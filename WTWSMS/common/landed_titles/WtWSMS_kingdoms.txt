@@ -2434,11 +2434,12 @@ e_wre = {
 
 	title = "EMPEROR"
 	
+	dignity = 200
+	
 	# Creation/Usurp Trigger
 	allow = {
 		always = no
 	}
-		
 }
 e_hre = {
 
