@@ -266,9 +266,6 @@ viking = {
 	male_compliment_adj = COMPL_VIKING
 	female_compliment = COMPL_VALKYRIE
 	female_compliment_adj = COMPL_VIKING
-
-	customizer = no
-	random = no
 }
 
 monk = {
@@ -1382,9 +1379,6 @@ robust = {
 	
 	male_compliment_adj = COMPL_STRONG
 
-	customizer = yes
-	random = yes
-
 	ruler_designer_cost = 10
 }
 
@@ -1403,9 +1397,6 @@ feeble = {
 	tribal_opinion = -5
 	
 	male_insult = INSULT_WEAKLING
-
-	customizer = yes
-	random = yes
 
 	ruler_designer_cost = -15
 }
@@ -2008,6 +1999,9 @@ valhalla_bound  = {
 		tengri_warrior
 		shaddai
 		gondi_shahansha
+		holy_warrior
+		warrior_of_hypsistos
+		follower_of_the_dao
 	}
 	
 	martial = 2
@@ -2229,6 +2223,9 @@ eagle_warrior = {
 		tengri_warrior
 		shaddai
 		gondi_shahansha
+		holy_warrior
+		warrior_of_hypsistos
+		follower_of_the_dao
 	}
 	
 	martial = 2
@@ -2262,6 +2259,9 @@ sun_warrior = {
 		tengri_warrior
 		shaddai
 		gondi_shahansha
+		holy_warrior
+		warrior_of_hypsistos
+		follower_of_the_dao
 	}
 	
 	martial = 2
@@ -2295,6 +2295,9 @@ ukkos_shield = {
 		tengri_warrior
 		shaddai
 		gondi_shahansha
+		holy_warrior
+		warrior_of_hypsistos
+		follower_of_the_dao
 	}
 	
 	martial = 2
@@ -2328,6 +2331,9 @@ nyames_shield = {
 		tengri_warrior
 		shaddai
 		gondi_shahansha
+		holy_warrior
+		warrior_of_hypsistos
+		follower_of_the_dao
 	}
 	
 	martial = 2
@@ -2361,6 +2367,9 @@ peruns_chosen = {
 		tengri_warrior
 		shaddai
 		gondi_shahansha
+		holy_warrior
+		warrior_of_hypsistos
+		follower_of_the_dao
 	}
 	
 	martial = 2
@@ -2394,6 +2403,9 @@ romuvas_own = {
 		tengri_warrior
 		shaddai
 		gondi_shahansha
+		holy_warrior
+		warrior_of_hypsistos
+		follower_of_the_dao
 	}
 	
 	martial = 2
@@ -2427,6 +2439,9 @@ ares_own = {
 		tengri_warrior
 		shaddai
 		gondi_shahansha
+		holy_warrior
+		warrior_of_hypsistos
+		follower_of_the_dao
 	}
 	
 	martial = 2
@@ -2460,6 +2475,9 @@ tengri_warrior = {
 		ares_own
 		shaddai
 		gondi_shahansha
+		holy_warrior
+		warrior_of_hypsistos
+		follower_of_the_dao
 	}
 	
 	martial = 2
@@ -2493,6 +2511,9 @@ shaddai = {
 		ares_own
 		tengri_warrior
 		gondi_shahansha
+		holy_warrior
+		warrior_of_hypsistos
+		follower_of_the_dao
 	}
 	
 	martial = 2
@@ -2526,6 +2547,9 @@ gondi_shahansha = {
 		ares_own
 		tengri_warrior
 		shaddai
+		holy_warrior
+		warrior_of_hypsistos
+		follower_of_the_dao
 	}
 	
 	martial = 2
@@ -2553,7 +2577,6 @@ cannibal_trait = {
 	vice = yes
 	
 	opposites = {
-		kind
 		vegetarian
 		zealous
 		temperate

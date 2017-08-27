@@ -31746,18 +31746,20 @@ e_italy = {
                     AND = {
 						NOT = { culture = ostrogothic }
                         NOT = { culture = skirian }
+						NOT = { culture = heruli }
                         NOT = { culture = romano_gothic }
+						NOT = { has_landed_title = k_ostrogoths }
                     }                                                                
 					AND = {
 				        higher_tier_than = KING
                         OR = {
-							culture = ostrogothic
-							culture = skirian
+                            culture = ostrogothic
+                            culture = skirian
 							culture = romano_gothic
 						}
 					}
-				}
-			}
+                }
+			} 
 		}
 
 		d_andatuonia = {
@@ -32366,6 +32368,7 @@ e_italy = {
                         NOT = { culture = skirian }
 						NOT = { culture = heruli }
                         NOT = { culture = romano_gothic }
+						NOT = { has_landed_title = k_ostrogoths }
                     }                                                                
 					AND = {
 				        higher_tier_than = KING
@@ -32390,21 +32393,23 @@ e_italy = {
 				hidden_tooltip = {
 					OR = {
 						ai = no
-                        AND = {
-							NOT = { culture = ostrogothic }
-                            NOT = { culture = skirian }
-                            NOT = { culture = romano_gothic }
-                        }                                                                
 						AND = {
-				            higher_tier_than = DUKE
-                            OR = {
-                                culture = ostrogothic
-                                culture = skirian
+							NOT = { culture = ostrogothic }
+							NOT = { culture = skirian }
+							NOT = { culture = heruli }
+							NOT = { culture = romano_gothic }
+							NOT = { has_landed_title = k_ostrogoths }
+						}                                                                
+						AND = {
+							higher_tier_than = DUKE
+							OR = {
+								culture = ostrogothic
+								culture = skirian
 								culture = romano_gothic
 							}
 						}
-                    }
-				}
+					}
+				} 
 			}
 
 			c_osterreich = {
@@ -32509,11 +32514,13 @@ e_italy = {
 				hidden_tooltip = {
 					OR = {
 						ai = no
-                        AND = {
+						AND = {
 							NOT = { culture = ostrogothic }
-                            NOT = { culture = skirian }
-                            NOT = { culture = romano_gothic }
-                        }                                                                
+							NOT = { culture = skirian }
+							NOT = { culture = heruli }
+							NOT = { culture = romano_gothic }
+							NOT = { has_landed_title = k_ostrogoths }
+						}                                                                
 						AND = {
 							higher_tier_than = DUKE
 							OR = {
@@ -32523,7 +32530,7 @@ e_italy = {
 							}
 						}
 					}
-				}
+				} 
 			}
 
 			c_vas = {

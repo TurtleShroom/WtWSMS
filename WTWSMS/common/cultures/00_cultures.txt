@@ -3186,10 +3186,10 @@ latin = {
 		color = { 0.63 0 0 }
 
 		male_names = {
-			Aemilian Aemilius Aetius Albinus Alexander_Alexander Anastasius_Anastasius Anicius Annius Antoninus Antonius_Antonius Arcadius Aurelian Aurelius
-			Avitus Belisarius_Belisarius Britannicus Caecilius Caesar_Caesar Carinus Carus Cassius Claudius Clementius Constans_Constans Constantine_Constantine
-			Constantius_Constantius Cornelius Crassus Cyprianus Decimus Decius Diocletian Domitian Domitius Drusus Ennodius Fabianus Fabius Faustus Felix Flavianus Florian
-			Gaius Galerius Gallienus Gallus Germanus_Germanus Gordian Gracchus Gratian Hadrian_Adrian Herculius_Heracles Honorius Joannes_John Jovian
+			Aemilian Aemilius Aetius Agrippa Albinus Alexander_Alexander Anastasius_Anastasius Anicius Annius Antidius Antoninus Antonius_Antonius Arcadius Arsacius Aulus Aurelian Aurelius
+			Auxentius Avitus Belisarius_Belisarius Britannicus Caecilius Caesar_Caesar Carinus Carus Cassius Claudius Clementius Constans_Constans Constantine_Constantine
+			Constantius_Constantius Cornelius Crassus Cyprianus Decimus Decius Diocletian Domitian Domitius Drusus Ennodius Fabianus Fabius Faustus Felix Flavianus Florian Fortunatus
+			Gaius Galerius Gallienus Gallus Germanus_Germanus Gnaeus Gordian Gracchus Gratian Hadrian_Adrian Herculius_Heracles Honorius Joannes_John Jovian
 			Julian_Julian Julius Julius-Caesar Junius Justin_Justin Justinian_Justinian Leo_Leo Leontius_Leontius Liberius Licinius Lucius Magnus_Magnus Marcellinus
 			Marcellus Marcian Marcus_Marcus Marinus Marius Martinus Maximian Maximinus Maximus_Maximus Nepotian Nerva Numerian Octavianus Octavius Otho
 			Paulinus Paulus_Paul Petronius Philip_Philip Pompeius Pontianus Priscus Probus Publius Quintus Romanus_Roman Romulus Rufinus Rutilius Sabinianus
@@ -11570,7 +11570,11 @@ anatolian_group = {
 		color = { 0.35 0.25 0.5 }
 
 		male_names = {
-		Wasuruntiya Taras Pugnus Arnuwanti Paucaris Ennes Illus Kodis Tarmutus Athenodorus Linginus Conon Paulus Lalli Sahui Tarhunazi Suwarimi Hattusili Hapatila Asturwaramanza Larama Tarhulara Mahana Parita Ashwis Jurti Warpalawa Zeno Leo Ioannes 
+            Wasuruntiya Taras Pugnus Arnuwanti Paucaris Ennes Illus Kodis Tarmutus Athenodorus Linginus Conon Paulus Lalli Sahui Tarhunazi Suwarimi Hattusili
+            Hapatila Asturwaramanza Larama Tarhulara Mahana Parita Ashwis Jurti Warpalawa Zeno Piyamaradu Walmu Alaksandu Muwatalli Tudhaliya  Suppiluliuma
+            Huzziya Arnuwanda Mursili Labarna Hantili Zidanta Alluwama Ammuna Telipinus Tahurwaili Kurunta Kuziteshub Mazakarhuha Irteshub Talmiteshub Sipazati
+            Uratarhunza Suhi Katuwa Astiruwa Jariri Kamani Sastura Pisiri Pugnusmili Runtiya Halpasulupi Mariti Sahwi Satiruntiya Hilaruada
+            Ariyahina Hamiyata Muwizi Halparuntiya Taita Manana Urahilina Uratami Tuwati Wasusarma Kurti Kiyakiya Saruwani Muwaharani Awariku Azatiwata
     	}
     	female_names = {
     		Agathe_Agatha Aglaia_Aglaia Agne_Agnes Ailia_Aelia Akakia_Akakia Anatolia_Anatolia Antonia_Antonia
@@ -11586,6 +11590,8 @@ anatolian_group = {
     		Philippa_Philippa Phlavia_Flavia Rhonesis_Kurunashi Sophia_Sophia Stephania_Stephania Tedinenis_Tatinani
     		Thekla_Thekla Theodora_Theodora Theodosia_Theodosia Theophane_Theophane Tiberia_Tiberia Trebeis_Tarpa
     		Trebemis_Tarpamira Trokondeis_Trokondeis Valeria_Valeria Valentina_Valentina Verina_Verina
+            Puduhepa Gassulawiya Nikalmati Ashmunikal Daduhepa Tawannanna Henti Tanuhepa Kilushhepa Harapsheki Malitashkur Ishtapariya Yaya Shummiri
+            Walanni Hashtayara Harapshili Isparaya Bonusti Ana Arinna Dadukhepa Estan Gilukhepa Hebat Ilanirinna Istustaya Papaya Sinteshupash Tawashi Wurusemu
     	}
 
 		from_dynasty_prefix = "of "

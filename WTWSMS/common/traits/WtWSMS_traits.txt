@@ -9,13 +9,25 @@ has_justinian_plague = {
 	is_epidemic = yes
 	is_illness = yes
 	
-	health = -7
+	diplomacy_penalty = -2
+	martial_penalty = -3
+	stewardship_penalty = -2
+	intrigue_penalty = -3
+	learning_penalty = -2
+	
+	health_penalty = -7
+	
+	fertility_penalty = -0.50
+	
+	combat_rating = -10
 	
 	customizer = no
-	
+
 	male_insult_adj = INSULT_DECAYING
 	female_insult_adj = INSULT_DECAYING
 	child_insult_adj = INSULT_SMELLY
+	
+	succession_gfx = yes
 }
 
 greens_supporter = {
@@ -90,6 +102,49 @@ siyavashist = {
 	ruler_designer_cost = 0
 }
 
+apellian = {
+	monthly_character_piety = 0.25
+
+	opposites =  {
+		potitian
+		synerian 
+	}
+	
+	opposite_opinion = -50
+	ai_rationality = -25
+	
+	customizer = no
+	random = no
+}
+
+potitian = {
+	monthly_character_prestige = 0.25
+
+	opposites =  {
+		potitian
+		synerian 
+	}
+	
+	opposite_opinion = -50
+
+	customizer = no
+	random = no
+}
+
+synerian = {
+	monthly_character_prestige = -0.05
+
+	opposites =  {
+		potitian
+		synerian 
+	}
+	
+	opposite_opinion = -50
+
+	customizer = no
+	random = no
+}
+
 ### Special Specific Traits ###
 
 convict = {
@@ -100,7 +155,6 @@ convict = {
 
 corrupt = {
 	opposites =  {
-		legendary_leader
 		honest
 	}
 	diplomacy = -3
@@ -161,11 +215,8 @@ the_prophet = {
 }
 
 servant_of_assur = {
-	potential = {
-		religion = assyrian_pagan
-	}
-
-	same_religion_opinion = 25
+	
+	same_religion_opinion = 15
  
 	ai_zeal = 25
 	ai_ambition = 15
@@ -193,10 +244,6 @@ roman_nostalgia = {
 }
 
 nasrani = {
-	potential = {
-		religion_group = christian
-	}
-
 	opposites = {
 		kshatriya
 		vaishya
@@ -210,20 +257,10 @@ nasrani = {
 
 	monthly_character_piety = 0.1
 
-	christian_opinion = 5
-
-	ai_zeal = 0.1
-
 	learning = 1
 
 	customizer = no
 	random = no
-
-	male_insult = INSULT_LOVER_OF_HEATHENS
-	female_insult = INSULT_LOVER_OF_HEATHENS
-	male_insult_adj = INSULT_UNPRINCIPLED
-	female_insult_adj = INSULT_UNPRINCIPLED
-	child_insult_adj = INSULT_STUPID
 }
 
 newsalem = {
@@ -231,7 +268,7 @@ newsalem = {
 	monthly_character_piety = 2
 	customizer = no
 	random = no
-	priest = yes
+	#priest = yes
 
 	learning = 4
 
@@ -251,6 +288,8 @@ newsalem = {
 	child_insult = INSULT_DESERT_RAT
 
 	same_religion_opinion = 35
+
+	customizer = no
 }
 
 spawn_of_newsalem = {  ## all kids of restorer of K_MELCHISIDECHIANISM get it
@@ -261,7 +300,9 @@ spawn_of_newsalem = {  ## all kids of restorer of K_MELCHISIDECHIANISM get it
 	agnatic = yes
 	enatic = yes #trying to make like Saoyshant's Kid Trait
 
-	learning = 1
+	opposites = {
+		mystic
+	}
 
 	male_compliment = SALEMITE
 	female_compliment = SALEMITE
@@ -304,30 +345,32 @@ sympathy_hypsistarian = {
 
 	same_opinion_if_same_religion = 5
 
-	customizer = yes
-	random = yes
+	customizer = no
+	random = no
 
 	male_insult = INSULT_LOVER_OF_HEATHENS
 	female_insult = INSULT_LOVER_OF_HEATHENS
 	male_insult_adj = INSULT_UNPRINCIPLED
 	female_insult_adj = INSULT_UNPRINCIPLED
 	child_insult_adj = INSULT_STUPID
-
-	ruler_designer_cost = 3
 }
 
 bad_priest_donatism = {
 	religious = yes
 
 	potential = {
+		OR = {
+			is_theocracy = yes
+			is_ruler = no
+		}
 		religion = donatism
 	}
 
 	can_hold_titles = no
+	
 	same_religion_opinion = -100
 	church_opinion = -100
-	religious = yes
-	priest = yes
+	
 	vice = yes
 
 	monthly_character_piety = -2
@@ -345,45 +388,215 @@ bad_priest_donatism = {
 	female_insult_adj = INSULT_CORRUPT
 	child_insult_adj = INSULT_STUPID
 }
+bad_priest_jewish = {
+	
+	religious = yes
 
-lame_spartan = {
 	potential = {
-		culture = spartan
+		OR = {
+			is_theocracy = yes
+			is_ruler = no
+		}
 	}
 
-	martial = -4
-	diplomacy = 2
-	stewardship = 2
-	learning = 2
+	church_opinion = -10
+	same_opinion_if_same_religion = 25
 
-	male_insult = INSULT_CRIPPLE
-	female_insult = INSULT_CRIPPLE
+	monthly_character_piety = -1
 
-	customizer = no
-}
-
-inferior_spartan_child = {
-	potential = {
-		culture = spartan
-	}
-
-	cached = yes
-	incapacitating = yes
-	is_health = yes
-	is_illness = yes # It is "cured" by having the child survive it
-
-	diplomacy_penalty = -8
-	martial_penalty = -8
-	health_penalty = -2
-	fertility_penalty = -1
-	
-	combat_rating = -8
-	
 	customizer = no
 	random = no
 
-	male_insult = INSULT_CRIPPLE
-	female_insult = INSULT_USELESS
+	male_insult = INSULT_SCARECROW
+	female_insult = INSULT_SCARECROW
+	child_insult = INSULT_SCARECROW
 	male_insult_adj = INSULT_USELESS
 	female_insult_adj = INSULT_USELESS
+	child_insult_adj = INSULT_CRUMMY
+}
+
+bad_priest_bosporan = {
+	
+	religious = yes
+
+	potential = {
+		OR = {
+			is_theocracy = yes
+			is_ruler = no
+		}
+	}
+
+	church_opinion = -10
+	same_opinion_if_same_religion = 25
+
+	monthly_character_piety = -1
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_SCARECROW
+	female_insult = INSULT_SCARECROW
+	child_insult = INSULT_SCARECROW
+	male_insult_adj = INSULT_USELESS
+	female_insult_adj = INSULT_USELESS
+	child_insult_adj = INSULT_CRUMMY
+}
+
+bad_priest_indian = {
+	
+	religious = yes
+
+	potential = {
+		OR = {
+			is_theocracy = yes
+			is_ruler = no
+		}
+	}
+
+	church_opinion = -10
+	same_opinion_if_same_religion = 25
+
+	monthly_character_piety = -1
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_SCARECROW
+	female_insult = INSULT_SCARECROW
+	child_insult = INSULT_SCARECROW
+	male_insult_adj = INSULT_USELESS
+	female_insult_adj = INSULT_USELESS
+	child_insult_adj = INSULT_CRUMMY
+}
+
+bad_priest_chinese = {
+	
+	religious = yes
+
+	potential = {
+		OR = {
+			is_theocracy = yes
+			is_ruler = no
+		}
+	}
+
+	church_opinion = -10
+	same_opinion_if_same_religion = 25
+
+	monthly_character_piety = -1
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_SCARECROW
+	female_insult = INSULT_SCARECROW
+	child_insult = INSULT_SCARECROW
+	male_insult_adj = INSULT_USELESS
+	female_insult_adj = INSULT_USELESS
+	child_insult_adj = INSULT_CRUMMY
+}
+holy_warrior = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		tengri_warrior
+		shaddai
+		gondi_shahansha
+		warrior_of_hypsistos
+		follower_of_the_dao
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+warrior_of_hypsistos = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		tengri_warrior
+		shaddai
+		gondi_shahansha
+		holy_warrior
+		follower_of_the_dao
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+follower_of_the_dao = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		tengri_warrior
+		shaddai
+		gondi_shahansha
+		holy_warrior
+		warrior_of_hypsistos
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
 }
