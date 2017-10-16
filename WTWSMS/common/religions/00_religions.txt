@@ -372,6 +372,10 @@ christian = {
 			SATAN LUCIFER THE_DEVIL
 		}
 		
+		character_modifier = {
+			ai_zeal = 5
+		}
+		
 		can_excommunicate = yes
 		can_grant_divorce = yes
 		can_grant_invasion_cb = invasion
@@ -696,7 +700,7 @@ christian = {
 		parent = nicene
 
 		character_modifier = {
-			# FIXME heretic_opinion is not a valid modifier
+			# FIX ME heretic_opinion is not a valid modifier
 			# heretic_opinion = 20
 		}
 		
@@ -961,7 +965,7 @@ christian = {
 
 		character_modifier = {
 			martial = 1
-			intrigue = 1 #When under the extreme persecution they faced, Priscillianists used bribery and intrigue to stay alive
+			intrigue = 1 # When under the extreme persecution they faced, Priscillianists used bribery and intrigue to stay alive
 		}
 
 		unit_modifier = {
@@ -1302,7 +1306,7 @@ muslim = {
 		uses_jizya_tax = yes
 	}
 	yazidi = {
-		graphical_culture = persiangfx #Yazidis ain't Islamic
+		graphical_culture = persiangfx # Yazidis ain't Islamic
 		coa_on_barony_only = yes
 
 		icon = 3
@@ -1326,8 +1330,8 @@ muslim = {
 		
 		parent = sunni
 		priests_can_marry = yes
-		female_temple_holders = yes #Female Yazidis of the priestly caste can become full clergy, but they cannot be the Sheikh/Yazidi Pope equivalent
-		priests_can_inherit = yes #Yazidi clergy, much like Jewish Levites, inherit their positions, but I am not sure how this would be simulated
+		female_temple_holders = yes # Female Yazidis of the priestly caste can become full clergy, but they cannot be the Sheikh/Yazidi Pope equivalent
+		priests_can_inherit = yes # Yazidi clergy, much like Jewish Levites, inherit their positions, but I am not sure how this would be simulated
 		can_excommunicate = yes
 		can_call_crusade = yes
 		max_wives = 4
@@ -1338,19 +1342,19 @@ muslim = {
 		uses_decadence = no
 		uses_jizya_tax = no
 		can_hold_temples = no
-		defensive_attrition = yes #Yazidi originated deep in the mountains and hostile terrain
+		defensive_attrition = yes # Yazidi originated deep in the mountains and hostile terrain
 
 		unit_modifier = {
 			global_supply_limit = 0.25
 			global_winter_supply = 0.25
 			siege_defence = 0.5
-			#global_defensive = 0.3
+			global_defensive = 0.3
 			
 			key = "DEF_RELIGION"
 		}
 
-		religious_clothing_head = 5 #The Sheikh wears white but can wear a pink headdress
-		religious_clothing_priest = 5 #Different orders of Yazidi clergy wear different colors (lowest rank wears black), but white is considered universally accepted
+		religious_clothing_head = 5 # The Sheikh wears white but can wear a pink headdress
+		religious_clothing_priest = 5 # Different orders of Yazidi clergy wear different colors (lowest rank wears black), but white is considered universally accepted
 
 		general_opinion = -20
 		same_opinion_if_same_religion = 40
@@ -2178,7 +2182,7 @@ pagan_group = {
 		max_consorts = 3
 		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
 		reformed = norse_pagan_reformed
-		reformer_head_of_religion = yes #make the character that reforms this religion the head of the new reformed faith
+		reformer_head_of_religion = yes # Make the character that reforms this religion the head of the new reformed faith
 		
 		aggression = 2.0 # AI aggression factor
 		
@@ -2647,7 +2651,7 @@ pagan_group = {
 		intermarry = buddhist
 	}
 
-	scythian_pagan_reformed = { #Reformed Iranian steppe paganism
+	scythian_pagan_reformed = { # Reformed Iranian steppe paganism
 		graphical_culture = persiangfx
 		
 		secondary_event_pictures = tengri_pagan
@@ -2655,7 +2659,7 @@ pagan_group = {
 		icon = 54
 		heresy_icon = 55
 		
-		ai_convert_other_group = 2 # always try to convert
+		ai_convert_other_group = 2 # Always try to convert
 		
 		color = { 0.7 0.39 0.5 }
 		
@@ -2746,7 +2750,7 @@ pagan_group = {
 		icon = 143
 		heresy_icon = 144
 
-		ai_convert_other_group = 2 # always try to convert
+		ai_convert_other_group = 2 # Always try to convert
 		
 		color = { 0.9 0.5 0.2 }
 		crusade_name = GREAT_HOLY_WAR
@@ -4077,20 +4081,20 @@ pagan_group = {
 
 		character_modifier = {
 			martial = 4
-			#commander_limit = 3
+			commander_limit = 3
 			short_reign_length = 0 # Assyrians worshipped their rulers as a direct connection to the Ashur and the gods (if they were not gods themselves)
-			#ai_ambition = 5 # Causes Assyrian characters to be more likely to go to war, compunds with aggression
+			ai_ambition = 5 # Causes Assyrian characters to be more likely to go to war, compounds with aggression
 		}
 
 		unit_modifier = {
-			#camel_calvary_offensive = 0.5 # The Assyrian Empire mastered the use of the camel
+			camel_calvary_offensive = 0.5 # The Assyrian Empire mastered the use of the camel
 			land_morale = 0.66
 			light_infantry_offensive= 0.1
 			heavy_infantry_offensive = 0.1
 			knights_offensive = 0.1
 			archers_offensive = 0.1
 			garrison_size = 0.20
-			#winter_supply = -0.1 # The Assyrian Empire failed to withstand the cold and never expanded northward in that way
+			winter_supply = -0.1 # The Assyrian Empire failed to withstand the cold and never expanded northward in that way
 
 			key = "OFF_RELIGION"
 		}
@@ -4102,9 +4106,10 @@ pagan_group = {
 		raised_vassal_opinion_loss = no
 		priests_can_marry = yes
 		female_temple_holders = yes
-		max_consorts = 3 #Mesopotamian culture was highly sexualised
+		max_consorts = 3 # Mesopotamian culture was highly sexualised
 		hostile_within_group = yes
 		dislike_tribal_organization = no
+		raised_vassal_opinion_loss = no
 		ignores_defensive_attrition = yes
 		
 		aggression = 10 # The Ancient Assyrians believed that if they stopped conquering it would literally be the end of the world
@@ -4215,13 +4220,14 @@ pagan_group = {
         
         color = { 0.4 0.0 0.1 }
         
-        high_god_name = GOD_ZALMOXIS
-        god_names = {
-            GOD_ZALMOXIS GOD_THE_SUN GOD_THE_LIBERATOR GOD_ORPHEUS PATER GOD_INVINCIBLE_SUN #GOD_THE_THRACIAN_PEOPLE
-        }
-        evil_god_names = {
-            THE_DARK_SPIRITS THE_GREAT_LIE
-        }
+		high_god_name = GOD_ZALMOXIS
+
+		god_names = {
+			GOD_ZALMOXIS GOD_THE_SUN GOD_THE_LIBERATOR GOD_THE_THRACIAN_PEOPLE GOD_ORPHEUS PATER GOD_INVINCIBLE_SUN
+		}
+		evil_god_names = {
+			THE_GREAT_LIE THE_DARKNESS
+		}
         
         unit_modifier = {
             levy_size = 0.3
@@ -4231,7 +4237,7 @@ pagan_group = {
             key = "OFF_RELIGION"
         }
         
-        crusade_name = GREAT_HOLY_WAR
+        crusade_name = SUN_WAR
         scripture_name = ZALMOXIS_TAULS
         priest_title = ZALMOX
         
@@ -5107,7 +5113,7 @@ jewish_group = {
 			knights_defensive = 0.3
 			archers_defensive = 0.2
 			garrison_size = 0.25
-			#winter_supply = 0.05 # Mountainous nature
+			winter_supply = 0.05 # Mountainous nature
 
 			key = "DEF_RELIGION_HOME_TERRITORY"
 		}
@@ -5115,9 +5121,9 @@ jewish_group = {
 		character_modifier = {
 			martial  = 3
 			combat_rating = 1
-			#commander_limit = 1
-			#ai_ambition = 1
-			#ai_zeal = 2
+			commander_limit = 1
+			ai_ambition = 1
+			ai_zeal = 2
 		}
 
 		can_grant_divorce = yes
@@ -5394,7 +5400,7 @@ indian_group = {
 		intermarry = buddhist
 	}
 	mimamsa = {
-#		has_coa_on_barony_only = yes
+		has_coa_on_barony_only = yes
 
 		ai_convert_same_group = 2 # always
 		ai_convert_other_group = 1 # only when zealous
@@ -5662,7 +5668,7 @@ indian_group = {
 ### Credit to All Under Heaven ### 
 chinese_group = {
 	has_coa_on_barony_only = yes
-	graphical_culture = indiangfx #chinesegfx, but it's hardcoded...
+	graphical_culture = indiangfx # Chinesegfx, but it's hardcoded...
 	playable = yes
 	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
 	
