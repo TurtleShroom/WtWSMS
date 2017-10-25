@@ -387,7 +387,11 @@ has_unseelie_prerequisites = {
 
 has_coven_prerequisites = {
 	has_common_devilworship_prerequisites = yes
-	religion_openly_in_hellenic_subgroup_trigger = yes
+	OR = {
+		religion_openly_in_hellenic_subgroup_trigger = yes
+		religion = dacian_pagan
+		religion = dacian_pagan_reformed
+	}
 }
 
 has_sand_snakes_prerequisites = {

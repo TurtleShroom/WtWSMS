@@ -2266,6 +2266,10 @@ hermetics = {
 				}
 			}
 			religion = hellenic_pagan
+			religion = cybelian_pagan
+			religion = neoplatonist
+			religion = dacian_pagan
+			religion = dacian_pagan_reformed
 		}
 		NOR = {
 			is_nomadic = yes
@@ -2287,6 +2291,10 @@ hermetics = {
 			religion = zun_pagan
 			religion = zun_pagan_reformed
 			religion = hellenic_pagan
+			religion = cybelian_pagan
+			religion = neoplatonist
+			religion = dacian_pagan
+			religion = dacian_pagan_reformed
 		}
 	}
 	

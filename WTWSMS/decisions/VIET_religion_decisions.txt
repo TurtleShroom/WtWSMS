@@ -619,6 +619,8 @@ decisions = {
 				religion = root_west_pagan_reformed
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
+				religion = dacian_pagan
+				religion = dacian_pagan_reformed
 			}
 			NOT = { has_character_modifier = ask_ancestors_for_advice_timer }
 			NOT = {
@@ -738,6 +740,8 @@ decisions = {
 				religion = root_west_pagan_reformed
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
+				religion = dacian_pagan
+				religion = dacian_pagan_reformed
 			}
 		}
 		allow = {

@@ -4221,7 +4221,7 @@ pagan_group = {
 		high_god_name = GOD_ZALMOXIS
 
 		god_names = {
-			GOD_ZALMOXIS GOD_THE_SUN GOD_THE_LIBERATOR GOD_THE_THRACIAN_PEOPLE GOD_ORPHEUS PATER GOD_INVINCIBLE_SUN
+			GOD_ZALMOXIS GOD_THE_SUN GOD_THE_LIBERATOR GOD_THE_THRACIAN_PEOPLE GOD_ORPHEUS PATER GOD_INVINCIBLE_SUN GOD_DERZELAS GOD_VAHAGN
 		}
 		evil_god_names = {
 			THE_GREAT_LIE THE_DARKNESS
@@ -4234,6 +4234,8 @@ pagan_group = {
             
             key = "OFF_RELIGION"
         }
+		
+		max_wives = 3 # Dacians in Moldova- what we know most about in terms of marriage -explicitly took up to ten wives
         
         crusade_name = SUN_WAR
         scripture_name = ZALMOXIS_TAULS
@@ -4243,6 +4245,7 @@ pagan_group = {
         allow_looting = yes
         allow_rivermovement = yes
         female_temple_holders = yes
+		raised_vassal_opinion_loss = no
         
 		aggression = 1.5 # AI aggression factor
 		
@@ -4268,7 +4271,7 @@ pagan_group = {
         
         high_god_name = GOD_ZALMOXIS
         god_names = {
-            GOD_ZALMOXIS GOD_THE_SUN GOD_THE_LIBERATOR GOD_ORPHEUS PATER GOD_INVINCIBLE_SUN #GOD_THE_THRACIAN_PEOPLE
+            GOD_ZALMOXIS GOD_THE_SUN GOD_THE_LIBERATOR GOD_ORPHEUS PATER GOD_INVINCIBLE_SUN GOD_THE_THRACIAN_PEOPLE GOD_DERZELAS GOD_VAHAGN
         }
         evil_god_names = {
             THE_DARK_SPIRITS THE_GREAT_LIE
@@ -4302,6 +4305,8 @@ pagan_group = {
         
         religious_clothing_head = 3
         religious_clothing_priest = 3
+		
+		max_wives = 3 Dacians in Moldova- what we know most about in terms of marriage -explicitly took up to ten wives
         
         intermarry = norse_pagan_reformed
         intermarry = arian

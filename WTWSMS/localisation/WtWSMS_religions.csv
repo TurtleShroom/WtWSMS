@@ -639,15 +639,64 @@ vasconic_pagan_reformed_DESC;The reformed Vasconic religion has a religious head
 dacian_pagan;Zalmoxism;zalmoxisme;;;Zalmoxista;;;;;;;x
 dacian_pagan_DESC;Zalmoxis, the Thracian death god, who was originally a Greek philosopher, enthralled the Thracians and Dacians with his own religion, Zalmoxianism. Where the Thracians simply added him to their list of dieties, the Dacians worshipped him as the highest of gods.;;;;Zalmoxis, el dios de la muerte tracio, que fue originalmente un filósofo griego, cautivó a los tracios y dacios con su propia religión, el zalmoxianismo. Donde los tracios simplemente le agregaron a su lista de dieties, los dacios lo adoraron como el más alto de dioses.;;;;;;;x
 GOD_ZALMOXIS;Zalmoxis;;;;Zalmoxis;;;;;;;x
-GOD_THE_LIBERATOR;The Liberator;;;;;;;;;;;x
-GOD_THE_THRACIAN_PEOPLE;The Thracian People;;;;;;;;;;;x
+GOD_THE_LIBERATOR;the Liberator;;;;;;;;;;;x
+GOD_THE_THRACIAN_PEOPLE;the Thracian People;;;;;;;;;;;x
 GOD_ORPHEUS;Orpheus;;;;;;;;;;;x
-PATER;Sun Father;;;;;;;;;;;x
+GOD_DERZELAS;Derzelas;;;;;;;;;;;x
+GOD_VAHAGN;Vahagn;;;;;;;;;;;x
+PATER;the Sun Father;;;;;;;;;;;x
 ZALMOXIS_TAULS;Zalmoxis' Tauls;;;;Las Tablas de Zamlmoxis;;;;;;;x
 ZALMOX;Zalmox;;;;Zalmox;;;;;;;x
 dacian_pagan_reformed;Zalmoxism;zalmoxisme;;;Zalmoxista;;;;;;;x
-dacian_pagan_reformed_DESC;The reformed Zalmoxist religion has a religious head and a codified organisation in contrast to the decentralised nature of the unreformed faith.;;;;;;;;;;;x
-d_dacian_pagan_reformed;Great Góita;;;;;;;;;;;x
+dacian_pagan_reformed_DESC;The reformed Zalmoxist religion has a religious head and a codified organisation in contrast to the decentralised nature of the unreformed faith. Zalmoxis was the Thracian death god, who was originally a Greek philosopher. He enthralled the Thracians and Dacians with his own religion, Zalmoxianism. Where the Thracians simply added him to their list of dieties, the Dacians worshipped him as the highest of gods.;;;;;;;;;;;x
+d_dacian_pagan_reformed;Societatea Gebeleizis;;;;;;;;;;;x
+GOITA;Great Góita;;;;;;;;;;;x
+ZALMOX;Zalmo;;;;;;;;;;;x
+temple_baron_dacian_pagan;Kaga;;;;;;;;;;x
+temple_baron_female_dacian_pagan;Kaga;;;;;;;;;;x
+temple_baron_dacian_pagan_reformed;Kaga;;;;;;;;;;x
+temple_baron_female_dacian_pagan_reformed;Kaga;;;;;;;;;;x
+temple_count_dacian_pagan;High Kaga;;;;;;;;;;x
+temple_count_female_dacian_pagan;High Kaga;;;;;;;;;;x
+temple_count_dacian_pagan_reformed;High Kaga;;;;;;;;;;x
+temple_count_female_dacian_pagan_reformed;High Kaga;;;;;;;;;;x
+temple_duke_dacian_pagan;Grand Kaga;;;;;;;;;;x
+temple_duke_female_dacian_pagan;Grand Kaga;;;;;;;;;;x
+temple_duke_dacian_pagan_reformed;Grand Kaga;;;;;;;;;;x
+temple_duke_female_dacian_pagan_reformed;Grand Kaga;;;;;;;;;;x
+temple_king_dacian_pagan;Zalmo;;;;;;;;;;x
+temple_king_female_dacian_pagan;Zalmo;;;;;;;;;;x
+temple_king_dacian_pagan_reformed;Zalmo;;;;;;;;;;x
+temple_king_female_dacian_pagan_reformed;Zalmo;;;;;;;;;;x
+temple_emperor_dacian_pagan;Pater Zalmo;;;;;;;;;;x
+temple_emperor_female_dacian_pagan;Mater Zalmo;;;;;;;;;;x
+temple_emperor_dacian_pagan_reformed;Pater Zalmo;;;;;;;;;;x
+temple_emperor_female_dacian_pagan_reformed;Mater Zalmo;;;;;;;;;;x
+family_palace_baron_dacian_pagan;Pater Familias;Pater Familias;;;;;;;;;;;;x
+family_palace_baron_female_dacian_pagan;Mater Familias;Mater Familias;;;;;;;;;;;;x
+family_palace_baron_dacian_pagan_reformed;Pater Familias;Pater Familias;;;;;;;;;;;;x
+family_palace_baron_female_dacian_pagan_reformed;Mater Familias;Mater Familias;;;;;;;;;;;;x
+city_emperor_dacian_pagan;Prince;Empereur;Kaiser;;Emperador;;;;;;;;;x
+city_emperor__female_dacian_pagan;Princess;Empereur;Kaiser;;Emperador;;;;;;;;;x
+city_king_dacian_pagan;Consul;Consul;Konsulat;;Cónsul;;;;;;;;;x
+city_king_female_dacian_pagan;Mater;Consul;Konsulat;;Cónsul;;;;;;;;;x
+city_duke_dacian_pagan;Proconsul;Proconsul;Prokonsul;;Procónsul;;;;;;;;;x
+city_duke_female_dacian_pagan;Lady;Proconsul;Prokonsul;;Procónsul;;;;;;;;;x
+city_count_dacian_pagan;Lord Prefect;Seigneur-Préfet;Oberbürgermeister;;Gran Prefecto;;;;;;;;;x
+city_count_female_dacian_pagan;Lady;Seigneur-Préfet;Oberbürgermeister;;Gran Prefecto;;;;;;;;;x
+city_baron_dacian_pagan;Prefect;Préfet;Bürgermeister;;Prefecto;;;;;;;;;x
+family_palace_baron_dacian_pagan_reformed;Pater Familias;Pater Familias;;;;;;;;;;;;x
+family_palace_baron_female_dacian_pagan_reformed;Mater Familias;Mater Familias;;;;;;;;;;;;x
+family_palace_baron_dacian_pagan_reformed_reformed;Pater Familias;Pater Familias;;;;;;;;;;;;x
+family_palace_baron_female_dacian_pagan_reformed_reformed;Mater Familias;Mater Familias;;;;;;;;;;;;x
+city_emperor_dacian_pagan_reformed;Prince;Empereur;Kaiser;;Emperador;;;;;;;;;x
+city_emperor_female_dacian_pagan_reformed;Princess;Empereur;Kaiser;;Emperador;;;;;;;;;x
+city_king_dacian_pagan_reformed;Consul;Consul;Konsulat;;Cónsul;;;;;;;;;x
+city_king_female_dacian_pagan_reformed;Mater;Consul;Konsulat;;Cónsul;;;;;;;;;x
+city_duke_dacian_pagan_reformed;Proconsul;Proconsul;Prokonsul;;Procónsul;;;;;;;;;x
+city_duke_female_dacian_pagan_reformed;Lady;Proconsul;Prokonsul;;Procónsul;;;;;;;;;x
+city_count_dacian_pagan_reformed;Lord Prefect;Seigneur-Préfet;Oberbürgermeister;;Gran Prefecto;;;;;;;;;x
+city_count_female_dacian_pagan_reformed;Lady;Seigneur-Préfet;Oberbürgermeister;;Gran Prefecto;;;;;;;;;x
 ###### Misc zoroastrian;;;;;;;;;;;;x
 zurvanist;Zurvanist;zurvanite;;;;;;;;;;x
 zurvanist_DESC;Zurvanism in this sense refers to Fatalistic Zurvanism, a branch of the broader Zurvanist tradition which held that mankind was nothing more than a slave to the movement of the astral bodies of the heavenly sphere, holding that "Ohrmazd allotted happiness to man, but if man did not receive it, it was owing to the extortion of these planets." It would break from the broad Zoroastrian church for this, violating the concept of Free Will, the most sacred tennent of Zoroastrianism.;Le zurvanisme dans ce sens se réfère à zurvanisme fanatique, une branche de la tradition zurvanite qui a jugé que l'humanité n'était rien de plus qu'un esclave du mouvement des corps astraux de la sphère céleste, jugeant que "Ohrmazd attribua le bonheur à l'homme, mais si l'homme ne l'a pas reçu, il était dû à l'extorsion de ces planètes ". Cela briserait la vaste église zoroastrienne pour cela, il ne respecte pas le concept de libre arbitre, l'élément le plus sacré du zoroastrisme.;;;;;;;;;;x
@@ -800,7 +849,7 @@ temple_count_root_west_pagan;Greater Blackhead;;;;;;;;;;x
 temple_count_root_west_pagan_reformed;Greater Blackhead;;;;;;;;;;x
 temple_duke_root_west_pagan;Grand Blackhead;;;;;;;;;;x
 temple_duke_root_west_pagan_reformed;Grand Blackhead;;;;;;;;;;x
-temple_king_root_rest_pagan;Black Cranelord;;;;;;;;;;x
+temple_king_root_west_pagan;Black Cranelord;;;;;;;;;;x
 temple_king_root_west_pagan_reformed;Black Cranelord;;;;;;;;;;x
 temple_emperor_root_west_pagan;Black Overlord;;;;;;;;;;x
 temple_emperor_root_west_pagan_reformed;Black Overlord;;;;;;;;;;x
