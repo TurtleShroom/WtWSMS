@@ -207,3 +207,55 @@ title_enarei = {
 
 	message = yes
 }
+
+title_dacian_sacrifice = {
+	is_high_prio = yes
+	dignity = 10
+	grant_limit = 1
+	unique = yes
+	show_as_title = yes
+	monthly_salary = 0.2
+	monthly_prestige = 3
+	monthly_piety = 0.5
+	realm_in_name = yes
+	is_voter = yes
+	attribute = diplomacy
+	opinion_effect = -10
+	
+	allowed_to_hold = {
+		OR = {
+			religion = dacian_pagan
+			religion = dacian_pagan_reformed
+		}
+		NOT = { dynasty = FROM }
+		NOT = { trait = incapable }
+		NOT = { has_character_flag = kaga_sucks_to_be_you }
+		NOT = { has_character_modifier = publically_humiliated }
+		is_landed = no
+		is_female = no
+	}
+	
+	allowed_to_grant = {
+		OR = {
+			religion = dacian_pagan
+			religion = dacian_pagan_reformed
+		}
+		OR = {
+			higher_real_tier_than = COUNT
+			AND = {
+				OR = {
+					is_theocracy = yes
+					controls_religion = dacian_pagan_reformed
+				}
+				NOT = { tier = BARON }
+			}
+		}
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+	
+	message = yes
+}

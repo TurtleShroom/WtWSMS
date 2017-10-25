@@ -1577,6 +1577,288 @@ character_event = { # Ebionites, being Jews themselves, will obviously tolerate 
 	}
 }
 
+narrative_event = { # Zalmoxian Sacrifice of the Messenger - START
+	id = spirit.49
+	title = EVTNAMEspirit.49
+	desc = EVTDESCspirit.49
+	picture = GFX_evt_battle_east_germanic
+	
+	is_triggered_only = yes # Decision
+	
+	trigger = {
+		OR = { 
+			religion = dacian_pagan
+			religion = dacian_pagan_reformed
+		}
+	}
+	
+	immediate = {
+		any_courtier_or_vassal = {
+			limit = { has_minor_title = title_dacian_sacrifice }
+			# Save current scope
+			save_event_target_as = ZalmoScrewed
+		}
+	}
+	
+	option = {
+		name = EVTOPTAspirit.49
+		custom_tooltip = { name = ZALMOXITEBEGIN2 }
+		random_list = {
+			75 = { character_event = { id = spirit.50 tooltip = ZALMOXITESUCCESS } } # Sacrifice goes well
+			25 = { character_event = { id = spirit.51 tooltip = ZALMOXITEFAIL } } # Sacrifice fails
+		}
+	}
+}
+
+long_character_event = { # Zalmoxian Sacrifice of the Messenger - SUCCESSFUL
+	id = spirit.50
+	desc = EVTDESCspirit.50
+	picture = GFX_evt_journey_to_spirit_world
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = { 
+			religion = dacian_pagan
+			religion = dacian_pagan_reformed
+		}
+	}
+	
+	immediate = {
+		any_courtier_or_vassal = {
+			limit = { has_minor_title = title_dacian_sacrifice }
+			# Save current scope
+			save_event_target_as = ZalmoScrewed
+		}
+	}
+	
+	option = {
+		name = EVTOPTAspirit.50
+		prestige = 300
+		piety = 300
+		event_target:ZalmoScrewed = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		hidden_tooltip = {
+			any_courtier_or_vassal = {
+				limit = { has_minor_title = title_dacian_sacrifice }
+				death = {
+					death_reason = death_sacrificed
+					killer = ROOT
+				}
+			}
+		}
+		add_character_modifier = {
+			name = dacian_sacrifice_timer
+			duration = 1825 # Five years
+		}
+	}
+}
+
+long_character_event = { # Zalmoxian Sacrifice of the Messenger - FAILURE
+	id = spirit.51
+	desc = EVTDESCspirit.51
+	picture = GFX_evt_nightmare
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = { 
+			religion = dacian_pagan
+			religion = dacian_pagan_reformed
+		}
+	}
+	
+	immediate = {
+		any_courtier_or_vassal = {
+			limit = { has_minor_title = title_dacian_sacrifice }
+			# Save current scope
+			save_event_target_as = ZalmoScrewed
+		}
+	}
+	
+	option = {
+		name = EVTOPTAspirit.51 # Banish him
+		event_target:ZalmoScrewed = {
+			banish = yes
+			hidden_tooltip = {
+				add_trait = disinherited
+				piety = -1000
+				add_character_modifier = {
+					name = publicly_humiliated
+					duration = -1
+				}
+			}
+			set_character_flag = kaga_sucks_to_be_you
+			random_list = {
+				33 = { add_trait = maimed }
+				33 = { add_trait = severely_wounded }
+				33 = { add_trait = wounded }
+				1 = { add_trait = mangled }
+			}
+			remove_title = title_dacian_sacrifice
+		}
+		custom_tooltip = {
+			text = ZALMOX_TAKE_HIS_PLACE
+			hidden_tooltip = {
+				random_courtier = {
+					death = {
+						death_reason = death_sacrificed
+						killer = ROOT
+					}
+				}
+			}
+		}
+		add_character_modifier = {
+			name = dacian_sacrifice_timer
+			duration = 1825 # Five years
+		}
+	}
+	
+	option = {
+		name = DIP_DECLINE_KILL # OFF WITH HIS HEAD
+		event_target:ZalmoScrewed = {
+			death = {
+				death_reason = death_execution_beheading
+				killer = ROOT
+			}
+		}
+		custom_tooltip = {
+			text = ZALMOX_TAKE_HIS_PLACE
+			hidden_tooltip = {
+				random_courtier = {
+					death = { 
+						death_reason = death_sacrificed
+						killer = ROOT
+					}
+				}
+			}
+		}
+		add_character_modifier = {
+			name = dacian_sacrifice_timer
+			duration = 1825 # Five years
+		}
+	}
+	
+	option = {
+		name = EVTOPTCspirit.51 # Impale him!
+		trigger = { trait = impaler }
+		tooltip_info = impaler
+		event_target:ZalmoScrewed = {
+			death = {
+				death_reason = death_execution_impaling
+				killer = ROOT
+			}
+		}
+		custom_tooltip = {
+			text = ZALMOX_TAKE_HIS_PLACE
+			hidden_tooltip = {
+				random_courtier = {
+					death = {
+						death_reason = death_sacrificed
+						killer = ROOT
+					}
+				}
+			}
+		}
+		add_character_modifier = {
+			name = dacian_sacrifice_timer
+			duration = 1825 # Five years
+		}
+	}
+	
+	option = {
+		name = EVTOPTDspirit.52 # Castrate him!
+		trigger = { trait = cruel }
+		tooltip_info = cruel
+		add_character_modifier = {
+			name = dacian_sacrifice_timer
+			duration = 1825 # Five years
+		}
+		custom_tooltip = { text = EVTDESCLoR.834 }
+		hidden_tooltip = {
+			event_target:ZalmoScrewed = {
+				remove_title = title_dacian_sacrifice
+				set_character_flag = kaga_cannot_into_sacrifice
+				random_list = {
+					33 = { add_trait = maimed }
+					33 = { add_trait = severely_wounded }
+					33 = { add_trait = wounded }
+					1 = { add_trait = mangled }
+				}
+				add_trait = disinherited
+				piety = -1000
+				add_character_modifier = {
+					name = publicly_humiliated
+					duration = -1
+				}
+				add_trait = eunuch
+				opinion = {
+					modifier = opinion_castrated_me
+					who = ROOT
+				}
+				mother = {
+					opinion = {
+						modifier = opinion_castrated_close_kin
+						who = ROOT
+					}
+				}
+				father = {
+					opinion = {
+						modifier = opinion_castrated_close_kin
+						who = ROOT
+					}
+				}
+				spouse = {
+					opinion = {
+						modifier = opinion_castrated_close_kin
+						who = ROOT
+					}
+				}
+				any_child = {
+					opinion = {
+						modifier = opinion_castrated_close_kin
+						who = ROOT
+					}
+				}
+				if = {
+					limit = {
+						NOT = { dynasty = ROOT }
+						NOT = { sibling = ROOT }
+					}
+					any_sibling = {
+						opinion = {
+							modifier = opinion_castrated_close_kin
+							who = ROOT
+						}
+					}
+					any_dynasty_member = {
+						opinion = {
+							modifier = opinion_castrated_family
+							who = ROOT
+						}
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			text = ZALMOX_TAKE_HIS_PLACE
+			hidden_tooltip = {
+				random_courtier = {
+					death = { 
+						death_reason = death_sacrificed
+						killer = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+
+
 
 ##################################################################
 #								 #

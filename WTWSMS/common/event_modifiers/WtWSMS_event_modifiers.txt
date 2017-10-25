@@ -279,6 +279,11 @@ bavarian_influx = {
 }
 held_akelarre_timer = { icon = 1 }
 sacrificed_black_goat_timer = { icon = 1 }
+dacian_sacrifice_timer = {
+	icon = 77
+	local_revolt_risk = -0.02
+	monthly_character_piety = 0.25
+}
 erected_megalith = {
 	diplomacy = 1
 	general_opinion = 10
@@ -305,7 +310,7 @@ defiance_of_asceticism = { # A Donatist, Monatist, or Priscillian character or c
 	same_religion_opinion = -20
 	monthly_character_prestige = -0.2
 	major = yes
-	#ai_zeal = -20
+	ai_zeal = -20
 	icon = 26
 }
 traditor_donatism = { # A Donatist clergyman has received the "defiance_of_asceticism" modifier and has been expelled from their post
@@ -314,8 +319,8 @@ traditor_donatism = { # A Donatist clergyman has received the "defiance_of_ascet
 	#prison_reason = yes
 	#banish_reason = yes
 	#execute_reason = yes
-	#ai_honor = -5
-	#ai_zeal = -20
+	ai_honor = -5
+	ai_zeal = -20
 	icon = 26
 }
 donatist_redeemed = { # A former Donatist clergyman has lost the "defiance_of_asceticism" modifier
@@ -324,7 +329,7 @@ donatist_redeemed = { # A former Donatist clergyman has lost the "defiance_of_as
 	same_religion_opinion = 15
 	monthly_character_piety = 1
 	monthly_character_prestige = 0.25
-	#ai_honor = 5
+	ai_honor = 5
 	icon = 39
 }
 priscillian_vegetarian = {

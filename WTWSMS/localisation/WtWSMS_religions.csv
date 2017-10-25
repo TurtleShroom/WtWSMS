@@ -696,14 +696,13 @@ city_king_female_dacian_pagan_reformed;Mater;Consul;Konsulat;;Cónsul;;;;;;;;;x
 city_duke_dacian_pagan_reformed;Proconsul;Proconsul;Prokonsul;;Procónsul;;;;;;;;;x
 city_duke_female_dacian_pagan_reformed;Lady;Proconsul;Prokonsul;;Procónsul;;;;;;;;;x
 city_count_dacian_pagan_reformed;Lord Prefect;Seigneur-Préfet;Oberbürgermeister;;Gran Prefecto;;;;;;;;;x
-city_count_female_dacian_pagan_reformed;Lady;Seigneur-Préfet;Oberbürgermeister;;Gran Prefecto;;;;;;;;;x
 ###### Misc zoroastrian;;;;;;;;;;;;x
 zurvanist;Zurvanist;zurvanite;;;;;;;;;;x
 zurvanist_DESC;Zurvanism in this sense refers to Fatalistic Zurvanism, a branch of the broader Zurvanist tradition which held that mankind was nothing more than a slave to the movement of the astral bodies of the heavenly sphere, holding that "Ohrmazd allotted happiness to man, but if man did not receive it, it was owing to the extortion of these planets." It would break from the broad Zoroastrian church for this, violating the concept of Free Will, the most sacred tennent of Zoroastrianism.;Le zurvanisme dans ce sens se réfère à zurvanisme fanatique, une branche de la tradition zurvanite qui a jugé que l'humanité n'était rien de plus qu'un esclave du mouvement des corps astraux de la sphère céleste, jugeant que "Ohrmazd attribua le bonheur à l'homme, mais si l'homme ne l'a pas reçu, il était dû à l'extorsion de ces planètes ". Cela briserait la vaste église zoroastrienne pour cela, il ne respecte pas le concept de libre arbitre, l'élément le plus sacré du zoroastrisme.;;;;;;;;;;x
 khurramite;Khurramite;khurramite;;;;;;;;;;x
 khurramite_DESC;The sect was founded by the Persian cleric Sunpadh and was a revitalization of an earlier sect that had mixed Shi‘a Islam and Zoroastrianism, however, its true claim to fame was its adoption by Babak Khorramdin as a basis for rebelling against the Abbasid Caliphate.;La secte a été fondée par le religieux persan Sunpadh et était une revitalisation d'une secte antérieure qui avait mélangé l'islam chiite et le zoroastrisme, cependant, son véritable titre de gloire était son adoption par Babak Khorramdin comme base pour se rebeller contre le califat abbasside.;;;;;;;;;;x
 hepthal_religion;Hephthalite;hephthalite;;;;;;;;;;x
-hepthal_religion_DESC;Hephthalism is a syncretic religious sect based on a fusion of Zoroastrian and Hindu traditions with native beliefs. Less a true religion than an amalgam of an accepted many, the Hepthalite religion in game represents the unique combination of Zoroastrian, Tabitian, and Hindu practices all under the auspices of the Rajadhiraja himself.;;;;;;;;;;;x
+hepthal_religion_DESC;Hephthalism is a syncretic religious sect based on a fusion of Zoroastrian and Hindu traditions with native beliefs. Less a true religion than an amalgam of an accepted many, the Hepthalite religion in game represents the unique combination of Zoroastrian, Tabitian, and Hindu practices, all under the auspices of the Rajadhiraja himself.;;;;;;;;;;;x
 GREAT_PURIFICATION;Great Purification;;;;;;;;;;;x
 PROPHET_NOAH;Noah;;;;;;;;;;;x
 PROPHET_SETH;Seth;;;;;;;;;;;x
@@ -713,16 +712,16 @@ PROPHET_BUDDHA;Buddha;;;;;;;;;;;x
 PROPHET_ABRAHAM;Abraham;;;;;;;;;;;x
 PROPHET_SHEM;Shem;;;;;;;;;;;x
 PROPHET_ENOCH;Enoch;;;;;;;;;;;x
-RADIANT_JESUS;Jesus;;;;;;;;;;;x
+RADIANT_JESUS;the Radiant Jesus;;;;;;;;;;;x
 JEHOVAH;Jehovah;;;;;;;;;;;x
 ###### Misc;;;;;;;;;;;;x
 bosporan_group;Bosporan Group;groupe bosphorien;;;;;;;;;;x
 bosporan_faith;Hypsistarian;hypsistarien;;;;;;;;;;x
 bosporan_faith_DESC;After the fall of the Bosporan Kingdom, the influx of Thracian and Jewish traditions led to the creation of a Cult of the Most High God, a monotheistic religion unrelated to the Abrahamic faiths.;Après la chute du Royaume du Bosphore, l'afflux de traditions thraces et juives a conduit à la création d'un culte du Dieu suprême, une religion monothéiste sans rapport avec les religions abrahamiques.;;;;;;;;;;x
-GOD_THE_HERO;The Hero God;;;;;;;;;;;x
+GOD_THE_HERO;the Hero God;;;;;;;;;;;x
 GOD_THE_THREE_MOTHERS;The Three Mothers;;;;;;;;;;;x
-GOD_BOSPORAN;The Most High God;;;;;;;;;;;x
-GOD_HYPSISTOS;The Hypsistos;;;;;;;;;;;x
+GOD_BOSPORAN;the Most High God;;;;;;;;;;;x
+GOD_HYPSISTOS;he Hypsistos;;;;;;;;;;;x
 ajivika;Ajivika;ajivika;;;;;;;;;;x
 ajivika_DESC;Meaning "living" in Sanskrit, Ajivika is an ancient ascetic heterodox Hindu school. It was founded by Makkhali Gosala, and is deeply entrenched in Metaphysics.;Signifiant "vivant" en sanskrit, Ajivika est une ancienne école hindoue hétérodoxe ascétique. Elle a été fondée par Makkhali Gosala, et est profondément enracinée dans la Métaphysique.;;;;;;;;;;x
 GOD_VISHNU;Vishnu;Vishnou;;;;;;;;;;x
@@ -947,6 +946,7 @@ GOD_MELEKSAMAEL;Melek Samael;;;;;;;;;;;;;x
 GOD_MELEKNURAEL;Melek Nurael;;;;;;;;;;;;;x
 GOD_7MYSTERY;The Seven Mysteries;;;;;;;;;;;;;x
 gov_salem;Mystic Sanctum;;;;;;;;;;;;;x
+ZALMOXISNOTMESSENGERDEAD;Has not sacrificed the Messenger within five years;;;;;;;;;;;;;x
 ###### Misc religion-related modifiers;;;;;;;;;;;;x
 apokopos;Apokopos;;;;;;;;;;;;;x
 fall_of_persia;Fall of Persia;;;;;;;;;;;;;x

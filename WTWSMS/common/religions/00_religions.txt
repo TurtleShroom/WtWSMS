@@ -4221,7 +4221,7 @@ pagan_group = {
 		high_god_name = GOD_ZALMOXIS
 
 		god_names = {
-			GOD_ZALMOXIS GOD_THE_SUN GOD_THE_LIBERATOR GOD_THE_THRACIAN_PEOPLE GOD_ORPHEUS PATER GOD_INVINCIBLE_SUN GOD_DERZELAS GOD_VAHAGN
+			GOD_ZALMOXIS GOD_THE_SUN GOD_THE_LIBERATOR GOD_THE_THRACIAN_PEOPLE GOD_ORPHEUS PATER GOD_INVINCIBLE_SUN GOD_DERZELAS GOD_VAHAGN GOD_EPONA
 		}
 		evil_god_names = {
 			THE_GREAT_LIE THE_DARKNESS
@@ -4253,6 +4253,8 @@ pagan_group = {
 
         religious_clothing_head = 3
         religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
         
         intermarry = norse_pagan_reformed
         intermarry = arian

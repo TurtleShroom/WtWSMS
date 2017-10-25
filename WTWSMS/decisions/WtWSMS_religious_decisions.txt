@@ -1,4 +1,4 @@
-decisions = {	
+decisions = {
 	create_binitarian_patriarchy = {
 		only_playable = yes
 		is_high_prio = yes
@@ -1338,7 +1338,7 @@ decisions = {
 		}
 		
 		ai_will_do = {
-			factor = .5
+			factor = 0.5
 			
 			modifier = {
 				factor = 3
@@ -1383,6 +1383,42 @@ decisions = {
 		
 		ai_will_do = {
 			factor = 5
+		}
+	}
+	
+	dacian_sacrifice_the_messenger = {
+		only_playable = yes
+		is_high_prio = yes
+		
+		potential = {
+			OR = {
+				religion = dacian_pagan
+				religion = dacian_pagan_reformed
+			}
+			higher_real_tier_than = COUNT
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = ZALMOXISNOTMESSENGERDEAD
+				NOT = { has_character_modifier = dacian_sacrifice_timer }
+			}
+			any_courtier_or_vassal = {
+				has_minor_title = title_dacian_sacrifice
+			}
+			NOT = { trait = cynical }
+		}
+		
+		effect = {
+#			add_character_modifier = {
+#				name = dacian_sacrifice_timer
+#				duration = 1825 # Five years
+#			}
+			narrative_event = { id = spirit.49 tooltip = ZALMOXITEBEGIN }
+		}
+		
+		ai_will_do = {
+			factor = 2
 		}
 	}
 }

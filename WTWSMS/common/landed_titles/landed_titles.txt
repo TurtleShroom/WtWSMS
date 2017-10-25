@@ -11193,11 +11193,8 @@ e_dacia = {
 	
 	# Creation/Usurp Trigger
 	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture = dacian
-			}
+		NOT = {
+			has_landed_title = e_byzantium
 		}
 	}
 
@@ -11216,6 +11213,7 @@ e_dacia = {
 		baltic_pagan_reformed = 500
 		germanic_pagan_reformed = 500
 		hellenic_pagan = 600
+		dacian_pagan_reformed = 3000
 		
 		gepid = Gepidia
 		iazyges = Sarmatia

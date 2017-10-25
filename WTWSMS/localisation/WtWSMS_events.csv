@@ -1389,4 +1389,21 @@ this_is_sparta.15;With our house in order and our glory proclaimed, we Spartans 
 this_is_sparta.2_TITLE;Sons of the Three Hundred;;;;;;;;;;;;;x
 this_is_sparta.6_TITLE;Fall of Sparta;;;;;;;;;;;;;x
 this_is_sparta.10_TITLE;Sparta Rebuilt!;;;;;;;;;;;;;x
-
+dacian_sacrifice_the_messenger;Sacrifice the Messenger;;;;;;;;;;;;;x
+dacian_sacrifice_the_messenger_desc;Perhaps the greatest honor in the Dacian ethnic religion, the Messenger is the Chosen One who will lay down his life to send letters, messages, and priority prayer requests to Zalmoxis and the afterlife, where souls are immortal and eternal peace is found. This exalted position comes with immense religious and secular prestige and authority. Every five years, the Zalmoxian faithful selects and executes their Messenger. The Messenger is thrown from a great height to be impaled on three ceremonial lances. If he dies, he is righteous and will receive the utmost rewards and accolades in the afterlife, where the letters and requests on his body will be addressed with priority. If he lives, he is deemed wicked and is banished from the community, after which a random person is selected to take his place, with apologies written to Zalmoxis for the previous error.;;;;;;;;;;;;;x
+ZALMOXITEBEGIN;You prepare the ceremony to sacrifice the Messenger;;;;;;;;;;;;;x
+ZALMOXITEBEGIN2;The Zalmoxian ritual begins.;;;;;;;;;;;;;x
+ZALMOXITESUCCESS;The Messenger dies: he is righteous and Zalmoxis is pleased;;;;;;;;;;;;;x
+ZALMOXITEFAIL;The Messenger lives: his is wicked and you have to send a second Messenger in his place;;;;;;;;;;;;;x
+ZALMOX_TAKE_HIS_PLACE;Another Courtier shall die in the place of Messenger [Root.ZalmoScrewed.GetName]!;;;;;;;;;;;;;x
+EVTNAMEspirit.49;Message to Paradise;;;;;;;;;;;;;x
+EVTDESCspirit.49;It's a windswept day today at the platform for the sacrifice. Three Zalmoxist clergymen stand at the ready as the Messenger [Root.ZalmoScrewed.GetFullName] is positioned on the platform, dressed in the finest [Root.Culture.GetName] clothes available. Below him, three ornate, cermonial lances gleam in the sunlight. You, your courtiers, and peasants in the area have affixed papers and trinkets for dispatch to [Root.Religion.GetHighGodName]. Now, all that remains is that one fateful push...;;;;;;;;;;;;;x
+EVTOPTAspirit.49;Truly, the Messenger is blessed.;;;;;;;;;;;;;x
+EVTDESCspirit.50;Success! The Messenger [Root.ZalmoScrewed.GetFullName] fell right onto the lances, piercing his neck and heart. He died quickly. Now, he has gone to Paradise and, as the Messenger, will receive special rewards, pleasures, and honor from [Root.Religion.GetHighGodName]. The requests and writings on his body will be answered with far more urgency than normal praying.;;;;;;;;;;;;;x
+EVTOPTAspirit.50;Praise [Root.Religion.GetRandomGodName]! Hail [Root.Religion.GetHighGodName]!;;;;;;;;;;;;;x
+EVTDESCspirit.51;Horror: [Root.Religion.GetRandomEvilGodName] has prevailed today! The vitals of [Root.ZalmoScrewed.GetFullName] missed the lances, and he has fallen with comparitively mild wounds! He only got stabbed in the leg and lower hip. This means that, surely, [Root.ZalmoScrewed.GetName] must be a wicked man! Another person in your court must now take his place, and to them you shall affix an apology to Zalmoxis for nearly sending him an unworthy Messenger. The prescribed punishment for the Messenger's sin is banishment, but as [Root.GetTitle], you can instead offer something else...;;;;;;;;;;;;;x
+EVTOPTAspirit.51;[Root.Religion.GetRandomGodName] demands banishment. Send him away.;;;;;;;;;;;;;x
+EVTOPTCspirit.51;Oh no. No, that won't do at all.;;;;;;;;;;;;;x
+EVTOPTDspirit.52;Present the wicked Messenger's manhood as the apology!;;;;;;;;;;;;;x
+dacian_sacrifice_timer;Recently Sacrificed the Messenger;;;;;;;;;;;;;x
+dacian_sacrifice_timer_desc;This character has recently presided over the ritual sacrifice of the Messenger to Zalmoxis.;;;;;;;;;;;;;x
