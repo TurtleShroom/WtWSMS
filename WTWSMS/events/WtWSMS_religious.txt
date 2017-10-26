@@ -1705,6 +1705,10 @@ long_character_event = { # Zalmoxian Sacrifice of the Messenger - FAILURE
 			text = ZALMOX_TAKE_HIS_PLACE
 			hidden_tooltip = {
 				random_courtier = {
+					limit = {
+						is_adult = yes
+						is_landed = no
+					}
 					death = {
 						death_reason = death_sacrificed
 						killer = ROOT
@@ -1730,6 +1734,10 @@ long_character_event = { # Zalmoxian Sacrifice of the Messenger - FAILURE
 			text = ZALMOX_TAKE_HIS_PLACE
 			hidden_tooltip = {
 				random_courtier = {
+					limit = {
+						is_adult = yes
+						is_landed = no
+					}
 					death = { 
 						death_reason = death_sacrificed
 						killer = ROOT
@@ -1757,6 +1765,10 @@ long_character_event = { # Zalmoxian Sacrifice of the Messenger - FAILURE
 			text = ZALMOX_TAKE_HIS_PLACE
 			hidden_tooltip = {
 				random_courtier = {
+					limit = {
+						is_adult = yes
+						is_landed = no
+					}
 					death = {
 						death_reason = death_sacrificed
 						killer = ROOT
@@ -1848,6 +1860,10 @@ long_character_event = { # Zalmoxian Sacrifice of the Messenger - FAILURE
 			text = ZALMOX_TAKE_HIS_PLACE
 			hidden_tooltip = {
 				random_courtier = {
+					limit = {
+						is_adult = yes
+						is_landed = no
+					}
 					death = { 
 						death_reason = death_sacrificed
 						killer = ROOT

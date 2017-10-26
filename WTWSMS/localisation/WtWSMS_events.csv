@@ -1402,7 +1402,7 @@ EVTOPTAspirit.49;Truly, the Messenger is blessed.;;;;;;;;;;;;;x
 EVTDESCspirit.50;Success! The Messenger [Root.ZalmoScrewed.GetFullName] fell right onto the lances, piercing his neck and heart. He died quickly. Now, he has gone to Paradise and, as the Messenger, will receive special rewards, pleasures, and honor from [Root.Religion.GetHighGodName]. The requests and writings on his body will be answered with far more urgency than normal praying.;;;;;;;;;;;;;x
 EVTOPTAspirit.50;Praise [Root.Religion.GetRandomGodName]! Hail [Root.Religion.GetHighGodName]!;;;;;;;;;;;;;x
 EVTDESCspirit.51;Horror: [Root.Religion.GetRandomEvilGodName] has prevailed today! The vitals of [Root.ZalmoScrewed.GetFullName] missed the lances, and he has fallen with comparitively mild wounds! He only got stabbed in the leg and lower hip. This means that, surely, [Root.ZalmoScrewed.GetName] must be a wicked man! Another person in your court must now take his place, and to them you shall affix an apology to Zalmoxis for nearly sending him an unworthy Messenger. The prescribed punishment for the Messenger's sin is banishment, but as [Root.GetTitle], you can instead offer something else...;;;;;;;;;;;;;x
-EVTOPTAspirit.51;[Root.Religion.GetRandomGodName] demands banishment. Send him away.;;;;;;;;;;;;;x
+EVTOPTAspirit.51;[Root.Religion.GetRandomGodNameCap] demands banishment. Send him away.;;;;;;;;;;;;;x
 EVTOPTCspirit.51;Oh no. No, that won't do at all.;;;;;;;;;;;;;x
 EVTOPTDspirit.52;Present the wicked Messenger's manhood as the apology!;;;;;;;;;;;;;x
 dacian_sacrifice_timer;Recently Sacrificed the Messenger;;;;;;;;;;;;;x

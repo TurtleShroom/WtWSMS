@@ -233,6 +233,7 @@ title_dacian_sacrifice = {
 		NOT = { has_character_modifier = publically_humiliated }
 		is_landed = no
 		is_female = no
+		is_adult = yes
 	}
 	
 	allowed_to_grant = {

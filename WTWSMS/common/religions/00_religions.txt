@@ -97,6 +97,7 @@ christian = {
 		can_call_crusade = yes
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
+		hard_to_convert = yes
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
@@ -491,9 +492,8 @@ christian = {
 		
 		expel_modifier = expelled_jewish
 		
-		general_opinion = -10
-		same_opinion_if_same_religion = 20
-		infidel_opinion = -20
+		same_opinion_if_same_religion = 5
+		jewish_opinion = -5
 	}
 	marcionism = {
 		graphical_culture = westerngfx
@@ -920,6 +920,8 @@ christian = {
 		general_opinion = -20
 		same_opinion_if_same_religion = 40
 		infidel_opinion = -40
+		
+		hard_to_convert = yes
 	}
 
 	priscillianism = {
@@ -984,6 +986,8 @@ christian = {
 		infidel_opinion = -40
 
 		intermarry = manichean
+		
+		hard_to_convert = yes
 	}
 
 	monophysite = {
@@ -1022,7 +1026,7 @@ christian = {
 
 		can_retire_to_monastery = yes
 		female_temple_holders = yes
-		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
 		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
@@ -1357,6 +1361,8 @@ muslim = {
 		general_opinion = -20
 		same_opinion_if_same_religion = 40
 		infidel_opinion = -40
+		
+		hard_to_convert = yes
 	}
 	ibadi = {
 		graphical_culture = muslimgfx
@@ -1542,7 +1548,7 @@ muslim = {
 		religious_clothing_head = 5 #They actually wear black, but there is no black model that looks like number five
 		religious_clothing_priest = 5
 		
-
+		hard_to_convert = yes
 	}
 	mahdi = {
 		graphical_culture = muslimgfx
@@ -1879,6 +1885,8 @@ pagan_group = {
 		intermarry = root_west_pagan
 		intermarry = confucianism
 		intermarry = sanamahi
+		
+		hard_to_convert = yes
 	}
 	root_west_pagan = {
 		graphical_culture = buddhistgfx
@@ -1923,6 +1931,8 @@ pagan_group = {
 		intermarry = root_west_pagan_reformed
 		intermarry = confucianism
 		intermarry = sanamahi
+		
+		hard_to_convert = yes
 	}	
 	sanamahi_reformed = { # Manipuran Paganism
 		graphical_culture = mesoamericangfx
@@ -1946,9 +1956,8 @@ pagan_group = {
 		female_temple_holders = yes
 		max_consorts = 3
 		defensive_attrition = no
-	
-	
-		reformed = sanamahi_reformed
+
+#		reformed = sanamahi_reformed
 		
 		unit_modifier = {
 			garrison_size = 0.4
@@ -1976,6 +1985,8 @@ pagan_group = {
 		religious_clothing_priest = 3
 
 		allow_in_ruler_designer = no
+		
+		hard_to_convert = yes
 	}
 	sanamahi = { # Manipuran Paganism
 		graphical_culture = mesoamericangfx
@@ -2029,6 +2040,8 @@ pagan_group = {
 		religious_clothing_priest = 3
 
 		intermarry = buddhist
+		
+		hard_to_convert = yes
 	}
 
 	georgian_pagan = { # Armazi, used for misc other pagans
@@ -2792,11 +2805,12 @@ pagan_group = {
 		allow_looting = yes
 		max_consorts = 3
 
-
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
 
 		allow_in_ruler_designer = no
+		
+		hard_to_convert = yes
 	}
 	
 	semitic_pagan = { 
@@ -2856,6 +2870,8 @@ pagan_group = {
 		
 		religious_clothing_head = 6
 		religious_clothing_priest = 4
+		
+		hard_to_convert = yes
 	}
 
 	semitic_pagan_heresy = {
@@ -3439,8 +3455,6 @@ pagan_group = {
 		
 		dislike_tribal_organization = yes
 	}
-
-
 	
 	west_african_pagan_reformed = {
 		graphical_culture = africangfx
@@ -3892,6 +3906,8 @@ pagan_group = {
 		religious_clothing_priest = 3
 
 		allow_in_ruler_designer = no
+		
+		hard_to_convert = yes
 	}
 
 	latin_solar_pagan = {
@@ -3937,6 +3953,8 @@ pagan_group = {
 		intermarry = zun_pagan_reformed
 		intermarry = african_solar_pagan
 		intermarry = african_solar_pagan_reformed
+		
+		hard_to_convert = yes
 	}
 
 	mandulis_pagan = {
@@ -4109,14 +4127,17 @@ pagan_group = {
 		dislike_tribal_organization = no
 		raised_vassal_opinion_loss = no
 		ignores_defensive_attrition = yes
+		peace_prestige_loss = yes # Lose Prestige while at peace
 		
 		aggression = 10 # The Ancient Assyrians believed that if they stopped conquering it would literally be the end of the world
-		peace_piety_gain = -1.0
+		peace_piety_gain = -0.75
 
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
 
 		intermarry = zoroastrian_group
+		
+		hard_to_convert = yes
 	}
 	
 	zun_pagan_reformed = {
@@ -4383,6 +4404,8 @@ pagan_group = {
 		dislike_tribal_organization = yes
 		
 		allow_in_ruler_designer = no
+		
+		hard_to_convert = yes
 	}
 	
 	vasconic_pagan = { # Basques
@@ -4450,6 +4473,8 @@ pagan_group = {
 		religious_clothing_priest = 3
 		
 		dislike_tribal_organization = yes
+		
+		hard_to_convert = yes
 	}
 	
 	hellenic_pagan = {
@@ -5151,6 +5176,8 @@ jewish_group = {
 		general_opinion = -20
 		same_opinion_if_same_religion = 40
 		infidel_opinion = -40
+		
+		hard_to_convert = yes
 	}
 	karaite = {
 		graphical_culture = jewishgfx
@@ -5418,6 +5445,8 @@ indian_group = {
 		
 		color = { 0.4 0.4 0.4 }
 		parent = hindu
+		
+		high_god_name = GOD_DHARMA
 		
 		god_names = {
 			GOD_DHARMA
