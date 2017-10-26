@@ -92,15 +92,6 @@ bilal_descendant = { #First successful West African Muslims King or Emperor
 }
 
 noble_stranger_descendant = { #Other West African Kings and Emperors
-	potential = {
-		OR = {
-			culture_group = west_african
-			culture_group = central_african
-			religion = west_african_pagan
-			religion = west_african_pagan_reformed
-		}
-	}
-
 	agnatic = yes # Always inherited from fathers
 
 	customizer = no
@@ -108,8 +99,7 @@ noble_stranger_descendant = { #Other West African Kings and Emperors
 	
 	diplomacy = 1
 
-	monthly_character_prestige = 0.1
-	
+	monthly_character_prestige = 0.1	
 }
 
 israel_restorer = { # The Restorer of Israel
