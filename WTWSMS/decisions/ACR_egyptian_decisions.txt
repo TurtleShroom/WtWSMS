@@ -132,19 +132,6 @@ decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					wealth = 1000
-				}
-			}
-			modifier = {
-				factor = 0
-				NOT = {
-					learning = 8
-				}
-			}
 		}
 	}
 	
@@ -154,7 +141,7 @@ decisions = {
 		potential = {
 			has_dlc = "The Old Gods"
 			is_playable = yes
-			higher_tier_than = duke # Tease the decision for kings
+			higher_tier_than = baron
 			religion = egyptian_pagan
 			NOT = { has_global_flag = egyptian_priesthood_founded }
 			has_regent = no		
@@ -214,7 +201,7 @@ decisions = {
 		potential = {
 			has_dlc = "The Old Gods"
 			is_playable = yes
-			higher_tier_than = duke # Tease the decision for kings
+			higher_tier_than = baron
 			religion = aten_pagan
 			NOT = { has_global_flag = aten_priesthood_founded }
 			has_regent = no		

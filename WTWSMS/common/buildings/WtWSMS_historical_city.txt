@@ -1275,12 +1275,15 @@ city = {
 	
 	ct_kemetic_pyramid = {
 		potential = {
-			FROM = {
-				higher_tier_than = duke
-				OR = {
-					religion = egyptian_pagan
-					religion = aten_pagan
+			OR = {
+				FROM = {
+					higher_tier_than = duke
+					OR = {
+						religion = egyptian_pagan
+						religion = aten_pagan
+					}
 				}
+				FROMFROM = { has_building = ct_kemetic_pyramid } # Once a Pyramid is built, it is permanent
 			}
 		}
 		trigger = { always = no }
@@ -1289,8 +1292,13 @@ city = {
 		build_time = 3650
 
 		culture_techpoints = 0.1
-		liege_piety = 0.5
-		monthly_character_piety = 0.5
+		liege_piety = 1
+		monthly_character_piety = 1
+		
+		convert_to_castle = ca_kemetic_pyramid
+		convert_to_city = ct_kemetic_pyramid
+		convert_to_temple = tp_kemetic_pyramid
+		convert_to_tribal = tb_kemetic_pyramid
 
 		ai_creation_factor = 100
 
