@@ -538,6 +538,9 @@ e_golden_horde = {
 	
 	capital = 619 # Saray
 	
+	title = CULTURE_KHAGAN
+	title_female = CULTURE_KHANUM
+	
 	# Always exists
 	landless = yes
 	
@@ -557,6 +560,9 @@ e_il-khanate = {
 	short_name = yes
 	
 	capital = 646 # Esfahan
+	
+	title = CULTURE_KHAGAN
+	title_female = CULTURE_KHANUM
 	
 	# Always exists
 	landless = yes
@@ -579,6 +585,9 @@ e_mongol_empire = {
 	
 	capital = 1457 # Kara-khorum
 	
+	title = CULTURE_KHAGAN
+	title_female = CULTURE_KHANUM
+	
 	# Always exists
 	landless = yes
 	
@@ -598,6 +607,9 @@ e_timurids = {
 	short_name = yes
 	
 	capital = 646 # Esfahan
+	
+	title = CULTURE_KHAGAN
+	title_female = CULTURE_KHANUM
 	
 	allow = {
 		always = no
