@@ -1181,8 +1181,6 @@ gardener = {
 	female_insult = INSULT_TREEHUGGER
 }
 mystic = {
-	lifestyle = yes
-	
 	learning = 2
 	stewardship = 1
 	
