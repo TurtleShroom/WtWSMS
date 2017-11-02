@@ -44,6 +44,9 @@ feudal_governments = {
 
 		can_build_tribal = no
 		
+		can_grant_kingdoms_and_empires_to_other_government = yes
+		can_be_granted_kingdoms_and_empires_by_other_government = yes
+		
 		ignore_in_vassal_limit_calculation = {
 			tribal_government
 		}
@@ -79,9 +82,7 @@ feudal_governments = {
 				NOT = { religion_group = muslim }
 				NOT = { religion_group = zoroastrian_group }
 				NOT = {	primary_title = { is_landless_type_title = no }	}
-				NOT = {
-					bureaucratic_government_trigger = yes 
-				}
+				NOT = { bureaucratic_government_trigger = yes }
 			}
 			religion_group = muslim
 			is_patrician = no
@@ -101,6 +102,9 @@ feudal_governments = {
 		free_levies_in_offensive_war = yes # Took away the hardcoded stuff for muslims where they could raise levies without pissing off vassals if in an offensive war.
 
 		can_build_tribal = no
+		
+		can_grant_kingdoms_and_empires_to_other_government = yes
+		can_be_granted_kingdoms_and_empires_by_other_government = yes
 		
 		ignore_in_vassal_limit_calculation = {
 			tribal_government

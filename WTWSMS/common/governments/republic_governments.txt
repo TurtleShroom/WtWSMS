@@ -83,6 +83,7 @@ republic_governments = {
 		can_usurp_kingdoms_and_empires = no
 		have_gender_laws = no
 		can_grant_kingdoms_and_empires_to_other_government = yes
+		can_be_granted_kingdoms_and_empires_by_other_government = yes
 		allows_matrilineal_marriage = no
 
 		can_build_tribal = no
@@ -134,6 +135,8 @@ republic_governments = {
 		
 		can_imprison_without_reason = no
 		can_revoke_without_reason = no
+		can_grant_kingdoms_and_empires_to_other_government = yes
+		can_be_granted_kingdoms_and_empires_by_other_government = yes
 		
 		can_build_tribal = no
 		
