@@ -2,45 +2,40 @@ castle = {
 	ca_aqueduct = {	# Aqueduct
 		potential = {
 			OR = {
-				AND = {
-					OR = {
-						borders_lake = yes
-						borders_major_river = yes
-						terrain = mountain
-						port = yes
-						any_neighbor_province = { terrain = mountain }
-					}
-					FROM = {
-						OR = {
-							has_romance_culture_trigger = yes
-							#bureaucratic_government_trigger = yes
-							trait = roman_nostalgia
-							any_liege = { has_romance_culture_trigger = yes }
-							#any_liege = { bureaucratic_government_trigger = yes }
-							any_liege = { trait = roman_nostalgia }
-						}
-					}
-					FROMFROM = {
-						OR = {
-							region = custom_imperium_romanum
-							region = world_asia_minor
-							region = world_europe
-							region = world_persia
-						}
-					}
-					FROMFROM = {
-						NOR = {
-							title = b_roma
-							title = b_constantinople
-							title = b_split
-							title = b_seleukeia
-							title = b_segovia
-							title = b_nimes
-							title = b_cartaghe
-						}
-					}
+				borders_lake = yes
+				borders_major_river = yes
+				terrain = mountain
+				port = yes
+				any_neighbor_province = { terrain = mountain }
+			}
+			FROM = {
+				OR = {
+					has_romance_culture_trigger = yes
+					#bureaucratic_government_trigger = yes
+					trait = roman_nostalgia
+					any_liege = { has_romance_culture_trigger = yes }
+					#any_liege = { bureaucratic_government_trigger = yes }
+					any_liege = { trait = roman_nostalgia }
 				}
-				FROMFROM = { has_building = ca_aqueduct # Once an Aqueduct is built, it is permanent (they still stand today) }
+			}
+			FROMFROM = {
+				OR = {
+					region = custom_imperium_romanum
+					region = world_asia_minor
+					region = world_europe
+					region = world_persia
+				}
+			}
+			FROMFROM = {
+				NOR = {
+					title = b_roma
+					title = b_constantinople
+					title = b_split
+					title = b_seleukeia
+					title = b_segovia
+					title = b_nimes
+					title = b_cartaghe
+				}
 			}
 		}
 		desc = aqueduct_desc
@@ -96,16 +91,11 @@ castle = {
 	ca_qanat = {	# Qanat (Persian underground aqueduct)
 		potential = {
 			OR = {
-				AND = {
-					OR = {
-						terrain = mountain
-						any_neighbor_province = { terrain = mountain }
-					}
-					FROM = {
-						culture = persian
-					}
-				}
-				FROMFROM = { has_building = ca_qanat } # Once a province has an Underground Aqueduct, it is permanent
+				terrain = mountain
+				any_neighbor_province = { terrain = mountain }
+			}
+			FROM = {
+				culture = persian
 			}
 		}
 		desc = qanat_desc
@@ -128,18 +118,15 @@ castle = {
 	}
 	ca_cistern = {	# Cistern
 		potential = {
-			OR = {
-				FROM = {
-					OR = {
-						has_romance_culture_trigger = yes
-						#bureaucratic_government_trigger = yes
-						trait = roman_nostalgia
-						any_liege = { has_romance_culture_trigger = yes }
-						#any_liege = { bureaucratic_government_trigger = yes }
-						any_liege = { trait = roman_nostalgia }
-					}
+			FROM = {
+				OR = {
+					has_romance_culture_trigger = yes
+					#bureaucratic_government_trigger = yes
+					trait = roman_nostalgia
+					any_liege = { has_romance_culture_trigger = yes }
+					#any_liege = { bureaucratic_government_trigger = yes }
+					any_liege = { trait = roman_nostalgia }
 				}
-				FROMFROM = { has_building = ca_cistern } # Once a Cistern is built, it is permanent (many still exist today)
 			}
 		}
 		desc = cistern_desc
@@ -156,21 +143,16 @@ castle = {
 	}
 	ca_theatre = {	# Theatre
 		potential = {
-			OR = {
-				AND = {
-					FROMFROM = { is_capital = yes }
-					FROM = {
-						OR = {
-							has_romance_culture_trigger = yes
-							#bureaucratic_government_trigger = yes
-							trait = roman_nostalgia
-							any_liege = { has_romance_culture_trigger = yes }
-							#any_liege = { bureaucratic_government_trigger = yes }
-							any_liege = { trait = roman_nostalgia }
-						}
-					}
+			FROMFROM = { is_capital = yes }
+			FROM = {
+				OR = {
+					has_romance_culture_trigger = yes
+					#bureaucratic_government_trigger = yes
+					trait = roman_nostalgia
+					any_liege = { has_romance_culture_trigger = yes }
+					#any_liege = { bureaucratic_government_trigger = yes }
+					any_liege = { trait = roman_nostalgia }
 				}
-				FROMFROM = { has_building = ca_theatre } # Once a Theater is built, it is permanent
 			}
 		}
 		desc = theatre_desc
@@ -188,21 +170,16 @@ castle = {
 	}
 	ca_public_baths = {	# Public baths
 		potential = {
-			OR = {
-				AND = {
-					FROMFROM = { is_capital = yes }
-					FROM = {
-						OR = {
-							has_romance_culture_trigger = yes
-							#bureaucratic_government_trigger = yes
-							trait = roman_nostalgia
-							any_liege = { has_romance_culture_trigger = yes }
-							#any_liege = { bureaucratic_government_trigger = yes }
-							any_liege = { trait = roman_nostalgia }
-						}
-					}
+			FROMFROM = { is_capital = yes }
+			FROM = {
+				OR = {
+					has_romance_culture_trigger = yes
+					#bureaucratic_government_trigger = yes
+					trait = roman_nostalgia
+					any_liege = { has_romance_culture_trigger = yes }
+					#any_liege = { bureaucratic_government_trigger = yes }
+					any_liege = { trait = roman_nostalgia }
 				}
-				FROMFROM = { has_building = ca_public_baths } # Once a Bathouse is constructed, it is permanent
 			}
 		}
 		desc = public_baths_desc
@@ -222,45 +199,40 @@ city = {
 	ct_aqueduct = {	# Aqueduct
 		potential = {
 			OR = {
-				AND = {
-					OR = {
-						borders_lake = yes
-						borders_major_river = yes
-						terrain = mountain
-						port = yes
-						any_neighbor_province = { terrain = mountain }
-					}
-					FROM = {
-						OR = {
-							has_romance_culture_trigger = yes
-							#bureaucratic_government_trigger = yes
-							trait = roman_nostalgia
-							any_liege = { has_romance_culture_trigger = yes }
-							#any_liege = { bureaucratic_government_trigger = yes }
-							any_liege = { trait = roman_nostalgia }
-						}
-					}
-					FROMFROM = {
-						OR = {
-							region = custom_imperium_romanum
-							region = world_asia_minor
-							region = world_europe
-							region = world_persia
-						}
-					}
-					FROMFROM = {
-						NOR = {
-							title = b_roma
-							title = b_constantinople
-							title = b_split
-							title = b_seleukeia
-							title = b_segovia
-							title = b_nimes
-							title = b_cartaghe
-						}
-					}
+				borders_lake = yes
+				borders_major_river = yes
+				terrain = mountain
+				port = yes
+				any_neighbor_province = { terrain = mountain }
+			}
+			FROM = {
+				OR = {
+					has_romance_culture_trigger = yes
+					#bureaucratic_government_trigger = yes
+					trait = roman_nostalgia
+					any_liege = { has_romance_culture_trigger = yes }
+					#any_liege = { bureaucratic_government_trigger = yes  }
+					any_liege = { trait = roman_nostalgia }
 				}
-				FROMFROM = { has_building = ct_aqueduct # Once an Aqueduct is built, it is permanent (they still stand today) }
+			}
+			FROMFROM = {
+				OR = {
+					region = custom_imperium_romanum
+					region = world_asia_minor
+					region = world_europe
+					region = world_persia
+				}
+			}
+			FROMFROM = {
+				NOR = {
+					title = b_roma
+					title = b_constantinople
+					title = b_split
+					title = b_seleukeia
+					title = b_segovia
+					title = b_nimes
+					title = b_cartaghe
+				}
 			}
 		}
 		desc = aqueduct_desc
@@ -316,16 +288,11 @@ city = {
 	ct_qanat = {	# Qanat (Persian underground aqueduct)
 		potential = {
 			OR = {
-				AND = {
-					OR = {
-						terrain = mountain
-						any_neighbor_province = { terrain = mountain }
-					}
-					FROM = {
-						culture = persian
-					}
-				}
-				FROMFROM = { has_building = ct_qanat } # Once a province has an Underground Aqueduct, it is permanent
+				terrain = mountain
+				any_neighbor_province = { terrain = mountain }
+			}
+			FROM = {
+				culture = persian
 			}
 		}
 		desc = qanat_desc
@@ -348,18 +315,15 @@ city = {
 	}
 	ct_cistern = {	# Cistern
 		potential = {
-			OR = {
-				FROM = {
-					OR = {
-						has_romance_culture_trigger = yes
-						#bureaucratic_government_trigger = yes
-						trait = roman_nostalgia
-						any_liege = { has_romance_culture_trigger = yes }
-						#any_liege = { bureaucratic_government_trigger = yes }
-						any_liege = { trait = roman_nostalgia }
-					}
+			FROM = {
+				OR = {
+					has_romance_culture_trigger = yes
+					#bureaucratic_government_trigger = yes
+					trait = roman_nostalgia
+					any_liege = { has_romance_culture_trigger = yes }
+					#any_liege = { bureaucratic_government_trigger = yes }
+					any_liege = { trait = roman_nostalgia }
 				}
-				FROMFROM = { has_building = ct_cistern } # Once a Cistern is built, it is permanent (many still exist today)
 			}
 		}
 		desc = cistern_desc
@@ -376,21 +340,16 @@ city = {
 	}
 	ct_theatre = {	# Theatre
 		potential = {
-			OR = {
-				AND = {
-					FROMFROM = { is_capital = yes }
-					FROM = {
-						OR = {
-							has_romance_culture_trigger = yes
-							#bureaucratic_government_trigger = yes
-							trait = roman_nostalgia
-							any_liege = { has_romance_culture_trigger = yes }
-							#any_liege = { bureaucratic_government_trigger = yes }
-							any_liege = { trait = roman_nostalgia }
-						}
-					}
+			FROMFROM = { is_capital = yes }
+			FROM = {
+				OR = {
+					has_romance_culture_trigger = yes
+					#bureaucratic_government_trigger = yes
+					trait = roman_nostalgia
+					any_liege = { has_romance_culture_trigger = yes }
+					#any_liege = { bureaucratic_government_trigger = yes }
+					any_liege = { trait = roman_nostalgia }
 				}
-				FROMFROM = { has_building = ca_theatre } # Once a Theater is built, it is permanent
 			}
 		}
 		desc = theatre_desc
@@ -605,21 +564,16 @@ temple = {
 	}
 	tp_public_baths = {	# Public baths
 		potential = {
-			OR = {
-				AND = {
-					FROMFROM = { is_capital = yes }
-					FROM = {
-						OR = {
-							has_romance_culture_trigger = yes
-							#bureaucratic_government_trigger = yes
-							trait = roman_nostalgia
-							any_liege = { has_romance_culture_trigger = yes }
-							#any_liege = { bureaucratic_government_trigger = yes }
-							any_liege = { trait = roman_nostalgia }
-						}
-					}
+			FROMFROM = { is_capital = yes }
+			FROM = {
+				OR = {
+					has_romance_culture_trigger = yes
+					#bureaucratic_government_trigger = yes
+					trait = roman_nostalgia
+					any_liege = { has_romance_culture_trigger = yes }
+					#any_liege = { bureaucratic_government_trigger = yes }
+					any_liege = { trait = roman_nostalgia }
 				}
-				FROMFROM = { has_building = ca_public_baths } # Once a Bathouse is constructed, it is permanent
 			}
 		}
 		desc = public_baths_desc
