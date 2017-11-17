@@ -5718,6 +5718,7 @@ e_byzantium = {
 		culture = greek
 
 		title = "COMES_ORIENTIS"
+		title_female = "COMES_ORIENTIS_FEMALE"
 
 		aramean = "Syria"
 
@@ -6037,7 +6038,7 @@ e_byzantium = {
 				holy_site = yazidi
 				holy_site = jewish
 				holy_site = ebionites
-				holy_site = samaritan
+				holy_site = samaritan # Nablus, temple on Mount Gerizim
 				holy_site = karaite
 				holy_site = ibadi
 				holy_site = abadites
@@ -27073,9 +27074,9 @@ e_britannia = {
 				anglo = Westwéalas
 				briton = Déisi
 				roman = Demetae	
-				romano_gallic = Demetae	
+				romano_gallic = Demetae
 				romano_british = Demetae
-				norman = Pembrokeshire				
+				norman = Pembrokeshire
 				old_frisian = Betsjinder
 				dane = Tjenestepigejordr
 				jute = Tþejneþixejorð
@@ -27748,7 +27749,7 @@ e_britannia = {
 					norwegian = "Pålø"
 					danish = "Pålø"
 					swedish = "Pålø"
-					norse = "Pålø"		
+					norse = "Pålø"
 				}
 				b_rushen = {
 				}
