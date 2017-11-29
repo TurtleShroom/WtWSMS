@@ -43,7 +43,9 @@ decisions = {
 				character_event = { id = ancrel.4010 days = 15 }
 			}
 		}
-		
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -79,7 +81,9 @@ decisions = {
 				province_event = { id = ancrel.4000 }
 			}
 		}
-		
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			
@@ -102,7 +106,7 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
-			is_playable = yes
+			is_playable = yes	
 			higher_tier_than = duke
 			OR = {
 				religion = egyptian_pagan
@@ -117,16 +121,31 @@ decisions = {
 		allow = {
 			wealth = 600
 			war = no
-			has_regent = no
+			has_regent = no		
 		}
 		effect = {
 			set_character_flag = pyramid_building_char
 			character_event = { id = ancrel.4004 }
 		}
-		
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
-		}
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 1000
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					learning = 8
+				}
+			}
+		}		
 	}
 	
 	restore_priesthood_egyptian_pagan = {
@@ -135,7 +154,7 @@ decisions = {
 		potential = {
 			has_dlc = "The Old Gods"
 			is_playable = yes
-			higher_tier_than = baron
+			higher_tier_than = duke # Tease the decision for kings
 			religion = egyptian_pagan
 			NOT = { has_global_flag = egyptian_priesthood_founded }
 			has_regent = no		
@@ -195,7 +214,7 @@ decisions = {
 		potential = {
 			has_dlc = "The Old Gods"
 			is_playable = yes
-			higher_tier_than = baron
+			higher_tier_than = duke # Tease the decision for kings
 			religion = aten_pagan
 			NOT = { has_global_flag = aten_priesthood_founded }
 			has_regent = no		
@@ -378,7 +397,7 @@ decisions = {
 			religion = aten_pagan
 			NOT = { has_global_flag = akhetaten_restored }
 			NOT = { has_global_flag = akhetaten_restoring }
-		}
+		}	
 		allow = {
 			wealth = 1000
 			795 = {
@@ -396,7 +415,9 @@ decisions = {
 				province_event = { id = ancrel.5000 }
 			}
 		}
-		
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			
