@@ -989,3 +989,4 @@ secret_dacian_pagan_reformed_community = {
 	}
 }
 
+become_foederati_timer = { icon = 1 }
