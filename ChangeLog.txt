@@ -2,8 +2,9 @@
 -----------
 
 MAJOR:
-- Compatibility with vanilla 2.8.0
+- Compatibility with vanilla 2.8.1
 - Added the Amber Road as a trade route, stretching from Novgorod to Rome, via the Baltic, Germania Slavica and Aquileia
+- Added China as an off-map power (TBD)
 
 MINOR:
 - Integrated Ancient Religions v0.41.0 "Apheliotes", for compatibility with 2.8.0
@@ -51,7 +52,9 @@ MINOR:
 - Added Mediterranean paths of Silk Road via
 - Added many new Wikipedia links for historical characters
 - Added a complete history of Western Roman Imperial Regalia artifact from creation to being sent to Theodoric the Great by Zeno
+- Enabled the 492-497 Isaurian Wars between Eastern Roman Empire and Isaurians
 - Filled in some history gaps in Gothic Wars bookmark
+- Changed the Insular pilgrimage to make it to St. Albans rather than to the anachronistic Canterbury
 
 BUGFIXES:
 - Fixed Justinian's Plague appearing in Dunhuang rather than Constantinople

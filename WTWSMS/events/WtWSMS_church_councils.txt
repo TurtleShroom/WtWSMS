@@ -157,6 +157,9 @@ character_event = {
 		name = syn.6.b
 		hidden_tooltip = {
 			any_playable_ruler = {
+				limit = { 
+					religion = nicene
+				}
 				narrative_event = { id = HRE.5 } # The Great Schism
 			}
 		}
@@ -214,9 +217,11 @@ character_event = {
 		religion = aquileian
 		capital_scope = {
 			if = {
-				limit = { religion = nicene }
+				limit = { 
+					religion = nicene 
+				}
+				religion = aquileian
 			}
-			religion = aquileian
 		}
 		any_realm_province = {
 			limit = { 
@@ -288,9 +293,11 @@ narrative_event = {
 		religion = nicene
 		capital_scope = {
 			if = {
-				limit = { religion = monophysite }
+				limit = { 
+					religion = monophysite 
+				}
+				religion = nicene
 			}
-			religion = nicene
 		}
 		any_realm_province = {
 			limit = { 
@@ -330,7 +337,7 @@ narrative_event = {
 
 # End of Aquileian Schism
 narrative_event = {
-	id = syn.11 
+	id = syn.11
 	title = syn.11.name
 	desc = syn.11.desc
 	picture = GFX_evt_nicene_preacher
@@ -347,9 +354,11 @@ narrative_event = {
 		religion = nicene
 		capital_scope = {
 			if = {
-				limit = { religion = aquileian }
+				limit = {
+					religion = aquileian
+				}
+				religion = nicene
 			}
-			religion = nicene
 		}
 		any_realm_province = {
 			limit = { 
@@ -369,9 +378,11 @@ narrative_event = {
 		}
 		capital_scope = {
 			if = {
-				limit = { religion = aquileian }
+				limit = {
+					religion = aquileian
+				}
+				religion = nicene
 			}
-			religion = nicene
 		}
 		any_realm_province = {
 			limit = { 
