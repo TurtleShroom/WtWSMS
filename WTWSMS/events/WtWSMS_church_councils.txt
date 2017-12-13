@@ -81,6 +81,9 @@ character_event = {
 	
 	option = { # Rescind the Condemnation 
 		name = syn.3.b
+		ai_chance = {
+			factor = 5
+		}
 		hidden_tooltip = {
 			any_playable_ruler = {
 				limit = {
@@ -153,17 +156,17 @@ character_event = {
 		}
 	}
 	
-	option = { # Refuse
-		name = syn.6.b
-		hidden_tooltip = {
-			any_playable_ruler = {
-				limit = { 
-					religion = nicene
-				}
-				narrative_event = { id = HRE.5 } # The Great Schism
-			}
-		}
-	}
+#	option = { # Refuse
+#		name = syn.6.b
+#		hidden_tooltip = {
+#			any_playable_ruler = {
+#				limit = { 
+#					religion = nicene
+#				}
+#				narrative_event = { id = HRE.5 } # The Great Schism
+#			}
+#		}
+#	}
 }
 
 # The Aquileian Schism
@@ -226,7 +229,7 @@ character_event = {
 		any_realm_province = {
 			limit = { 
 				religion = nicene
-          	}
+          			}
 			religion = aquileian
 		}
 		any_realm_character = {
@@ -309,12 +312,14 @@ narrative_event = {
 			limit = { religion = monophysite }
 			religion = nicene
 		}
+		d_monophysite = { unsafe_destroy_landed_title = THIS }
 	}
 	option = { # Stay
 		name = syn.9.b
 		trigger = {
 			NOT = { religion = monophysite }
 		}
+		d_monophysite = { unsafe_destroy_landed_title = THIS }
 	}
 }
 
@@ -345,6 +350,13 @@ narrative_event = {
 	major = yes
 	
 	is_triggered_only = yes
+
+	trigger = {
+		AND = {
+			year = 698 # This is the year the Aquelian Schism ended in RL
+			NOT = { has_global_flag =  the_aquileian_capture } # The Church will ultimately rejoin if controlled by the Italians in this time, if a pagan Captures the See, though, it will not end (this is a temporary fix)
+		}
+	}
 	
 	option = {
 		name = syn.11.a
@@ -363,7 +375,7 @@ narrative_event = {
 		any_realm_province = {
 			limit = { 
 				religion = aquileian
-          	}
+      		    	}
 			religion = nicene
 		}
 		any_realm_character = {
@@ -387,7 +399,7 @@ narrative_event = {
 		any_realm_province = {
 			limit = { 
 				religion = aquileian
-          	}
+        		   	}
 			religion = nicene
 		}
 		any_realm_character = {
