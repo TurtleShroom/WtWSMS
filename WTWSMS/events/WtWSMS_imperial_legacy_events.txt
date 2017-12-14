@@ -289,6 +289,8 @@ narrative_event = {
 		custom_tooltip = { 
 			text = imperial_legacy.10.a.tooltip
 		}
+
+		set_global_flag = rome_has_been_restored
 	}
 }
 
@@ -1776,6 +1778,12 @@ character_event = {
 				has_landed_title = c_ravenna
 			}
 		}
+		OR = { # Roman creations should never disband if Rome has successfully been restored!!
+			e_roman_empire = { has_holder = no}
+			NOT = {
+				is_title_active = e_roman_empire
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1802,6 +1810,12 @@ character_event = {
 		NOT = {
 			any_liege = {
 				has_landed_title = c_byzantion
+			}
+		}
+		OR = { # Roman creations should never disband if Rome has successfully been restored!!
+			e_roman_empire = { has_holder = no}
+			NOT = {
+				is_title_active = e_roman_empire
 			}
 		}
 	}
@@ -1850,7 +1864,7 @@ narrative_event = {
 		}
 		
 		FROM = {
-			# any_demesne_title mercenary = yes doesn't work
+			# any_demesne_title mercenary = yes # doesn't work
 			any_mercenary_band = {
 				limit = {
 					holder_scope = {

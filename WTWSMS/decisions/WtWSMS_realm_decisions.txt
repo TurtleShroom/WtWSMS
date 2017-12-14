@@ -113,7 +113,10 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
-			has_landed_title = e_byzantium
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
 			is_female = no
 			prisoner = no
 			age = 16
@@ -156,7 +159,10 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
-			has_landed_title = e_wre
+			OR = {
+				has_landed_title = e_wre
+				has_landed_title = e_roman_empire
+			}
 			is_female = no
 			prisoner = no
 			age = 16
@@ -201,13 +207,18 @@ decisions = {
 		potential = {
 			prisoner = no
 			age = 16
-			has_landed_title = e_wre
+			OR = {
+				has_landed_title = e_wre
+				has_landed_title = e_roman_empire
+			}
 			NOT = { is_title_active = d_imperial_fleet_wre } 
 		}
 		allow = {
 			wealth = 2000
-			completely_controls = c_ravenna # Ravenna was an important port
-			has_landed_title = c_ravenna
+			OR = {
+				completely_controls = c_ravenna # Ravenna was an important port
+				has_landed_title = c_ravenna
+			}
 		}
 		effect = {
 			wealth = -2000
@@ -236,13 +247,18 @@ decisions = {
 		potential = {
 			prisoner = no
 			age = 16
-			has_landed_title = e_byzantium
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
 			NOT = { is_title_active = d_imperial_fleet_ere } 
 		}
 		allow = {
 			wealth = 2000
-			completely_controls = c_byzantion # Constantinople was the main port of the imperial navy
-			has_landed_title = c_byzantion
+			OR = {
+				completely_controls = c_byzantion # Constantinople was the main port of the imperial navy
+				has_landed_title = c_byzantion
+			}
 		}
 		effect = {
 			wealth = -2000
@@ -479,7 +495,10 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
-			has_landed_title = e_byzantium
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
 			is_female = no
 			prisoner = no
 			age = 16

@@ -562,8 +562,6 @@ laws = {
 		default = yes
 		allow = {
 			NOT = { has_law = ze_administration_laws_2 }
-			NOT = { holder_scope = { government = bureaucratic_government } }
-			NOT = { holder_scope = { government = sassanid_government } }
 		}
 		potential = {
 			has_dlc = "Zeus"
@@ -597,8 +595,7 @@ laws = {
 	ze_administration_laws_1 = {
 		group = ze_administration_laws
 		allow = {
-			NOT = { holder_scope = { government = bureaucratic_government } }
-			NOT = { holder_scope = { government = sassanid_government } }
+			always = yes
 		}
 		potential = {
 			has_dlc = "Zeus"
@@ -656,7 +653,6 @@ laws = {
 			has_law = execution_voting_power_0
 			has_law = revoke_title_law_1
 			has_law = out_of_realm_inheritance_law_1
-			NOT = { holder_scope = { government = bureaucratic_government } }
 			NOT = { holder_scope = { government = sassanid_government } }
 		}
 		potential = {

@@ -693,7 +693,10 @@ decisions = {
 			has_global_flag = viking_age_started
 			NOT = { has_global_flag = varangian_guard_founded }
 			any_playable_ruler = {
-				religion = norse_pagan
+				OR = {
+					religion = norse_pagan
+					religion = germanic_pagan
+				}
 				capital_scope = {
 					distance = {
 						where = 496	# Constantinople

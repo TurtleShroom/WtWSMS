@@ -11,10 +11,8 @@ decisions = {
 			NOT = { has_global_flag = rome_restored }
 			NOT = { e_byzantium = { owner = { always = yes } } }
 			NOT = { e_latin_empire = { owner = { always = yes } } }
-			NOT = {
-				has_landed_title = e_hre
-				religion = catholic
-			}
+			NOT = { e_wre = { owner = { always = yes } } }
+			NOT = { has_landed_title = e_hre }
 			OR = {
 				religion_group = christian
 				religion = hellenic_pagan
@@ -24,6 +22,7 @@ decisions = {
 				culture = italian
 				culture_group = latin
 				has_landed_title = e_italy
+				has_romance_culture_trigger = yes
 			}
 			OR = {
 				# Just so it doesn't appear for everyone
@@ -73,7 +72,7 @@ decisions = {
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_latin_empire }
 			has_landed_title = e_hre
-			religion = catholic
+			religion_group = christian
 			OR = {
 				completely_controls = c_roma
 				completely_controls = c_byzantion

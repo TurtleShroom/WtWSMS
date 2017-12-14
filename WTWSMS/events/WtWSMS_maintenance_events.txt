@@ -58,7 +58,7 @@ character_event	= {
 	immediate = {
 		ROOT = {
 			abandon_heresy = yes
-			religion = nicene
+			unsafe_religion = nicene
 		}
 	}
 }
@@ -217,7 +217,7 @@ character_event = {
 			has_landed_title = e_wre
 			has_landed_title = k_italy
 		}
-		is_title_active	= d_senate 
+		is_title_active = d_senate 
 		NOT = { has_character_flag = had_senate_recognition_event }
 	}
 	
@@ -250,16 +250,24 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		has_landed_title = d_senate
-		NOT = { is_title_active = k_republic }
+#		ROOT = {
+#			 NOT = {
+#				primary_title = {
+#					title = d_senate # Why would the Senate cease to exist if the Senator was a king AND a Republic as well? The title should be given to someone underneath him.
+#				}
+#			}
+#		}
 		ROOT = {
+			has_landed_title = d_senate
+			NOT = { is_title_active = k_republic }
+		}
+		OR = {
+			NOT = { government = merchant_republic_government }
+			e_roman_empire = { has_holder = no}
 			NOT = {
-				primary_title = {
-					title = d_senate
-				}
+				is_title_active = e_roman_empire
 			}
 		}
-		NOT = { government = merchant_republic_government }
 	}
 	
 	mean_time_to_happen = {
