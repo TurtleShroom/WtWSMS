@@ -2798,6 +2798,7 @@ k_byzantium = {
 		e_byzantium = {
 			has_holder = no
 		}
+		NOT = { has_landed_title = e_roman_empire }
 	}
 }
 k_germany = {
