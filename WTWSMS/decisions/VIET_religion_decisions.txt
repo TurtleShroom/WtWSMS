@@ -1097,7 +1097,7 @@ decisions = {
 			OR = {
 				religion = shiite
 				religion = hurufi
-				religion = druze #remove once we do Druze stuff down the line
+				religion = druze # Remove once we do Druze stuff down the line
 			}
 			NOT = {
 				OR = {

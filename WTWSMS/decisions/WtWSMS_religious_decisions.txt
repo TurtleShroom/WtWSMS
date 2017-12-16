@@ -74,6 +74,8 @@ decisions = {
 					owns = 774
 				}
 			}
+			has_global_flag = third_temple_built
+			has_landed_title = k_israel
 		}
 		
 		effect = {
@@ -100,9 +102,7 @@ decisions = {
 				}
 			}
 			piety = 1000
-		}
-		
-		
+		}	
 		
 		ai_will_do = {
 			factor = 1

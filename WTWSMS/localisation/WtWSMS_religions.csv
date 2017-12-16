@@ -29,16 +29,16 @@ ebionites_FEATURES;§Y*§! Ebionaioi are counted as Jews in many events and scenar
 d_ebionites;The Ebionite Church;L'Église Ébionite;;;;;;;;;;x
 d_ebionites_adj;Ebionaioi;Ébionite;;;;;;;;;;x
 d_ebionites_ADJ;Ebionaioi;Ébionite;;;;;;;;;;x
-temple_of_ebionites;Synagogue of;;;;;;;;;;x
-temple_barony_of_ebionites;Synagogue of;;;;;;;;;;x
+temple_empire_of_ebionites;Great Gadolship of;;;;;;;;;;;;;x
 temple_kingdom_of_ebionites;Grand Sanhedrin of;;;;;;;;;;;;;x
 temple_duchy_of_ebionites;Sanhedrin of;;;;;;;;;;;;;x
 temple_county_of_ebionites;Beit Din of;;;;;;;;;;;;;x
+temple_barony_of_ebionites;Synagogue of;;;;;;;;;;x
 temple_baron_ebionites;Rabi;Rabbin;Rabbiner;;Rabino;;;;;;;;;x
 temple_count_ebionites;Kohen;Cohen;Kohen;;Kohen;;;;;;;;;x
 temple_duke_ebionites;Rabban;Rabbi;Rabban;;Rabban;;;;;;;;;x
 temple_king_ebionites;Nasi;Nassi;Nasi;;Nasi;;;;;;;;;x
-temple_emperor_ebionites;Grand Nagid
+temple_emperor_ebionites;Grand Nagid;;;;;;;;;;x
 PATRIARCHATE_TITLE_ebionites;Gadolship of $TITLE$;Gadolat de $TITLE$;;;;;;;;;;x
 AUTOCEPHALOUS_REL_HEAD_TITLE_ebionites;Gadol;Gadol;;;;;;;;;;x
 marcionism;Marcionist;marcionite;;;;;;;;;;x

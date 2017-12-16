@@ -1453,7 +1453,12 @@ decisions = {
 				}
 			}
 			any_friend = {
-				limit = { religion_group = jewish_group }
+				limit = {
+					OR = {
+						religion_group = jewish_group
+						religion = ebionites
+					}
+				}
 				remove_friend = ROOT
 			}
 		}
