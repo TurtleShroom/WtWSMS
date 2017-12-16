@@ -441,7 +441,10 @@ character_event = {
 		religion_group = muslim
 		NOT = { culture_group = israelite }
 		any_courtier = {
-			religion_group = jewish_group
+			OR = {
+				religion_group = jewish_group
+				religion = ebionites
+			}
 #			culture_group = israelite
 			is_female = no
 			is_ruler = no		

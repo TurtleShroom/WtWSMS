@@ -173,7 +173,10 @@ character_event = {
 		set_character_flag = no_more_jewish_event
 		IF = { 
 			limit = { 
-				mother_even_if_dead = { religion_group = jewish_group }
+				OR = {
+					mother_even_if_dead = { religion_group = jewish_group }
+					mother_even_if_dead = { religion = ebionites }
+				}
 			}
 			mother_even_if_dead = {
 				reverse_religion = ROOT
@@ -202,6 +205,10 @@ character_event = {
 		IF = { 
 			limit = { culture = sephardi }
 			culture = andalusian_arabic
+		}
+		IF = {
+			limit = { culture = hebrew }
+			culture = aramaic
 		}
 	}
 }

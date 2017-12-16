@@ -1,4 +1,4 @@
-###################################
+﻿###################################
 #
 # Historical Events
 #
@@ -903,7 +903,10 @@ narrative_event = {
 	major = yes
 	
 	major_trigger = {
-		religion_group = jewish_group
+		OR = {
+			religion_group = jewish_group
+			religion = ebionites
+		}
 	}
 	
 	mean_time_to_happen = {

@@ -21,6 +21,7 @@ character_event = {
 			religion_group = muslim
 			religion_group = zoroastrian_group
 			religion_group = jewish_group
+			religion = ebionites
 		}	
 		NOT = { 
 			has_character_modifier = persecuting_nestorians
@@ -69,6 +70,7 @@ character_event = {
 			religion_group = muslim
 			religion_group = zoroastrian_group
 			religion_group = jewish_group
+			religion = ebionites
 		}	
 		NOT = { 
 			has_character_modifier = persecuting_nestorians
@@ -117,6 +119,7 @@ character_event = {
 			religion_group = muslim
 			religion_group = zoroastrian_group
 			religion_group = jewish_group
+			religion = ebionites
 		}	
 		NOT = { 
 			has_character_modifier = persecuting_nestorians

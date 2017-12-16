@@ -13749,6 +13749,7 @@ character_event = {
 		name = "silkroad.427.a"
 		trigger = {
 			NOT = { religion_group = jewish_group }
+			NOT = { religion = ebionites }
 		}
 		if = {
 			limit = {
@@ -13768,7 +13769,10 @@ character_event = {
 		}
 		if = {
 			limit = {
-				religion_group = jewish_group
+				OR = {
+					religion_group = jewish_group
+					religion = ebionites
+				}
 			}
 			piety = 5
 		}
@@ -13778,12 +13782,16 @@ character_event = {
 		if = {
 			limit = {
 				NOT = { religion_group = jewish_group }
+				NOT = { religion = ebionites }
 			}
 			piety = 5
 		}
 		if = {
 			limit = {
-				religion_group = jewish_group
+				OR = {
+					religion_group = jewish_group
+					religion = ebionites
+				}
 			}
 			random = {
 				add_trait = cynical

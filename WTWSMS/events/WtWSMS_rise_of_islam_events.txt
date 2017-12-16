@@ -409,7 +409,12 @@ province_event = {
 		}
 			
 		if = {
-			limit = { religion_group = christian }
+			limit = {
+				AND = {
+					religion_group = christian 
+					NOT = { religion = ebionites }
+				}
+			}
 			set_global_flag = islam_christian_influence
 		}
 
@@ -419,7 +424,12 @@ province_event = {
 		}
 
 		if = {
-			limit = { religion_group = jewish_group }
+			limit = { 
+				OR = {
+					religion_group = jewish_group
+					religion = ebionites
+				}
+			}
 			set_global_flag = islam_jewish_influence
 		}
 

@@ -1225,7 +1225,10 @@ narrative_event = {
 		name = exilarch.1.b # Oy vey!
 		trigger = { 
 			NOT = { has_landed_title = d_exilarch }
-			religion_group = jewish_group
+			OR = {
+				religion_group = jewish_group
+				religion = ebionites
+			}
 		}
 	}
 	option = {
@@ -1233,6 +1236,7 @@ narrative_event = {
 		trigger = { 
 			NOT = { has_landed_title = d_exilarch }
 			NOT = { religion_group = jewish_group }
+			NOT = { religion = ebionites }
 		}
 	}
 }
@@ -1272,7 +1276,10 @@ narrative_event = {
 		name = exilarch.2.b # Oy vey!
 		trigger = { 
 			NOT = { has_landed_title = d_exilarch_karaite }
-			religion_group = jewish_group
+			OR = {
+				religion_group = jewish_group
+				religion = ebionites
+			}
 		}
 	}	
 	option = {
@@ -1280,6 +1287,7 @@ narrative_event = {
 		trigger = { 
 			NOT = { has_landed_title = d_exilarch_karaite }
 			NOT = { religion_group = jewish_group }
+			NOT = { religion = ebionites }
 		}
 	}
 }

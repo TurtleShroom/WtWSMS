@@ -3642,7 +3642,10 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				FROM = { religion_group = jewish_group }
+				OR = {
+					FROM = { religion_group = jewish_group }
+					FROM = { religion = ebionites }
+				}
 				trait = sympathy_judaism
 			}
 			modifier = {

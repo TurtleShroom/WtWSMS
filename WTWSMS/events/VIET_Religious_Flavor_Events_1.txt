@@ -2362,6 +2362,8 @@ character_event = {
 			trait = scholar
 			trait = genius
 			trait = quick
+			trait = shrewd
+			trait = mystic
 		}
 	}
 	

@@ -159,12 +159,15 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	only_playable = yes
-	religion_group = jewish_group
 	only_independent = yes
 	
 	trigger = {
 		has_dlc = "Sons of Abraham"
 		has_character_modifier = expelled_jewish
+		OR = {
+			religion_group = jewish_group
+			religion = ebionites
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1039,10 +1042,13 @@ character_event = {
 	min_age = 16
 	only_capable = yes
 	prisoner = no
-	religion_group = jewish_group
 	
 	trigger = {
 		has_job_title = job_chancellor
+		OR = {
+			religion_group = jewish_group
+			religion = ebionites
+		}
 		employer = {
 			NOT = { 
 				religion_group = jewish_group 
@@ -1092,10 +1098,13 @@ character_event = {
 	min_age = 16
 	only_capable = yes
 	prisoner = no
-	religion_group = jewish_group
 	
 	trigger = {
 		has_job_title = job_treasurer
+		OR = {
+			religion_group = jewish_group
+			religion = ebionites
+		}
 		employer = {
 			NOT = {
 				religion_group = jewish_group
@@ -1145,11 +1154,13 @@ character_event = {
 	min_age = 16
 	only_capable = yes
 	prisoner = no
-
-	religion_group = jewish_group
 	
 	trigger = {
 		has_job_title = job_spymaster
+		OR = {
+			religion_group = jewish_group
+			religion = ebionites
+		}
 		employer = {
 			NOT = { 
 				religion_group = jewish_group
