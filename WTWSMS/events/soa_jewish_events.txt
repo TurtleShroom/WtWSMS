@@ -857,7 +857,7 @@ character_event = {
 		}
 		custom_tooltip = { text = passover_invitations_sent }
 		hidden_tooltip = { character_event = { id = SoA.503 days = 10 } }
-		hidden_tooltip = { character_event = { id = SoA.504 days = 12 } }
+#		hidden_tooltip = { character_event = { id = SoA.504 days = 12 } } # Now handled by Jewish VIET code
 	}
 }
 
@@ -967,7 +967,7 @@ character_event = {
 		}
 		add_character_modifier = {
 			name = held_passover_timer
-			duration = 1825
+			duration = 1460
 			hidden = yes
 		}
 		prestige = 100

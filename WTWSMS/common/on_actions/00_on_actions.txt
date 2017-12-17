@@ -1,4 +1,4 @@
-#character
+﻿#character
 on_startup = {
 	events = {
 		GR.13 #True cognatic for rule gender = all
@@ -1483,7 +1483,7 @@ on_death = {
 		HL.4998
 		ZE.1030 # Daughter becomes disobedient - killed lover
 		ZE.1040 # Daughter becomes disobedient - killed friend
-		532 #Clears regents if heir has one already
+		532 # Clears regents if heir has one already
 		RIP.4400 #Nicknames for executions
 		GR.10
 		MNM.6844 #Removes mark of death block for Assassins GM
@@ -1501,6 +1501,7 @@ on_death = {
 		JD.3042 # Clear Supply Horses modifier if no longer Nomadic
 		JD.10080 # Your Chinese Prince/Princess has died (for children or spouse - must be read before JD.60310!)
 		JD.60310 # Courtier from China dies
+		VIETmisc.11001 # Announcement of the death of the Restorer of Israel
 	}
 	random_events = {
 		1 = RIP.29800 #reincarnation investigation

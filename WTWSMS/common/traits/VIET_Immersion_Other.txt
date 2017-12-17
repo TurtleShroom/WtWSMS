@@ -105,8 +105,9 @@ noble_stranger_descendant = { #Other West African Kings and Emperors
 israel_restorer = { # The Restorer of Israel
 	customizer = no
 	random = no
-	
-	same_religion_opinion = 10
+
+	jewish_group_opinion = 10
+	ebionites_opinion = 5
 
 	monthly_character_prestige = 0.03
 	monthly_character_piety = 0.08
@@ -122,7 +123,8 @@ house_of_david = { # Descendant of David
 
 	learning = 1
 	
-	same_religion_opinion = 10
+	jewish_group_opinion = 10
+	ebionites_opinion = 5
 
 	monthly_character_prestige = 0.5
 	monthly_character_piety = 0.1

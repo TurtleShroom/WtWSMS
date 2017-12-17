@@ -864,11 +864,12 @@ narrative_event = {
 			name = observed_passover
 			duration = 365
 		}
-		add_character_modifier = {
-			name = passover_timer
-			duration = 1460
-			hidden = yes
-		}
+#		add_character_modifier = {
+#			name = passover_timer
+#			duration = 1460
+#			hidden = yes
+#		}
+		hidden_tooltip = { character_event = { id = SoA.504 } }
 	}
 }
 
@@ -1012,7 +1013,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = passover.11.a #Obey
+		name = passover.11.a # Obey
 		ai_chance = {
 			factor = 2
 			modifier = {
