@@ -18936,7 +18936,7 @@ e_gaul = {
 		# Creation/usurpation trigger
 		allow = {
 			hidden_tooltip = {
-					ai = no 
+				ai = no 
 			}
 		}
 
@@ -21214,7 +21214,7 @@ e_gaul = {
 		# Creation/usurpation trigger
 		allow = {
 			hidden_tooltip = {
-					ai = no 
+				ai = no 
 			}
 		}
 
@@ -22038,7 +22038,7 @@ e_gaul = {
 		# Creation/usurpation trigger
 		allow = {
 			hidden_tooltip = {
-					ai = no 
+				ai = no 
 			}
 		}
 
@@ -22376,7 +22376,7 @@ e_spain = {
 		# Creation/usurpation trigger
 		allow = {
 			hidden_tooltip = {
-					ai = no
+				ai = no
 			}
 		}
 
@@ -22811,7 +22811,7 @@ e_spain = {
 		# Creation/usurpation trigger
 		allow = {
 			hidden_tooltip = {
-					ai = no
+				ai = no
 			}
 		}
 
@@ -23078,7 +23078,7 @@ e_spain = {
 		# Creation/usurpation trigger
 		allow = {
 			hidden_tooltip = {
-					ai = no 
+				ai = no 
 			}
 		}
 
@@ -23370,7 +23370,7 @@ e_spain = {
 		# Creation/usurpation trigger
 		allow = {
 			hidden_tooltip = {
-					ai = no 
+				ai = no 
 			}
 		}
 
@@ -30958,16 +30958,28 @@ e_italy = {
 		slavic_pagan_reformed = 150
 		
 		# Creation/usurpation trigger
-		allow = {
+		allow = { #Keeps the Ostrogoths from changing from k_italy
 			hidden_tooltip = {
-				NOT = { culture = romano_gothic }
-				NOT = { culture_group = east_germanic }
 				OR = {
 					ai = no
-					religion_group = christian
-				}
-			}
-		}		
+                    AND = {
+						NOT = { culture = ostrogothic }
+                        NOT = { culture = skirian }
+						NOT = { culture = heruli }
+                        NOT = { culture = romano_gothic }
+						NOT = { has_landed_title = k_ostrogoths }
+                    }                                                                
+					AND = {
+				        higher_tier_than = KING
+                        OR = {
+                            culture = ostrogothic
+                            culture = skirian
+							culture = romano_gothic
+						}
+					}
+                }
+			} 
+		}
 		
 		d_liguria = {
 			color={ 176 99 103 }
@@ -32917,16 +32929,28 @@ e_italy = {
 		culture = roman
 		
 		# Creation/usurpation trigger
-		allow = {
+		allow = { #Keeps the Ostrogoths from changing from k_italy
 			hidden_tooltip = {
-				NOT = { culture = romano_gothic }
-				NOT = { has_landed_title = k_italy }
-				NOT = { culture_group = east_germanic }
 				OR = {
 					ai = no
-					religion_group = christian
-				}
-			}
+                    AND = {
+						NOT = { culture = ostrogothic }
+                        NOT = { culture = skirian }
+						NOT = { culture = heruli }
+                        NOT = { culture = romano_gothic }
+						NOT = { has_landed_title = k_ostrogoths }
+                    }                                                                
+					AND = {
+				        higher_tier_than = KING
+                        OR = {
+                            culture = ostrogothic
+                            culture = skirian
+							culture = romano_gothic
+						}
+					}
+                }
+			} 
+			NOT = { has_landed_title = k_italy }
 		}
 		
 		d_umbria = {
