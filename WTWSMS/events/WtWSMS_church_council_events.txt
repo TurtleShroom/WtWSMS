@@ -151,31 +151,20 @@ character_event = {
 				limit = { 
 					NOT = { character = ROOT }
 				}
-				character_event = { id = syn.7 } # The Aquileian Schism
+				narrative_event = { id = syn.7 } # The Aquileian Schism
 			}
 		}
 	}
-	
-#	option = { # Refuse
-#		name = syn.6.b
-#		hidden_tooltip = {
-#			any_playable_ruler = {
-#				limit = { 
-#					religion = nicene
-#				}
-#				narrative_event = { id = HRE.5 } # The Great Schism
-#			}
-#		}
-#	}
 }
 
 # The Aquileian Schism
-character_event = {
+narrative_event = {
 	id = syn.7
 	title = syn.7.name
 	desc = syn.7.desc
 	picture = GFX_evt_christian_council
-
+	
+	major = yes
 	is_triggered_only = yes
 
 	immediate = {
@@ -185,6 +174,7 @@ character_event = {
 				d_aquileia_church = {
 					grant_title = PREV
 				}
+				unsafe_religion = aquileian
 			}
 		}
 	}
@@ -207,6 +197,13 @@ character_event = {
 			modifier = {
 				factor = 50
 				has_landed_title = d_aquileia_church
+			}
+			modifier = {
+				factor = 2
+				AND = {
+					any_realm_character = { has_landed_title = b_monza } # Scope to all direct vassals
+					NOT = { tier = EMPEROR }
+				}
 			}
 			modifier = {
 				factor = 10
@@ -232,9 +229,18 @@ character_event = {
           			}
 			religion = aquileian
 		}
-		any_realm_character = {
-			limit = { religion = nicene }
-			religion = aquileian
+		if = { # This prevents Kings that convert from converting everyone in their realm automatically, though Dukes and Counts still can do this
+			limit = {
+				OR = {
+					tier = BARON
+					tier = COUNT
+					tier = DUKE
+				}
+			}
+			any_realm_character = {
+				limit = { religion = nicene }
+				religion = aquileian
+			}
 		}
 	}
 	option = { # Stay
@@ -263,6 +269,7 @@ character_event = {
 	
 	option = { # Accept
 		name = syn.8.a
+		ai_chance = { factor = 4.5 } # Slightly less likely to stand down
 		hidden_tooltip = {
 			any_playable_ruler = {
 				narrative_event = { id = syn.9 }
@@ -272,6 +279,7 @@ character_event = {
 	option = { # Refuse
 		name = syn.8.b
 		ai_chance = { factor = 5 }
+		narrative_event = { id = syn.12 }
 	}
 }
 
@@ -305,7 +313,7 @@ narrative_event = {
 		any_realm_province = {
 			limit = { 
 				religion = monophysite
-          	}
+			}
 			religion = nicene
 		}
 		any_realm_character = {
@@ -314,7 +322,7 @@ narrative_event = {
 		}
 		d_monophysite = { unsafe_destroy_landed_title = THIS }
 	}
-	option = { # Stay
+	option = { # Alert for Non-Monophysites
 		name = syn.9.b
 		trigger = {
 			NOT = { religion = monophysite }
@@ -331,7 +339,6 @@ narrative_event = {
 	picture = GFX_evt_christian_council
 	
 	major = yes 
-	
 	is_triggered_only = yes
 	
 	option = {
@@ -348,15 +355,7 @@ narrative_event = {
 	picture = GFX_evt_christian_council
 
 	major = yes
-	
 	is_triggered_only = yes
-
-	trigger = {
-		AND = {
-			year = 698 # This is the year the Aquelian Schism ended in RL
-			NOT = { has_global_flag =  the_aquileian_capture } # The Church will ultimately rejoin if controlled by the Italians in this time, if a pagan Captures the See, though, it will not end (this is a temporary fix)
-		}
-	}
 	
 	option = {
 		name = syn.11.a
@@ -375,13 +374,14 @@ narrative_event = {
 		any_realm_province = {
 			limit = { 
 				religion = aquileian
-      		    	}
+			}
 			religion = nicene
 		}
 		any_realm_character = {
 			limit = { religion = aquileian }
 			religion = nicene
 		}
+		d_aquileia_church = { unsafe_destroy_landed_title = THIS }
 	}
 	option = { # Okay
 		name = syn.11.b
@@ -406,5 +406,70 @@ narrative_event = {
 			limit = { religion = aquileian }
 			religion = nicene
 		}
+	}
+}
+
+narrative_event = { # The Monophysite Patriarch refuses to settle differences and rejoin
+	id = syn.12
+	title = syn.12.name
+	desc = syn.12.desc
+	picture = GFX_evt_christian_council
+	
+	major = yes 	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = { religion = monophysite }
+		name = syn.12.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 10
+				OR = {
+					trait = zealous
+					trait = theologian
+					trait = genius
+					learning = 16
+				}
+			}
+		}
+	}
+	
+	option = { # Convert to Nicene anyway
+		trigger = {
+			religion = monophysite
+			NOT = { trait = zealous	}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				trait = cynical
+			}
+		}
+		name = syn.12.b
+		custom_tooltip = {
+			text = syn.12.TOOLTIP
+			hidden_tooltip = {
+				capital_scope = {
+					if = {
+						limit = { 
+							religion = monophysite
+						}
+						religion = nicene
+					}
+				}
+				any_child = {
+					limit = { religion = monophysite }
+					religion = nicene
+				}
+			}
+		}
+		religion = nicene
+	}
+	
+	option = {
+		trigger = { NOT = { religion = monophysite } }
+		name = EVTOPTA_GOG_5
 	}
 }

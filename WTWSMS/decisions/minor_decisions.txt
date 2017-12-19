@@ -1690,12 +1690,6 @@ decisions = {
 					}
 				}
 			}
-			hidden_tooltip = {
-				if = {
-					limit = { NOT = { religion = audianistic } }
-					character_event = { id = passover.0 }
-				}
-			}
 		}
 		revoke_allowed = {
 			always = no

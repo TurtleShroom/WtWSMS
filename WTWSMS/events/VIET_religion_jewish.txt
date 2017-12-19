@@ -680,7 +680,7 @@ character_event = {
 		narrative_event = { id = passover.1 days = 6 random = 2 tooltip = "passover.1.tooltip" }
 		hidden_tooltip = { #random chance of favoring one of the flavor events
 			random_list = {
-				60 = { }
+				40 = { }
 				3 = { set_character_flag = passover_eat_chametz }			
 				3 = { set_character_flag = passover_foreign_jew }			
 				7 = { set_character_flag = passover_song_of_songs }			
@@ -704,7 +704,6 @@ narrative_event = {
 	
 	option = {
 		name = passover.1.a
-		#character_event = { id = passover.2 days = 3 random = 2 tooltip = "passover.2.tooltip" }
 		piety = 5
 	}
 	
@@ -718,6 +717,8 @@ character_event = {
 	picture = GFX_evt_feast
 	
 	is_triggered_only = yes
+
+	hide_window = yes 
 	
 	option = {
 		name = passover.2.a
@@ -847,6 +848,7 @@ narrative_event = {
 	desc = passover.6.desc
 	picture = GFX_evt_feast
 	
+	hide_window = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -1154,7 +1156,6 @@ character_event = {
 	
 	only_men = yes
 	only_rulers = yes
-	ai = yes
 	
 	is_triggered_only = yes
 	
@@ -1162,10 +1163,12 @@ character_event = {
 		OR = {
 			has_landed_title = d_exilarch
 			has_landed_title = d_exilarch_karaite
+			has_landed_title = d_ebionites
 			father = {
 				OR = {
 					has_landed_title = d_exilarch
 					has_landed_title = d_exilarch_karaite
+					has_landed_title = d_ebionites
 				}
 			}
 		}
@@ -1202,7 +1205,6 @@ narrative_event = {
 	
 	only_men = yes
 	only_rulers = yes
-	
 	is_triggered_only = yes
 	
 	trigger = {
@@ -1323,6 +1325,10 @@ character_event = {
 				NOT = { religion = jewish }
 				NOT = { religion = karaite }
 			}
+			AND = {
+				has_landed_title = d_ebionites
+				NOT = { religion = ebionites }
+			}
 		}
 	}
 	
@@ -1341,22 +1347,26 @@ character_event = {
 				has_landed_title = d_exilarch
 				NOT = { has_landed_title = d_exilarch_karaite }
 			}
-			religion = jewish
+			unsafe_religion = jewish
 		}
 		if = {
 			limit = {
 				has_landed_title = d_exilarch_karaite
 				NOT = { has_landed_title = d_exilarch }
 			}
-			religion = karaite
+			unsafe_religion = karaite
 		}
 		if = {
-			limit = {
-				has_landed_title = d_exilarch
-				has_landed_title = d_exilarch_karaite
-			}
-			religion = jewish
+			limit = { has_landed_title = d_ebionites }
+			unsafe_religion = ebionites
 		}
+#		if = {
+#			limit = {
+#				has_landed_title = d_exilarch
+#				has_landed_title = d_exilarch_karaite
+#			}
+#			unsafe_religion = religion = jewish
+#		}
 	}
 	option = {
 		name = exilarch.4.b
@@ -1554,6 +1564,7 @@ character_event = {
 		trait = house_of_david
 		religion = jewish
 		has_global_flag = VIET_end_of_exilarch
+		female = no
 		OR = {
 			AND = {
 				diplomacy = 15
@@ -1762,6 +1773,11 @@ character_event = {
 					trait = martial_cleric
 					trait = scholarly_theologian
 					trait = mastermind_theologian
+					trait = theologian
+					trait = scholar
+					trait = genius
+					trait = kind
+					culture = aramean
 					learning = 6
 				}
 			}

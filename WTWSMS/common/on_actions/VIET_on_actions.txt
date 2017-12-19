@@ -1,5 +1,9 @@
 #character
 on_yearly_pulse = {
+	events = {
+		exilarch.0 # Ensure the Exilarch, High Priest, etc. is married
+	}
+
 	random_events = {
 
 		#VIET EVENTS

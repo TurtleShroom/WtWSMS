@@ -8,7 +8,7 @@ GOD_MASTIMAN;Mastiman;Mastiman;;;;;;;;;;x
 GOD_AMUN;Amun;Amon;;;;;;;;;;x
 GOD_GURZIL;Gurzil;Gurzil;;;;;;;;;;x
 aquileian;Aquileian;aquiléen;;;;;;;;;;x
-aquileian_DESC;The Holy See of Aquilea, together with other northern Italian bishops split from the church in Rome in 553 from the disagreement regarding the 2nd Council of Constantinople, attempting to reconcile western and middle-eastern Christian views on the nature of Christ. They proclaimed a Patriarch in Aquilea, thus beginning what would be known as the "Schism of the Three Chapters". .;Le Saint-Siège d'Aquilée, avec d'autres évêques d'Italie du Nord ont rompu avec l'Église romaine en 553 à cause du désaccord concernant le deuxième concile de Constantinople, qui tentait de réconcilier les divergences entre l'Occident et le Moyen-Orient concernant la nature du Christ. Ils ont proclamé un patriarche à Aquilée, ce qui fut ainsi le commencement du « Schisme des Trois Chapitres ».;;;;;;;;;;x
+aquileian_DESC;The Holy See of Aquilea, together with other northern Italian bishops split from the church in Rome in 553 from the disagreement regarding the Second Council of Constantinople, attempting to reconcile western and middle-eastern Christian views on the nature of Christ. They proclaimed a Patriarch in Aquilea, thus beginning what would be known as the "Schism of the Three Chapters". .;Le Saint-Siège d'Aquilée, avec d'autres évêques d'Italie du Nord ont rompu avec l'Église romaine en 553 à cause du désaccord concernant le deuxième concile de Constantinople, qui tentait de réconcilier les divergences entre l'Occident et le Moyen-Orient concernant la nature du Christ. Ils ont proclamé un patriarche à Aquilée, ce qui fut ainsi le commencement du « Schisme des Trois Chapitres ».;;;;;;;;;;x
 d_aquileia_church;Aquileian Patriarchate;Patriarcat d'Aquilée;;;;;;;;;;x
 d_aquileia_church_adj;Aquileian;Aquiléen;;;;;;;;;;x
 total_depravity;Total Depravity;corruption totale;;;;;;;;;;x
@@ -41,6 +41,9 @@ temple_king_ebionites;Nasi;Nassi;Nasi;;Nasi;;;;;;;;;x
 temple_emperor_ebionites;Grand Nagid;;;;;;;;;;x
 PATRIARCHATE_TITLE_ebionites;Gadolship of $TITLE$;Gadolat de $TITLE$;;;;;;;;;;x
 AUTOCEPHALOUS_REL_HEAD_TITLE_ebionites;Gadol;Gadol;;;;;;;;;;x
+spirit.52.title;The Ebionite Kohen Gadol;;;;;;;;;;;;x
+spirit.52.desc;Denounced in the Epistles and hated by the Jews, the Judaizers- who believed Gentiles must follow Jewish Law to be Saved -of Christianity were always black sheep. Now, the chief group among them, the Ebionites, who rejected Jesus' divinity, emphasized Jewish Law, and rejected animal sacrifice, have assumed such a dominant position that they have proclaimed a new Kingdom of Israel. With the Holy Temple rebuilt under their auspices, these Ebinoite Judaizers have now proclaimed their dominance over Christianity and Judaism. Already, Bibles with only one Gospel and none of Paul's Epistles have been spread far and wide, as Gentiles convert in droves.;;;;;;;;;;;;x
+spirit.52.b;Accursed JUDAIZERS!;;;;;;;;;;;;x
 marcionism;Marcionist;marcionite;;;;;;;;;;x
 marcionism_DESC;Marcionism was an Early Christian dualist belief system that originated in the teachings of Marcion of Sinope at Rome around the year 144 AD. Marcion believed Jesus Christ was the savior sent by God, and Paul of Tarsus was his chief apostle, but he rejected the Hebrew Bible and the God of Israel. Marcionists believed that the wrathful Hebrew God was a separate and lower entity than the all-forgiving God of the New Testament. This belief was in some ways similar to Gnostic Christian theology. Notably, both are dualistic, that is, they posit opposing gods, forces, or principles: one higher, spiritual, and "good", and the other lower, material, and "evil" (compare Manichaeism), in contrast to the orthodox Christian view that "evil" has no independent existence, but is a privation or lack of "good", a view shared by the Jewish theologian Moses Maimonides.;Le marcionisme était un système de croyance dualiste du christianisme primitif qui a pris naissance dans les enseignements de Marcion de Sinope à Rome vers l'an 144 apr. J.-C. Marcion croyait que Jésus-Christ était le sauveur envoyé par Dieu, et Paul de Tarse était son chef apôtre, mais il rejetait la Bible hébraïque et le Dieu d'Israël. Les marcionites croyaient que le Dieu hébreu courroucé était une entité distincte et inférieure au Dieu qui pardonne tout le Nouveau Testament. Cette croyance était à certains égards similaires à la théologie gnostique chrétienne. Notamment, les deux sont dualistes, c'est-à-dire, ils posent des dieux, des forces ou des principes opposés : l'un plus élevé, spirituel, et "bon", et l'autre inférieur, matériel, et "mauvais" (comparez avec le manichéisme), contrairement à l'avis chrétien conventionnel qui voit le "mal" comme n'ayant pas d'existence indépendante, mais comme une privation ou le manque de "bon", un avis partagé par le théologien juif Moïse Maïmonide.;;;;;;;;;;x
 GOD_YALTABAOTH;Yaltabaoth;Yaltabaoth;;;;;;;;;;x
@@ -960,11 +963,13 @@ GOD_7MYSTERY;The Seven Mysteries;;;;;;;;;;;;;x
 gov_salem;Mystic Sanctum;;;;;;;;;;;;;x
 ZALMOXISNOTMESSENGERDEAD;Has not sacrificed the Messenger within five years;;;;;;;;;;;;;x
 GOD_EPONA;Epona;;;;;;;;;;;;;x
-d_samaritan;The Samaritan High Priesthood;Grande Prêtrise samaritaine;Das samariter Hohepriestertum;;El Sumo Sacerdocio samaritano;;;;;;;;;x
+d_samaritan;The Samaritan High Priesthood;Grande Prêtrise samaritaine;Das samariter Hohepriestertum;;El Sumo Sacerdocio Samaritano;;;;;;;;;x
 d_samaritan_adj;Samaritan;samaritaine;Samariter;;Samaritano;;;;;;;;;x
 ###### Misc religion-related modifiers;;;;;;;;;;;;x
 apokopos;Apokopos;;;;;;;;;;;;;x
 fall_of_persia;Fall of Persia;;;;;;;;;;;;;x
 AGONISTIC_MARTYR;Holy Martyr;;;;;;;;;;;;;x
-JEW_ACRE_TIBERIAS;Either you, or any vassal, must control the fringes of Upper Samaria (the counties of Acre and Tiberias) /n;;;;;;;;;;;;;x
+JEW_ACRE_TIBERIAS;Either you, or any vassal, must control the fringes of Upper Samaria (the counties of Acre and Tiberias) \n;;;;;;;;;;;;;x
+NEEDSTHIRDTEMPLE;The Third Temple must be constructed \n;;;;;;;;;;;;;x
 PRESBYTERS;Presbyter;Presbytre;;;;;;;;;;;;x
+LORDLIVESZION;The Lord lives in Zion!;;;;;;;;;;;;x

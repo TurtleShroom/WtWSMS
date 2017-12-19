@@ -1835,6 +1835,52 @@ long_character_event = { # Zalmoxian Sacrifice of the Messenger - FAILURE
 	}
 }
 
+# Created Ebionites High Priesthood
+narrative_event = { 
+	id = spirit.52
+	title =  spirit.52.title
+	desc = spirit.52.desc
+	picture = GFX_evt_the_torah
+	border = GFX_event_narrative_frame_religion
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = LORDLIVESZION
+		trigger = {
+			religion = ebionites
+		}
+		piety = 50
+	}
+
+	option = {
+		name = spirit.52.b
+		trigger = {
+			AND = {
+				religion_group = christian
+				NOT = { religion = ebionites }
+			}
+		}
+	}
+	option = {
+		name = exilarch.4.a # OY VEY.
+		trigger = {
+			religion_group = jewish_group	
+		}
+	}
+	option = {
+		name = VIETceltic.4.b # Interesting development
+		trigger = {
+			NOT = {
+				religion_group = christian
+				religion = ebionites
+			}
+		}
+	}
+}
+
 
 
 ##################################################################

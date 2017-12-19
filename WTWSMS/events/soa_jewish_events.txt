@@ -857,7 +857,18 @@ character_event = {
 		}
 		custom_tooltip = { text = passover_invitations_sent }
 		hidden_tooltip = { character_event = { id = SoA.503 days = 10 } }
-#		hidden_tooltip = { character_event = { id = SoA.504 days = 12 } } # Now handled by Jewish VIET code
+		hidden_tooltip = {
+			if = {
+				limit = { religion = audianistic }
+				character_event = { id = SoA.504 days = 12 } } # For Audianistics. For Jews it is now handled by Jewish VIET code.
+			}
+		}
+		hidden_tooltip = { # For Jews
+			if = {
+				limit = { NOT = { religion = audianistic } }
+				character_event = { id = passover.0 }
+			}
+		}
 	}
 }
 
@@ -936,6 +947,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_SoA_503
+		hidden_tooltip = { character_event = { id = passover.2 } } # Initiates VIET Passover Flavor Events
 	}
 }
 
@@ -974,6 +986,13 @@ character_event = {
 		piety = 100
 		clr_character_flag = holding_passover
 		clr_character_flag = do_not_disturb
+		clr_character_flag = observing_passover
+		clr_character_flag = passover_eat_chametz
+		clr_character_flag = passover_foreign_jew
+		clr_character_flag = passover_song_of_songs
+		clr_character_flag = passover_matzo_matzo
+		clr_character_flag = passover_bitter_herbs
+		clr_character_flag = passover_zroa
 	}
 }
 
@@ -990,6 +1009,14 @@ character_event = {
 		name = EVTOPTA_SoA_504
 		clr_character_flag = attending_passover
 		clr_character_flag = do_not_disturb
+		clr_character_flag = holding_passover
+		clr_character_flag = observing_passover
+		clr_character_flag = passover_eat_chametz
+		clr_character_flag = passover_foreign_jew
+		clr_character_flag = passover_song_of_songs
+		clr_character_flag = passover_matzo_matzo
+		clr_character_flag = passover_bitter_herbs
+		clr_character_flag = passover_zroa
 	}
 }
 
@@ -1218,6 +1245,13 @@ character_event = {
 		clr_character_flag = do_not_disturb
 		clr_character_flag = holding_passover
 		clr_character_flag = attending_passover
+		clr_character_flag = observing_passover
+		clr_character_flag = passover_eat_chametz
+		clr_character_flag = passover_foreign_jew
+		clr_character_flag = passover_song_of_songs
+		clr_character_flag = passover_matzo_matzo
+		clr_character_flag = passover_bitter_herbs
+		clr_character_flag = passover_zroa
 	}
 }
 

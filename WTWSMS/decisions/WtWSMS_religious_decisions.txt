@@ -12,6 +12,14 @@ decisions = {
 		}
 		
 		allow = {
+			OR = {
+				is_heretic = no
+				AND = {
+					tier = EMPEROR
+					piety = 2000
+					realm_size = 100
+				}
+			}
 			piety = 1000
 			OR = {
 				owns = 774 # Jerusalem
@@ -46,9 +54,7 @@ decisions = {
 			}
 			piety = 1000
 		}
-		
-		
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -74,35 +80,54 @@ decisions = {
 					owns = 774
 				}
 			}
-			has_global_flag = third_temple_built
 			has_landed_title = k_israel
+			custom_tooltip = {
+				text = NEEDSTHIRDTEMPLE
+				hidden_tooltip = {
+					has_global_flag = third_temple_built
+				}
+			}
 		}
 		
 		effect = {
 			activate_title = { title = d_ebionites status = yes }
-			hidden_tooltip = {
-				create_random_priest = {
-					dynasty = none
-					random_traits = yes
-				}
-				new_character = {
-					d_ebionites = {
-						grant_title = PREV
+			custom_tooltip = {
+				text = LORDLIVESZION
+				hidden_tooltip = {
+					create_random_priest = {
+						dynasty = random
+						random_traits = yes
+						female = no
+						historical = yes
 					}
-					wealth = 500
-					opinion = {
-						who = ROOT
-						modifier = opinion_creator_of_rel_heal
+					new_character = {
+						d_ebionites = {
+							grant_title = PREV
+						}
+						wealth = 1000
+						opinion = {
+							who = ROOT
+							modifier = opinion_creator_of_rel_heal
+						}
+						add_trait = house_of_david
+						add_trait = theologian
 					}
-				}
-				
-				religion_authority = {
-					modifier = patriarchy_instituted
-					years = 20
+					
+					religion_authority = {
+						modifier = patriarchy_instituted
+						years = 20
+					}
+					piety = 1000
+					if = {
+						limit = { higher_real_tier_than DUKE }
+						d_ebionites = {
+							defacto_vassal = ROOT
+						}
+					}
 				}
 			}
-			piety = 1000
-		}	
+			narrative_event = { id = spirit.52 }
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -122,7 +147,14 @@ decisions = {
 		}
 		
 		allow = {
-			is_heretic = no
+			OR = {
+				is_heretic = no
+				AND = {
+					tier = EMPEROR
+					piety = 3000
+					realm_size = 200
+				}
+			}
 			piety = 1000
 			OR = {
 				owns = 496 # Constantinople
@@ -158,8 +190,6 @@ decisions = {
 			piety = 1000
 		}
 		
-		
-		
 		ai_will_do = {
 			factor = 1
 		}
@@ -178,7 +208,14 @@ decisions = {
 		}
 		
 		allow = {
-			is_heretic = no
+			OR = {
+				is_heretic = no
+				AND = {
+					tier = EMPEROR
+					piety = 3000
+					realm_size = 200
+				}
+			}
 			piety = 1000
 			OR = {
 				owns = 764 # Antioch
@@ -234,7 +271,14 @@ decisions = {
 		}
 		
 		allow = {
-			is_heretic = no
+			OR = {
+				is_heretic = no
+				AND = {
+					tier = EMPEROR
+					piety = 3000
+					realm_size = 200
+				}
+			}
 			piety = 1000
 			OR = {
 				owns = 333 # Rome
@@ -270,8 +314,6 @@ decisions = {
 			piety = 1000
 		}
 		
-		
-		
 		ai_will_do = {
 			factor = 1
 		}
@@ -290,7 +332,14 @@ decisions = {
 		}
 		
 		allow = {
-			is_heretic = no
+			OR = {
+				is_heretic = no
+				AND = {
+					tier = EMPEROR
+					piety = 3000
+					realm_size = 200
+				}
+			}
 			piety = 1000
 			OR = {
 				owns = 817 # Carthage
@@ -304,18 +353,20 @@ decisions = {
 			activate_title = { title = d_donatism status = yes }
 			hidden_tooltip = {
 				create_random_priest = {
-					dynasty = none
-					random_traits = yes
+					dynasty = random
 				}
 				new_character = {
 					d_donatism = {
 						grant_title = PREV
 					}
-					wealth = 500
+					wealth = 50
 					opinion = {
 						who = ROOT
 						modifier = opinion_creator_of_rel_heal
 					}
+					add_trait = zealous
+					add_trait = temperate
+					add_trait = shrewd
 				}
 				
 				religion_authority = {
@@ -325,6 +376,17 @@ decisions = {
 			}
 			piety = 1000
 			narrative_event = { id = spirit.43 days = 2 }
+			if = {
+				limit = {
+					OR = {
+						tier = KING
+						tier = EMPEROR
+					}
+				}
+				d_donatism = {
+					defacto_vassal = ROOT
+				}
+			}
 		}
 		
 		
@@ -347,13 +409,26 @@ decisions = {
 		}
 		
 		allow = {
-			is_heretic = no
-			piety = 1000
+			OR = {
+				has_landed_title = e_africa
+				has_landed_title = e_saharah
+				AND = {
+					OR = {
+						owns = 333 # Rome
+						any_realm_lord = {
+							owns = 333 # Rome
+						}
+					}
+					is_heritic = no
+				}
+			}
+			piety = 1000	
 			OR = {
 				owns = 333 # Rome
 				any_realm_lord = {
-					owns = 333
+					owns = 333 # Rome
 				}
+				is_heretic_no
 			}
 		}
 		
@@ -382,8 +457,6 @@ decisions = {
 			}
 			piety = 1000
 		}
-		
-		
 		
 		ai_will_do = {
 			factor = 1
@@ -642,7 +715,14 @@ decisions = {
 		}
 		
 		allow = {
-			is_heretic = no
+			OR = {
+				is_heretic = no
+				AND = {
+					tier = EMPEROR
+					piety = 3000
+					realm_size = 200
+				}
+			}
 			piety = 1000
 			OR = {
 				owns = 774 # Jerusalem
@@ -695,13 +775,17 @@ decisions = {
 		}
 		
 		allow = {
+			war = no
 			piety = 1000
 			OR = {
 				trait = mystic
 				learning = 14
 			}
-			primary_title = { higher_tier_than = KING }
-			realm_size = 150
+			primary_title = { higher_real_tier_than = KING }
+			OR = {
+				realm_size = 150
+				is_heretic = no
+			}
 		}
 		
 		effect = {
@@ -765,10 +849,10 @@ decisions = {
 	recruit_donatist_bands = {
 		only_playable = yes
 		is_high_prio = yes
-		is_mercenary = yes
+#		is_mercenary = yes
+
 		potential = {
 			is_playable = yes
-			is_tribal = no
 			is_landed = yes
 			religion = donatism
 			capital_scope = {
@@ -839,9 +923,9 @@ decisions = {
 			always = no #Not used in vanilla
 		}
 		
-		ai_will_do = {
-			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
-		}
+#		ai_will_do = {
+#			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
+#		}
 	}
 	
 	choose_sanamahi_patron_deity = {
@@ -1037,6 +1121,7 @@ decisions = {
 		potential = {
 			religion = mimamsa
 			higher_real_tier_than = KING
+			NOT = { has_global_flag = hindu_autocephaly }
 		}
 
 		allow = {
@@ -1071,6 +1156,7 @@ decisions = {
 					years = 20
 				}
 			}
+			set_global_flag = hindu_autocephaly
 		}
 	}
 	
@@ -1268,13 +1354,18 @@ decisions = {
 		}
 		
 		allow = {
-			piety = 50
+			piety = 500
 			controls_religion = aquileian
+			AND = {
+				year = 698 # When the Aquileian Schism ended in RL
+				NOT = { has_global_flag =  the_aquileian_capture } # If a pagan takes the Church, the captor will not allow it to be disbanded without his permission
+			}
 		}
 		
 		effect = {
 			narrative_event = { id = syn.11 }
 			set_global_flag = end_aquileian_schism
+			d_aquileia_church = { unsafe_destroy_landed_title = THIS }
 		}
 		
 		ai_will_do = {
@@ -1289,7 +1380,7 @@ decisions = {
 				trait = content
 			}
 			modifier = {
-				factor = 0.1
+				factor = 0
 				trait = zealous
 			}
 		}
@@ -1302,19 +1393,67 @@ decisions = {
 			religion_group = pagan_group 
 			has_landed_title = c_aquileia
 			NOT = { has_global_flag = the_aquileian_capture }
-			NOT = { has_global_flag = aquileian_schism }
+			NOT = { has_global_flag = end_aquileian_schism }
 			age = 16
 			prisoner = no
 		}
 		
 		allow = {
 			prestige = 500
+			higher_real_tier_than = COUNT
 		}
 		
 		effect = {
-			religion = aquileian
+			unsafe_religion = aquileian
+			hidden_tooltip = {
+				any_child = {
+					limit = { religion = ROOT }
+					unsafe_religion = aquileian
+				}
+			}
+			hidden_tooltip = {
+				if = { # If the holder is a mercenary band that migrated here, the mercenary title becomes Aquilean too
+					limit = {
+						OR = {
+							primary_title = {
+								is_landless_type_title = yes # For mercenary bands that migrate to convert
+							}
+							primary_title = {
+								mercenary = yes
+							}
+							primary_title = {
+								mercenary = yes
+								is_landless_type_title = yes
+							}
+							is_landless_type_title = yes
+							mercenary = yes
+						}
+						NOT = { controls_religion = yes } # So pagan religious heads don't convert
+						NOT = { holy_order = yes } # So pagan holy orders don't convert
+					}
+					any_mercenary_band = {
+						limit = { holder_scope = { ROOT } }
+						unsafe_religion = aquileian
+					}
+				}
+			}
 			narrative_event = { id = syn.10 tooltip = syn.10.tooltip }
 			set_global_flag = the_aquileian_capture
+			hidden_tooltip = {
+				d_aquileia_church ={
+					culture = ROOT
+				}
+			}
+			if = {
+				limit = { 
+					OR = {
+						tier = KING
+						tier = EMPEROR
+					}
+				d_aquileia_church = {
+					defacto_liege = ROOT
+				}
+			}
 		}
 		
 		ai_will_do = {

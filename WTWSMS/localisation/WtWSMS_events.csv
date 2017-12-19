@@ -474,6 +474,11 @@ syn.11.name;End of the Schism;Fin du schisme;;;;;;;;;;x
 syn.11.desc;The Patriarch of Aquileia has decided to accept the decrees of the Second Council of Constantinople, and rejoin the Church.;Le patriarche d'Aquilée a décidé d'accepter les décrets du second concile de Constantinople, et de rejoindre l'Eglise.;;;;;;;;;;x
 syn.11.a;Very well.;Très bien.;;;;;;;;;;x
 syn.11.b;Interesting...;Intéressant...;;;;;;;;;;x
+syn.12.name;The Monophysites Refuse;;;;;;;;;;;;;x
+syn.12.desc;The Monophysite Patriarch has delivered a stunning rebuke of the consensus of the Chalcedonian Church and the Patriarchs of the East and West. He asserts that the Monophysite Church's stance on the nature of Christ and rejection of the Holy Trinity will stand the test of time.;;;;;;;;;;;;;x
+syn.12.a;We know the truth!;;;;;;;;;;;;;x
+syn.12.b;We disagree with the Holy Reverend.;;;;;;;;;;;;;x
+syn.12.TOOLTIP;The Chalcedonians' arguments against your Nontrinitarian doctrines are very compelling. You decide to rejoin the true Church.;;;;;;;;;;;;;x
 ###### Vikings events;;;;;;;;;;;;x
 EVTDESC_TOG_402620;I trust you are in good health, [Root.GetTitledFirstName]. My name is Halmsaurg, and I have taken it upon myself to create a brotherhood of warriors devoted to Loki. While sailing along the coast of Trondelag, I discovered the perfect site to build our stronghold and I would ask your permission to settle this land.\n\nSigned,\n[From.GetTitledName].;Je crois que vous êtes en bonne santé, [Root.GetTitledFirstName]. Mon nom est Halmsaurg, et j'ai pris sur moi pour créer une confrérie de guerriers consacrés à Loki. Pendant la navigation le long de la côte de Trondelag, j'ai découvert le site idéal pour construire notre forteresse et je demande votre permission pour coloniser cette terre.\n\nSigné,\n[From.GetTitledName].;;;;;;;;;;x
 EVTOPTC_TOG_400120;I don't want you barbarians in my land!;Je ne veux pas de vous, barbares, dans mon pays!;;;;;;;;;;x
@@ -486,7 +491,7 @@ EVTOPTA_TOG_400320;Praise the Messengers!;Bénissez les messagers!;;;;;;;;;;x
 EVTOPTB_TOG_400320;Are there no end to the barbarians?;N'existe-t-il pas de fin aux barbares?;;;;;;;;;;x
 ###### Novgorod events;;;;;;;;;;;;x
 EVTDESC_GOG_2002;The people of the Principality of Novgorod are forming unique customs and manners, the residents of the principality can now be considered culturally unique.;Les habitants de la Principauté de Novgorod se forment à des us et coutumes uniques, les habitants de la principauté peuvent désormais être considérés comme culturellement unique.;;;;;;;;;;x
-EVTOPTA_GOG_2002;But what of Russian values?;Mais quid des valeurs russes?;;;;;;;;;;x
+EVTOPTA_GOG_2002;What of Russian values?;Mais quid des valeurs russes?;;;;;;;;;;x
 EVTOPTB_GOG_2002;They are coming around.;Ils viennent d'autour.;;;;;;;;;;x
 ###### Monothelite events;;;;;;;;;;;;x
 EVTNAMELoR.2100;The Elitists Triumphant;Les élites triomphantes;;;;;;;;;;x
