@@ -1564,7 +1564,7 @@ character_event = {
 		trait = house_of_david
 		religion = jewish
 		has_global_flag = VIET_end_of_exilarch
-		female = no
+		is_female = no
 		OR = {
 			AND = {
 				diplomacy = 15
@@ -1640,7 +1640,7 @@ character_event = {
 	desc = israel.100.desc
 	picture = GFX_evt_holy_jerusalem
 
-	is_triggered_only = yes
+#	is_triggered_only = yes
 
 	only_rulers = yes
 	min_age = 16

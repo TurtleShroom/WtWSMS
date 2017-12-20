@@ -572,7 +572,7 @@ character_event = {
 			trait = possessed
 			trait = homosexual
 			trait = hedonist
-			trait = cannibal
+			trait = cannibal_trait
 		}
 	}
 

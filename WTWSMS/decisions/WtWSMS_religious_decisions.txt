@@ -428,7 +428,7 @@ decisions = {
 				any_realm_lord = {
 					owns = 333 # Rome
 				}
-				is_heretic_no
+				is_heretic = no
 			}
 		}
 		

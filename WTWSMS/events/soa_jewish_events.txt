@@ -1,7 +1,7 @@
 ###################################
 #
 # THE SONS OF ABRAHAM 
-# - Jewish Events
+# Jewish Events
 #
 ###################################
 
@@ -860,7 +860,7 @@ character_event = {
 		hidden_tooltip = {
 			if = {
 				limit = { religion = audianistic }
-				character_event = { id = SoA.504 days = 12 } } # For Audianistics. For Jews it is now handled by Jewish VIET code.
+				character_event = { id = SoA.504 days = 12 } # For Audianistics. For Jews, it is now handled by Jewish VIET code.
 			}
 		}
 		hidden_tooltip = { # For Jews

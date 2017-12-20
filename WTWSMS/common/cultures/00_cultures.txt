@@ -3820,10 +3820,10 @@ torrean_group = {
 }
 
 vasconic = {
-	graphical_cultures = { occitangfx }
+	graphical_cultures = { occitangfx southerngfx }
 
 	basque = {
-		graphical_cultures = { occitangfx }
+		graphical_cultures = { occitangfx southerngfx }
 		
 		color = { 0.2 0.3 0.2 }
 
@@ -3835,6 +3835,7 @@ vasconic = {
 			Aines_Agnes Aldontza_Aldonza Ana_Anna Anderkina Andregoto Antsa Auro Belaskita Berengaria Blanka_Blanche Eilo Elbira Elida_Hilda Elisabet_Elisabeth Eliza Emili_Emily Endulcia_Douce Ermesinda_Ermesinda Estefania_Stephania Fakilo Fronilde_Fronilde Guntroda
 			Joana_Joan Konstantzia_Constance Lopa_Lopa Maior_Mayor Margarita_Margaret Maria_Maria Markesa Mentzia_Mencia Munia Nuña Oneka Plazentzia_Plaisance Tekla Teresa_Teresa Toda_Toda Urraka_Urraca Ximena
 		}
+		
 		from_dynasty_prefix = "de "
 		
 		male_patronym = "ez"
@@ -3848,11 +3849,13 @@ vasconic = {
 		pat_grm_name_chance = 55
 		mat_grm_name_chance = 15
 		mother_name_chance = 20
+		
+		feminist = yes # Basque feature in Vanilla rendition
 
 		modifier = default_culture_modifier
 	}	
 	aquitani = { # Migrational Era Aquitanians 
-		graphical_cultures = { occitangfx }
+		graphical_cultures = { occitangfx southerngfx }
 		
 		color = { 0.7 0.7 0.3 }
 		
@@ -3863,13 +3866,15 @@ vasconic = {
 		female_names = {
 			Anderazu Andere Arai Araica Balcca Bihoxa Bita Eduntze Emazteona Enedina Erlea Hahan Iluna Maiora Mari Maite Maura Milia Munnoza Munnata Monnia Munina Nescato Oneca Ocanda Uenega Ussoa Curia Nabarra
 		}
+		
+		feminist = yes # Basque feature in Vanilla rendition
 
 		founder_named_dynasties = yes
 		
 		modifier = default_culture_modifier
 	}
 	vasconian = { # Unused, Vascones
-		graphical_cultures = { occitangfx }
+		graphical_cultures = { occitangfx southerngfx }
 		
 		color = { 0.7 0.7 0.3 }
 		
@@ -3882,11 +3887,13 @@ vasconic = {
 		}
 		
 		founder_named_dynasties = yes
+		
+		feminist = yes # Basque feature in Vanilla rendition
 
 		modifier = default_culture_modifier
 	}
 	paleo_iberian = { # Unused, Ancient Iberians
-		graphical_cultures = { occitangfx }
+		graphical_cultures = { occitangfx southerngfx }
 
 		color = { 0.7 0.5 0.7 }
 		male_names = {
@@ -3914,6 +3921,8 @@ vasconic = {
 		mother_name_chance = 20
 		
 		founder_named_dynasties = yes
+		
+		feminist = yes # Basque feature in Vanilla rendition
 		
 		modifier = default_culture_modifier
 	}
@@ -4745,7 +4754,7 @@ byzantine = {
 		mother_name_chance = 0
 		
 		disinherit_from_blinding = yes
-		
+		feminist = yes
 		founder_named_dynasties = yes
 
 		allow_looting = yes
@@ -6694,7 +6703,7 @@ sinic = { # Chinese Group
 	graphical_cultures = { chinesegfx mongolgfx indiangfx muslimgfx }
 
 	xiongnu = {
-		graphical_cultures = { mongolgfx } #arabicgfx
+		graphical_cultures = { mongolgfx chinesegfx }
 		horde = yes
 
 		color = { 0.6 0.6 0.0 }
@@ -6714,17 +6723,19 @@ sinic = { # Chinese Group
 	}
 	han = {
 		graphical_cultures = { chinesegfx mongolgfx indiangfx muslimgfx }
-		secondary_event_pictures = bedouin_arabic
+		secondary_event_pictures = bengali
+		
+		parent = chinese
 		
 		dynasty_name_first = yes
 		
 		color = { 211 44 44 }
 
 		male_names = {
-			Ji Yu Deyi Wuji Xuanling Ruhui Jing Yanbo Shilian Shiji Xingcheng Zhining Suiliang Rengui Zhide Liangsi Daijia Chengsi Changliang Qinwang Jishan Xiujing Yuanzhong Chengqi Shi Ziyi Maozhen Wei Gongren Shidao Wenben Zhou Jifu Shi Dunli Yifu Zhenglun Jingzong Xiangdao Dunxin Liben Chujun Jingxuan Yuanchao Zhiwen Yan Weidao Judao Wenwei Zhaode Sansi Renjie Qiao Zaisi Xuanwei Shuji Anshi Chuke Zhizhong Shaojing Sili Chong Shuo Jiazhen Song Jiuling Linfu Guozhong Yuan Fuguo Huaiguang Sheng Jian Hong Minzhong Zhaodu Wenjing Kang Shuda Yuanji Gui Zheng Wenjie Yuan Maojiang Yushi Dexuan Luo Wenguan Chujun Jingxian Dezhen Siqian Xuantong Guangfu Youning Wuzi Qinke Tong Shou Hui Yanfan Huai Juyuan Chuna Zhizhong Rizhi Youqiu Huaizhen Xi Zhigu Huaishen Qianyao Guangting Yaoqin Xianke Shizhi Xilie Jiansu Jinqin Jin Sui Duo Mei Congdang Yanruo Yin Yan Zhou Junji Yaxiang Chengqing Yi Yanwei Chuyue Hongwu Anqi Renben Heng Yiyan Zhizhou Da'an Daiju Hongmin Weizhi Benli Xiaojie Jiongxiu Dan Jianzhi Huaiyuan Qinming Renyuan Zhigu Xiangxian Na Lin Zhengyi Jingchen Junliang Cha Fangzhi Lübing Youyi Sihui Fuyuan Zhigu Xingben Zhirou Youdao Zhihong Shenji Yuanzong Yuansu Rui Juyuan Yuanfang Shifang Jingquan Yunyuan Yuanheng Fangqing Daoguang Yuanchong Xu Jingze Rong Weiqian Yanzhao Jiafu Yuanhong Xilie Guan Mian Ting Qi Kui Hua Zunqing Zai Hongjian Gun Zhongchen Youfu Lin Yi Bo Congyi Gongfu Yanshang Zao Huang Hun Bi Can Zhi Dan Mai Sun Zongru Yuqing Ying Xunyu Zhiyi Huangshang Yuanheng Di Pan Deyu Jiang Hongjin Guanzhi Fengji Qun Yong Yijian Fu Wenchang Yuanying Sengru Chen Yizhi Chuhou Zongmin Shenxi Guyan Yuanyu Xun Tan Yixing Sifu Shen Rangyi Su Shang Minzhong Yuanshi Guicong Tao Mo Lang Shenyou Zhuan Shenquan Xian Shou Que Shang Zhan Ye Wei Che Gou Changtu Rangneng Yanchang Xisheng Chuan Pu Wo She Riyong Renshi Guangqi Yanjing Dewei Shouyi Longji Jie Shouli Yuanzhen Xinfu Yun
+			Anshi Bai Baiqi Baisha Baiwen Bao Baoheng Baorong Baoxu Bei Bi Bian Biao Bida Bin Bing Bo Bogong Bogui Boqing Bu Can Caolu Chang Changben Changyuan Chao Che Chen Cheng Chengda Chengxun Chengyou Chong Chonggao Chonggui Chongji Chongjin Chongmei Chongrui Chongwang Chongxin Chongxuan Chongyang Chongyi Chongying Chongyu Chuanliao Chuansu Chun Chundao Chuyun Ci Cishan Ciwang Cong Congdang Conghou Conghui Congjia Congke Congqian Congrang Congrong Congshen Congyi Congyu Cui Cunxu Da Dao Daolong Dashen Dexing Deyuan Dezhao Di Dong Duo Fang Fangde Fei Fen Fengliu Fu Fude Gang Gao Gaochi Gaosui Gaoxi Gaoxu Gong Gongfu Gongmao Gonzao Gou Guan Guang Guangbi Guangda Guangmei Guangqi Guangyi Gui Guitu Hao He Heng Hongbi Hongcao Hongchang Hongchu Hongdao Hongdu Hongfan Honggao Hongji Hongjian Hongmiao Hongwei Hongwo Hongxi Hongxin Hongxuan Hongya Hongyang Hongyi Hongyin Hongyou Hongze Hongzhao Hongzheng Hongzhuan Hongzong Hongzun Hongzuo Hong’an Honzahn Houcong Houwei Houzhao Houzhu Hu Hua Huaide Huan Huang Hui Huizu Ji Jian Jianchun Jianfeng Jianji Jianjun Jianlin Jianpei Jianshen Jianshi Jianshu Jianze Jianzhi Jichan Jichong Jie Jigong Jiji Jiming Jin Jing Jingda Jingdi Jinghua Jingqian Jingsui Jingtang Jingtong Jingxuan Jiong Jipeng Jirong Jisong Jitao Jitong Jiushao Jixing Jiyan Jiyao Jiyu Jiyuan Jizong Ji’en Jun Junshi Juren Juzheng Kan Keda Kefu Kerang Keyong Kuan Kuangji Kuangmei Kuangyi Kuangyin Kuangzan Kui Kun Kuo Lian Liang Lin Linghua Lingwu Lishan Liu Longyang Lu Luan Lun Luzhi Mai Maozhen Meng Mengqi Mengyan Mi Min Mingcheng Minzhai Minzhong Miyuan Mo Naiyou Nan Pian Pu Qi Qian Qiaoxin Qilao Qingge Qingtian Qiu Qiyu Qu Quan Quanzhong Qubo Que Rangneng Rencao Rende Renyi Renyu Renzan Renzhi Rong Ruoshui Shao Shaoyong Sheng Shenquan Shenzhi Shi Shifan Shihuang Shinan Shiqi Shizhong Shou Shouli Shu Shuang Shunfu Sicheng Sidao Side Siqi Sixun Song Songnian Songrui Su Sui Sun Taiyi Tan Tang Tao Ti Tian Tianfu Tianxiang Tinggui Tingjian Tingmei Tingxiang Tingxiu Tingyin Tingzhi Tong Tuan Tuozhou Weixian Weiyo Weiyong Weizhong Wen Wengui Wenji Wenkui Wenkun Wenlong Wenwei Wo Wuyi Xi Xian Xiang Xianzhang Xichong Xifan Xigao Xiguan Xiguang Xijun Xilang Xin Xineng Xinfu Xingmi Xingmin Xiongying Xisheng Xiu Xiufu Xiwang Xiyin Xizhan Xizhao Xizhen Xizhi Xi’e Xu Xuan Xun Yan Yanbao Yanbin Yanchang Yanchen Yanfeng Yangming Yangui Yanhan Yanhui Yanjun Yanmei Yanruo Yanshou Yanwang Yanwu Yanxi Yanzhang Yanzhao Yanzheng Yanzong Yaoshu Ye Yi Yifan Yige Yiju Yin Ying Yinggong Yingxu Yiqing Yiye Yiyong Yizhong Yong Yongde You Youbin Yougong Yougui Youheng Youhui Youji Youkai Youlun Youqi Youqing Yourang Youshu Youshun Youtang Youwen Youyong Youyu Youyuan Youyun Youzhang Youzhen Youzi Yu Yuan Yuancheng Yuandai Yuanfen Yuang Yuangjie Yuanliao Yuanming Yuanpu Yuanwo Yuanxi Yuanxiang Yuanyan Yuanyi Yuanzhang Yuanzuo Yue Yun Yunching Yunjian Yunrang Yuntong Yunwen Yunxi Yuqun Yurui Zaicheng Zanhua Zao Ze Zeduan Zengbo Zengshou Zhan Zhangang Zhangyuan Zhanji Zhankai Zhanshan Zhanxun Zhanyan Zhanyin Zhanyong Zhanyu Zhaodu Zhaowei Zhaozuo Zhen Zhengchang Zhengyan Zhewei Zhi Zhigao Zhijin Zhixiang Zhiyuan Zhong Zhongde Zhongji Zhongqing Zhongxuan Zhongyan Zhu Zhuan Zi Zicheng Zisheng Zonghui Zongjin Zongquan Zongrang Zongxun Zunwu Zuo Zuqian Ji Yu Deyi Wuji Xuanling Ruhui Jing Yanbo Shilian Shiji Xingcheng Zhining Suiliang Rengui Zhide Liangsi Daijia Chengsi Changliang Qinwang Jishan Xiujing Yuanzhong Chengqi Shi Ziyi Maozhen Wei Gongren Shidao Wenben Zhou Jifu Shi Dunli Yifu Zhenglun Jingzong Xiangdao Dunxin Liben Chujun Jingxuan Yuanchao Zhiwen Yan Weidao Judao Wenwei Zhaode Sansi Renjie Qiao Zaisi Xuanwei Shuji Anshi Chuke Zhizhong Shaojing Sili Chong Shuo Jiazhen Song Jiuling Linfu Guozhong Yuan Fuguo Huaiguang Sheng Jian Hong Minzhong Zhaodu Wenjing Kang Shuda Yuanji Gui Zheng Wenjie Yuan Maojiang Yushi Dexuan Luo Wenguan Chujun Jingxian Dezhen Siqian Xuantong Guangfu Youning Wuzi Qinke Tong Shou Hui Yanfan Huai Juyuan Chuna Zhizhong Rizhi Youqiu Huaizhen Xi Zhigu Huaishen Qianyao Guangting Yaoqin Xianke Shizhi Xilie Jiansu Jinqin Jin Sui Duo Mei Congdang Yanruo Yin Yan Zhou Junji Yaxiang Chengqing Yi Yanwei Chuyue Hongwu Anqi Renben Heng Yiyan Zhizhou Da'an Daiju Hongmin Weizhi Benli Xiaojie Jiongxiu Dan Jianzhi Huaiyuan Qinming Renyuan Zhigu Xiangxian Na Lin Zhengyi Jingchen Junliang Cha Fangzhi Lübing Youyi Sihui Fuyuan Zhigu Xingben Zhirou Youdao Zhihong Shenji Yuanzong Yuansu Rui Juyuan Yuanfang Shifang Jingquan Yunyuan Yuanheng Fangqing Daoguang Yuanchong Xu Jingze Rong Weiqian Yanzhao Jiafu Yuanhong Xilie Guan Mian Ting Qi Kui Hua Zunqing Zai Hongjian Gun Zhongchen Youfu Lin Yi Bo Congyi Gongfu Yanshang Zao Huang Hun Bi Can Zhi Dan Mai Sun Zongru Yuqing Ying Xunyu Zhiyi Huangshang Yuanheng Di Pan Deyu Jiang Hongjin Guanzhi Fengji Qun Yong Yijian Fu Wenchang Yuanying Sengru Chen Yizhi Chuhou Zongmin Shenxi Guyan Yuanyu Xun Tan Yixing Sifu Shen Rangyi Su Shang Minzhong Yuanshi Guicong Tao Mo Lang Shenyou Zhuan Shenquan Xian Shou Que Shang Zhan Ye Wei Che Gou Changtu Rangneng Yanchang Xisheng Chuan Pu Wo She Riyong Renshi Guangqi Yanjing Dewei Shouyi Longji Jie Shouli Yuanzhen Xinfu Yun
 		}
 		female_names = {
-			Anzong Wenshou Aiqin Que Daoan Maoying Qigui Rongji Huinan Yuying Yingwu Xianyuan Lingyuan Wanying Yingmei Zhenfeng Miaodeng Farong Yuzhu Jiangui Fanjing Daozheng Zhirong Huizhao Shuyi Shuyuan Jieyu Ronghua Zhaoyi Lanying Baoming Jingying Shaoming Huiduan Lingqu Yu'er Nizi Jinghui Shunhua Shangrou Hui Lingguang Lingying Lingbing Zhaopei Yao'er Miaorong Shaoji Jingyan Lihua Wuhua Xianji Shouji Zhaorong Ying Xianzi Puxian Lian Mingxiang Yuanhua Tong'e Mingyue Zhaojun "Zu'e" Yuguang Zuqi Zhonghua Yuyi Changyi Huanghua Xiaolian "E'zi" Manyue Yueyi Yueshang Qieluo Lingji Zhou Shuzhen Gui Hui Huitong "Wan'er" Shun Fangmei Zhenyi Caiping Yuhuan Qiniang Qiu Qiuniang Jianrong Chongyan Zhenniang Yuniang Fujin Shiguang "E'huang" "Nüying" Xinyue Hanyue Feishan Shunxuan Taihua Dexiu Jinfeng Chunyan Qiongxian E Taotao Bingyi Yunu Zuimei Chunluo Fengniang Daoqing Zhuozhen Yan Yanyan "Shi'er" "Xian'e" Nanxian Shanxiang Ai Shanli Jinluan "Xi'er" "Zhen'er" Wanyi Mantang Xijie Baozhu Xiuying Zhongyang Ruoxian Ruozhao Ruoxin Ruoxun Ruolun Miaozhen Mao'er Daoyi Niangzi Saihua Guiying Shengqiong Chaochao Fu Zhaoyun Rouniang Rounu Yuniang Biniang Rui Jinhua Guilan Shanwei Suyue Yunxian Nenniang Xiang Zhenli Cuiqiao Zhihui Lingxuan Jicong Shuzhu Yujing Yuanyuan Xiaowan Hengbo Mei Xiangjun Rushi Xianglan Ruying Yuhua Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen "Xiao'e" Xiaoying Xiaoyuan Xiaoji Xiuui "Nüjie" Qingyu Zhichong "Yi'an" Youwu Yupan Jinnu Jinluo Fujin "Hu'er" Jinxian Qiaoyun Sanjin Xiangyun Zhuzhu "Jin'er" Chuanzhu Jinzhu Xiaojin Huimei Miaoyu Quyi Siniang Sanniang "A'wu" Lizhi Jing Shu Lingyue Xianhui Jijiang "Guo'er" Huawan Huazhuang Chang Dehua Panpan Caichun Wenxiu Hong Honghong "A'man" Huimei Shuozhen Youwei Huilan Lize Mingda Sujie Yiyang Hua Yuhuan Shi Diaochan Zheng Liu Kangyi Feiyan Hou Jiangnu Na Shengtong Zhi
+			Anzong Wenshou Aiqin Que Daoan Maoying Qigui Rongji Huinan Yuying Yingwu Xianyuan Lingyuan Wanying Yingmei Zhenfeng Miaodeng Farong Yuzhu Jiangui Fanjing Daozheng Zhirong Huizhao Shuyi Shuyuan Jieyu Ronghua Zhaoyi Lanying Baoming Jingying Shaoming Huiduan Lingqu Yu'er Nizi Jinghui Shunhua Shangrou Hui Lingguang Lingying Lingbing Zhaopei Yao'er Miaorong Shaoji Jingyan Lihua Wuhua Xianji Shouji Zhaorong Ying Xianzi Puxian Lian Mingxiang Yuanhua Tong'e Mingyue Zhaojun "Zu'e" Yuguang Zuqi Zhonghua Yuyi Changyi Huanghua Xiaolian "E'zi" Manyue Yueyi Yueshang Qieluo Lingji Zhou Shuzhen Gui Hui Huitong "Wan'er" Shun Fangmei Zhenyi Caiping Yuhuan Qiniang Qiu Qiuniang Jianrong Chongyan Zhenniang Yuniang Fujin Shiguang "E'huang" "Nüying" Xinyue Hanyue Feishan Shunxuan Taihua Dexiu Jinfeng Chunyan Qiongxian E Taotao Bingyi Yunu Zuimei Chunluo Fengniang Daoqing Zhuozhen Yan Yanyan "Shi'er" "Xian'e" Nanxian Shanxiang Ai Shanli Jinluan "Xi'er" "Zhen'er" Wanyi Mantang Xijie Baozhu Xiuying Zhongyang Ruoxian Ruozhao Ruoxin Ruoxun Ruolun Miaozhen Mao'er Daoyi Niangzi Saihua Guiying Shengqiong Chaochao Fu Zhaoyun Rouniang Rounu Yuniang Biniang Rui Jinhua Guilan Shanwei Suyue Yunxian Nenniang Xiang Zhenli Cuiqiao Zhihui Lingxuan Jicong Shuzhu Yujing Yuanyuan Xiaowan Hengbo Mei Xiangjun Rushi Xianglan Ruying Yuhua Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen "Xiao'e" Xiaoying Xiaoyuan Xiaoji Xiuui "Nüjie" Qingyu Zhichong "Yi'an" Youwu Yupan Jinnu Jinluo Fujin "Hu'er" Jinxian Qiaoyun Sanjin Xiangyun Zhuzhu "Jin'er" Chuanzhu Jinzhu Xiaojin Huimei Miaoyu Quyi Siniang Sanniang "A'wu" Lizhi Jing Shu Lingyue Xianhui Jijiang "Guo'er" Huawan Huazhuang Chang Dehua Panpan Caichun Wenxiu Hong Honghong "A'man" Huimei Shuozhen Youwei Huilan Lize Mingda Sujie Yiyang Hua Yuhuan Shi Diaochan Zheng Liu Kangyi Feiyan Hou Ancheng Anhua Anqing Anyang Baoqing Cailuan Chadan Chang Changde Changle Changning Changtai Changyuan Chen Chonge Chonghua Chongning Chouzhen Chu Chuiping Chuniang Chunjie Chun’an Cuibing Cuiluan Cuiping Daming Daoqing Daosheng Da’er Dehui Deng Deqing Derong Deyuan Dezhen De’an Diaochan Diaogei Doupo Du Duanduan E Fan Fansu Fanxi Feiyan Fengcheng Fengjie Fomu Fonu Fu Fujin Fuqing Guang Guangde Gui Gun Gu’an Hanshan Hanyue Hongfu Honghong Hong’er Hua Huaiqing Huarui Hui Huiming Huiyuan Jialian Jianchang Jiangdu Jiashan Jiaxiang Jiaxing Jiehao Jieyu Jinfeng Jing Jingchong Jinglan Jingshun Jinhua Jinlian Jinluan Jiongying Kui Lan Leping Lian Lin’an Longqing Lu Luanluan Lun Mei Meifang Meiping Meizi Miaofeng Miaoniang Miaoqu Miaoyin Mu Mulan Mushun Nankang Nanping Neiming Ning Panpan Pingyang Pingyuan Pukang Puning Pu’an Qi Qian Qing Qinghe Qingnu Qingzhao Qiongying Qixiang Ranmei Renhe Renshou Rong Roujia Runing Ruozhao Ruyang Ruyi Saijin Sai’er Shang Shangrao Shen Sheng Shengtang Shiguang Shishi Shouchun Shuduan Shun Shunde Shuzen Shuzhen Shuzheng Su Suizhen Taihe Taikang Tang Tangqiao Tangxing Tao Taotao Tongchang Wa Wan’er Wenchen Wuniang Xian Xiangjun Xiangling Xianning Xianxian Xianyou Xiaochengjing Xiaoman Xiaoshu Xiaowan Xiaoxiao Xindu Xingguo Xinxing Xinyue Xin’an Xiumei Xiurong Xi’er Xu Xuanji Xueying Xunyang Yang Yanping Yanshu Yanxiu Yao Yaoniang Yaose Yaoying Ye Yi Yichang Yihua Yihui Yilun Yin Yincheng Yingying Yinshen Yinzhe Yishun Yixing Yi’an Yongkang Yongming Yongning Yongping Yongqing Yongshou Yongxing Yong’an Youcheng Yu Yuantong Yuanxiao Yuanzhen Yue Yuhuan Yulien Yuluo Yuniang Yunying Yushan Zhangzeng Zhao Zhaobi Zhaoqi Zhaoyi Zhaoyun Zhen Zhending Zhenning Zhenyi Zhen’er Zhouchen Zhu Zhunhua Zhuodiu Zhuzhu Zihe Ziye Ziyi Jiangnu Na Shengtong Zhi
 		}
 		
 		dynasty_title_names = no
@@ -6733,13 +6744,15 @@ sinic = { # Chinese Group
 		
 		modifier = default_culture_modifier
 	}
-#Some of these cultures are unused, but were added for fun nevertheless - use at your own risk
+
+	# Some of these cultures are unused, but were added for fun nevertheless - use at your own risk
 	chinese = {
 		graphical_cultures = { chinesegfx mongolgfx muslimgfx }
-
+ 
 		color = { 0.99 0.99 0.01 }
 	   
 		used_for_random = no
+		dynasty_name_first = yes
 
 		male_names = {
 			Anshi Bai Baiqi Baisha Baiwen Bao Baoheng Baorong Baoxu Bei Bi Bian Biao Bida Bin Bing Bo Bogong Bogui Boqing Bu Can Caolu Chang Changben Changyuan 
@@ -6797,7 +6810,7 @@ sinic = { # Chinese Group
     }
 	
 	vietnamese = {
-		graphical_cultures = { chinesegfx mongolgfx muslimgfx }
+		graphical_cultures = { mongolgfx chinesegfx muslimgfx }
 		
 		color = { 0.9 0.9 0.15 }
 		
@@ -6840,11 +6853,13 @@ sinic = { # Chinese Group
     }
 	
 	korean = {
-		graphical_cultures = { chinesegfx mongolgfx muslimgfx }
+		graphical_cultures = { chinesegfx turkishgfx mongolgfx }
 		
 		color = { 0.95 0.85 0.1 }
 		
 		used_for_random = no
+
+		dynasty_name_first = yes
 		
 		male_names = {
 			Bal Bang-Gwa Bang-Won Bon-Hwa Chi Chin-Hae Chin-Hwa Chin-Mae Chul-Moo Chung-Hee Chung-Ho Dak-Ho Do Doh Dong-Sun Dong-Yul Duck-Hwan Duck-Young Geon Geum Gong Gyeoggu Gyun Gwang Hak-Kun Heum Ho Hon Hong-Rip Hong-Wi Hyang Hyeol Hyeong Hwan Hwang Hwi 
@@ -6875,7 +6890,7 @@ sinic = { # Chinese Group
 	}
 	
 	japanese = {
-		graphical_cultures = { chinesegfx mongolgfx muslimgfx }
+		graphical_cultures = { chinesegfx turkishgfx mongolgfx }
 		
 		color = { 0.85 0.85 0.01 }
 		
@@ -10342,21 +10357,14 @@ israelite = {
 		color = { 0.6 0.3 0.6 }
 
 		male_names = {
-			Abba Abbaye Acha Achai Achunai Aharon Alechsandri Ammi Amram Amunah Ashi Asher Avomai Avraham Azariah Baboi Baruch
-			Bibai Binyamin Boaz Bustenai Chanan Chananel Chaninai Chanoch Chaim Chayim Chelbo Chisdai Chiyya Chizkiyah Chofni Chushiel
-			Daniel David Dimi Dodai Dudai Efrayim Eina Elazar Elchanan Eldad Eliezer Elyakim Gedalyah Gershom Ghayyat Giat Giza Hillel 
-			Hila Isaac Ivomai Kafnai Kahana Kalonymos Levi Kiyomi Machir Malcha Mar Mari Matiyahu Meir Menechem Menashe Mesharsheya Meshulam 
-			Mevasser Mishael Mordechai Moshe Nachman Nachshon Nasan Natan Natroi Natronai Nechemiah Nehilai Nesanel Nissim Paltoi Pirkoi 
-			Peter Rava Ravai Ravi Ravya Reuven Rivai Saadiah Sechok Shabsai Shalom Shanoi Shemaryah Sherira Sheshna Shila Shimon Shinoi 
-			Shlomo Shmuel Sorgo Sulam Tachlifa Tamar Tzadok Tzemach Uri Yaakov Yachya Yechiel Yehudah Yehudai Yehoshua Yeshayah 
-			Yisrael Yitzchak Yoel Yosef Yoshiah Yosi Yuda Zakkai Zelekman Zuiskind
+			Abba Abbaye Acha Achai Achunai Aharon Alechsandri Ammi Amram Amunah Ashi Asher Avomai Avraham Azariah Baboi Baruch Bibai Binyamin Boaz Bustenai Chanan Chananel Chaninai Chanoch Chaim Chayim Chelbo Chisdai Chiyya Chizkiyah Chofni Chushiel Daniel David Dimi Dodai Dudai Efrayim Eina Elazar Elchanan Eldad Eliezer Elyakim Gedalyah Gershom Ghayyat Giat Giza Hillel Hila Isaac Ivomai Kafnai Kahana Kalonymos Levi Kiyomi Machir Malcha Mar Mari Matiyahu Meir Menechem Menashe Mesharsheya Meshulam Mevasser Mishael Mordechai Moshe Nachman Nachshon Nasan Natan Natroi Natronai Nechemiah Nehilai Nesanel Nissim Paltoi Pirkoi Peter Rava Ravai Ravi Ravya Reuven Rivai Saadiah Sechok Shabsai Shalom Shanoi Shemaryah Sherira Sheshna Shila Shimon Shinoi Shlomo Shmuel Sorgo Sulam Tachlifa Tamar Tzadok Tzemach Uri Yaakov Yachya Yechiel Yehudah Yehudai Yehoshua Yeshayah Yisrael Yitzchak Yoel Yosef Yoshiah Yosi Yuda Zakkai Zelekman Zuiskind Adarnase_Atrnerseh Aghsartan Aleksandre_Alexander Andronik_Andronicus Anzori Archili Ashot_Ashot Bagrat Bakur_Bagour Davit_David Demetre_Demetrius Demna Djavakhi Erekle_Heracles Gabrieli_Gabriel Gagiki_Gagik Giorgi_George Grigoli_Gregory Guaram_Guaram Gubaz Gurgen_Lupo Iese Ioane_John Ishkhanik_Ishkhan Iveri Jarji Kaikhosro_Keykhosrau Kakhi Koba Konstantine_Constantine Kvarkvare Kvirike Levan_Leo Luarsab Malkhazi_Malkhas Mamia Merab Mikheil_Michael Mukhran Nerse_Narses Nikoloz_Nicholas Okhropir Orbeli Padla Samoeli_Samuel Shanshe_Shahanshah Shota Simon_Simon Stepanoz_Stephen Sumbat_Smbat Teimuraz_Teimuraz Tornike_Tornik Ushisha Vache Vakhtang_Vakhtank Zurab Zviad
 		}
 		female_names = {
-			Beila Belet Chana Doltza Esther Guta Guthela Madrona Matrona Minna Pultzelina Rachel Rivkah Saris Scolaster
-			Shluida Shoinlin Shonlin Tziporah Yehudis Yeintil
+			Beila Belet Chana Doltza Esther Guta Guthela Madrona Matrona Minna Pultzelina Rachel Rivkah Saris Scolaster Shluida Shoinlin Shonlin Tziporah Yehudis Yeintil Ana_Anna Baia Bedisa Borena Chiora Chito Dali Dedika Duda Dzabuli Elene_Helen Eliso Endzela Gogutsa Gulchara Guliko Gulisa Gulvardi Guranduht_Gorandukht Gvantsa Ia Judjuna	Kekela Ketevan_Catherine Lamara Lamzira Lela Mariami_Mariam Mathiko Mthvarisa Mzekhar Natia Nino Rusudan Sanatha Shorena Shukhia Suliko Tamari_Tamar Taplo Tinatini Tsiala Vardo
 		}
 		
 		from_dynasty_prefix = "éz "
+		from_dynasty_suffix = "ite"
 		male_patronym = "gede"
 		female_patronym = "duhder"
 		prefix = no
@@ -10376,7 +10384,7 @@ israelite = {
 			Mevasser Mishael Mordechai Moshe Nachman Nachshon Nasan Natan Natroi Natronai Nechemiah Nehilai Nesanel Nissim Paltoi Pirkoi 
 			Peter Rava Ravai Ravi Ravya Reuven Rivai Saadiah Sechok Shabsai Shalom Shanoi Shemaryah Sherira Sheshna Shila Shimon Shinoi 
 			Shlomo Shmuel Sorgo Sulam Tachlifa Tamar Tzadok Tzemach Uri Yaakov Yachya Yechiel Yehudah Yehudai Yehoshua Yeshayah
-			Yisrael Yitzchak Yoel Yosef Yoshiah Yosi Yuda Zakkai Zelekman Zuiskind
+			Yisrael Yitzchak Yoel Yosef_Joseph Yoshiah_Joshua Yosi Yuda Zakkai Zelekman Zuiskind
 		}
 		female_names = {
 			Beila Belet Chana Doltza Esther Guta Guthela Madrona Matrona Minna Pultzelina Rachel Rivkah Saris Scolaster
@@ -10390,42 +10398,29 @@ israelite = {
 	hebrew = { 
 		graphical_cultures = { muslimgfx } #arabicgfx
 		
-		color = { 0.4 0.3 0.6 }
+		color = { 65 105 255 }
 
 		male_names = {
 			Abris_Abrisius Adam_Adam Adi Adina_Adina Adir Agam Aharon_Aaron Akiba_Jacob Akiva_Jacob Almog Alon_Alon Amichai Amir_Amir Amit Amnon Amos Anat Ari Arieh Ariel Arik Aryeh Asa_Asa Asaf Asher_Asher
 			Avi Avidan Avihu Aviram Avishai Aviv Aviya Avner Avraham_Abraham Avram_Abram Ayal Barak_Barak Barukh_Baruch Binyamin_Benjamin Boaz Chaim
-			Chayim Chayyim Chesed Dan Daniyyel_Daniel David_David Dawid_David Dekel Dror Deror Dikla_Dikla Diklah_Dikla Dor Dori Doron Dov Efraim_Ephraim Ehud_Ehud Eiran Eitan_Ethan
-			Eli_Eli Eliezer_Eliezer Eliyyahu_Elijah Elior Elisha_Elisha Eliyahu_Elijah Elkanah Erez Eyal Eytan_Ethan Ezra Gal Gavriel_Gabriel Gid'on_Gideon
+			Chayim Chayyim Chesed Dan Daniyyel_Daniel David_David Dawid_David Dekel Dror Deror Dikla_Dikla Diklah_Dikla Dor Dori Doron Dov Efraim_Ephraim Ehud_Ehud Eiran Eitan_Ethan Eli_Eli Eliezer_Eliezer Eliyyahu_Elijah Elior Elisha_Elisha Eliyahu_Elijah Elkanah Erez Eyal Eytan_Ethan Ezra Gal Gavriel_Gabriel Gid'on_Gideon
 			Gil Gilad_Gilead Gili Hadar Haim Hamon Hayim Hayyim Hebel_Abel Hed Hevel_Abel Hillel Hyam Idan Ilan Immanuel_Emmanuel Ira Itai Itamar Itzhak
 			Iyov Jaffe_Yaffa Keshet Kfir Lavi Lev Levi Li Lior Liron Maayan Mal'akhiy_Malachi Maor Matan Mattithyahu_Matthew Mattityahu_Matthew Meit Melech
 			Melek Menachem Menahem Menashe_Manasseh Meshulam Meshullam Mikha'el_Michael Mor Moran Mordecai Mordechai Moshe_Moses Nachum_Nahum Nadav_Nadab
 			Natan_Nathan Nir Nitzan Niv Noach_Noah Noam Noga Nogah Noy Ofek Ofer Ofir_Ophir Ofra_Ophrah Omer Omri Or Oren Ori Osher Ovadia_Obadiah Oved_Obed
-			Oz Paz Peleg Pinchas_Phinehas Raanan Ravid Raz Reuven_Reuben Roi Ron Ronen Rotem Sagi_Sagi Shachar Shahar Shai Shaked Shalev Shalom Shani Shay
-			Sheraga Shimon_Simon Shimshon_Samson Shlomo_Solomon Shmuel_Samuel Shraga Simcha Tal Tamir Tom Tomer Tovias_Tobias Tovia_Tobiah Tuvya_Tobiah Tzafrir_Zephyr
+			Oz Paz Peleg Pinchas_Phinehas Pinchas_Phineas Raanan Ravid Raz Reuven_Reuben Roi Ron Ronen Rotem Sagi_Sagi Schlomo Shachar Shahar Shai Shaked Shalev Shalom Shani Shay
+			Sheraga Shimon_Simon Shimshon_Samson Shlomo_Solomon Shlomo Shmuel_Samuel Shraga Simcha Tal Tamir Tom Tomer Tovias_Tobias Tovia_Tobiah Tuvya_Tobiah Tzafrir_Zephyr
 			Tzion_Zion Tzvi_Tzvi Udi_Ehud Uri Uriel_Uriel Uzi_Uzzi Uzzi_Uzzi Uzziel Yaakov_Jacob Yachin_Jachin Yafe_Yaffa Yaffe_Yaffa Yair_Jair Yakov_Jacob
-			Yaniv Yarden_Jordan Yaron_Aaron Yechezkel_Ezekiel Yehiel_Jehiel Yehoshua_Joshua Yehudah_Judah Yehudi_Jehudi Yishai_Jesse Yisra'el_Israel
+			Yaniv Yarden_Jordan Yaron_Aaron Yechezkel_Ezekiel Yehiel_Jehiel Yehoshua_Joshua Yeshua_Joshua Yehudah_Judah Yehudi_Jehudi Yishai_Jesse Yisra'el_Israel
 			Yissakhar_Issachar Yitzhak_Isaac Yoav_Joab Yochanan_John Yoel_Joel Yonah_Jonah Yonatan_Jonathan Yoni_Jonathan Yoram_Joram Yosef_Joseph Yuval_Jubal
 			Zeev_Zeev Zev_Zeev Ziv_Ziv Zohar_Zohar Zvi_Tzvi
 		}
 
 		female_names = {
-			Achinoam_Ahinoam Adara Adena_Adina Adi Adina_Adina Adva Agam Ahava Ahuva Aliya_Aliyah Aliyah_Aliyah Aliza Almog Alona_Alon Amira_Amir Amit Anat Ariel Atalia Atara Atarah Avia
-			Avigail Avishag Aviva Aviya Ayala Ayelet Ayla Bashe Basia Basya Batel Batsheva_Bathsheba Batya Batyah Beracha Bosmat Bracha Chanah_Hanah
-			Channah_Hannah Chava_Eve Chaya Chesed Dafna Dalia Dalit Dalya Danya Dara Dassah Devorah_Deborah Drorit Derorit Dikla_Dikla Diklah_Dikla Dor Dorit Dvorah_Deborah
-			Efrat Elah Eliana Eliora Elisheva_Elizabeth Elke Gal Galia Galit Geula Gilah Gili Hadar Hadas Hadassah Hagit Hed Herut Hila Idriya Ilana Ilanit Inbal
-			Inbar Irit Jaffe_Yaffa Kelila Keren Keshet Le'ah_Leah Li Liat Libi Lihi Lior Liora Liorit Liron Livna Livnat Maayan Malka Margalit_Margaret Margalita_Margaret
-			Marganita Marni Marnie Maya Maytal Meira Meirit Meital Menuha Merav Mica Michal Miriam_Mary Mor Moran Naamah Nahal Na'omiy_Naomi Nava Nessa Neta Nissa
-			Nitza Nitzan Noa_Noah Noam Noga Nogah Noy Noya Nurit Ofir_Ophir Ofra_Ophrah Or Ora Orah Ori Orit Orli Orly Orna Paz Rachel_Rachel Rani Ravid Raz Raziela
-			Reut_Ruth Rina Riva_Rebecca Rivka_Rebecca Ron Rona Roni Ronit Rotem Sagit Sapir Sarah_Sarah Sarit_Sarah Shachar Shahar Shaked Shalev Shamira Shani Shay
-			Shifra_Shiphrah Shir Shira Shiri Shlomit Shoshana_Susanna Shoshannah_Susanna Shulamit_Shulammite Shulamith_Shulammite Shulammit_Shulammite Shulammite_Shulammite
-			Sigal Sigalit Simcha Smadar Tahlia_Talya Tal_Tal Tali_Tal Talia_Talya Talya_Talya Tamar Tehila Tikva Tirtzah Tom Tova_Tova Tovah_Tova Toviah_Tobiah Tziporah_Zipporah
-			Tzipporah_Zipporah Tzivya Tzofiya Tzufit Varda_Vered Vardah_Vered Vered_Vered Yachna Yael_Jael Yaen Yafa_Yaffa Yafe_Yaffa Yaffa_Yaffa Yaffe_Yaffa Yakira
-			Yarden_Jordan Yardena_Jordan Yarona_Yoron Yehudit_Judith Yemima_Jemima Yocheved_Jochebed Yonina_Jonah Yonit_Jonah Yuval_Jubal Zahara_Zohar Zakiah Zipporah_Zipporah
-			Ziv_Ziv Ziva_Ziv Zivit_Ziv Zohar_Zohar
+			Achinoam_Ahinoam Adara Adena_Adina Adi Adina_Adina Adva Agam Ahava Ahuva Aliya_Aliyah Aliyah_Aliyah Aliza Almog Alona_Alon Amira_Amir Amit Anat Ariel Atalia Atara Atarah Avia Avigail Avishag Aviva Aviya Ayala Ayelet Ayla Bashe Basia Basya Batel Batsheva_Bathsheba Batya Batyah Beracha Bosmat Bracha Chanah_Hanah Channah_Hannah Chava_Eve Chaya Chesed Dafna Dalia Dalit Dalya Danya Dara Dassah Devorah_Deborah Drorit Derorit Dikla_Dikla Diklah_Dikla Dor Dorit Dvorah_Deborah Efrat Elah Eliana Eliora Elisheva_Elizabeth Elke Gal Galia Galit Geula Gilah Gili Hadar Hadas Hadassah Hagit Hed Herut Hila Idriya Ilana Ilanit Inbal Inbar Irit Jaffe_Yaffa Kelila Keren Keshet Le'ah_Leah Li Liat Libi Lihi Lior Liora Liorit Liron Livna Livnat Maayan Malka Margalit_Margaret Margalita_Margaret Marganita Marni Marnie Maya Maytal Meira Meirit Meital Menuha Merav Mica Michal Miriam_Mary Mor Moran Naamah Nahal Na'omiy_Naomi Nava Nessa Neta Nissa Nitza Nitzan Noa_Noah Noam Noga Nogah Noy Noya Nurit Ofir_Ophir Ofra_Ophrah Or Ora Orah Ori Orit Orli Orly Orna Paz Rachel_Rachel Rani Ravid Raz Raziela Reut_Ruth Rina Riva_Rebecca Rivka_Rebecca Ron Rona Roni Ronit Rotem Sagit Sapir Sarah_Sarah Sarit_Sarah Shachar Shahar Shaked Shalev Shamira Shani Shay Shifra_Shiphrah Shir Shira Shiri Shlomit Shoshana_Susanna Shoshannah_Susanna Shulamit_Shulammite Shulamith_Shulammite Shulammit_Shulammite Shulammite_Shulammite Sigal Sigalit Simcha Smadar Tahlia_Talya Tal_Tal Tali_Tal Talia_Talya Talya_Talya Tamar Tehila Tikva Tirtzah Tom Tova_Tova Tovah_Tova Toviah_Tobiah Tziporah_Zipporah Tzipporah_Zipporah Tzivya Tzofiya Tzufit Varda_Vered Vardah_Vered Vered_Vered Yachna Yael_Jael Yaen Yafa_Yaffa Yafe_Yaffa Yaffa_Yaffa Yaffe_Yaffa Yakira Yarden_Jordan Yardena_Jordan Yarona_Yoron Yehudit_Judith Yemima_Jemima Yocheved_Jochebed Yonina_Jonah Yonit_Jonah Yuval_Jubal Zahara_Zohar Zakiah Zipporah_Zipporah Ziv_Ziv Ziva_Ziv Zivit_Ziv Zohar_Zohar
 		}
 
-		from_dynasty_prefix = "of "
+		from_dynasty_suffix = "ite"
 
 		male_patronym = "Ben-"
 		female_patronym = "Bat-"
@@ -10438,10 +10433,10 @@ israelite = {
 }
 
 siberian_group = {
-	graphical_cultures = { indiangfx }
+	graphical_cultures = { turkishgfx indiangfx }
 
 	yeniseian = {
-		graphical_cultures = { mongolgfx }
+		graphical_cultures = { bodpagfx turkishgfx mongolgfx }
 
 		color = { 0.10 0.00 0.05 }
 
@@ -11001,7 +10996,7 @@ indo_aryan_group = {
 	}
 	
 	nepali = {
-		graphical_cultures = { bodpagfx indiangfx southindiangfx muslimgfx }
+		graphical_cultures = { bodpagfx indiangfx southindiangfx chinesegfx mongolgfx muslimgfx }
 		secondary_event_pictures = bedouin_arabic
 		
 		color = { 0.65 0.25 0.1  }
@@ -11691,7 +11686,7 @@ southeast_asian_group = {
 	graphical_cultures = { mongolgfx muslimgfx }
 
 	manipuri = { 
-		graphical_cultures = { mongolgfx muslimgfx }
+		graphical_cultures = { southindiangfx mongolgfx bodpagfx indiangfx muslimgfx }
 		secondary_event_pictures = bengali
 		
 		color = { 0.0 0.2 0.7 }
@@ -11837,10 +11832,10 @@ southeast_asian_group = {
 }
 
 east_celtic = {
-	graphical_cultures = { westerngfx }
+	graphical_cultures = { eastwelshgfx turkishgfx westerngfx }
 
 	east_welsh = {
-		graphical_cultures = { eastwelshgfx }
+		graphical_cultures = { eastwelshgfx turkishgfx westerngfx }
 		
 		color = { 0.1 0.6 0.4 }
 
