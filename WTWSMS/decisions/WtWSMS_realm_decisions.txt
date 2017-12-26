@@ -113,7 +113,7 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
-			OR = {
+			OR = { 
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
 			}
@@ -875,7 +875,7 @@ decisions = {
 			factor = 1
 		}
 	}
-		
+	
 	peregrinatio = {
 		only_rulers = yes
 		potential = {
@@ -932,7 +932,7 @@ decisions = {
 	call_synod_of_whitby = {
 		only_rulers = yes
 		is_high_prio = yes
-	
+		
 		potential = {
 			always = no # TODO Event ins.4 does not exist !
 			year = 644
@@ -957,8 +957,6 @@ decisions = {
 			set_global_flag = synod_of_whitby
 			character_event = { id = ins.4 days = 2 }
 		}
-		
-		
 		
 		ai_will_do = {
 			factor = 1
