@@ -30471,6 +30471,10 @@ e_africa = {
 				}
 				b_aced_aman = {
 				}
+				b_tecsi_aceddis2 = {
+				}
+				b_tecsi_aceddis3 = {
+				}
 			}
 			c_rifexx = {
 				color={ 48 255 6 }
@@ -30481,6 +30485,14 @@ e_africa = {
 				b_nserdhes = {
 				}
 				b_ifaqi = {
+				}
+				b_rifexx2 = {
+				}
+				b_rifexx3 = {
+				}
+				b_rifexx4 = {
+				}
+				b_rifexx5 = {
 				}
 			}
 			c_ssger = {
@@ -30493,6 +30505,14 @@ e_africa = {
 				}
 				b_massa_clone = {
 				}
+				b_ssger2 = {
+				}
+				b_ssger3 = {
+				}
+				b_ssger4 = {
+				}
+				b_ssger5 = {
+				}
 			}
 			c_glisiya = {
 				color={ 48 255 6 }
@@ -30504,6 +30524,14 @@ e_africa = {
 				}
 				b_nuri = {
 				}
+				b_glisiya2 = {
+				}
+				b_glisiya3 = {
+				}
+				b_glisiya4 = {
+				}
+				b_glisiya5 = {
+				}
 			}
 			c_mmekli = {
 				color={ 48 255 6 }
@@ -30514,6 +30542,14 @@ e_africa = {
 				b_restu = {
 				}
 				b_qama = {
+				}
+				b_mmekli2 = {
+				}
+				b_mmekli3 = {
+				}
+				b_mmekli4 = {
+				}
+				b_mmekli5 = {
 				}
 			}
 		}		
@@ -30533,6 +30569,14 @@ e_africa = {
 				b_hma = {
 				}
 				b_timess = {
+				}
+				b_rweqt2 = {
+				}
+				b_rweqt3 = {
+				}
+				b_rweqt4 = {
+				}
+				b_rweqt5 = {
 				}
 			}
 			c_elkemmen = {

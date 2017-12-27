@@ -371,12 +371,16 @@ inferior_spartan_child = { # A deformed or otherwise unworthy child was left by 
 #	banishment_reason = yes
 }
 
-spartan_warrior = { Spartan of decent martial prowess
+spartan_warrior = { # Spartan of decent martial prowess
 	icon = 1
-
 	monthly_character_prestige = 0.05
 }
 
+become_foederati_timer = { icon = 1 }
+
+get_foederati_timer = { icon = 1 }
+
+become_foederati_timer = { icon = 1 }
 
 ### secret_religious_society modifiers
 
@@ -988,5 +992,3 @@ secret_dacian_pagan_reformed_community = {
 		society_member_of = secret_religious_society_dacian_pagan_reformed
 	}
 }
-
-become_foederati_timer = { icon = 1 }
