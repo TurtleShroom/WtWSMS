@@ -1,6 +1,11 @@
 ﻿Next v0.9.X
 -----------
 
+2017-12-28 v0.9.11
+-----------------
+
+This release is save-game compatible with the previous version
+
 MAJOR:
 - Compatibility with vanilla 2.8.1.1
 - Added the Amber Road as a trade route, stretching from Novgorod to Rome, via the Baltic, Germania Slavica and Aquileia
@@ -71,6 +76,7 @@ MINOR:
 - Added the war of the pretender Leontius in as a historical war
 - Made considerable progress in the French and Spanish translatioons of the mod, courtesy of Abian36, Mouchi and Domper59
 - Permanent tributaries may no longer become independent through decision, they will have to acquire it through the force of arms
+- The command an army ambition now requires the character to hold a commander title
 
 BUGFIXES:
 - Fixed Justinian's Plague appearing in Dunhuang rather than Constantinople
