@@ -923,9 +923,9 @@ decisions = {
 			always = no #Not used in vanilla
 		}
 		
-#		ai_will_do = {
-#			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
-#		}
+		ai_will_do = {
+			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
+		}
 	}
 	
 	choose_sanamahi_patron_deity = {

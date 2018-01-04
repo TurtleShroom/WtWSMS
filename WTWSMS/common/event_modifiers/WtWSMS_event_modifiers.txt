@@ -382,6 +382,13 @@ get_foederati_timer = { icon = 1 }
 
 become_foederati_timer = { icon = 1 }
 
+erected_hero_stone = {
+	diplomacy = 1
+	general_opinion = 10
+	monthly_character_piety = 0.5
+	icon = 48
+}
+
 ### secret_religious_society modifiers
 
 secret_aquileian_community = {
