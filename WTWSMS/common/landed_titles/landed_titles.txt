@@ -105,6 +105,7 @@ d_papal_state = {
 	title = "POPE"
 	foa = "POPE_FOA"
 	short_name = yes
+	location_ruler_title = yes
 	
 	# Always exists
 	landless = yes
@@ -966,18 +967,25 @@ e_germania = {
 				old_frankish = "Hamaland"
 			
 				b_nijmegen = {
+					roman = Noviomagus
 				}
 				b_zutphen = {
+					roman = Zutpheniae
 				}
 				b_deventer = {
+					roman = Daventria
 				}
 				b_arnhem = {
+					roman = Arecanum
 				}
 				b_zwolle = {
+					roman = Svolla
 				}
 				b_kampen = {
+					roman = Campi
 				}
 				b_bergh = {
+					roman = Monte
 				}
 				b_bronckhorst = {
 				}
@@ -988,9 +996,11 @@ e_germania = {
 				
 				old_frisian = Eastfryslân
 				gaulish = "Chaici"
-				old_saxon = "Ênfriskland" 
+				old_saxon = "Ênfriskland"
+				roman = "Frisia orientalis"
 			
 				b_emden = {
+					roman = Embda
 				}
 				b_aurich = {
 				}
@@ -1014,20 +1024,25 @@ e_germania = {
 				old_frisian = Fryslân
 			
 				b_groningen = {
+					roman = Groninga
 				}
 				b_leeuwarden = {
+					roman = Lewardum
 				}
 				b_stavoren = {
+					roman = Stavorum
 				}
 				b_bolsward = {
 				}
 				b_franeker = {
+					roman = Franekera
 				}
 				b_dokkum = {
 				}
 				b_assen = {
 				}
 				b_harlingen = {
+					roman = Harlinga
 				}
 			}	
 			c_holland = {
@@ -1036,22 +1051,31 @@ e_germania = {
 				
 				old_frisian = Hollân
 				old_frankish = "Hol Land"
+				roman = Hollandia
 			
 				b_haarlem = {
+					roman = Harlemum
 				}
 				b_amsterdam = {
+					roman =  Amstelodamum
 				}
 				b_vlaardingen = {
+					roman = Flenium
 				}
 				b_sgravenhage = {
+					roman = Haga
 				}
 				b_dordrecht = {
+					roman = Dordracum
 				}
 				b_gouda = {
+					roman = Gaudanum
 				}
 				b_leiden = {
+					roman = "Lugdunum Batavorum"
 				}
 				b_muiden = {
+					roman = Amuda
 				}
 			}
 			c_sticht = {
@@ -1065,10 +1089,13 @@ e_germania = {
 					roman = "Castellum Laurum"
 				}
 				b_utrecht = {
+					roman = "Traiectum ad Rhenum"
 				}
 				b_dorestad = {
+					roman = Dorostadio
 				}
 				b_gorinchem = {
+					roman = Goricum
 				}
 				b_zeist = {
 				}
@@ -1084,22 +1111,28 @@ e_germania = {
 				color2={ 255 255 255 }
 				
 				old_frisian = Westfryslân
+				roman = "Frisia occidentalis"
 			
 				b_alkmaar = {
 				}
 				b_hoorn = {
+					roman = Hornum
 				}
 				b_medemblik = {
+					roman = Medemelacha
 				}
 				b_enkhuizen = {
+					roman = Enchusae
 				}
 				b_heerhugowaard = {
 				}
 				b_texel = {
 				}
 				b_egmond = {
+					roman = Ecmundum
 				}
 				b_schagen = {
+					roman = Scagha
 				}
 			}
 		}
@@ -9853,24 +9886,51 @@ e_wendish_empire = {
 			prussian = "Pruthenia"
 			lithuanian = "Pruthenia"
 			lettigallish = "Pruthenia"
+			polish = "Prusy"
 			
 			c_marienburg = {
 				color={ 185 90 90 }
 				color2={ 255 255 255 }
 				
+				polish = "Malbork"
+				
 				b_marienburg = {
+					polish = "Malbork"
 				}
 				b_braunsberg = {
+					polish = "Braniewo"
 				}
 				b_elbing = {
+					polish = "Elbl¹g"
 				}
 				b_christburg = {
+					polish = "Kiszporg"
 				}
 				b_heilsberg = {
+					polish = "Lidzbark Warmiñski"
+					prussian = "Lecbargs"
 				}
 				b_bartenstein = {
+					polish = "Barsztyn"
+					prussian = "Bartanstabs"
+					lithuanian = "Barštynas"
 				}
 				b_marienwerder = {
+					lechite = "Kwedis"
+					polish = "Kwidzyñ"
+					latin = "Quedin"
+					roman = "Quedin"
+					romano_british = "Quedin"
+					romano_dacian = "Quedin"
+					romano_aramean = "Quedin"
+					romano_frank = "Quedin"
+					romano_gallic = "Quedin"
+					romano_gothic = "Quedin"
+					romano_hispanic = "Quedin"
+					romano_vandalic = "Quedin"
+					romano_persian = "Quedin"
+					illyro_roman = "Quedin"
+					thraco_roman = "Quedin"
 				}
 				b_balga = {
 				}
@@ -9930,7 +9990,7 @@ e_wendish_empire = {
 				norwegian = "Samland"
 					
 				b_konigsberg = {
-					polish = "Krolewiec"
+					polish = "Królewiec"
 					prussian = "Krolewiec"
 					pommeranian = "Krolewiec"
 					lithuanian = "Krolewiec"
@@ -21326,8 +21386,10 @@ e_gaul = {
 				old_frisian = Henegouwen
 			
 				b_valenciennes = {
+					roman = Valentianae
 				}
 				b_cambrai = {
+					roman = Camaracum
 				}
 				b_avesnes = {
 				}
@@ -21341,8 +21403,10 @@ e_gaul = {
 				b_enghien = {
 				}
 				b_charleroi = {
+					roman = Caroloregium
 				}
 				b_ath = {
+					roman = Athum
 				}
 			}
 			c_reims = {
@@ -21594,18 +21658,22 @@ e_gaul = {
 					romano_gallic = "Nemetacum"
 				}
 				b_terwaan = {
+					roman = Terwenna
 				}
 				b_bethune = {
+					roman = Bethunia
 				}
 				b_lens = {
 				}
 				b_lille = {
+					roman = Insula
 				}
 				b_bouvines = {
 				}
 				b_beaumetz = {
 				}
 				b_bapaume = {
+					roman = Bapalma
 				}
 			}
 			c_boulogne = {
@@ -21622,18 +21690,23 @@ e_gaul = {
 					romano_gallic = "Gesoriacum"
 				}
 				b_montreuil = {
+					roman = Monasteriolum
 				}
 				b_saintpol = {
 				}
 				b_hesdin = {
+					roman = Hesdinum
 				}
 				b_fauquembergues = {
 				}
 				b_ternouis = {
+					roman = Tervanensis
 				}
 				b_therouanne = {
+					roman = Terwenna
 				}
 				b_ardres = {
+					roman = Arda
 				}
 			}
 			c_guines = {
@@ -21645,21 +21718,25 @@ e_gaul = {
 				romano_gallic = "Guisnes"
 				
 				b_guines = {
-				old_frankish = "Aignerichrok"
-				roman = "Guisnes"
-				romano_gallic = "Guisnes"
+					old_frankish = "Aignerichrok"
+					roman = "Guisnes"
+					romano_gallic = "Guisnes"
 				}
 				b_saintomer = {
 				}
 				b_calais = {
+					roman = Calesium
 				}
 				b_dunkerque = {
+					roman = Dunquerca
 				}
 				b_bourbourg = {
+					roman = "Burgus in Broco"
 				}
 				b_marck = {
 				}
 				b_gravelines = {
+					roman = Gravelina
 				}
 				b_coulogne = {
 				}
@@ -21669,23 +21746,30 @@ e_gaul = {
 				color2={ 255 255 255 }
 				
 				old_frankish = "Leper"
+				roman = Iprensis
 				
 				b_ypres = {
-				old_frankish = "Leper"
+					old_frankish = "Leper"
+					roman = Ipera
 				}
 				b_rosebeke = {
 				}
 				b_cassel = {
+					roman = "Castellum Meniaporum"
 				}
 				b_roeselare = {
+					roman = Rollare
 				}
 				b_poperinge = {
+					roman = Pupurninga
 				}
 				b_menen = {
 				}
 				b_diksmuide = {
+					roman = Dicasmutha
 				}
 				b_wervik = {
+					roman = Viroviacum
 				}
 			}
 			c_brugge = {
@@ -21702,18 +21786,25 @@ e_gaul = {
 					romano_gallic = "Bruciam"
 				}
 				b_damme = {
+					roman = Dammum
 				}
 				b_sluys = {
+					roman = Slusa
 				}
 				b_oostende = {
+					roman = Ostenda
 				}
 				b_male = {
+					roman = Mallum
 				}
 				b_nieuwpoort = {
+					roman = "Isera Portus"
 				}
 				b_torhout = {
+					roman = Turholt
 				}
 				b_aardenburg = {
+					roman = Rodanum
 				}
 			}
 			c_gent = {
@@ -21726,23 +21817,30 @@ e_gaul = {
 				armorican = "Gontia"
 				
 				b_gent = {
-				old_frankish = "Ganda"
-				roman = "Gontia"
-				armorican = "Gontia"
+					old_frankish = "Ganda"
+					roman = "Gontia"
+					armorican = "Gontia"
 				}
 				b_doornik = {
+					roman = Turnacum
 				}
 				b_oudenaarde = {
+					roman = Aldenarda
 				}
 				b_aalst = {
+					roman = Halosta
 				}
 				b_st_niklaas = {
+					roman = "Waes monasterium"
 				}
 				b_dendermonde = {
+					roman = Teneramonda
 				}
 				b_kortrijk = {
+					roman = Cortoriacum
 				}
 				b_geraardsbergen = {
+					roman = "Geroaldi Montem"
 				}
 			}
 		}
@@ -21882,20 +21980,26 @@ e_gaul = {
 				
 				old_frisian = Brabân
 				old_frankish = "Blaoburc"
+				roman = Toxandria
 			
 				b_leuven = {
+					roman = Lovanium
 				}
 				b_mechelen = {
+					roman = Maclinia
 				}
 				b_brussel = {
+					roman = Bruxellae
 				}
 				b_antwerpen = {
+					roman = Antverpia
 				}
 				b_aarschot = {
 				}
 				b_grimbergen = {
 				}
 				b_herstal = {
+					roman = Heristalium
 				}
 				b_lier = {
 				}
@@ -21909,18 +22013,23 @@ e_gaul = {
 				b_breda = {
 				}
 				b_shertogenbosch = {
+					roman = "Silva Ducis"
 				}
 				b_tilburg = {
+					roman = Tilia
 				}
 				b_willemstad = {
 				}
 				b_bergenopzoom = {
+					roman = "Bergae ad Zomam"
 				}
 				b_cuijck = {
+					roman = Ceuclum
 				}
 				b_ravenstein = {
 				}
 				b_horn = {
+					roman = Hornum
 				}
 			}
 			c_liege = {
@@ -22018,20 +22127,27 @@ e_gaul = {
 				old_frankish = "Nehalennland"
 			
 				b_middelburg = {
+					roman = Medioburgum
 				}
 				b_tholen = {
+					roman = Thola
 				}
 				b_veere = {
+					roman = Veria
 				}
 				b_cadzand = {
 				}
-				b_vlissingen = {
+				b_vlissingen = {	
+					roman = Flissinga
 				}
 				b_renesse = {
+					roman = Renessa
 				}
 				b_borsele = {
+					roman = Borsela
 				}
 				b_zierikzee = {
+					roman = Siricasha
 				}
 			}
 		}
@@ -23415,6 +23531,15 @@ e_spain = {
 				roman = "Hispania Citerior"
 				romano_gallic = "Hispania Citerior"
 				romano_hispanic = "Hispania Citerior"
+				romano_british = "Hispania Citerior"
+				illyro_roman = "Hispania Citerior"
+				thraco_roman = "Hispania Citerior"
+				romano_gothic = "Hispania Citerior"
+				romano_dacian = "Hispania Citerior"
+				romano_vandalic = "Hispania Citerior"
+				romano_aramean = "Hispania Citerior"
+				romano_persian = "Hispania Citerior"
+				romano_frank = "Hispania Citerior"
 				visigothic =  Ga-háiljanland
 				suebi = Ga-háiljanland
 				
@@ -23459,6 +23584,15 @@ e_spain = {
 				roman = Vindius
 				romano_gallic = Vindius
 				romano_hispanic = Vindius
+				romano_british = Vindius
+			    illyro_roman = Vindius
+				thraco_roman = Vindius
+				romano_gothic = Vindius
+		        romano_dacian = Vindius
+				romano_vandalic = Vindius
+				romano_aramean = Vindius
+			    romano_persian = Vindius
+			    romano_frank = Vindius
 				visigothic =  Akranaláusakr
 				suebi = Akranaláusakr
 				
@@ -23543,12 +23677,30 @@ e_spain = {
 				roman = "Castra Vasconensis" 
 				romano_gallic = "Castra Vasconensis"
 				romano_hispanic = "Castra Vasconensis"
+				romano_british = "Castra Vasconensis"
+			    illyro_roman = "Castra Vasconensis"
+			    thraco_roman = "Castra Vasconensis"
+				romano_gothic = "Castra Vasconensis"
+		        romano_dacian = "Castra Vasconensis"
+			    romano_vandalic = "Castra Vasconensis"
+			    romano_aramean = "Castra Vasconensis"
+			    romano_persian = "Castra Vasconensis"
+			    romano_frank = "Castra Vasconensis"
 				
 				b_pamplona = {
 					basque = Iruña
-					roman = Pompaleo 
-					romano_gallic = Pompaleo 
-					romano_hispanic = Pompaleo 
+					roman = Pompaelo
+					romano_gallic = Pompaelo
+					romano_hispanic = Pompaelo
+					romano_british = Pompaelo
+			        illyro_roman = Pompaelo
+			        thraco_roman = Pompaelo
+				    romano_gothic = Pompaelo
+		            romano_dacian = Pompaelo
+			        romano_vandalic = Pompaelo
+		            romano_aramean = Pompaelo
+			        romano_persian = Pompaelo
+			        romano_frank = Pompaelo
 				}
 				b_leyre = {
 				}
@@ -23575,6 +23727,15 @@ e_spain = {
 				roman = Tritium
 				romano_gallic = Tritium
 				romano_hispanic = Tritium
+				romano_british = Tritium
+			    illyro_roman = Tritium
+			    thraco_roman = Tritium
+		        romano_gothic = Tritium
+		        romano_dacian = Tritium
+			    romano_vandalic = Tritium
+		        romano_aramean = Tritium
+		        romano_persian = Tritium
+			    romano_frank = Tritium
 				visigothic = Naxara
 				suebi = Naxara
 				cantabrian = Talacarraig
@@ -23624,6 +23785,15 @@ e_spain = {
 				roman = Oria
 				romano_gallic = Oria
 				romano_hispanic = Oria
+				romano_british = Oria
+			    illyro_roman = Oria
+			    thraco_roman = Oria
+		        romano_gothic = Oria
+		        romano_dacian = Oria
+			    romano_vandalic = Oria
+		        romano_aramean = Oria
+		        romano_persian = Oria
+			    romano_frank = Oria
 				cantabrian = Duracii
 				
 				b_soria = {
@@ -23656,6 +23826,15 @@ e_spain = {
 				roman = Molinia
 				romano_gallic = Molinia
 				romano_hispanic = Molinia
+				romano_british = Molinia
+			    illyro_roman = Molinia
+			    thraco_roman = Molinia
+		        romano_gothic = Molinia
+		        romano_dacian = Molinia
+			    romano_vandalic = Molinia
+		        romano_aramean = Molinia
+		        romano_persian = Molinia
+			    romano_frank = Molinia
 				visigothic = Hafjaguma
 				suebi = Hafjaguma
 				
@@ -23683,6 +23862,15 @@ e_spain = {
 				roman = "Augusta Bilbilis"
 				romano_gallic = "Augusta Bilbilis"
 				romano_hispanic = "Augusta Bilbilis"
+				romano_british = "Augusta Bilbilis"
+			    illyro_roman = "Augusta Bilbilis"
+			    thraco_roman = "Augusta Bilbilis"
+		        romano_gothic = "Augusta Bilbilis"
+		        romano_dacian = "Augusta Bilbilis"
+			    romano_vandalic = "Augusta Bilbilis"
+		        romano_aramean = "Augusta Bilbilis"
+		        romano_persian = "Augusta Bilbilis"
+			    romano_frank = "Augusta Bilbilis"
 				visigothic = Martialand
 				suebi = Martialand
 				
@@ -23716,6 +23904,15 @@ e_spain = {
 				roman = "Castra Arbor"
 				romano_gallic = "Castra Arbor"
 				romano_hispanic = "Castra Arbor"
+				romano_british = "Castra Arbor"
+			    illyro_roman = "Castra Arbor"
+			    thraco_roman = "Castra Arbor"
+		        romano_gothic = "Castra Arbor"
+		        romano_dacian = "Castra Arbor"
+			    romano_vandalic = "Castra Arbor"
+		        romano_aramean = "Castra Arbor"
+		        romano_persian = "Castra Arbor"
+			    romano_frank = "Castra Arbor"
 				visigothic = "Santa Maria"
 				suebi = "Santa Maria"
 				
@@ -23779,6 +23976,15 @@ e_spain = {
 				roman = Tarraco
 				romano_gallic = Tarraco
 				romano_hispanic = Tarraco
+				romano_british = Tarraco
+			    illyro_roman = Tarraco
+			    thraco_roman = Tarraco
+		        romano_gothic = Tarraco
+		        romano_dacian = Tarraco
+			    romano_vandalic = Tarraco
+		        romano_aramean = Tarraco
+		        romano_persian = Tarraco
+			    romano_frank = Tarraco
 				visigothic = Kesse
 				suebi = Kesse
 				punic = Tarraho
@@ -23865,6 +24071,15 @@ e_spain = {
 				roman = Caesaraugusta
 				romano_gallic = Caesaraugusta
 				romano_hispanic = Caesaraugusta
+				romano_british = Caesaraugusta
+			    illyro_roman = Caesaraugusta
+			    thraco_roman = Caesaraugusta
+		        romano_gothic = Caesaraugusta
+		        romano_dacian = Caesaraugusta
+			    romano_vandalic = Caesaraugusta
+		        romano_aramean = Caesaraugusta
+		        romano_persian = Caesaraugusta
+			    romano_frank = Caesaraugusta
 				visigothic = Caesaraugusta
 				suebi = Caesaraugusta
 				english = Saragossa
@@ -23957,6 +24172,15 @@ e_spain = {
 				roman = "Julia Libyca"
 				romano_gallic = "Julia Libyca"
 				romano_hispanic = "Julia Libyca"
+				romano_british = "Julia Libyca"
+			    illyro_roman = "Julia Libyca"
+			    thraco_roman = "Julia Libyca"
+		        romano_gothic = "Julia Libyca"
+		        romano_dacian = "Julia Libyca"
+			    romano_vandalic = "Julia Libyca"
+		        romano_aramean = "Julia Libyca"
+		        romano_persian = "Julia Libyca"
+			    romano_frank = "Julia Libyca"
 				visigothic = Puigcerdica
 				suebi = Puigcerdica
 				cantabrian = Cerretani
@@ -23985,6 +24209,15 @@ e_spain = {
 				roman = Emporiae
 				romano_gallic = Emporiae
 				romano_hispanic = Emporiae
+				romano_british = Emporiae
+			    illyro_roman = Emporiae
+			    thraco_roman = Emporiae
+		        romano_gothic = Emporiae
+		        romano_dacian = Emporiae
+			    romano_vandalic = Emporiae
+		        romano_aramean = Emporiae
+		        romano_persian = Emporiae
+			    romano_frank = Emporiae
 				visigothic = Ampurias
 				suebi = Ampurias
 				punic = Emporion
@@ -24115,6 +24348,18 @@ e_spain = {
 				egyptian_arabic = "Manurqa"
 				andalusian_arabic = "Manurqa"
 				punic = Mago
+				roman = Minorica
+				romano_gallic = Minorica
+				romano_hispanic = Minorica
+				romano_british = Minorica
+			    illyro_roman = Minorica
+			    thraco_roman = Minorica
+		        romano_gothic = Minorica
+		        romano_dacian = Minorica
+			    romano_vandalic = Minorica
+		        romano_aramean = Minorica
+		        romano_persian = Minorica
+			    romano_frank = Minorica
 				
 				b_ciutadella = {
 					bedouin_arabic = "Madinat al-Jazirah"
@@ -33315,9 +33560,15 @@ e_italy = {
 				color2={ 255 255 255 }
 				
 				roman = "Tauriscia"
+				romano_gallic = "Tauriscia"
+				romano_british = "Tauriscia"
+				romano_hispanic = "Tauriscia"
+				raetoroman = "Tauriscia"
 				noricroman = "Tauriscia"
 				ostrogothic = "Grunháims"
 				romano_gothic = "Grunháims"
+				english = "Styria"
+				polish = "Styria"
 				
 				b_eppenstein = {
 				}
@@ -33775,11 +34026,15 @@ e_italy = {
 				romano_gallic = Roma
 				romano_hispanic = Roma
 				romano_british = Roma
+				romano_aramean = Roma
+				romano_dacian = Roma
 				dalmatian = Roma
 				african_romance = Roma
 				skirian = Roma
 				romano_gothic = Roma
 				ostrogothic = Roma
+				polish = "Rzym"
+				italian = "Roma"
 				
 				holy_site = catholic
 				holy_site = nicene
@@ -35065,6 +35320,23 @@ e_italy = {
 			c_tirol = {
 				color={ 90 90 90 }
 				color2={ 255 255 255 }
+				
+				polish = "Tyrol"
+				english = "Tyrol"
+				latin = "Tirolis"
+				roman = "Tirolis"
+				roman = "Tirolis"
+				romano_gallic = "Tirolis"
+				romano_hispanic = "Tirolis"
+				romano_british = "Tirolis"
+				african_romance = "Tirolis"
+				raetoroman = "Tirolis"
+				thraco_roman = "Tirolis"
+				illyro_roman = "Tirolis"
+				pannonian = "Tirolis"
+				dalmatian = "Tirolis"
+				noricroman = "Tirolis"
+				italian = "Tirolo"
 				
 				holy_site = germanic_pagan
 				holy_site = germanic_pagan_reformed

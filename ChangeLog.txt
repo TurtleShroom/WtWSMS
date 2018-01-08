@@ -17,6 +17,7 @@ MINOR:
 - Split the duchy of Prussia in two for balance
 - Added unique icons for the Samaritan religion, courtesy of majesty8
 - Added an event to destroy the Western Roman Empire title if Julius Nepos dies without any dynastic heir
+- Added events to shatter tribal de jure kingdoms upon the death of a ruler with a weak heir, to represent the fluctuating nature of tribal realms
 
 BUGFIXES:
 - Removed the references to hostile_within_group for individual religions when it is defined by religious group
@@ -31,6 +32,7 @@ BUGFIXES:
 - Fixed Zeno's invasion leading to the ERE becoming Gavelkind
 - Fixed issues with Conclave laws overwriting the Stability law for Bureaucratic realms
 - Fixed the elevate_oriens decision not checking if the title had a holder
+- Fixed Chinese invasion troops spawning in southern Libya
 
 2017-12-28 v0.9.11
 -----------------
