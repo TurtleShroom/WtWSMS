@@ -36,7 +36,7 @@ rise_of_islam = {
 VIET_events = {
 	name = "RULE_VIET_EVENTS"
 	group = "RULE_GROUP_WTWSMS"
-		option = {
+	option = {
 		name = off
 		text = "RULE_OPTION_OFF"
 		desc = "RULE_VIET_OFF_DESC"
@@ -62,5 +62,22 @@ dynamic_custom_realms = {
 		name = custom_realms_unrestricted
 		text = "RULE_CUSTOM_REALMS_UNRESTRICTED"
 		desc = "RULE_CUSTOM_REALMS_UNRESTRICTED_DESC"
+	}
+}
+
+shattered_tribes = {
+	name = "SHATTERED_TRIBAL_KINGDOMS"
+	group = "RULE_GROUP_WTWSMS"
+
+	option = {
+		name = shatter
+		text = "TRIBAL_KINGSOMS_SHATTER"
+		desc = "TRIBAL_SHATTERDESC"
+	}
+
+	option = {
+		name = not_shatter
+		text = "TRIBAL_KINGDOMS_NOT_SHATTER"
+		desc = "TRIBAL_NOT_SHATTER_DESC"
 	}
 }

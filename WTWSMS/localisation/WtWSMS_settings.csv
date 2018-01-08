@@ -43,3 +43,8 @@ RULE_CUSTOM_REALMS_DEFAULT_DESC;The AI will create custom realms with the same r
 RULE_VIET_EVENTS;VIET events;Événements VIET;;;Eventos VIET;;;;;;;x
 RULE_VIET_ON_DESC;All integrated events from the mod VIET are enabled.;Tous les événements issus de la modification VIET sont activés.;;;Todos los eventos integrados del mod VIET están habilitados.;;;;;;;x
 RULE_VIET_OFF_DESC;The VIET events of a more controversial nature are disabled.;Les événements issus de la modification VIET de nature plus controversée sont désactivés.;;;Los eventos de VIET de naturaleza más controvertida están desactivados.;;;;;;;x
+SHATTERED_TRIBAL_KINGDOMS;Shattered Tribal Kingdoms;;;;;;;;;;;;;x
+TRIBAL_KINGDOMS_SHATTER;Shatter;;;;;;;;;;;;;x
+TRIBAL_SHATTERDESC;Upon the death of an unreformed pagan king of a tribal government, his king-tier title is destroyed.;;;;;;;;;;;;;x
+TRIBAL_KINGDOMS_NOT_SHATTER;Do Not Shatter;;;;;;;;;;;;;x
+TRIBAL_NOT_SHATTER_DESC;King-tier titles held by unreformed pagans are not destroyed upon death.;;;;;;;;;;;;;x
