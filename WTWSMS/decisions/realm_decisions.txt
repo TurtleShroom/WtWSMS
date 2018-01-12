@@ -2049,8 +2049,8 @@ decisions = {
 			
 			OR = {
 				has_game_rule = {
-					name = dynamic_custom_realms
-					value = custom_realms_unrestricted
+					name = dynamic_realms
+					value = unrestricted
 				}
 				ai = no
 				AND = {
@@ -2183,8 +2183,8 @@ decisions = {
 			NOT = { tier = EMPEROR }
 			OR = {
 				has_game_rule = {
-					name = dynamic_custom_realms
-					value = custom_realms_unrestricted
+					name = dynamic_realms
+					value = unrestricted
 				}
 				ai = no
 				AND = {
