@@ -1455,8 +1455,8 @@ decisions = {
 				}
 			}
 			any_friend = {
-				limit = {
-					OR = {
+				limit = { 
+					OR = { 
 						religion_group = jewish_group
 						religion = ebionites
 					}
@@ -1477,7 +1477,10 @@ decisions = {
 			modifier = {
 				factor = 0
 				any_courtier = {
-					religion_group = jewish_group
+					OR = {
+						religion_group = jewish_group
+						religion = ebionites
+					}
 					reverse_opinion = { who = ROOT value = 20 }
 				}
 			}
@@ -1550,12 +1553,20 @@ decisions = {
 			has_dlc = "Rajas of India"
 			is_playable = yes
 			is_feudal = yes
-			has_dharmic_religion_trigger = yes
 			primary_title = {
 				higher_tier_than = DUKE
 			}
-			capital_scope = {
-				region = world_india
+			OR = {
+				capital_scope = {
+					region = world_india
+				}
+				has_dharmic_religion_trigger = yes
+				religion = dravidian_pagan
+				religion = dravidian_pagan_reformed
+				culture_group = indo_aryan_group
+				culture_group = dravidian_group
+				culture = nasrani
+				trait = nasrani
 			}
 			e_india = {
 				has_holder = no
@@ -1582,6 +1593,16 @@ decisions = {
 				e_deccan = { has_holder = no }
 			}
 			completely_controls_region = world_india
+			OR = { 
+				has_dharmic_religion_trigger = yes
+				religion = dravidian_pagan
+				religion = dravidian_pagan_reformed
+				culture_group = indo_aryan_group
+				culture_group = dravidian_group
+				culture = nasrani
+				trait = nasrani
+			}
+
 		}
 		effect = {
 			wealth = -500
