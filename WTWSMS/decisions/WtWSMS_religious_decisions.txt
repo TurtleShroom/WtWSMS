@@ -54,7 +54,6 @@ decisions = {
 			}
 			piety = 1000
 		}
-
 		ai_will_do = {
 			factor = 1
 		}
@@ -251,8 +250,6 @@ decisions = {
 			piety = 1000
 		}
 		
-		
-		
 		ai_will_do = {
 			factor = 1
 		}
@@ -388,8 +385,6 @@ decisions = {
 				}
 			}
 		}
-		
-		
 		
 		ai_will_do = {
 			factor = 1
@@ -1298,7 +1293,7 @@ decisions = {
 			add_trait = synerian
 			character_event = { id = spirit.28 tooltip = EVTTOOLTIP_SPIRIT_28 }
 		}
-				
+		
 		ai_will_do = {
 			factor = 1
 			
