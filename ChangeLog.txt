@@ -35,6 +35,9 @@ MINOR:
 - Fixed Saint Remi of Reims being born at the wrong date and not holding the bishopric of Reims
 - Made Celtic Pagans slightly less disposed to use the County Conquest CB to prevent the AI from expanding too quickly
 - Added more members of Theoderic Strabo's family, including his father Triarchius and his wife Sigilda
+- Disabled patron saints for Total Depravity based upon forum feedback
+- Made the colours of the duchies of Gurma and Oulata more distinct for them to be discernible on the map
+- Made the Three Chapters Schism and resolution of it slower for it to be more accurate and less predictable
 
 BUGFIXES:
 - Removed the references to hostile_within_group for individual religions when it is defined by religious group
@@ -65,6 +68,8 @@ BUGFIXES:
 - Fixed the Papal States not being a Pentarch for Italia and Annonaria and thus being revocable by the WRE in 476
 - Fixed the Papal States being independent after the death of Julius Nepos
 - Fixed Hungary being instantly remained to Pannonia through CM events
+- Fixed the retinue modifiers for the Cornish and Romano-British retinue not corresponding with the retinue troops
+- Minor Validator fixes
 
 2017-12-28 v0.9.11
 -----------------
