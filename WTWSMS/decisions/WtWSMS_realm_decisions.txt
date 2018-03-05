@@ -179,7 +179,7 @@ decisions = {
 			wealth = -300
 			activate_title = { title = d_western_scholae_palatinae status = yes }
 			hidden_tooltip = {
-				narrative_event = { id = guard.31352 }
+				narrative_event = { id = guard.31002 }
 				create_random_soldier = {
 					random_traits = yes
 					religion = nicene
@@ -871,7 +871,7 @@ decisions = {
 			factor = 1
 		}
 	}
-		
+	
 	peregrinatio = {
 		only_rulers = yes
 		potential = {
@@ -1044,6 +1044,7 @@ decisions = {
 	}
 
 	assign_poet = { # For the AI, because they are dumb enough not to hand out minor titles
+		only_playable = yes
 		potential = {
 			ai = yes
 			OR = {
@@ -1085,7 +1086,8 @@ decisions = {
 			}
 		}
 	}
-#CHRISTIAN
+
+	#CHRISTIAN
 	patrons_ins = {
 		only_playable = yes
 		potential = {
@@ -1144,8 +1146,9 @@ decisions = {
 			}
 		}
 	}
+	
 	divide_roman_empire = {
-		only_playable = yes
+		only_independent = yes
 		is_high_prio = yes
 		potential = {
 			has_landed_title = e_roman_empire
