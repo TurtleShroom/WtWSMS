@@ -254,7 +254,7 @@ k_illyria_prefect = {
 		always = no
 	}
 }
-d_africa_prefect = {
+k_africa_prefect = {
 	color = { 173 150 43 }
 	color2 = { 0 128 128 }
 
@@ -660,6 +660,18 @@ d_sappia = {
 		always = no
 	}
 }
+d_ultra_iura = {
+	color={ 189 160 57 }
+	color2 = { 255 255 255 }
+	
+	capital = 244 # Bern
+	
+	culture = old_frankish 
+	
+	allow = {
+		always = no
+	}
+}
 k_spania = {
 	color={ 209 185 27 }
 	color2 = { 255 255 255 }
@@ -991,6 +1003,19 @@ d_milan = {
 	color2={ 255 255 255 }
 	
 	capital = 235 # Lombardia
+	
+	culture = lombard
+	
+	allow = {
+		always = no
+	}
+}
+
+d_perusia = {
+    color={ 255 291 130 }
+	color2={ 255 255 255 }
+	
+	capital = 322
 	
 	culture = lombard
 	
