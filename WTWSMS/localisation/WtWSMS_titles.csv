@@ -722,7 +722,6 @@ d_jemsa_adj;Jemsan;;;;;;;;;;;x
 d_great_swarty;Great Swarti;Grand Swarti;;;;;;;;;;x
 d_great_swarty_adj;Great Swartyan;;;;;;;;;;;x
 d_balun;Balun;;;;;;;;;;;x
-d_balun_adj;Balunesse;;;;;;;;;;;x
 d_balun_adj;Balunyan;;;;;;;;;;;x
 d_murzuk;Murzuk;Mourzouk;;;;;;;;;;x
 d_murzuk_adj;Murzukan;;;;;;;;;;;x
@@ -894,11 +893,11 @@ d_esseaxena_adj;East Saxon;Saxon de l'est;;;;;;;;;;x
 d_lindsey;Lindsey;Lindsey;;;;;;;;;;x
 d_lindsey_adj;Lindsian;;;;;;;;;;;x
 # Irish and Scottish kingdoms
-k_ce;Ce;;;;;;;;;;;x
+d_ce;Ce;;;;;;;;;;;x
 k_dal_riata;Dál Riata;Dal Riada;;;;;;;;;;x
-k_cait;Cait;;;;;;;;;;;x
-k_fortriu;Fortriu;Fortriú;;;;;;;;;;x
-k_fotla;Fotla;Fódla;;;;;;;;;;x
+d_cait;Cait;;;;;;;;;;;x
+d_fortriu;Fortriu;Fortriú;;;;;;;;;;x
+d_fotla;Fotla;Fódla;;;;;;;;;;x
 k_orkney;Orkney;Orcades;;;;;;;;;;x
 # Other kingdoms
 k_auvergne;Auvergne;Auvergne;;;;;;;;;;x
@@ -1200,7 +1199,7 @@ d_elephant_corps;Elephant Corps;Corps d'éléphants;;;;;;;;x
 ERAN_ANBARAGHBAD;Eran Anbaraghbad;;;;;;;;;x
 d_kamandaran;Kamandaran;;;;;;;;;x
 d_kamandaran_adj;Kamandarani;;;;;;;;;x
-d_exilarch;Exilarch;Exilarque;;;;;;;;x
+d_exilarch;The Exilarchy;L'Exilarcat;;;;;;;;;;;;x
 d_exilarch_adj;Exilarch;Exilarque;;;;;;;;x
 DRUHTINAZ;Druhtinaz;;;;;;;;;;x
 DRUHTINAZ_FOA;Great Warlord;Grand seigneur de guerre;;;;;;;;;x
