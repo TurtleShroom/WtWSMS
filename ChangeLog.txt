@@ -2,7 +2,8 @@
 -----------
 
 MAJOR:
-- Progressed on the French translation of the mod, courtesy of Mouchi and Domper59
+- Completed the French translation of the mod, courtesy of Mouchi and Domper59
+	- Added an optional sub-mod for a complete French translation, with war names and titles being in French
 
 MINOR:
 - Added three new loading screens, and updated three older loading screens
@@ -52,7 +53,16 @@ MINOR:
 - Changed the Basque and Aquitani dynasty naming from the prefix "de" to the suffix "koa" for accuracy
 - Changed some Basque surnames to remove Spanicised variants
 - Changed the four Pictish kingdoms into duchies
-- Changed Crimea to be under the control of the ERE during Justinian's reign 
+- Changed Crimea to be under the control of the ERE during Justinian's reign
+- Made it possible for the three Hellenic heresies (Neoplatonism, Mithraism and Cybelian) to join the Hermetic society
+- Prevented the event for a religious head affected by pestilence from firing repeatedly for a quick succession of heads affected within less than five years
+- Added a create Audianistic Papacy decision for the successful Audianistic religion
+- Added a Roman event picture with the Colosseum for Roman castle construction
+- Removed anachronistic Manx culture characters at start
+- Added historical holders of Arcadia
+- Added a decision for the ERE to adopt Greek as an official language after having adopted a themes system
+- Rewritten some counties' history to match the king order of the Visigoths
+- Fixed Franks taking Montpelier and Narbonne in 561
 
 BUGFIXES:
 - Removed the references to hostile_within_group for individual religions when it is defined by religious group
@@ -86,8 +96,15 @@ BUGFIXES:
 - Fixed the retinue modifiers for the Cornish and Romano-British retinue not corresponding with the retinue troops
 - Fixed the Soissons reconquest events firing for characters having Soissons as a secondary title
 - Fixed an issue which caused a broken form of the Great Schism to fire even if Nicene had become an heresy of another religion
-- Removed duplicate b_al_lith castle baronny in the 719 - Mecca province
+- Removed duplicate b_al_lith castle barony in the 719 - Mecca province
 - Fixed the Vandal cultural building not corresponding  with the retinue
+- Fixed China having a perpetual civil war
+- Fixed the Confessions of St. Augustine event speaking about centuries less than a hundred years after the book was written
+- Fixed Dalmatia existing in Spain at start
+- Fixes the barony of Ta'if (b_taif) in the Mecca province and the county of At Ta'if (c_at_ta_if) being duplicate
+- Moved b_qunfudhah and b_turubah to c_at_ta_if
+- Fixed the Choose Patron Deity decision for Sanamahi rulers referencing the wrong event
+- Fixed the initial start foederati negotiations request scoping to the wrong character in localisation
 
 2017-12-28 v0.9.11
 -----------------

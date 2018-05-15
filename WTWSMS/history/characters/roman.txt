@@ -147,8 +147,9 @@
 		death="487.5.2"
 	}
 }
-190012  = {
+190012 = {
 	name="Anicius" # Major Poet, usually called Boethius
+	# Consul of 510
 	#dynasty=1042312
 	religion="nicene"
 	culture="roman"
@@ -156,11 +157,11 @@
 	479.1.1={
 		birth="479.1.1"
 	}
-	525.5.2={
-		death="525.5.2"
+	524.12.1={ #died in 524
+		death=yes
 	}
 }
-20782  = {
+20782 = {
 	name="Maximus" # Lord of Tangiers
 	dynasty=1042251
 	martial=7
@@ -3671,7 +3672,7 @@
 	5.1.1={
 		birth=yes
 	}
-	69.1.1={
+	79.1.1={
 		death=yes
 	}
 }
@@ -5059,6 +5060,214 @@
 		birth=yes
 	}
 	601.1.1={ #between 598 and 602
+		death=yes
+	}
+}
+1300659 = {
+	name="Gnaeus" #PLRE vol.3 Anonymus 38
+	#consularis Liguriae 533/537
+	religion="nicene"
+	culture="roman"
+	470.1.1={
+		birth=yes
+	}
+	538.1.1={
+		death=yes
+	}
+}
+1300664 = {
+	name="Edantius" #PLRE vol.3 Edantius
+	#dux Sardiniae 588/589
+	religion="nicene"
+	culture="roman"
+	530.1.1={
+		birth=yes
+	}
+	591.1.1={
+		death=yes
+	}
+}
+1300667 = {
+	name="Lucillus" #PLRE vol.2 Lucillus
+	#father of Decius
+	religion="nicene"
+	culture="roman"
+	340.1.1={
+		birth=yes
+	}
+	417.1.1={
+		death=yes
+	}
+}
+1300668 = {
+	name="Decius" #PLRE vol.2 Decius
+	#consularis Tusciae et Umbriae 417 Nov.
+	religion="nicene"
+	culture="roman"
+	father = 1300667
+	360.1.1={
+		birth=yes
+	}
+	430.1.1={
+		death=yes
+	}
+}
+1300669 = {
+	name="Anastasius" #PLRE vol.2 Anastasius 10
+	#dux Palaestinae 516/517
+	religion="nicene"
+	culture="roman"
+	470.1.1={
+		birth=yes
+	}
+	540.1.1={
+		death=yes
+	}
+}
+1300376 = {
+	name="Cledonius" #PLRE vol.2 Cledonius 1
+	religion="nicene"
+	culture="roman"
+	trait = just
+	380.1.1={
+		birth=yes
+	}
+	440.1.1={
+		death=yes
+	}
+}
+1300377 = {
+	name="Vitalianus" #PLRE vol.2 Fl. Patricius Vitalianus 3
+	religion="nicene"
+	culture="roman"
+	420.1.1={
+		birth=yes
+	}
+	480.1.1={
+		death=yes
+	}
+}
+1300378 = {
+	name="Paulus" #PLRE vol.2 Paulus 14
+	religion="nicene"
+	culture="roman"
+	470.1.1={
+		birth=yes
+	}
+	530.1.1={
+		death=yes
+	}
+}
+1300379 = {
+	name="Marinus" #PLRE vol.2 Anonymus 83
+	religion="nicene"
+	culture="roman"
+	#grandson of PPO Marinus
+	trait = arbitrary
+	trait = indulgent_wastrel
+	470.1.1={
+		birth=yes
+	}
+	518.1.1={
+		death=yes
+	}
+}
+1300380 = {
+	name="Bassianus" #PLRE vol.2 Bassianus
+	religion="nicene"
+	culture="roman"
+	father = 1300379
+	trait = arbitrary
+	trait = indulgent_wastrel
+	490.1.1={
+		birth=yes
+	}
+	550.1.1={
+		death=yes
+	}
+}
+#################
+#Province Arcadia
+#################
+1300365 = {
+	name="Origenes" #PLRE vol.2 Fl. Origenes
+	religion="nicene"
+	culture="roman"
+	360.1.1={
+		birth=yes
+	}
+	430.1.1={
+		death=yes
+	}
+}
+1300366 = {
+	name="Alexander" #PLRE vol.2 Fl. Aristonicus Alexander 21
+	religion="nicene"
+	culture="roman"
+	380.1.1={
+		birth=yes
+	}
+	440.1.1={
+		death=yes
+	}
+}
+1300367 = {
+	name="Maximus" #PLRE vol.2 Fl. Demetrianus Maximus 19
+	religion="nicene"
+	culture="roman"
+	380.1.1={
+		birth=yes
+	}
+	440.1.1={
+		death=yes
+	}
+}
+1300368 = {
+	name="Theophilus" #PLRE vol.2 Fl. Anthemius Isidorus Theophilus 7
+	religion="nicene"
+	culture="roman"
+	390.1.1={
+		birth=yes
+	}
+	460.1.1={
+		death=yes
+	}
+}
+1300369 = {
+	name="Eusebius" #PLRE vol.2 Fl. Aelius Eusebius 26
+	religion="nicene"
+	culture="roman"
+	410.1.1={
+		birth=yes
+	}
+	470.1.1={
+		death=yes
+	}
+}
+##########
+
+1300683 = {
+	name="Flavius Petrus" #PLRE vol.2 Fl. Petrus 28
+	# Consul of 516
+	religion="nicene"
+	culture="roman"
+	460.1.1={
+		birth=yes
+	}
+	530.1.1={
+		death=yes
+	}
+}
+
+1300686 = {
+	name="Flavius Moschianus" #PLRE vol.2 Fl. Moschianus 2
+	# Consul of 512
+	religion="nicene"
+	culture="roman"
+	460.1.1={
+		birth=yes
+	}
+	530.1.1={
 		death=yes
 	}
 }

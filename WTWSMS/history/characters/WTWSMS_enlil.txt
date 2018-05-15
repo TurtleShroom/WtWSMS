@@ -637,7 +637,8 @@
 	religion="insular"
 	culture="irish"
 	father=36038
-	450.1.1={
+	#450.1.1={
+	449.1.1={
 		birth=yes
 		give_nickname = nick_lonn
 	}
@@ -708,7 +709,8 @@
 	religion="insular"
 	culture="irish"
 	father=36038
-	451.1.1={
+	#451.1.1={
+	450.1.1={
 		birth=yes
 	}
 	490.1.1={
@@ -4273,11 +4275,14 @@
 	culture="gujurati"
 	trait="kshatriya"
 	trait="shaivist_hindu"
-	530.1.1 = {
-		birth = yes
+	530.1.1={
+		birth=yes
 	}
-	570.1.1 = {
-		death = yes
+	550.1.1={
+		add_spouse=191606
+	}
+	580.1.1={
+		death=yes
 	}
 }
 36333 = {
@@ -8227,7 +8232,7 @@
 	440.1.1={
 		birth=yes
 	}
-	440.1.1={
+	460.1.1={
 		add_spouse = 36613
 	}
 	475.1.1={
