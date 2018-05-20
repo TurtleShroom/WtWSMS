@@ -27,7 +27,7 @@ character_event = {
 	only_men = yes
 	
 	trigger = {
-		always = no #not finished yet
+#		always = no #not finished yet
 		is_married = no
 		is_betrothed = no
 		is_primary_heir = no
@@ -239,7 +239,7 @@ character_event = {
 	only_men = yes
 	
 	trigger = {
-		always = no #not finished yet
+ #		always = no #not finished yet
 		is_married = no
 		is_betrothed = no
 		is_primary_heir = no
@@ -420,7 +420,7 @@ character_event = {
 	only_men = yes
 	
 	trigger = {
-		always = no #not finished yet
+#		always = no #not finished yet
 		is_married = no
 		is_betrothed = no
 		is_primary_heir = no
@@ -657,7 +657,7 @@ character_event = {
 	only_men = yes
 	
 	trigger = {
-		always = no #not finished yet
+#		always = no #not finished yet
 		is_married = no
 		is_betrothed = no
 		is_primary_heir = no
@@ -860,6 +860,7 @@ character_event = {
 			create_character = {
 				random_traits = yes
 				trait = slow
+				trait = fertile
 				dynasty = NONE
 				female = yes
 				religion = FROM

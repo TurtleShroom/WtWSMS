@@ -90,6 +90,9 @@ decisions = {
 		
 		effect = {
 			activate_title = { title = d_ebionites status = yes }
+			d_ebionites = {
+				add_law = succ_primogeniture
+			}
 			custom_tooltip = {
 				text = LORDLIVESZION
 				hidden_tooltip = {
@@ -470,6 +473,11 @@ decisions = {
 					}
 					is_heritic = no
 				}
+				AND = {
+					tier = EMPEROR
+					piety = 5000
+					realm_size = 200
+				}
 			}
 			piety = 1000	
 			OR = {
@@ -598,7 +606,8 @@ decisions = {
 			OR = {
 				is_heretic = no
 				AND = {
-					higher_real_tier_than = KING
+					higher_real_tier_than = EMPEROR
+					piety = 1000
 					realm_size = 90
 				}
 			}
@@ -607,6 +616,11 @@ decisions = {
 				owns = 802 # Alexandria
 				any_realm_lord = {
 					owns = 802
+				}
+				AND = {
+					higher_real_tier_than = EMPEROR
+					piety = 3000
+					realm_size = 200
 				}
 			}
  		}
@@ -872,7 +886,13 @@ decisions = {
 
 		potential = {
 			has_landed_title = e_byzantium
-			religion = nicene
+			OR = {
+				religion = nicene
+				AND = {
+					year = 500 # Forces it in the off-chance that the Miaphysite Emperor remains on the ERE throne
+					religion_group = christian
+				}
+			}
 			NOT = { has_global_flag = the_henotikon}
 		}
 		
@@ -904,8 +924,8 @@ decisions = {
 			is_playable = yes
 			is_landed = yes
 			religion = donatism
-			capital_scope = {
-				region = world_africa_north #These bands lived in Northern Africa where there were sizeable Donatist minorities
+			any_realm_province = {
+				region = world_africa_north # These bands lived in Northern Africa where there were sizeable Donatist minorities
 			}
 			OR = {
 				ai = no
@@ -1082,7 +1102,7 @@ decisions = {
 			primary_title = { higher_tier_than = BARON }
 		}
 		allow = {
-            scaled_wealth = 0.20
+			scaled_wealth = 0.20
 			prestige = 50
 			piety = 50
 		}
@@ -1385,7 +1405,13 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
-			religion = nicene
+			OR = {
+				religion = nicene
+				AND = {
+					year = 525
+					religion_group = christian
+				}
+			}
 			has_landed_title = e_byzantium 
 			age = 16
 			prisoner = no
@@ -1474,7 +1500,10 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			religion_group = pagan_group 
-			has_landed_title = c_aquileia
+			OR = {
+				has_landed_title = c_aquileia
+				any_child = { has_landed_title = c_aquileia }
+			}
 			NOT = { has_global_flag = the_aquileian_capture }
 			NOT = { has_global_flag = end_aquileian_schism }
 			has_global_flag = aquileian_schism 
@@ -1491,7 +1520,7 @@ decisions = {
 			unsafe_religion = aquileian
 			hidden_tooltip = {
 				any_child = {
-					limit = { religion = ROOT }
+					limit = { religion_group = pagan_group }
 					unsafe_religion = aquileian
 				}
 			}

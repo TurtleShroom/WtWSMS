@@ -639,7 +639,7 @@ laws = {
 			}
 		}
 	}
-	ze_administration_laws_2 = {
+	ze_administration_laws_2 = { # Imperial Administration (e.g. in Roman Empire)
 		group = ze_administration_laws
 		allow = {
 			tier = EMPEROR

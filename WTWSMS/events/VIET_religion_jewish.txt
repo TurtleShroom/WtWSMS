@@ -67,6 +67,7 @@ narrative_event = {
 	title = VIETjewish.2.name
 	desc = VIETjewish.2.desc
 	picture = GFX_evt_holy_jerusalem
+	major = yes
 	
 	is_triggered_only = yes
 	
@@ -530,7 +531,7 @@ character_event = {
 	}
 }
 
-# VIETjewish.6 - 17 # Removed WtWSMS
+# VIETjewish.6 - 17 # Removed WTWSMS
 
 # Other dynasty members get the House of David trait (only for characters who are alive unfortunately)
 character_event = {
@@ -1163,7 +1164,7 @@ character_event = {
 			has_landed_title = d_exilarch
 			has_landed_title = d_exilarch_karaite
 			has_landed_title = d_ebionites
-			father = {
+			father_even_if_dead = {
 				OR = {
 					has_landed_title = d_exilarch
 					has_landed_title = d_exilarch_karaite
@@ -1178,6 +1179,7 @@ character_event = {
 	
 	option = {
 		name = exilarch.0.a # Oy vey!
+		set_character_flag = ai_flag_refuse_conversion # The Exilarch and friends should not convert out of Judaism!
 		create_character = {
 			female = yes
 			min_age = 16
@@ -1189,6 +1191,16 @@ character_event = {
 			remove_trait = celibate
 			remove_trait = chaste
 			add_spouse = ROOT
+		}
+		# Sets the laws of the Exilarchy to primogeniture as a safety check, because the game tends to revert back to Open Elective for theocracies
+		d_ebionites = { 
+			add_law = succ_primogeniture
+		}
+		d_exilarch = {
+			add_law = succ_primogeniture
+		}
+		d_exilarch_karaite = {
+			add_law = succ_primogeniture
 		}
 	}
 }
@@ -1209,6 +1221,7 @@ narrative_event = {
 	trigger = {
 		has_landed_title = d_exilarch
 		NOT = { trait = house_of_david }
+		NOT = { has_global_flag = has_global_flag = jewish_homeland_restored } # With Israel restored, the worries about the House of David and continuity, etc., are solved, similarly to the High Priest
 	}
 	
 	immediate = {
@@ -1260,6 +1273,7 @@ narrative_event = {
 	trigger = {
 		has_landed_title = d_exilarch_karaite
 		NOT = { trait = house_of_david }
+		NOT = { has_global_flag = has_global_flag = jewish_homeland_restored } # With Israel restored, the worries about the House of David and continuity, etc., are solved, similarly to the High Priest
 	}
 	
 	immediate = {
@@ -1302,9 +1316,8 @@ character_event = {
 	
 	only_men = yes
 	only_rulers = yes
-	ai = yes
 	
-	is_triggered_only = yes
+	mean_time_to_happen = { days = 3 }
 	
 	trigger = {
 		OR = {
@@ -1338,6 +1351,7 @@ character_event = {
 				OR = {
 					title = d_exilarch
 					title = d_exilarch_karaite
+					title = d_ebionites
 				}
 			}
 		}
@@ -1366,6 +1380,7 @@ character_event = {
 #			}
 #			unsafe_religion = religion = jewish
 #		}
+		set_character_flag = ai_flag_refuse_conversion # The Exilarch and friends should not convert!
 	}
 	option = {
 		name = exilarch.4.b
@@ -1411,16 +1426,18 @@ character_event = {
 	only_men = yes
 	only_rulers = yes
 	
-	is_triggered_only = yes
+	mean_time_to_happen = { days = 40 }
 	
 	trigger = {
 		has_landed_title = k_israel
 		NOT = { has_global_flag = the_exilarch_returns }
 		NOT = { has_global_flag = the_karaite_exilarch_returns }
+		NOT = { has_global_flag = ebionites_comes_home }
 		has_global_flag = jewish_homeland_restored
 		OR = {
 			d_exilarch = { has_holder = yes }
 			d_exilarch_karaite = { has_holder = yes }
+			d_ebionites = { has_holder = yes }
 		}
 	}
 	
@@ -1439,6 +1456,9 @@ character_event = {
 							set_defacto_liege = ROOT
 						}
 					}
+					d_exilarch = {
+						de_jure_liege = k_israel
+					}
 				}
 			}
 		}
@@ -1455,6 +1475,25 @@ character_event = {
 							set_defacto_liege = ROOT
 						}
 					}
+					d_exilarch_karaite = {
+						de_jure_liege = k_israel
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				d_ebionites = { has_holder = yes }
+			}
+			set_global_flag = ebionites_come_home
+			hidden_tooltip = {
+				d_ebionites = {
+					holder_scope = {
+						set_defacto_liege = ROOT
+					}
+				}
+				d_ebionites = {
+					de_jure_liege = k_israel
 				}
 			}
 		}
@@ -1473,6 +1512,7 @@ character_event = {
 		OR = {
 			has_landed_title = d_exilarch
 			has_landed_title = d_exilarch_karaite
+			has_landed_title = d_ebionites
 		}
 		trait = house_of_david
 		NOT = { has_character_flag = VIET_Israel_claim_given }
@@ -1484,6 +1524,7 @@ character_event = {
 		name = exilarch.6.a # Oy vey!
 		add_weak_claim = k_israel
 		set_character_flag = VIET_Israel_claim_given
+		set_character_flag = ai_flag_refuse_conversion # The Exilarch and friends should not convert out of Judaism!
 	}
 }
 # Exilarch destroys the karaite exilarchy
@@ -1639,7 +1680,7 @@ character_event = {
 	desc = israel.100.desc
 	picture = GFX_evt_holy_jerusalem
 
-#	is_triggered_only = yes
+	mean_time_to_happen = { years = 3 }
 
 	only_rulers = yes
 	min_age = 16
@@ -1655,7 +1696,6 @@ character_event = {
 		NOT = { has_global_flag = aramean_integrated }
 		NOT = { has_character_flag = aramean_village_visited }
 		NOT = { has_character_flag = removed_arameans }
-		has_disease = no
 		war = no
 	}
 
@@ -1845,7 +1885,10 @@ narrative_event = {
 	option = { #Maybe we have things in common
 		name = israel.103.a
 		trigger = {
-			NOT = { trait = cruel }
+			OR = {
+				NOT = { trait = cruel }
+				ai = no
+			}
 		}
 		any_courtier = {
 			limit = {
@@ -2102,8 +2145,6 @@ character_event = { #New ruler has to reaffirm arameans
 	desc = israel.106.desc
 	picture = GFX_evt_holy_jerusalem
 	
-	is_triggered_only = yes
-	
 	only_rulers = yes
 	
 	trigger = {
@@ -2118,9 +2159,9 @@ character_event = { #New ruler has to reaffirm arameans
 		NOT = { has_character_flag = removed_arameans }
 	}
 	
-	#mean_time_to_happen = {
-	#	days = 1
-	#}
+	mean_time_to_happen = {
+		days = 9
+	}
 	
 	option = {
 		name = israel.106.a
@@ -2267,7 +2308,7 @@ character_event = { #New ruler has to reaffirm arameans
 				years = 1
 			}
 		}
-		any_courtier = {
+		any_realm_character = {
 			limit = {
 				culture = aramean
 			}
@@ -2297,8 +2338,19 @@ narrative_event = { #Should I make the arameans equals permanently?
 		has_global_flag = aramean_integrated
 		NOT = { has_global_flag = aramean_law }
 		has_character_flag = reaffirmed_arameans
-		diplomacy = 12
-		learning = 12
+		OR = {
+			AND = {
+				diplomacy = 12
+				learning = 12
+			}
+			diplomacy = 18
+			learning = 18
+			trait = genius
+			AND = {
+				trait = kind
+				trait = just
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -2358,12 +2410,7 @@ character_event = { #aramean courtier spawn
 	}
 	
 	mean_time_to_happen = {
-		years = 20
-
-		modifier = {
-			factor = 4
-			is_patrician = yes
-		}
+		years = 10
 		
 		modifier = {
 			factor = 2
@@ -2420,12 +2467,12 @@ character_event = { #aramean courtier spawn
 			trait = greedy
 		}
 		
-		modifier = {
-			factor = 8
-			any_courtier = {
-				has_character_flag = israel_aliyah
-			}
-		}
+#		modifier = {
+#			factor = 8
+#			any_courtier = {
+#				has_character_flag = israel_aliyah
+#			}
+#		}
 	}
 	
 	option = { #accept them

@@ -104,9 +104,9 @@ character_event = {
 	
 	min_age = 16
 	capable_only = yes
-	only_rulers = yes
+#	only_rulers = yes
 	
-	is_triggered_only = yes
+	mean_time_to_happen = { days = 2 }
 	
 	trigger = {
 		is_theocracy = yes
@@ -1719,15 +1719,6 @@ character_event = {
 			NOT = { has_character_flag = converted_to_vegetarianism }
 			is_adult = yes
 			OR = {
-				religion_group = indian_group
-				religion = cathar
-				religion = qarmatian
-				religion = bogomilist
-				religion = taoist
-				religion = priscillianism
-				religion = miaphysite # RL Coptics fast by taking a vegetarian or vegan diet
-			}
-			OR = {
 				trait = zealous
 				trait = kind
 				trait = temperate
@@ -1818,15 +1809,6 @@ character_event = {
 				NOT = { trait = incapable }
 				NOT = { has_character_flag = converted_to_vegetarianism }
 				is_adult = yes
-				OR = {
-					religion_group = indian_group
-					religion = cathar
-					religion = qarmatian
-					religion = bogomilist
-					religion = taoist
-					religion = priscillianism
-					religion = miaphysite # RL Coptics fast by taking a vegetarian or vegan diet
-				}
 				OR = {
 					trait = zealous
 					trait = kind

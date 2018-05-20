@@ -2,6 +2,10 @@
 on_yearly_pulse = {
 	events = {
 		exilarch.0 # Ensure the Exilarch, High Priest, etc. is married
+		exilarch.1 # Checks, and if found, terminates the Exilarchy if it is not held by a descendant of King David
+		exilarch.2 # Checks, and if found, terminates the Karaite Exilarchy if it is not held by a descendant of King David
+		exilarch.9 # A brilliant Jew descended from King David can restore the Exilarchy, this is checked annually
+		exilarch.10 # A brilliant Karaite Jew descended from King David can restore the Exilarchy, this is checked annually
 	}
 
 	random_events = {
