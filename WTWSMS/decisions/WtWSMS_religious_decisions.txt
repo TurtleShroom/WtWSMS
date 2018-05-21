@@ -906,7 +906,7 @@ decisions = {
 		}
 		
 		effect = {
-			narrative_event = { id = hist.9 }
+			character_event = { id = hist.9 }
 			set_global_flag = the_henotikon
 		}
 		
