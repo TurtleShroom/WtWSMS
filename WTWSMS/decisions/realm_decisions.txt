@@ -1327,7 +1327,7 @@ decisions = {
 					NOT = { trait = sympathy_judaism }
 				}
 				random = {
-					chance = 50
+					chance = 75
 					add_trait = sympathy_judaism
 				}
 			}
@@ -1408,6 +1408,8 @@ decisions = {
 					OR = {
 						religion_group = jewish_group 
 						religion = ebionites
+						culture = ashkenazi
+						culture = sephardi
 					}
 				} 
 			}

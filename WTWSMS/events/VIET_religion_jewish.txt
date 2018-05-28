@@ -1192,15 +1192,15 @@ character_event = {
 			remove_trait = chaste
 			add_spouse = ROOT
 		}
-		# Sets the laws of the Exilarchy to primogeniture as a safety check, because the game tends to revert back to Open Elective for theocracies
+		# Sets the laws of the Exilarchy as a safety check, because the game tends to revert back to Open Elective for theocracies
 		d_ebionites = { 
 			add_law = succ_primogeniture
 		}
 		d_exilarch = {
-			add_law = succ_primogeniture
+			add_law = succ_seniority
 		}
 		d_exilarch_karaite = {
-			add_law = succ_primogeniture
+			add_law = succ_seniority
 		}
 	}
 }
@@ -1361,6 +1361,7 @@ character_event = {
 				NOT = { has_landed_title = d_exilarch_karaite }
 			}
 			unsafe_religion = jewish
+			any_child = { unsafe_religion = jewish }
 		}
 		if = {
 			limit = {
@@ -1368,10 +1369,12 @@ character_event = {
 				NOT = { has_landed_title = d_exilarch }
 			}
 			unsafe_religion = karaite
+			any_child = { unsafe_religion = karaite }
 		}
 		if = {
 			limit = { has_landed_title = d_ebionites }
 			unsafe_religion = ebionites
+			any_child = { unsafe_religion = ebionites }
 		}
 #		if = {
 #			limit = {
@@ -1593,7 +1596,6 @@ character_event = {
 	desc = exilarch.9.desc
 
 	picture = GFX_evt_holy_jerusalem
-
 	only_men = yes
 	
 	is_triggered_only = yes
@@ -1603,7 +1605,11 @@ character_event = {
 		NOT = { has_landed_title = d_exilarch_karaite }
 		trait = house_of_david
 		religion = jewish
-		has_global_flag = VIET_end_of_exilarch
+		OR = {
+			has_global_flag = VIET_end_of_exilarch
+			NOT = { is_title_active = d_exilarch }
+			d_exilarch = { has_holder = no }
+		}
 		is_female = no
 		OR = {
 			AND = {
@@ -1644,7 +1650,11 @@ character_event = {
 		NOT = { has_landed_title = d_exilarch_karaite }
 		trait = house_of_david
 		religion = karaite
-		has_global_flag = VIET_end_of_exilarch_karaite
+		OR = {
+			has_global_flag = VIET_end_of_exilarch_karaite
+			NOT = { is_title_active = d_exilarch_karaite }
+			d_exilarch_karaite = { has_holder = no }
+		}
 		OR = {
 			AND = {
 				diplomacy = 15

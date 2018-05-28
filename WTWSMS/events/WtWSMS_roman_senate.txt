@@ -1039,6 +1039,7 @@ narrative_event = {
 	desc = SENATE.10004.desc
 	picture = GFX_evt_deca_romana
 	border = GFX_event_narrative_frame_religion
+	major = yes
 	
 	only_playable = yes
 	only_rulers = yes
