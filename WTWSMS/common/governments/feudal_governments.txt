@@ -181,7 +181,7 @@ feudal_governments = {
 				NOT = { religion_group = muslim }
 				NOT = {	primary_title = { is_landless_type_title = no }	}
 			}
-			NOT = {	religion_group = muslim	}
+			NOT = {	religion_group = muslim }
 			NOT = { religion = aten_pagan }
 			AND = { 
 				culture_group = tibetan_group
@@ -253,6 +253,7 @@ feudal_governments = {
 				culture = tangut
 				culture = jurchen
 				has_character_flag = chinese_imperial_government_preserve #keeps government when player is given culture change opton
+				primary_title = { has_title_flag = pretender_chinese_empire }
 			}
 			is_patrician = no
 		}
