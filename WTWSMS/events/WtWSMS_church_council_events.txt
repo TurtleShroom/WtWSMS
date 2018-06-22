@@ -238,9 +238,9 @@ narrative_event = {
 			}
 		}
 		any_realm_province = {
-			limit = { 
+			limit = {
 				religion = nicene
-          			}
+          	}
 			religion = aquileian
 		}
 		if = { # This prevents Kings that convert from converting everyone in their realm automatically, though Dukes and Counts still can do this
@@ -424,7 +424,7 @@ narrative_event = {
 		any_realm_province = {
 			limit = { 
 				religion = aquileian
-        		   	}
+			}
 			religion = nicene
 		}
 		any_realm_character = {
@@ -548,12 +548,12 @@ character_event = {
 #			}
 #			character_event = { id = HRE.4 } # The Great Schism
 #		}
-		k_nicene = { 
-				holder_scope = { 
-					character_event = { id = HRE.4 } # The Great Schism
-				} 
-			}
-		}
+#		k_nicene = {
+#				holder_scope = { 
+#					character_event = { id = HRE.4 } # The Great Schism
+#				} 
+#			}
+#		}
 	}
 	
 	option = { # Reverse judgement
