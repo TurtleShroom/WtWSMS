@@ -1458,6 +1458,7 @@ decisions = {
 			narrative_event = { id = syn.11 }
 			set_global_flag = end_aquileian_schism
 			d_aquileia_church = { unsafe_destroy_landed_title = THIS }
+			activate_title = { title = d_aquileia_church status = no }
 		}
 		
 		ai_will_do = {
@@ -1573,8 +1574,7 @@ decisions = {
 			factor = 5
 		}
 	}
-	
-<<<<<<< HEAD
+
 	dacian_sacrifice_the_messenger = {
 		only_playable = yes
 		is_high_prio = yes
@@ -1609,15 +1609,18 @@ decisions = {
 		ai_will_do = {
 			factor = 2
 		}
+
 	give_alms  = {
 		only_playable = yes
 		potential = {
 			is_playable = yes
-			ai = no
 			religion = pelagianism
 			is_adult = yes
 			demesne_size = 1
-			NOT = { has_character_flag = gave_alms }
+			OR = {
+				NOT = { has_character_flag = gave_alms }
+				ai = no
+			}
 			religion_head = {	
 				NOT = {
 					has_opinion_modifier = { who = ROOT modifier = opinion_almsgiving }
@@ -1629,7 +1632,7 @@ decisions = {
 		}
 		effect = {
 			set_character_flag = gave_alms
-			scaled_wealth = -0.25
+			scaled_wealth = -0.5
 			piety = 50
 			if = {
 				limit = {
@@ -1650,9 +1653,13 @@ decisions = {
 				factor = 0
 				ai = yes
 				OR = {
-					NOT = { scaled_wealth = 10.0 }
+					NOT = { scaled_wealth = 2.0 }
 					piety = 0
 				}
+			}
+			modifier = {
+				factor = 0
+				trait = greedy
 			}
 		}
 	}

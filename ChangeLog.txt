@@ -26,6 +26,7 @@ MINOR:
 - Added a decision for Pelagian rulers to give alms
 - Expanded the tribal organisation description to mention the risk of weak heir seeing the realm shatter after succession
 - Added a decision to promulgate the Lex Visigothorum as the Visigoths
+- Added some title cultural localisation for Latin group cultures
 
 MAP/HISTORY:
 - Added a fictional Romano-British count in Nantes to represent their local influence even after the end of Riothamus' authority
@@ -40,11 +41,13 @@ MAP/HISTORY:
 - Added Venantius, corrector of Lucaniae et Bruttiorum
 - Added four historical governors of Sicily prior to the first start date
 - Added two historical governors of Crete prior to 476
-- Added Willacharius, comes of Tours 584-590
+- Added two historical comites of Tours
 - Added four historical comites of Angouleme
 - Added Vaefarius, Frankish dux east of the Jura in 573
 - Added Dulcidius, father of Emperor Justin II
 - Added Waddo, comes of Saintes before 584
+- Added Ennodius, comes of Poitiers in 577 and dux of Poitiers and Tours 585-587
+- Added two historical comites of Javols
 
 BUGFIXES:
 - Fixed the Praetorian Guard's history, fixing the Western Scholae Palatinae decision
@@ -56,6 +59,11 @@ BUGFIXES:
 - Fixed Chinese off-map event troops spawning in Africa
 - Fixed the eastern edge of the map not being recognised in the mod
 - Fixed events about the spread of Christianity, adoption of feudalism and religious divergences between Christians firing repeatedly
+- Fixed Aramaic characters not corresponding to Aramean provinces
+- Fixed a few positions in Northern Africa
+- Fixed the Aquileian Patriarchy remaining active after resolution of the Aquileian Schism
+- Fixed the wrong Merovingian king being referenced as an important character in the Fallen Giant bookmark
+- Changed Nicene characters on the British Isles to Insular prior to the Synod of Whitby 
 
 2017-06-14 v0.9.12.1
 -----------------
