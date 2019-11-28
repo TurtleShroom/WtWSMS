@@ -529,6 +529,7 @@ tribal = {
 				}
 			}
 			OR = {
+				FROMFROM = { has_building = tb_roman_roads_0 } # Once a Roman Road is built, it is permanent
 				FROMFROM = { region = custom_imperium_romanum }
 				FROM = { has_romance_culture_trigger = yes }
 			}
@@ -647,6 +648,7 @@ tribal = {
 				}
 			}
 			OR = {
+				FROMFROM = { has_building = tb_roman_roads_1 } # Once a Roman Road is built, it is permanent
 				FROMFROM = { region = custom_imperium_romanum }
 				FROM = { has_romance_culture_trigger = yes }
 			}
@@ -766,6 +768,7 @@ tribal = {
 				}
 			}
 			OR = {
+				FROMFROM = { has_building = tb_roman_roads_2 } # Once a Roman Road is built, it is permanent
 				FROMFROM = { region = custom_imperium_romanum }
 				FROM = { has_romance_culture_trigger = yes }
 			}
@@ -1233,7 +1236,6 @@ tribal = {
 		potential = {
 			OR = {
 				FROM = {
-					higher_tier_than = duke
 					OR = {
 						religion = egyptian_pagan
 						religion = aten_pagan
@@ -1252,6 +1254,7 @@ tribal = {
 				OR = {
 					religion = egyptian_pagan
 					religion = aten_pagan
+					culture = coptic
 				}
 			}
 		}

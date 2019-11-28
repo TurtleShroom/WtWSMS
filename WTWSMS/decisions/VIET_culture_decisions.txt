@@ -31,6 +31,8 @@ decisions = {
 				culture = breton
 				culture = cornish
 				culture = cumbric
+				religion = insular
+				religion = pelagian
 			}
 			k_britain = {
 				has_holder = no
@@ -156,7 +158,7 @@ decisions = {
 					}
 				}
 				hidden_tooltip = {
-					has_crown_law_title = no
+					d_cornwall = { has_crown_law_title = no }
 					NOT = { has_dlc = "Zeus" }
 				}
 				crownlaw_title = {
@@ -205,7 +207,7 @@ decisions = {
 					}
 				}
 				hidden_tooltip = {
-					has_crown_law_title = no
+					d_cornwall = { has_crown_law_title = no }
 					NOT = { has_dlc = "Zeus" }
 				}
 				crownlaw_title = {
@@ -302,7 +304,6 @@ decisions = {
 			age = 16
 			scaled_wealth = 0.5
 			prisoner = no
-			religion_group = christian
 			NOT = { has_character_flag = VIET_celtic_breton_cavalry }
 			culture = breton
 		}
@@ -310,6 +311,7 @@ decisions = {
 			war = no
 			prisoner = no
 			piety = 100
+			religion_group = christian
 		}
 		effect = {
 			scaled_wealth = -0.5
@@ -348,9 +350,17 @@ decisions = {
 	go_on_tro_breizh = {
 		only_playable = yes
 		potential = {
-			culture = breton
+			OR = {
+				culture = breton
+				AND = {
+					OR = {
+						has_landed_title = k_brittany
+						has_landed_title = d_brittany
+					}
+					religion_group = christian
+				}
+			}
 			is_ruler = yes
-			religion_group = christian
 			OR = {
 				NOT = { has_dlc = "Way of Life" }
 				NOT = { trait = pilgrim }
@@ -359,6 +369,7 @@ decisions = {
 			NOT = { has_character_flag = do_not_disturb }
 		}
 		allow = {
+			religion_group = christian
 			war = no
 			in_command = no
 			any_demesne_title = {
@@ -414,12 +425,16 @@ decisions = {
 				any_demesne_province = {
 					culture = welsh
 				}
+				AND = {
+					has_dlc = "Way of Life"
+					any_owned_province = { culture = welsh }
+					has_focus = focus_carousing
+				}
 			}
-			OR = {
-				NOT = { has_dlc = "Way of Life" }
-				lower_tier_than = DUKE
-				has_focus = focus_carousing
-			}
+#			OR = {
+#				NOT = { has_dlc = "Way of Life" }
+#				lower_tier_than = DUKE
+#			}
 			NOT = { has_character_modifier = gwyl_madant_timer }
 		}
 		allow = {
@@ -497,19 +512,16 @@ decisions = {
 				factor = 2
 				religion_group = pagan_group
 			}
+			modifier = {
+				factor = 3
+				has_focus = focus_carousing
+			}
 		}
 	}	
 	
 	visit_celtic_holy_well = {
 		only_playable = yes
 		potential = {
-			OR = {
-				culture_group = celtic
-				culture_group = continental_celtic
-				culture_group = west_germanic
-				religion = insular
-			}
-			NOT = { has_character_modifier = VIET_visited_holy_well }
 			any_demesne_province = {
 				OR = {
 					has_province_modifier = VIET_celtic_holy_well_1
@@ -518,6 +530,7 @@ decisions = {
 					has_province_modifier = VIET_celtic_holy_well_4
 				}
 			}
+			NOT = { has_character_modifier = VIET_visited_holy_well }
 		}
 		allow = {
 			war = no
@@ -563,7 +576,7 @@ decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0.01          # Reduce chances of happening
+			factor = 0.01 # Reduce chances of happening
 			modifier = {
 				factor = 2
 				trait = gregarious
@@ -587,6 +600,15 @@ decisions = {
 			modifier = {
 				factor = 0.5
 				trait = slothful
+			}
+			modifier = {
+				factor = 0.9
+				NOT = {
+					culture_group = celtic
+					culture_group = continental_celtic
+					culture_group = west_germanic
+					religion = insular
+				}
 			}
 		}
 	}	
@@ -628,19 +650,22 @@ decisions = {
 			}
 			NOT = {	has_character_flag = going_to_obby_oss }
 			NOT = {	has_character_flag = do_not_disturb }
-			has_landed_title = c_cornwall
 			OR = {
+				AND = {
+					has_dlc = "Way of Life"
+					OR = {
+						has_focus = focus_carousing
+						has_focus = focus_seduction
+					}
+					any_owned_province = { province_id = 31 }
+				}
+				has_landed_title = c_cornwall
+				has_landed_title = d_cornwall
 				culture = cornish
 				AND = {
 					NOT = { culture = cornish }
 					primary_title = { tier = COUNT }
 				}
-			}
-			OR = {
-				NOT = { has_dlc = "Way of Life" }
-				lower_tier_than = DUKE
-				has_focus = focus_carousing
-				has_focus = focus_seduction
 			}
 		}
 		allow = {
@@ -695,15 +720,23 @@ decisions = {
 						province_id = 480
 					}
 				}
+				AND = {
+					has_dlc = "Way of Life"
+					OR = {
+						has_focus = focus_carousing
+						has_focus = focus_business
+						has_focus = focus_seduction
+					}
+					any_owned_province = {
+						OR = {
+							province_id = 479
+							province_id = 480
+						}
+					}
+				}
 			}
 			NOT = { has_character_modifier = VIET_cretan_feast_timer }
 			NOT = { has_character_flag = do_not_disturb }
-			OR = {
-				NOT = { has_dlc = "Way of Life" }
-				lower_tier_than = DUKE
-				has_focus = focus_carousing
-				has_focus = focus_business
-			}
 		}
 		allow = {
 			war = no
@@ -758,7 +791,7 @@ decisions = {
 		ai_will_do = {
 			factor = 0.01          # Reduce chances of happening
 			modifier = {
-				factor = 0.001
+				factor = 0
 				NOT = {
 					OR = {
 						trait = gregarious
@@ -768,13 +801,6 @@ decisions = {
 						trait = gluttonous
 						has_focus = focus_carousing
 					}
-				}
-			}
-			modifier = {
-				factor = 0.9
-				NOT = { 
-					culture = greek 
-					culture_group = byzantine
 				}
 			}
 			modifier = {
@@ -917,6 +943,7 @@ decisions = {
 			is_ruler = yes
 			OR = {
 				culture = sogdian
+				trait = sartapaw
 				capital_scope = {
 					OR = {
 						culture = sogdian
@@ -927,6 +954,20 @@ decisions = {
 					OR = {
 						culture = sogdian
 						has_province_modifier = VIET_sogdian_colony
+					}
+				}
+				AND = {
+					any_owned_province = {
+						OR = {
+							culture = sogdian
+							has_province_modifier = VIET_sogdian_colony
+						}
+					}
+					OR = {
+						has_focus = focus_carousing
+						has_focus = focus_business
+						has_focus = focus_rulership
+						has_dlc = "Way of Life"
 					}
 				}
 			}
@@ -1034,8 +1075,6 @@ decisions = {
 		}
 		allow = {
 			independent = yes
-			NOT = { tier = emperor }
-			NOT = { tier = king }
 			AND = {
 				#completely_controls = d_samarkand #not in WtWSMS
 				completely_controls = d_sogdia #instead of d_samarkand
@@ -1069,39 +1108,32 @@ decisions = {
 				tier = emperor
 				tier = king
 			}
+			any_owned_province = {
+				trade_route = silk_road
+			}
 			NOT = { has_global_flag = silk_road_level_3 }
 			NOT = { has_global_flag = silk_road_level_0 }
-			capital_scope = {
-				OR = {
-					kingdom = { title = k_afghanistan }
-					kingdom = { title = k_khiva }
-					kingdom = { title = k_baluchistan }
-					kingdom = { title = k_persia }
-					empire = { title = e_persia }
-					empire = { title = e_tartaria }
-					kingdom = { title = k_mongolia }
-					kingdom = { title = k_khotan }
-					kingdom = { title = k_cuman }
-					kingdom = { title = k_transoxiana }
-					kingdom = { title = k_alania }
-					county = { title = c_antiocheia }
-				}
-			} #change for SWMH
-			realm_size = 80
 		}
 		allow = {
 			independent = yes
+			realm_size = 80
 			OR = {
-				has_landed_title = k_persia
-				has_landed_title = k_khiva
-				has_landed_title = k_afghanistan
-				has_landed_title = k_baluchistan
-				has_landed_title = e_persia
-				has_landed_title = k_mongolia
-				has_landed_title = k_khotan
-				has_landed_title = k_cuman
-				has_landed_title = k_transoxiana
-				has_landed_title = k_alania
+				capital_scope = { #change for SWMH
+					OR = {
+						kingdom = { title = k_afghanistan }
+						kingdom = { title = k_khiva }
+						kingdom = { title = k_baluchistan }
+						kingdom = { title = k_persia }
+						empire = { title = e_persia }
+						empire = { title = e_tartaria }
+						kingdom = { title = k_mongolia }
+						kingdom = { title = k_khotan }
+						kingdom = { title = k_cuman }
+						kingdom = { title = k_transoxiana }
+						kingdom = { title = k_alania }
+						county = { title = c_antiocheia }
+					}
+				}
 				trait = sartapaw
 				culture = sogdian
 			}
@@ -1154,11 +1186,14 @@ decisions = {
 
 	invite_scholar_to_court = {
 		only_playable = yes
+		ai = no
+		
 		potential = {
-			ai = no
 			OR = {
 				culture_group = sinic
-				religion = confucianism
+				religion_group = chinese_group
+				religion = root_west_pagan
+				religion = root_west_pagan_reformed
 				has_landed_title = e_khitan
 			}
 		}
@@ -1168,9 +1203,10 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.2
 			create_character = {
+				culture = han
 				trait = jinshi
 				random_traits = yes
-				dynasty = random
+				dynasty = none
 				female = no
 				religion = confucianism
 			}
@@ -1197,7 +1233,6 @@ decisions = {
 				num_of_duke_titles = 2
 			}
 			is_adult = yes
-			religion_group = muslim
 			culture = turkish
 			NOT = { trait = incapable }
 			NOT = { has_global_flag = fall_of_constantinople }
@@ -1229,11 +1264,10 @@ decisions = {
 				father = { has_landed_title = e_turkish }
 				any_sibling = { has_landed_title = e_turkish }
 			}
-			religion_group = muslim
 			culture = turkish
 			NOT = { has_character_flag = ottoman_wifey_harem }
 			is_female = no
-			is_adult = yes #sorry no horny kids
+			is_adult = yes # sorry no horny kids
 		}
 		allow = {
 			NOT = { num_of_spouses = 4 }
@@ -1294,6 +1328,10 @@ decisions = {
 				culture_group = central_african
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
+				religion = african_solar_pagan
+				religion = african_solar_pagan_reformed
+				has_landed_title = e_mali
+				has_landed_title = k_mali
 			}
 		}
 		allow = {
@@ -1385,13 +1423,18 @@ decisions = {
 
 	assign_griot = { # For the AI, because they are dumb enough not to hand out minor titles
 		only_playable = yes
+		ai = yes
+		
 		potential = {
-			ai = yes
 			OR = {
 				culture_group = west_african
 				culture_group = central_african
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
+				religion = african_solar_pagan
+				religion = african_solar_pagan_reformed
+				has_landed_title = e_mali
+				has_landed_title = k_mali
 			}
 			NOT = { 
 				any_courtier = {
@@ -1435,6 +1478,7 @@ decisions = {
 				culture_group = west_african
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
+				has_landed_title = e_mali
 			}
 			NOR = {
 				has_character_flag = received_iron_woman
@@ -1536,6 +1580,10 @@ decisions = {
 				culture_group = central_african
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
+				religion = african_solar_pagan
+				religion = african_solar_pagan_reformed
+				has_landed_title = e_mali
+				has_landed_title = k_mali
 			}
 			NOR = {
 				has_character_modifier = griot_performance_timer

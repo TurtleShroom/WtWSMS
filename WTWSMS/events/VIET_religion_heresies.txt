@@ -21,17 +21,16 @@ narrative_event = {
 	picture = GFX_evt_monastery_monks
 
 	min_age = 16
-	religion = fraticelli 
+	religion = fraticelli
 	capable_only = yes
 	prisoner = no
 	
 	is_triggered_only = yes
 	
 	trigger = {
-		religion = fraticelli
 		NOT = { has_character_modifier = VIET_fraticelli_relaxati }
 		NOT = { has_character_modifier = VIET_fraticelli_zelanti }
-	}	
+	}
 	
 	option = { #relaxati
 		name = "VIETmisc.10000.a"
@@ -40,7 +39,7 @@ narrative_event = {
 			name = VIET_fraticelli_relaxati
 			duration = -1
 		}
-	}	
+	}
 	option = { #zelanti
 		name = "VIETmisc.10000.b"
 		custom_tooltip = { text = zelanti_explaination }
@@ -114,7 +113,7 @@ character_event = {
 	
 	immediate = {
 		remove_character_modifier = VIET_fraticelli_relaxati
-		remove_character_modifier = VIET_fraticelli_zelanti	
+		remove_character_modifier = VIET_fraticelli_zelanti
 	}
 }
 
@@ -122,7 +121,7 @@ character_event = {
 # Fraticelli clergy loses bad traits
 character_event = {
 	id = VIETmisc.10004
-	desc = VIETmisc.10004.desc
+	#desc = VIETmisc.10004.desc #not needed in hidden event
 
 	hide_window = yes
 
@@ -133,10 +132,16 @@ character_event = {
 	ai = yes
 
 	trigger = {
-		religion = fraticelli
+		OR = {
+			religion = fraticelli
+			religion = donatist
+			religion = pelagianism
+			religion = priscillianism
+		}
 		OR = {
 			trait = monk
 			trait = nun
+			is_ascetic_trigger = yes
 			is_theocracy = yes
 		}
 		OR = {
@@ -217,18 +222,15 @@ character_event = {
 	trigger = {
 		OR = {
 			religion = fraticelli
-			religion = insular  # Monasticism and radical asceticism were prominent
+			religion = insular # Monasticism and radical asceticism were prominent
 			religion = pelagianism
+			religion = donatist
+			religion = priscillianist
 			religion_group = indian_group # Jain nudists, Buddhist monks, etc.
 			has_character_modifier = jain_naked_ascetic
 			has_character_modifier = hindu_ascetic
 			has_character_modifier = buddhist_ascetic
 			is_ascetic_trigger = yes
-		}
-		NOT = {
-			any_courtier = {
-				trait = wandering_hermit
-			}
 		}
 		any_courtier = {
 			is_adult = yes
@@ -236,6 +238,8 @@ character_event = {
 				religion = fraticelli
 				religion = insular # Monasticism and radical asceticism were prominent
 				religion = pelagianism
+				religion = donatist
+				religion = priscillianist
 				religion_group = indian_group # Jain nudists, Buddhist monks, etc.
 				has_character_modifier = jain_naked_ascetic
 				has_character_modifier = hindu_ascetic
@@ -244,15 +248,12 @@ character_event = {
 			}
 			learning = 8
 			OR = {
-				trait = monk
-				trait = nun
-			}
-			OR = {
 				trait = zealous
 				trait = temperate
 				trait = charitable
 				trait = diligent
 				trait = scholar
+				trait = erudite
 				trait = gregarious
 			}
 			NOT = { trait = wandering_hermit }
@@ -322,8 +323,10 @@ character_event = {
 				is_adult = yes
 				OR = {
 					religion = fraticelli
-					religion = insular  # Monasticism and radical asceticism were prominent
+					religion = insular # Monasticism and radical asceticism were prominent
 					religion = pelagianism
+					religion = donatist
+					religion = priscillianist
 					religion_group = indian_group # Jain nudists, Buddhist monks, etc.
 					has_character_modifier = jain_naked_ascetic
 					has_character_modifier = hindu_ascetic
@@ -331,15 +334,12 @@ character_event = {
 					is_ascetic_trigger = yes
 				}
 				OR = {
-					trait = monk
-					trait = nun
-				}
-				OR = {
 					trait = zealous
 					trait = temperate
 					trait = charitable
 					trait = diligent
 					trait = scholar
+					trait = erudite
 					trait = gregarious
 				}
 				NOT = { trait = wandering_hermit }

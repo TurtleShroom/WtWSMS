@@ -1,11 +1,10 @@
 ######################################
-#
 # Legion Events
-# LEG.1 - LEG.9 Technical events
-# LEG.10 - LEG.99 Legion disband events
 #
-######################################
-# By Joemit
+# Written by Joemit
+#
+# LEG.1 -> LEG.9 Technical events
+# LEG.10 -> LEG.99 Legion disband events
 ######################################
 
 namespace = LEG
@@ -26,7 +25,7 @@ character_event = {
 	}
 }
 
-# Legion created 
+# Legion created
 # FROM is the legion commander
 # ROOT is the decision taker and liege
 narrative_event = {
@@ -65,13 +64,13 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name= {
+		name = {
 			text = EVTOPTALEG.3
 			trigger = {
 				has_romance_culture_trigger = yes
 			}
 		}
-		name= {
+		name = {
 			text = EVTOPTBLEG.3
 			trigger = {
 				NOT = { has_romance_culture_trigger = yes }
@@ -128,7 +127,7 @@ character_event = {
 		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
 		}
@@ -173,7 +172,7 @@ character_event = {
 					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_italica
 		d_salona = {
 			OR = {
@@ -212,10 +211,10 @@ character_event = {
 		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_ii_italica
 		d_noricum = {
 			OR = {
@@ -388,7 +387,7 @@ character_event = {
 		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
 		}
@@ -517,13 +516,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_vii_gemina
 		k_gallaecia = {
 			OR = {
@@ -561,13 +560,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_ii_augusta
 		k_england = {
 			OR = {
@@ -605,13 +604,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_vi_ferrata
 		k_arabia_petraea = {
 			OR = {
@@ -649,13 +648,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_septem_provincae
 		k_septem_provincae = {
 			OR = {
@@ -693,13 +692,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_v_iovia
 		k_moesia_superior = {
 			OR = {
@@ -737,13 +736,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_belgica
 		k_belgica = {
 			OR = {
@@ -781,13 +780,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_germania_inferior
 		k_germania_inferior = {
 			OR = {
@@ -825,13 +824,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_iv_flavia_felix
 		d_moesia_superior = {
 			OR = {
@@ -869,13 +868,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_iii_augusta
 		d_numidiamilitiana = {
 			OR = {
@@ -913,13 +912,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_dacia
 		k_dacia = {
 			OR = {
@@ -957,13 +956,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_mesopotamia
 		d_osrhoene = {
 			OR = {
@@ -1000,13 +999,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_flavia_constantia_gallicana
 		d_brittany = {
 			OR = {
@@ -1043,13 +1042,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_ii_britannica
 		d_durocotorum = {
 			OR = {
@@ -1086,13 +1085,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_xii_fulminata
 		d_coloneia = {
 			OR = {
@@ -1129,13 +1128,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_flavia_constantia
 		d_europa = {
 			OR = {
@@ -1172,13 +1171,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_ii_flavia_constantia
 		d_thebais = {
 			OR = {
@@ -1215,13 +1214,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_isaura_sagittaria
 		d_isauria = {
 			OR = {
@@ -1258,13 +1257,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_v_macedonica
 		d_moesia_secunda = {
 			OR = {
@@ -1301,13 +1300,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_ii_herculia
 		d_scythia_minor = {
 			OR = {
@@ -1344,13 +1343,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_ii_isaura
 		d_isauria = {
 			OR = {
@@ -1387,13 +1386,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_iii_diocletiana
 		d_alexandria = {
 			OR = {
@@ -1430,13 +1429,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_iv_parthica
 		d_osrhoene = {
 			OR = {
@@ -1473,13 +1472,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_iv_italica
 		d_syria = {
 			OR = {
@@ -1516,13 +1515,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_ii_iulia_alpina
 		d_thessalonika = {
 			OR = {
@@ -1559,13 +1558,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_iii_herculea
 		d_thessalonika = {
 			OR = {
@@ -1602,13 +1601,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_iv_martia
 		d_palestinia_salutaris = {
 			OR = {
@@ -1645,13 +1644,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_ii_felix_valentis_thebaeorum
 		d_thessalonika = {
 			OR = {
@@ -1688,13 +1687,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_flavia_theodosiana
 		d_europa = {
 			OR = {
@@ -1731,13 +1730,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_maximiana_thaebanorum
 		d_thebais = {
 			OR = {
@@ -1774,13 +1773,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_xv_apollinaris
 		d_pontus_polemoniacus = {
 			OR = {
@@ -1817,13 +1816,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_illyricorum
 		d_syria_salutaris = {
 			OR = {
@@ -1860,13 +1859,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_xiii_gemina
 		d_arcadia = {
 			OR = {
@@ -1903,13 +1902,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_pontica
 		d_pontus_polemoniacus = {
 			OR = {
@@ -1946,13 +1945,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_iii_cyrenaica
 		d_arabia_magna = {
 			OR = {
@@ -1989,13 +1988,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_armeniaca
 		d_syria = {
 			OR = {
@@ -2032,13 +2031,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_ii_traiana_fortis
 		d_alexandria = {
 			OR = {
@@ -2075,13 +2074,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_iv_scythia
 		d_syria_salutaris = {
 			OR = {
@@ -2118,13 +2117,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_iovia
 		d_scythia_minor = {
 			OR = {
@@ -2161,13 +2160,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_sala
 		d_mauria = {
 			OR = {
@@ -2204,13 +2203,13 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		NOT = { 
+		NOT = {
 			e_landless = {
 				holder_scope = {
-					is_liege_of	= ROOT 
+					is_liege_of	= ROOT
 				}
 			}
-		} 
+		}
 		has_landed_title = c_legio_i_noricorum
 		d_noricum = {
 			OR = {

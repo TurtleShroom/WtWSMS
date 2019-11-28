@@ -1,5 +1,4 @@
 city = {
-
 	ct_hadrian_wall_0 = { # Remnants of Hadrian's Wall
 		potential = { 
 			OR = {
@@ -110,7 +109,7 @@ city = {
 
 	ct_dioclet = {
 		potential = {
-				FROMFROM = { title = b_split }
+			FROMFROM = { title = b_split }
 		}
 		desc = ct_dioclet_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -129,11 +128,14 @@ city = {
 	ct_palaceaachen = {
 		potential = {
 			FROMFROM = { title = b_aachen }
-			FROMFROM = { is_capital = yes }
+		}
+		trigger = {
 			FROM = { higher_tier_than = KING }
 		}
+#		is_active_trigger = {
+#			FROMFROM = { is_capital = yes }
+#		}
 		desc = ct_palaceaachen_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost =200
 		build_time = 1460
 		add_number_to_name = no
@@ -150,11 +152,15 @@ city = {
 	ct_stmarks = { #St. Mark's Basilica in Venice courtesy of Morloran
 		potential = {
 			FROMFROM = { title = b_venezia }
+		}
+		trigger = {
+			TECH_TEMPLE_CONSTRUCTION = 7
 			FROM = { religion_group = christian }
-			TECH_TEMPLE_CONSTRUCTION = 5
+		}
+		is_active_trigger = {
+			FROM = { religion_group = christian }
 		}
 		desc = ct_stmarks_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 7 }
 		gold_cost = 200
 		build_time = 1460
 
@@ -170,11 +176,12 @@ city = {
 	ct_tower_pisa = { #Leaning Tower of Pisa courtesy of Morloran
 		potential = {
 			FROMFROM = { title = b_pisa }
-			FROM = { religion_group = christian }
-			TECH_TEMPLE_CONSTRUCTION = 6
 		}
 		desc = ct_tower_pisa_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 8 }
+		trigger = {
+ 			TECH_TEMPLE_CONSTRUCTION = 6
+			FROM = { religion_group = christian }
+		}
 		gold_cost = 300
 		build_time = 1825
 
@@ -190,10 +197,9 @@ city = {
 	ct_bastille = { #La Bastille courtesy of Morloran
 		potential = {
 			FROMFROM = { title = b_paris }
-			TECH_CASTLE_CONSTRUCTION = 6
 		}
 		desc = ct_bastille_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 8 }
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
 
 		gold_cost = 500
 		build_time = 1460
@@ -573,6 +579,7 @@ city = {
 				}
 			}
 			OR = {
+				FROMFROM = { has_building = ct_roman_roads_0 } # Once a Roman Road is built, it is permanent
 				FROMFROM = { region = custom_imperium_romanum }
 				FROM = { has_romance_culture_trigger = yes }
 			}
@@ -691,6 +698,7 @@ city = {
 				}
 			}
 			OR = {
+				FROMFROM = { has_building = ct_roman_roads_1 } # Once a Roman Road is built, it is permanent
 				FROMFROM = { region = custom_imperium_romanum }
 				FROM = { has_romance_culture_trigger = yes }
 			}
@@ -810,6 +818,7 @@ city = {
 				}
 			}
 			OR = {
+				FROMFROM = { has_building = ct_roman_roads_2 } # Once a Roman Road is built, it is permanent
 				FROMFROM = { region = custom_imperium_romanum }
 				FROM = { has_romance_culture_trigger = yes }
 			}
@@ -1277,7 +1286,6 @@ city = {
 		potential = {
 			OR = {
 				FROM = {
-					higher_tier_than = duke
 					OR = {
 						religion = egyptian_pagan
 						religion = aten_pagan
@@ -1296,6 +1304,7 @@ city = {
 				OR = {
 					religion = egyptian_pagan
 					religion = aten_pagan
+					culture = coptic
 				}
 			}
 		}

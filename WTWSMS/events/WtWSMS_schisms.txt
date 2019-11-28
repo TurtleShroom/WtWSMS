@@ -1,3 +1,11 @@
+###############################
+# Church schisms
+#
+# Written by Enlil
+#
+# HRE.1 -> HRE.7 Great Schism
+# GEORGIAN.1 -> GEORGIAN.2 Georgian Schism
+###############################
 
 namespace = HRE
 
@@ -15,7 +23,7 @@ character_event = {
 		name = EVTOPTAHRE.1
 
 		if = {
-			limit = { religion = arian}
+			limit = { religion = arian }
 			set_parent_religion = { religion = catholic parent = arian }
 		}
 
@@ -27,7 +35,7 @@ character_event = {
 	}
 }
 
-# The Schism itself 
+# The Schism itself
 narrative_event = {
 	id = HRE.3
 	title = EVTNAMEHRE.3
@@ -67,7 +75,7 @@ narrative_event = {
 			factor = 3
 			modifier = {
 				factor = 10
-				culture_group = byzantine # Greek Orthodoxy 
+				culture_group = byzantine # Greek Orthodoxy
 			}
 			modifier = {
 				factor = 20
@@ -75,7 +83,7 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 10
-				culture_group = east_slavic # Kiev!!!
+				culture_group = east_slavic # Kiev
 			}
 			modifier = {
 				factor = 5
@@ -83,10 +91,10 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 10
-				culture_group = altaic # Orthodoxy in the Steppes 
+				culture_group = altaic # Orthodoxy in the Steppes
 			}
 		}
-		religion = orthodox
+		unsafe_religion = orthodox
 		capital_scope = {
 			if = {
 				limit = { religion = nicene }
@@ -94,14 +102,14 @@ narrative_event = {
 			religion = orthodox
 		}
 		any_realm_province = {
-			limit = { 
+			limit = {
 				religion = nicene
 			}
 			religion = orthodox
 		}
 		any_realm_character = {
 			limit = { religion = nicene }
-			religion = orthodox
+			unsafe_religion = orthodox
 		}
 	}
 	option = { # Catholic
@@ -126,7 +134,7 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 10
-				culture_group = celtic # Duh! Celts! 
+				culture_group = celtic # Duh! Celts!
 			}
 			modifier = {
 				factor = 5
@@ -134,36 +142,36 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 5
-				culture_group = east_germanic # Sympathy toward Pope, hated Ecumenical patriarch 
+				culture_group = east_germanic # Sympathy toward Pope, hated Ecumenical patriarch
 			}
 			modifier = {
 				factor = 10
 				culture_group = latin # ROMAN Catholic church
 			}
-		}	
+		}
 		religion = catholic
 		capital_scope = {
 			if = {
 				limit = { religion = nicene }
 			}
-			religion = catholic
+			unsafe_religion = catholic
 		}
 		any_realm_province = {
-			limit = { 
+			limit = {
 				religion = nicene
 			}
 			religion = catholic
 		}
 		any_realm_character = {
 			limit = { religion = nicene }
-			religion = catholic
+			unsafe_religion = catholic
 		}
 	}
 	option = { # Pagan with Catholics
 		name = EVTOPTCHRE.3
 		
 		trigger = {
-			NOT = { religion = nicene }		
+			NOT = { religion = nicene }
 		}
 		ai_chance = {
 			factor = 3
@@ -182,7 +190,7 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 10
-				culture_group = celtic # Duh! Celts! 
+				culture_group = celtic # Duh! Celts!
 			}
 			modifier = {
 				factor = 5
@@ -190,15 +198,15 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 5
-				culture_group = east_germanic # Sympathy toward Pope, hated Ecumenical patriarch 
+				culture_group = east_germanic # Sympathy toward Pope, hated Ecumenical patriarch
 			}
 			modifier = {
 				factor = 10
 				culture_group = latin # ROMAN Catholic church
 			}
-		}	
+		}
 		any_realm_province = {
-			limit = { 
+			limit = {
 				religion = nicene
 			}
 			religion = catholic
@@ -211,13 +219,13 @@ narrative_event = {
 	option = { # Pagan with Orthodoxians
 		name = EVTOPTDHRE.3
 		trigger = {
-				NOT = { religion = nicene }		
+				NOT = { religion = nicene }
 		}
 		ai_chance = {
 			factor = 3
 			modifier = {
 				factor = 10
-				culture_group = byzantine # Greek Orthodoxy 
+				culture_group = byzantine # Greek Orthodoxy
 			}
 			modifier = {
 				factor = 20
@@ -233,11 +241,11 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 10
-				culture_group = altaic # Orthodoxy in the Steppes 
+				culture_group = altaic # Orthodoxy in the Steppes
 			}
 		}
 		any_realm_province = {
-			limit = { 
+			limit = {
 				religion = nicene
 			}
 			religion = orthodox
@@ -254,11 +262,12 @@ character_event = {
 	id = HRE.4
 	title = EVTNAMEHRE.4
 	desc = EVTDESCHRE.4
-	
 	picture = GFX_evt_great_schism
 	
+	religion = nicene
+	
 	trigger = {
-		year = 950 #Why this year? Temporary anyway. Should be 1054
+		year = 1054
 		religion = nicene
 		controls_religion = yes
 		has_landed_title = k_nicene
@@ -278,11 +287,12 @@ character_event = {
 		set_parent_religion = { religion = binitarian parent = orthodox }
 		set_parent_religion = { religion = melchisedechianism parent = orthodox }
 		set_parent_religion = { religion = sethian parent = catholic }
-		set_parent_religion = { religion = eutychian parent = nestorian } #Nontrinitarian beliefs extremely similar to Nestorianism
+#		set_parent_religion = { religion = eutychian parent = orthodox } # Eutyches was a presbyter at Constantinople and the controversy was mostly in the Eastern Church
+		set_parent_religion = { religion = eutychian parent = nestorian } # Nontrinitarian beliefs extremely similar to Nestorianism
 		set_parent_religion = { religion = antinomianism parent = nestorian } #Antinomianism is one of the most ancient sects, and most like the Messalians that are also Antinomians, and Messalians are counted as Nestorian heresies
 		set_parent_religion = { religion = montanist parent = catholic }
-		set_parent_religion = { religion = total_depravity parent = catholic }
-		set_parent_religion = { religion = apollinarian parent = orthodox } #Similar to Monothelites ("Jesus is controlled by Skynet", AKA no mind of His own)
+		set_parent_religion = { religion = total_depravity parent = catholic } # From the Catholics come the Calvanists
+		set_parent_religion = { religion = apollinarian parent = orthodox } # Similar to Monothelites ("Jesus is controlled by Skynet", AKA no mind of His own)
 		set_parent_religion = { religion = adoptionism parent = miaphysite } #Nontrinitarian, and monarchism is a Miaphysite heresy already, this is a branch of it built on Jesus' baptism
 		set_parent_religion = { religion = docetic parent = catholic }
 		set_parent_religion = { religion = pneumatomachians parent = orthodox } #Founded by Macedonius, a Bishop of Constantinople
@@ -306,7 +316,7 @@ character_event = {
 	}
 }
 
-# The Schism itself 
+# The Schism itself
 narrative_event = {
 	id = HRE.5
 	title = EVTNAMEHRE.3
@@ -389,7 +399,7 @@ narrative_event = {
 			religion = orthodox
 		}
 		any_realm_province = {
-			limit = { 
+			limit = {
 				religion = nicene
 			}
 			religion = orthodox
@@ -421,7 +431,7 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 10
-				culture_group = celtic # Duh! Celts! 
+				culture_group = celtic # Duh! Celts!
 			}
 			modifier = {
 				factor = 5
@@ -477,7 +487,7 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 10
-				culture_group = celtic # Duh! Celts! 
+				culture_group = celtic # Duh! Celts!
 			}
 			modifier = {
 				factor = 5
@@ -598,6 +608,7 @@ narrative_event = {
 	
 	trigger = {
 		year = 485
+		NOT = { year = 500 } # The window to close shouldn't be open forever
 		religion = georgian_orthodox
 		NOT = { has_global_flag = georgian_schism }
 		NOT = { has_character_flag = georgian_schism }
@@ -614,7 +625,13 @@ narrative_event = {
 	
 	option = { # Nicene
 		name = GEORGIAN.1.a
-		ai_chance = { factor = 70 }
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
 		
 		religion = nicene
 		hidden_tooltip = {
@@ -638,7 +655,13 @@ narrative_event = {
 	}
 	option = { # Miaphysite
 		name = GEORGIAN.1.b
-		ai_chance = { factor = 25 }
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
 		
 		religion = miaphysite
 		hidden_tooltip = {
@@ -663,7 +686,13 @@ narrative_event = {
 	}
 	option = { # Georgian
 		name = GEORGIAN.1.c
-		ai_chance = { factor = 5 }
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				trait = zealous
+			}
+		}
 	}
 }
 
@@ -688,7 +717,6 @@ character_event = {
 			modifier = {
 				factor = 0
 				trait = zealous
-				NOT = { intrigue = 3 }
 			}
 		}
 		
@@ -703,10 +731,6 @@ character_event = {
 		name = GEORGIAN.2.b
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { trait = zealous }
-			}
 		}
 		
 		piety = 100

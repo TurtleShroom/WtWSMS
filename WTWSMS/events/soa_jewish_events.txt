@@ -51,7 +51,6 @@ narrative_event = {
 	hide_from = yes
 	
 	major_trigger = {
-		ai = no
 		OR = {
 			religion_group = jewish_group
 			religion = ebionites
@@ -65,6 +64,7 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTA_SoA_101
+		b_jerusalem = { add_building = tp_jeru_wall2 } # Third Temple (WtWSMS addition)
 	}
 }
 
@@ -250,6 +250,7 @@ character_event = {
 			religion_group = muslim
 			religion_group = zoroastrian_group
 			religion_group = jewish_group
+			religion = bosporan_faith
 			culture = khazar
 			culture = han
 		}
@@ -338,6 +339,7 @@ character_event = {
 			religion_group = muslim
 			religion_group = zoroastrian_group
 			religion_group = jewish_group
+			religion = bosporan_faith
 			culture = khazar
 			culture = han
 		}	
@@ -426,6 +428,7 @@ character_event = {
 			religion_group = muslim
 			religion_group = zoroastrian_group
 			religion_group = jewish_group
+			religion = bosporan_faith
 			culture = khazar
 			culture = han
 		}
@@ -517,6 +520,7 @@ character_event = {
 			religion_group = muslim
 			religion_group = zoroastrian_group
 			religion_group = jewish_group
+			religion = bosporan_faith
 		}	
 		NOT = { 
 			has_character_modifier = expelled_jewish
@@ -603,6 +607,7 @@ character_event = {
 			religion_group = muslim
 			religion_group = zoroastrian_group
 			religion_group = jewish_group
+			religion = bosporan_faith
 		}	
 		NOT = { 
 			has_character_modifier = expelled_jewish
@@ -689,6 +694,7 @@ character_event = {
 			religion_group = muslim
 			religion_group = zoroastrian_group
 			religion_group = jewish_group
+			religion = bosporan_faith
 		}	
 		NOT = { 
 			has_character_modifier = expelled_jewish
@@ -861,6 +867,7 @@ character_event = {
 			if = {
 				limit = { religion = audianistic }
 				character_event = { id = SoA.504 days = 12 } # For Audianistics. For Jews, it is now handled by Jewish VIET code.
+				break = yes
 			}
 		}
 		hidden_tooltip = { # For Jews

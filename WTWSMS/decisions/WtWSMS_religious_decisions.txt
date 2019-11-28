@@ -15,18 +15,21 @@ decisions = {
 			OR = {
 				is_heretic = no
 				AND = {
-					tier = EMPEROR
-					piety = 2000
-					realm_size = 100
+					OR = {
+						tier = EMPEROR
+						tier = KING
+					}
+					piety = 1000
+					realm_size = 80
 				}
 			}
 			piety = 1000
-			OR = {
-				owns = 774 # Jerusalem
-				any_realm_lord = {
-					owns = 774
-				}
-			}
+#			OR = {
+#				owns = 774 # Jerusalem
+#				any_realm_lord = {
+#					owns = 774
+#				}
+#			}
 		}
 		
 		effect = {
@@ -90,9 +93,6 @@ decisions = {
 		
 		effect = {
 			activate_title = { title = d_ebionites status = yes }
-			d_ebionites = {
-				add_law = succ_primogeniture
-			}
 			custom_tooltip = {
 				text = LORDLIVESZION
 				hidden_tooltip = {
@@ -113,6 +113,9 @@ decisions = {
 						}
 						add_trait = house_of_david
 						add_trait = theologian
+						any_child = {
+							add_trait = house_of_david
+						}
 					}
 					
 					religion_authority = {
@@ -125,6 +128,12 @@ decisions = {
 						d_ebionites = {
 							defacto_vassal = ROOT
 						}
+					}
+					d_ebionites = {
+						de_jure_liege = k_israel
+					}
+					d_ebionites = {
+						add_law = succ_primogeniture
 					}
 				}
 			}
@@ -152,9 +161,12 @@ decisions = {
 			OR = {
 				is_heretic = no
 				AND = {
-					tier = EMPEROR
-					piety = 3000
-					realm_size = 200
+					OR = {
+						tier = EMPEROR
+						tier = KING
+					}
+					piety = 1000
+					realm_size = 80
 				}
 			}
 			piety = 1000
@@ -213,9 +225,12 @@ decisions = {
 			OR = {
 				is_heretic = no
 				AND = {
-					tier = EMPEROR
-					piety = 3000
-					realm_size = 200
+					OR = {
+						tier = EMPEROR
+						tier = KING
+					}
+					piety = 1000
+					realm_size = 80
 				}
 			}
 			piety = 1000
@@ -274,18 +289,15 @@ decisions = {
 			OR = {
 				is_heretic = no
 				AND = {
-					tier = EMPEROR
-					piety = 3000
-					realm_size = 200
+					OR = {
+						tier = EMPEROR
+						tier = KING
+					}
+					piety = 1000
+					realm_size = 80
 				}
 			}
 			piety = 1000
-			OR = {
-				owns = 333 # Rome
-				any_realm_lord = {
-					owns = 333
-				}
-			}
 		}
 		
 		effect = {
@@ -332,14 +344,18 @@ decisions = {
 		}
 		
 		allow = {
-			is_heretic = no
-			piety = 1000
 			OR = {
-				owns = 333 # Rome
-				any_realm_lord = {
-					owns = 333
+				is_heretic = no
+				AND = {
+					OR = {
+						tier = EMPEROR
+						tier = KING
+					}
+					piety = 1000
+					realm_size = 80
 				}
 			}
+			piety = 1000
 		}
 		
 		effect = {
@@ -363,6 +379,17 @@ decisions = {
 				religion_authority = {
 					modifier = patriarchy_instituted
 					years = 20
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tier = KING
+						tier = EMPEROR
+					}
+				}
+				d_audianistic = {
+					defacto_vassal = ROOT
 				}
 			}
 			piety = 1000
@@ -389,9 +416,8 @@ decisions = {
 			OR = {
 				is_heretic = no
 				AND = {
-					tier = EMPEROR
 					piety = 3000
-					realm_size = 200
+					realm_size = 80
 				}
 			}
 			piety = 1000
@@ -421,6 +447,7 @@ decisions = {
 					add_trait = zealous
 					add_trait = temperate
 					add_trait = shrewd
+					add_trait = celibate
 				}
 				
 				religion_authority = {
@@ -465,22 +492,15 @@ decisions = {
 				has_landed_title = e_africa
 				has_landed_title = e_saharah
 				AND = {
-					OR = {
-						owns = 333 # Rome
-						any_realm_lord = {
-							owns = 333 # Rome
-						}
-					}
-					is_heritic = no
-				}
-				AND = {
 					tier = EMPEROR
 					piety = 5000
-					realm_size = 200
+					realm_size = 100
 				}
 			}
 			piety = 1000	
 			OR = {
+				has_landed_title = e_africa
+				has_landed_title = e_saharah
 				owns = 333 # Rome
 				any_realm_lord = {
 					owns = 333 # Rome
@@ -505,6 +525,7 @@ decisions = {
 						who = ROOT
 						modifier = opinion_creator_of_rel_heal
 					}
+					add_trait = mystic
 				}
 				
 				religion_authority = {
@@ -578,6 +599,9 @@ decisions = {
 					modifier = opinion_creator_of_rel_heal
 				}
 			}
+			d_priscillianism = {
+				culture = ROOT
+			}
 			religion_authority = {
 				modifier = patriarchy_instituted
 				years = 20
@@ -606,7 +630,10 @@ decisions = {
 			OR = {
 				is_heretic = no
 				AND = {
-					higher_real_tier_than = EMPEROR
+					OR = {
+						higher_real_tier_than = EMPEROR
+						higher_real_tier_than = KING
+					}
 					piety = 1000
 					realm_size = 90
 				}
@@ -618,9 +645,12 @@ decisions = {
 					owns = 802
 				}
 				AND = {
-					higher_real_tier_than = EMPEROR
-					piety = 3000
-					realm_size = 200
+					OR = { 
+						higher_real_tier_than = EMPEROR
+						higher_real_tier_than = KING
+					}
+					piety = 1000
+					realm_size = 90
 				}
 			}
  		}
@@ -649,6 +679,9 @@ decisions = {
  					modifier = patriarchy_instituted
  					years = 20
  				}
+				d_sethian = {
+					culture = ROOT
+				}
  			}
 			piety = 1000
  		}
@@ -703,6 +736,9 @@ decisions = {
 					modifier = patriarchy_instituted
 					years = 20
 				}
+				d_insular = {
+					culture = ROOT
+				}
 			}
 			piety = 1000
 		}
@@ -755,6 +791,9 @@ decisions = {
 				religion_authority = {
 					modifier = patriarchy_instituted
 					years = 20
+				}
+				d_pelagian = {
+					culture = ROOT
 				}
 			}
 			piety = 1000
@@ -887,7 +926,7 @@ decisions = {
 		potential = {
 			has_landed_title = e_byzantium
 			OR = {
-				religion = nicene
+				religion_group = nicene
 				AND = {
 					year = 500 # Forces it in the off-chance that the Miaphysite Emperor remains on the ERE throne
 					religion_group = christian
@@ -912,6 +951,58 @@ decisions = {
 		
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	end_acacian_schism  = {
+		is_high_prio = yes
+		only_independent = yes
+		
+		potential = {
+			has_landed_title = e_byzantium
+			OR = {
+				religion_group = nicene
+				AND = {
+					year = 500 # Forces it in the off-chance that the Miaphysite Emperor remains on the ERE throne
+					religion_group = christian
+				}
+			}
+			has_global_flag = the_henotikon
+			NOT = { has_global_flag = acacian_schism_ended }
+		}
+		
+		allow = {
+			war = no
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			age = 16
+		}
+		
+		effect = {
+			narrative_event = { id = hist.26 }
+			set_global_flag = acacian_schism_ended
+			piety = 100
+			prestige = -100
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 3
+				trait = craven
+			}
+			modifier = {
+				factor = 3
+				trait = content
+			}
+			modifier = {
+				factor = 0.1
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0.001 # Slow it down
+				always = yes
+			}
 		}
 	}
 	
@@ -1109,7 +1200,7 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.20
 			set_character_flag = gave_offering_unugais
-            character_event = { id = sanamahi.15 }
+		        character_event = { id = sanamahi.15 }
 		}
 		
 		ai_will_do = {
@@ -1155,8 +1246,8 @@ decisions = {
 				has_character_flag = retreat_at_least_once
 				NOT = { trait = zealous }
 			}
-	    }
-    }
+		}
+	}
 	
 	enlist_paygan = {
 		only_playable = yes
@@ -1406,9 +1497,9 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			OR = {
-				religion = nicene
+				religion_group = nicene
 				AND = {
-					year = 525
+					year = 525 # Forces it in the off-chance that the Miaphysite Emperor remains on the ERE throne
 					religion_group = christian
 				}
 			}
@@ -1443,6 +1534,7 @@ decisions = {
 			prisoner = no
 			has_global_flag = aquileian_schism
 			NOT = { has_global_flag = end_aquileian_schism }
+			NOT = { has_global_flag = the_aquileian_capture } # If someone takes the Church, the captor will not allow it to be disbanded without his permission
 		}
 		
 		allow = {
@@ -1450,7 +1542,7 @@ decisions = {
 			controls_religion = aquileian
 			AND = {
 				year = 698 # When the Aquileian Schism ended in RL
-				NOT = { has_global_flag =  the_aquileian_capture } # If a pagan takes the Church, the captor will not allow it to be disbanded without his permission
+				NOT = { has_global_flag = the_aquileian_capture } # If a pagan takes the Church, the captor will not allow it to be disbanded without his permission
 			}
 		}
 		
@@ -1462,19 +1554,12 @@ decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 0.1
 			modifier = {
 				factor = 10
 				had_global_flag = { 
 					flag = aquileian_schism 
 					days = 36500 # 100 years 
-				}
-			}
-			modifier = {
-				factor = 5
-				had_global_flag = { 
-					flag = aquileian_schism 
-					days = 18250 # 50 years
 				}
 			}
 			modifier = {
@@ -1490,6 +1575,10 @@ decisions = {
 				trait = zealous
 			}
 			modifier = {
+				factor = 0
+				has_global_flag = the_aquileian_capture
+			}
+			modifier = {
 				factor = 0.001 # Slow it down
 				always = yes
 			}
@@ -1500,10 +1589,16 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
-			religion_group = pagan_group 
+			NOT = {
+				religion_group = christian
+				religion_group = muslim
+				religion_group = jewish_group
+			}
 			OR = {
 				has_landed_title = c_aquileia
 				any_child = { has_landed_title = c_aquileia }
+				any_realm_lord = { has_landed_title = c_aquileia }
+				completely_controls = c_aquileia
 			}
 			NOT = { has_global_flag = the_aquileian_capture }
 			NOT = { has_global_flag = end_aquileian_schism }
@@ -1513,6 +1608,7 @@ decisions = {
 		}
 		
 		allow = {
+			NOT = { trait = zealous }
 			prestige = 500
 			higher_real_tier_than = COUNT
 		}
@@ -1521,7 +1617,11 @@ decisions = {
 			unsafe_religion = aquileian
 			hidden_tooltip = {
 				any_child = {
-					limit = { religion_group = pagan_group }
+					limit = {
+						NOT = {
+							religion_group = christian
+						}
+					}
 					unsafe_religion = aquileian
 				}
 			}
@@ -1541,6 +1641,10 @@ decisions = {
 							}
 							is_landless_type_title = yes
 							mercenary = yes
+							any_vassal = { is_landless_type_title = yes }
+							any_vassal = { mercenary = yes }
+							any_realm_title = { is_landless_type_title = yes }
+							any_realm_title = { mercenary = yes }
 						}
 						NOT = { controls_religion = yes } # So pagan religious heads don't convert
 						NOT = { holy_order = yes } # So pagan holy orders don't convert
@@ -1548,6 +1652,17 @@ decisions = {
 					any_mercenary_band = {
 						limit = { holder_scope = { ROOT } }
 						unsafe_religion = aquileian
+					}
+					any_vassal = {
+						any_mercenary_band = {
+							unsafe_religion = aquileian
+						}
+					}
+					any_realm_lord = {
+						any_mercenary_band = {
+							limit = { holder_scope = { ROOT } }
+							unsafe_religion = aquileian
+						}
 					}
 				}
 			}
@@ -1564,6 +1679,7 @@ decisions = {
 						tier = KING
 						tier = EMPEROR
 					}
+				}
 				d_aquileia_church = {
 					defacto_liege = ROOT
 				}
@@ -1609,12 +1725,17 @@ decisions = {
 		ai_will_do = {
 			factor = 2
 		}
-
-	give_alms  = {
+	
+	give_alms = {
 		only_playable = yes
+		ai = no
+		
 		potential = {
 			is_playable = yes
-			religion = pelagianism
+			OR = {
+				religion = pelagianism
+				religion = donatist
+			}
 			is_adult = yes
 			demesne_size = 1
 			OR = {
@@ -1633,10 +1754,24 @@ decisions = {
 		effect = {
 			set_character_flag = gave_alms
 			scaled_wealth = -0.5
-			piety = 50
+			piety = 200
 			if = {
 				limit = {
+					religion = pelagianism
 					is_title_active = d_pelagian
+				}
+				religion_head = {
+					opinion = {
+						modifier = opinion_almsgiving
+						who = ROOT
+						years = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					religion = donatist
+					is_title_active = d_donatist
 				}
 				religion_head = {
 					opinion = {

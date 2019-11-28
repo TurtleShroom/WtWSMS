@@ -23,14 +23,15 @@ narrative_event = {
 	picture = GFX_evt_holy_jerusalem
 	
 	only_rulers = yes
+	has_global_flag = jewish_homeland_restored
 	
 	trigger = {
 		has_landed_title = k_israel
 		NOT = {
+			culture_group = israelite
 			religion_group = jewish_group
 			religion = ebionites
 		}
-		has_global_flag = jewish_homeland_restored
 	}
 	
 	mean_time_to_happen = {
@@ -108,11 +109,11 @@ character_event = {
 	picture = GFX_evt_holy_jerusalem
 	
 	only_rulers = yes
+	has_global_flag = jewish_homeland_restored
 	
 	trigger = {
 		has_landed_title = k_israel
 		NOT = { has_global_flag = israel_aliyah_sufficient }
-		has_global_flag = jewish_homeland_restored
 	}
 	
 	mean_time_to_happen = {
@@ -154,13 +155,14 @@ character_event = {
 	picture = GFX_evt_holy_jerusalem
 	
 	only_rulers = yes
+	has_global_flag = jewish_homeland_restored
 	
 	trigger = {
 		OR = {
 			has_landed_title = k_israel
 			has_landed_title = d_jerusalem
 			has_landed_title = d_iudea
-			top_liege = {
+			any_liege = {
 				has_landed_title = k_israel
 			}
 		}
@@ -169,21 +171,21 @@ character_event = {
 			has_landed_title = d_jerusalem
 			any_demesne_province = {
 				OR = {
-					province_id  = 723
-					province_id  = 769
-					province_id  = 770
-					province_id  = 771
-					province_id  = 772
-					province_id  = 773
-					province_id  = 774
-					province_id  = 775
-					province_id  = 776
-					province_id  = 777
-					province_id  = 778
-					province_id  = 779
-					province_id  = 780
-					province_id  = 781
-					province_id  = 782
+					province_id = 723
+					province_id = 769
+					province_id = 770
+					province_id = 771
+					province_id = 772
+					province_id = 773
+					province_id = 774
+					province_id = 775
+					province_id = 776
+					province_id = 777
+					province_id = 778
+					province_id = 779
+					province_id = 780
+					province_id = 781
+					province_id = 782
 				}
 			}
 		}
@@ -191,7 +193,6 @@ character_event = {
 			religion_group = jewish_group
 			religion = ebionites
 		}
-		has_global_flag = jewish_homeland_restored
 	}
 	
 	mean_time_to_happen = {
@@ -347,13 +348,14 @@ character_event = {
 	picture = GFX_evt_holy_jerusalem
 	
 	only_rulers = yes
+	has_global_flag = jewish_homeland_restored
 	
 	trigger = {
 		OR = {
 			has_landed_title = k_israel
 			has_landed_title = d_jerusalem
 			has_landed_title = d_iudea
-			top_liege = {
+			any_liege = {
 				has_landed_title = k_israel
 			}
 		}
@@ -362,21 +364,21 @@ character_event = {
 			has_landed_title = d_jerusalem
 			any_demesne_province = {
 				OR = {
-					province_id  = 723
-					province_id  = 769
-					province_id  = 770
-					province_id  = 771
-					province_id  = 772
-					province_id  = 773
-					province_id  = 774
-					province_id  = 775
-					province_id  = 776
-					province_id  = 777
-					province_id  = 778
-					province_id  = 779
-					province_id  = 780
-					province_id  = 781
-					province_id  = 782
+					province_id = 723
+					province_id = 769
+					province_id = 770
+					province_id = 771
+					province_id = 772
+					province_id = 773
+					province_id = 774
+					province_id = 775
+					province_id = 776
+					province_id = 777
+					province_id = 778
+					province_id = 779
+					province_id = 780
+					province_id = 781
+					province_id = 782
 				}
 			}
 		}
@@ -384,7 +386,6 @@ character_event = {
 			religion_group = jewish_group
 			religion = ebionites
 		}
-		has_global_flag = jewish_homeland_restored
 	}
 	
 	mean_time_to_happen = {
@@ -423,7 +424,7 @@ character_event = {
 		modifier = {
 			factor = 0.9
 			trait = diligent
-		}		
+		}
 		
 		modifier = {
 			factor = 0.9
@@ -448,17 +449,17 @@ character_event = {
 		modifier = {
 			factor = 0.9
 			trait = greedy
-		}		
+		}
 		modifier = {
 			factor = 0.8
 			culture = sephardi
-		}		
+		}
 		modifier = {
 			factor = 8
 			any_courtier = {
 				has_character_flag = israel_aliyah
 			}
-		}		
+		}
 	}
 	
 	option = { #accept them
@@ -647,7 +648,7 @@ character_event = {
 						religion = jewish
 						culture = ashkenazi
 						female = no
-					}				
+					}
 				}
 				16 = {
 					create_random_soldier = {
@@ -656,11 +657,11 @@ character_event = {
 						religion = jewish
 						culture = sephardi
 						female = no
-					}				
+					}
 				}
 			}
 		}
-	}	
+	}
 }
 
 #############################################
@@ -681,12 +682,12 @@ character_event = {
 		hidden_tooltip = { #random chance of favoring one of the flavor events
 			random_list = {
 				40 = { }
-				3 = { set_character_flag = passover_eat_chametz }			
-				3 = { set_character_flag = passover_foreign_jew }			
-				7 = { set_character_flag = passover_song_of_songs }			
+				10 = { set_character_flag = passover_eat_chametz }			
+				5 = { set_character_flag = passover_foreign_jew }			
+				5 = { set_character_flag = passover_song_of_songs }			
 				10 = { set_character_flag = passover_matzo_matzo }			
 				10 = { set_character_flag = passover_bitter_herbs }			
-				7 = { set_character_flag = passover_zroa }			
+				10 = { set_character_flag = passover_zroa }			
 			}
 		}
 	}
@@ -853,7 +854,7 @@ narrative_event = {
 	
 	option = {
 		name = passover.6.a
-		piety = 40
+		piety = 75
 		prestige = 20
 		clr_character_flag = observing_passover
 		clr_character_flag = passover_eat_chametz
@@ -909,9 +910,9 @@ character_event = {
 			random_list = {
 				75 = { }
 				25 = { remove_trait = gluttonous }
-			}	
+			}
 		}
-	}	
+	}
 	option = {
 		name = passover.7.b #will not resist
 		ai_chance = {
@@ -934,7 +935,7 @@ character_event = {
 			random_list = {
 				67 = { }
 				33 = { add_trait = gluttonous }
-			}	
+			}
 		}
 		add_character_modifier = {
 			name = best_meal_in_ages
@@ -1067,9 +1068,9 @@ character_event = {
 				modifier = opinion_respected_kosher_laws
 				who = ROOT
 				years = 3
-			}	
+			}
 		}
-	}	
+	}
 	option = {
 		name = passover.11.b #Respect
 		ai_chance = {
@@ -1120,7 +1121,7 @@ character_event = {
 				modifier = opinion_ignored_kosher_laws
 				who = ROOT
 				years = 3
-			}	
+			}
 		}
 		add_character_modifier = {
 			name = tolerant_of_minor_religious_differences
@@ -1156,7 +1157,7 @@ character_event = {
 	
 	only_men = yes
 	only_rulers = yes
-	
+	is_married = no
 	is_triggered_only = yes
 	
 	trigger = {
@@ -1173,8 +1174,6 @@ character_event = {
 			}
 		}
 		is_adult = yes
-		is_married = no
-		is_female = no
 	}
 	
 	option = {
@@ -1238,7 +1237,7 @@ narrative_event = {
 	}
 	option = {
 		name = exilarch.1.b # Oy vey!
-		trigger = { 
+		trigger = {
 			NOT = { has_landed_title = d_exilarch }
 			OR = {
 				religion_group = jewish_group
@@ -1248,7 +1247,7 @@ narrative_event = {
 	}
 	option = {
 		name = exilarch.1.c # Oy vey!
-		trigger = { 
+		trigger = {
 			NOT = { has_landed_title = d_exilarch }
 			NOT = { religion_group = jewish_group }
 			NOT = { religion = ebionites }
@@ -1290,17 +1289,17 @@ narrative_event = {
 	}
 	option = {
 		name = exilarch.2.b # Oy vey!
-		trigger = { 
+		trigger = {
 			NOT = { has_landed_title = d_exilarch_karaite }
 			OR = {
 				religion_group = jewish_group
 				religion = ebionites
 			}
 		}
-	}	
+	}
 	option = {
 		name = exilarch.2.c # Oy vey!
-		trigger = { 
+		trigger = {
 			NOT = { has_landed_title = d_exilarch_karaite }
 			NOT = { religion_group = jewish_group }
 			NOT = { religion = ebionites }
@@ -1311,7 +1310,7 @@ narrative_event = {
 # Fix the exilarch's religion
 character_event = {
 	id = exilarch.4
-	desc = exilarch.4.desc	
+	desc = exilarch.4.desc
 	picture = GFX_evt_holy_jerusalem
 	
 	only_men = yes
@@ -1388,10 +1387,11 @@ character_event = {
 	option = {
 		name = exilarch.4.b
 		trigger = {
+			ai = no
 			primary_title = {
-				NOR	 = {
-					title = d_exilarch  
-					title = d_exilarch_karaite 
+				NOR = {
+					title = d_exilarch
+					title = d_exilarch_karaite
 				}
 			}
 		}
@@ -1423,11 +1423,12 @@ character_event = {
 # Exilarch becomes vassal of Israel
 character_event = {
 	id = exilarch.5
-	desc = exilarch.5.desc	
+	desc = exilarch.5.desc
 	picture = GFX_evt_holy_jerusalem
 	
 	only_men = yes
 	only_rulers = yes
+	has_global_flag = jewish_homeland_restored
 	
 	mean_time_to_happen = { days = 40 }
 	
@@ -1436,7 +1437,6 @@ character_event = {
 		NOT = { has_global_flag = the_exilarch_returns }
 		NOT = { has_global_flag = the_karaite_exilarch_returns }
 		NOT = { has_global_flag = ebionites_comes_home }
-		has_global_flag = jewish_homeland_restored
 		OR = {
 			d_exilarch = { has_holder = yes }
 			d_exilarch_karaite = { has_holder = yes }
@@ -1451,7 +1451,7 @@ character_event = {
 				d_exilarch = { has_holder = yes }
 			}
 			set_global_flag = the_exilarch_returns
-			custom_tooltip = { 
+			custom_tooltip = {
 				text = the_exilarch_returns
 				hidden_tooltip = {
 					d_exilarch = {
@@ -1470,7 +1470,7 @@ character_event = {
 				d_exilarch_karaite = { has_holder = yes }
 			}
 			set_global_flag = the_karaite_exilarch_returns
-			custom_tooltip = { 
+			custom_tooltip = {
 				text = the_karaite_exilarch_returns
 				hidden_tooltip = {
 					d_exilarch_karaite = {
@@ -1597,6 +1597,8 @@ character_event = {
 
 	picture = GFX_evt_holy_jerusalem
 	only_men = yes
+	religion = jewish
+	has_global_flag = VIET_end_of_exilarch
 	
 	is_triggered_only = yes
 	
@@ -1642,6 +1644,8 @@ character_event = {
 	picture = GFX_evt_holy_jerusalem
 
 	only_men = yes
+	religion = karaite
+	has_global_flag = VIET_end_of_exilarch_karaite
 	
 	is_triggered_only = yes
 	
@@ -1696,6 +1700,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+	war = no
 
 	trigger = {
 		has_landed_title = k_israel
@@ -1706,7 +1711,7 @@ character_event = {
 		NOT = { has_global_flag = aramean_integrated }
 		NOT = { has_character_flag = aramean_village_visited }
 		NOT = { has_character_flag = removed_arameans }
-		war = no
+		has_disease_trigger = no
 	}
 
 	weight_multiplier = {
@@ -1826,6 +1831,7 @@ character_event = {
 					trait = scholar
 					trait = genius
 					trait = kind
+					trait = erudite
 					culture = aramean
 					learning = 6
 				}
@@ -1867,6 +1873,8 @@ narrative_event = {
 					trait = proud
 					trait = hunter
 					trait = duelist
+					trait = strategist
+					martial = 14
 					NOT = { diplomacy = 7 }
 				}
 			}
@@ -1911,6 +1919,8 @@ narrative_event = {
 					trait = martial_cleric
 					trait = scholarly_theologian
 					trait = mastermind_theologian
+					trait = scholar
+					trait = erudite
 					learning = 6
 				}
 			}
@@ -1949,7 +1959,7 @@ narrative_event = {
 }
 
 narrative_event = {
-	id =  israel.104
+	id = israel.104
 	title = israel.104.name
 	desc = israel.104.desc
 	picture = GFX_evt_holy_jerusalem
@@ -2011,6 +2021,8 @@ narrative_event = {
 					trait = martial_cleric
 					trait = scholarly_theologian
 					trait = mastermind_theologian
+					trait = scholar
+					trait = erudite
 				}
 			}
 			opinion = {
@@ -2029,6 +2041,10 @@ narrative_event = {
 				NOT = { trait = martial_cleric }
 				NOT = { trait = scholarly_theologian }
 				NOT = { trait = mastermind_theologian }
+				NOT = {
+					trait = scholar
+					trait = erudite
+				}
 			}
 			opinion = {
 				modifier = viet_opinion_accepted_arameans_first
@@ -2156,6 +2172,7 @@ character_event = { #New ruler has to reaffirm arameans
 	picture = GFX_evt_holy_jerusalem
 	
 	only_rulers = yes
+	has_global_flag = aramean_integrated
 	
 	trigger = {
 		has_landed_title = k_israel
@@ -2163,7 +2180,6 @@ character_event = { #New ruler has to reaffirm arameans
 			religion_group = jewish_group
 			religion = ebionites
 		}
-		has_global_flag = aramean_integrated
 		NOT = { has_global_flag = aramean_law }
 		NOT = { has_character_flag = reaffirmed_arameans }
 		NOT = { has_character_flag = removed_arameans }
@@ -2338,6 +2354,8 @@ narrative_event = { #Should I make the arameans equals permanently?
 	picture = GFX_evt_holy_jerusalem
 	
 	only_rulers = yes
+	has_global_flag = aramean_integrated
+	has_character_flag = reaffirmed_arameans
 	
 	trigger = {
 		has_landed_title = k_israel
@@ -2345,9 +2363,7 @@ narrative_event = { #Should I make the arameans equals permanently?
 			religion_group = jewish_group
 			religion = ebionites
 		}
-		has_global_flag = aramean_integrated
 		NOT = { has_global_flag = aramean_law }
-		has_character_flag = reaffirmed_arameans
 		OR = {
 			AND = {
 				diplomacy = 12
@@ -2356,10 +2372,12 @@ narrative_event = { #Should I make the arameans equals permanently?
 			diplomacy = 18
 			learning = 18
 			trait = genius
-			AND = {
-				trait = kind
-				trait = just
-			}
+			trait = kind
+			trait = just
+		}
+		OR = {
+			diplomacy = 14
+			learning = 14
 		}
 	}
 	
@@ -2386,7 +2404,7 @@ narrative_event = { #Should I make the arameans equals permanently?
 			opinion = {
 				modifier = viet_opinion_accepted_arameans_final
 				who = ROOT
-				years = 100
+				years = -1
 			}
 		}
 	}
@@ -2405,10 +2423,10 @@ character_event = { #aramean courtier spawn
 	prisoner = no
 	only_rulers = yes
 	capable_only = yes
+	has_global_flag = aramean_integrated
 	
 	trigger = {
 		has_landed_title = k_israel
-		has_global_flag = aramean_integrated
 		OR = {
 			has_character_flag = reaffirmed_arameans
 			has_global_flag = arameans_law
@@ -2520,7 +2538,7 @@ character_event = { #aramean courtier spawn
 					dynasty = culture
 					religion = ebionites
 					culture = aramean
-					attributes = { 
+					attributes = {
 						diplomacy = 11
 					}
 					flag = ai_flag_refuse_conversion
@@ -2545,7 +2563,7 @@ character_event = { #aramean courtier spawn
 					dynasty = culture
 					religion = ebionites
 					culture = aramean
-					attributes = { 
+					attributes = {
 						diplomacy = 12
 					}
 					flag = ai_flag_refuse_conversion

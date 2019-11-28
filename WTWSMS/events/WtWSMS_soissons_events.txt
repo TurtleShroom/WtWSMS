@@ -1,3 +1,9 @@
+###############################
+# Soissons reconquest events
+#
+# SOS.1 -> SOS.17, SOS.40
+###############################
+
 namespace = SOS
 
 ### Lost Roman Provinces
@@ -11,16 +17,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_syria_palaestina }
 		completely_controls_region = custom_diocese_oriens
 	}
@@ -45,16 +51,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_aegyptus }
 		completely_controls_region = custom_diocese_aegyptus
 	}
@@ -79,16 +85,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_cyrenaica }
 		completely_controls = d_cyrenaica
 		completely_controls = d_krete
@@ -114,16 +120,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_africa }
 		completely_controls = d_tripolitania
 		completely_controls = d_carthago
@@ -150,16 +156,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_illyricum }
 		completely_controls_region = custom_diocese_pannoniae
 	}
@@ -184,16 +190,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_italia }
 		completely_controls_region = custom_diocese_italia_annonaria
 		completely_controls_region = custom_diocese_italia_suburbicaria
@@ -219,16 +225,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_sicilia }
 		completely_controls = d_sicily
 	}
@@ -253,16 +259,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_sardinia }
 		completely_controls = d_sardinia
 	}
@@ -286,16 +292,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_viennensis }
 		completely_controls_region = custom_diocese_sevenprovinces
 	}
@@ -320,16 +326,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_gallia }
 		completely_controls_region = custom_diocese_gallia
 	}
@@ -340,7 +346,7 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTASOS.1
-		set_global_flag = soissons_gallia 
+		set_global_flag = soissons_gallia
 		prestige = 100
 	}
 }
@@ -354,16 +360,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_germania }
 		completely_controls_region = custom_diocese_germania_magna
 	}
@@ -388,18 +394,18 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_britannia }
-		completely_controls_region =  custom_diocese_britannia
+		completely_controls_region = custom_diocese_britannia
 	}
 	
 	mean_time_to_happen = {
@@ -422,16 +428,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_hispania }
 		completely_controls_region = custom_diocese_hispaniae
 	}
@@ -456,16 +462,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_mauretania }
 		completely_controls = d_caesariensis
 		completely_controls = d_sitifensis
@@ -498,10 +504,10 @@ narrative_event = {
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_mesopotamia }
 		completely_controls_region = custom_diocese_mesopotamia
 	}
@@ -526,16 +532,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_caledonia }
 		completely_controls_region = custom_diocese_caledonia
 	}
@@ -560,16 +566,16 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
 		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
-		}
+#		OR = {
+#			religion_group = christian
+#			religion_group = pagan_group
+#		}
 		NOT = { has_global_flag = soissons_hibernia }
 		completely_controls_region = custom_diocese_hibernia
 	}
@@ -596,15 +602,11 @@ narrative_event = {
 	picture = GFX_evt_rome_restored_byzantine
 	
 	ai = no
+	has_dlc = "Legacy of Rome"
 	
 	trigger = {
-		has_dlc = "Legacy of Rome"
 		primary_title = {
 			title = k_soissons
-		}
-		OR = {
-			religion_group = christian
-			religion_group = pagan_group
 		}
 		NOT = { has_global_flag = soissons_roman_borders }
 		

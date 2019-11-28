@@ -12,13 +12,12 @@ e_turkish = {
 	
 	short_name = yes
 	
-	title = "Sultan"
-	title_female = "Sultana"
+	title = "OTTOMAN_EMPEROR_TITLE"
+	title_female = "OTTOMAN_EMPRESS_TITLE"
 	
 	duchy_revokation = yes
 	
 	culture = turkish
-	religion = sunni
 	
 	allow = {
 		always = no # Only created through special event
@@ -32,7 +31,7 @@ k_britain = {
 	
 	capital = 32 #London
 	
-	culture = welsh
+#	culture = welsh
 
 	allow = {
 		always = no

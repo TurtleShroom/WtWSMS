@@ -18768,6 +18768,18 @@ e_arabia = {
 			
 				b_ibb_clone = {				
 				}
+				b_ibb_clone2 = {				
+				}
+				b_ibb_clone3 = {				
+				}
+				b_ibb_clone4 = {				
+				}
+				b_ibb_clone5 = {				
+				}
+				b_ibb_clone6 = {				
+				}
+				b_ibb_clone7 = {				
+				}
 			}
 		}
 		d_hadramawt = {
@@ -18823,18 +18835,39 @@ e_arabia = {
 			c_ataq = {
 				color={ 244 16 20 }
 				color2={ 255 255 255 }
-					
 			
-				b_ataq_two = {		#LD	
+				b_ataq_two = {			
+				}
+				b_ataq_two2 = {
+				}
+				b_ataq_two3 = {
+				}
+				b_ataq_two4 = {
+				}
+				b_ataq_two5 = {
+				}
+				b_ataq_two6 = {
+				}
+				b_ataq_two7 = {
 				}
 			}
-
 			c_sif = {
 				color={ 127 6 8 }
 				color2={ 255 255 255 }
-					
 			
 				b_sif = {				
+				}
+				b_sif2 = {				
+				}
+				b_sif3 = {				
+				}
+				b_sif4 = {				
+				}
+				b_sif5 = {				
+				}
+				b_sif6 = {				
+				}
+				b_sif7 = {				
 				}
 			}
 		}
@@ -18876,17 +18909,39 @@ e_arabia = {
 			c_saniw = {
 				color={ 224 11 14 }
 				color2={ 255 255 255 }
-					
 			
 				b_saniw = {				
+				}
+				b_saniw2 = {				
+				}
+				b_saniw3 = {				
+				}
+				b_saniw4 = {				
+				}
+				b_saniw5 = {				
+				}
+				b_saniw6 = {				
+				}
+				b_saniw7 = {				
 				}
 			}
 			c_murra = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_murra = {				
+				}
+				b_murra2 = {				
+				}
+				b_murra3 = {				
+				}
+				b_murra4 = {				
+				}
+				b_murra5 = {				
+				}
+				b_murra6 = {				
+				}
+				b_murra7 = {				
 				}
 			}
 		}
@@ -18912,17 +18967,39 @@ e_arabia = {
 			c_thamarit = {
 				color={ 169 186 198 }
 				color2={ 255 255 255 }
-					
 			
 				b_thamarit_clone = {				
+				}
+				b_thamarit_clone2 = {				
+				}
+				b_thamarit_clone3 = {				
+				}
+				b_thamarit_clone4 = {				
+				}
+				b_thamarit_clone5 = {				
+				}
+				b_thamarit_clone6 = {				
+				}
+				b_thamarit_clone7 = {				
 				}
 			}
 			c_raysut = {
 				color={ 154 174 188 }
 				color2={ 255 255 255 }
-					
 			
 				b_raysut_clone = {				
+				}
+				b_raysut_clone2 = {				
+				}
+				b_raysut_clone3 = {				
+				}
+				b_raysut_clone4 = {				
+				}
+				b_raysut_clone5 = {				
+				}
+				b_raysut_clone6 = {				
+				}
+				b_raysut_clone7 = {				
 				}
 			}
 			c_dhofar = {
@@ -18955,11 +19032,22 @@ e_arabia = {
 				color={ 140 160 180 }
 				color2={ 255 255 255 }
 					
-				b_dawkah_two = {	#LD		
+				b_dawkah_two = {			
+				}
+				b_dawkah_two2 = {	
+				}
+				b_dawkah_two3 = {	
+				}
+				b_dawkah_two4 = {	
+				}
+				b_dawkah_two5 = {	
+				}
+				b_dawkah_two6 = {	
+				}
+				b_dawkah_two7 = {	
 				}
 			}	
 		}
-
 		d_wusta = {
 			color={ 123 149 167 }
 			color2={ 255 255 255 }
@@ -18972,49 +19060,115 @@ e_arabia = {
 				
 				holy_site = khawariji
 				holy_site = haruriyyah
-					
-			
+				
 				b_shahan = {				
+				}
+				b_shahan2 = {				
+				}
+				b_shahan3 = {				
+				}
+				b_shahan4 = {				
+				}
+				b_shahan5 = {				
+				}
+				b_shahan6 = {				
+				}
+				b_shahan7 = {				
 				}
 			}
 			c_hamidan = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_hamidan = {				
+				}
+				b_hamidan2 = {				
+				}
+				b_hamidan3 = {				
+				}
+				b_hamidan4 = {				
+				}
+				b_hamidan5 = {				
+				}
+				b_hamidan6 = {				
+				}
+				b_hamidan7 = {				
 				}
 			}
 			c_hayama = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_hayama = {				
+				}
+				b_hayama2 = {				
+				}
+				b_hayama3 = {				
+				}
+				b_hayama4 = {				
+				}
+				b_hayama5 = {				
+				}
+				b_hayama6 = {				
+				}
+				b_hayama7 = {				
 				}
 			}
 			c_shishur = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_shishur = {				
+				}
+				b_shishur2 = {				
+				}
+				b_shishur3 = {				
+				}
+				b_shishur4 = {				
+				}
+				b_shishur5 = {				
+				}
+				b_shishur6 = {				
+				}
+				b_shishur7 = {				
 				}
 			}
 			c_fararah = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_fararah = {				
+				}
+				b_fararah2 = {				
+				}
+				b_fararah3 = {				
+				}
+				b_fararah4 = {				
+				}
+				b_fararah5 = {				
+				}
+				b_fararah6 = {				
+				}
+				b_fararah7 = {				
 				}
 			}
 			c_al_masira = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_al_masira = {				
+				}
+				b_al_masira2 = {				
+				}
+				b_al_masira3 = {				
+				}
+				b_al_masira4 = {				
+				}
+				b_al_masira5 = {				
+				}
+				b_al_masira6 = {				
+				}
+				b_al_masira7 = {				
 				}
 			}
 			c_duqm = {
@@ -19096,33 +19250,77 @@ e_arabia = {
 			c_matrah = {
 				color={ 86 111 129 }
 				color2={ 255 255 255 }
-					
 			
 				b_matrah = {				
+				}
+				b_matrah2 = {				
+				}
+				b_matrah3 = {				
+				}
+				b_matrah4 = {				
+				}
+				b_matrah5 = {				
+				}
+				b_matrah6 = {				
+				}
+				b_matrah7 = {				
 				}
 			}
 			c_nizwa = {
 				color={ 75 97 113 }
 				color2={ 255 255 255 }
-					
 			
 				b_nizwa_clone = {				
+				}
+				b_nizwa_clone2 = {				
+				}
+				b_nizwa_clone3 = {				
+				}
+				b_nizwa_clone4 = {				
+				}
+				b_nizwa_clone5 = {				
+				}
+				b_nizwa_clone6 = {				
+				}
+				b_nizwa_clone7 = {				
 				}
 			}
 			c_ibri = {
 				color={ 65 84 98 }
 				color2={ 255 255 255 }
-					
 			
-				b_ibri_two = {	#LD			
+				b_ibri_two = {				
+				}
+				b_ibri_two2 = {				
+				}
+				b_ibri_two3 = {				
+				}
+				b_ibri_two4 = {				
+				}
+				b_ibri_two5 = {				
+				}
+				b_ibri_two6 = {				
+				}
+				b_ibri_two7 = {				
 				}
 			}
 			c_khaluf = {
 				color={ 55 71 83 }
 				color2={ 255 255 255 }
-					
 			
 				b_khaluf = {				
+				}
+				b_khaluf2 = {				
+				}
+				b_khaluf3 = {				
+				}
+				b_khaluf4 = {				
+				}
+				b_khaluf5 = {				
+				}
+				b_khaluf6 = {				
+				}
+				b_khaluf7 = {				
 				}
 			}
 
@@ -19157,17 +19355,39 @@ e_arabia = {
 			c_burayami = {
 				color={ 69 89 104 }
 				color2={ 255 255 255 }
-					
 			
 				b_burayami = {				
+				}
+				b_burayami2 = {				
+				}
+				b_burayami3 = {				
+				}
+				b_burayami4 = {				
+				}
+				b_burayami5 = {				
+				}
+				b_burayami6 = {				
+				}
+				b_burayami7 = {				
 				}
 			}
 			c_as_sila = {
 				color={ 59 76 89 }
 				color2={ 255 255 255 }
-					
 			
 				b_as_sila = {				
+				}
+				b_as_sila2 = {				
+				}
+				b_as_sila3 = {				
+				}
+				b_as_sila4 = {				
+				}
+				b_as_sila5 = {				
+				}
+				b_as_sila6 = {				
+				}
+				b_as_sila7 = {				
 				}
 			}
 		}
@@ -19265,17 +19485,39 @@ e_arabia = {
 			c_qatar = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_qatar = {				
+				}
+				b_qatar2 = {				
+				}
+				b_qatar3 = {				
+				}
+				b_qatar4 = {				
+				}
+				b_qatar5 = {				
+				}
+				b_qatar6 = {				
+				}
+				b_qatar7 = {				
 				}
 			}
 			c_salwa = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_salwa = {				
+				}
+				b_salwa2 = {				
+				}
+				b_salwa3 = {				
+				}
+				b_salwa4 = {				
+				}
+				b_salwa5 = {				
+				}
+				b_salwa6 = {				
+				}
+				b_salwa7 = {				
 				}
 			}
 		}
@@ -19288,57 +19530,134 @@ e_arabia = {
 			c_mahrah = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_mahrah = {				
+				}
+				b_mahrah2 = {				
+				}
+				b_mahrah3 = {				
+				}
+				b_mahrah4 = {				
+				}
+				b_mahrah5 = {				
+				}
+				b_mahrah6 = {				
+				}
+				b_mahrah7 = {				
 				}
 			}
 			c_sarawrah = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_sarawrah = {				
+				}
+				b_sarawrah2 = {				
+				}
+				b_sarawrah3 = {				
+				}
+				b_sarawrah4 = {				
+				}
+				b_sarawrah5 = {				
+				}
+				b_sarawrah6 = {				
+				}
+				b_sarawrah7 = {				
 				}
 			}
 			c_sulayyil = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_sulayyil = {				
+				}
+				b_sulayyil2 = {				
+				}
+				b_sulayyil3 = {				
+				}
+				b_sulayyil4 = {				
+				}
+				b_sulayyil5 = {				
+				}
+				b_sulayyil6 = {				
+				}
+				b_sulayyil7 = {				
 				}
 			}
 			c_ubaylah = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_ubaylah = {				
+				}
+				b_ubaylah2 = {				
+				}
+				b_ubaylah3 = {				
+				}
+				b_ubaylah4 = {				
+				}
+				b_ubaylah5 = {				
+				}
+				b_ubaylah6 = {				
+				}
+				b_ubaylah7 = {				
 				}
 			}
 			c_iram = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_iram = {				
+				}
+				b_iram2 = {				
+				}
+				b_iram3 = {				
+				}
+				b_iram4 = {				
+				}
+				b_iram5 = {				
+				}
+				b_iram6 = {				
+				}
+				b_iram7 = {				
 				}
 			}
 			c_wabar = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_wabar = {				
+				}
+				b_wabar2 = {				
+				}
+				b_wabar3 = {				
+				}
+				b_wabar4 = {				
+				}
+				b_wabar5 = {				
+				}
+				b_wabar6 = {				
+				}
+				b_wabar7 = {				
 				}
 			}
 			c_ruewis = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_ruewis = {				
+				}
+				b_ruewis2 = {				
+				}
+				b_ruewis3 = {				
+				}
+				b_ruewis4 = {				
+				}
+				b_ruewis5 = {				
+				}
+				b_ruewis6 = {				
+				}
+				b_ruewis7 = {				
 				}
 			}
 		}
@@ -19351,33 +19670,77 @@ e_arabia = {
 			c_najran = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
-				b_najran_two = {	#LD			
+				b_najran_two = {				
+				}
+				b_najran_two2 = {				
+				}
+				b_najran_two3 = {				
+				}
+				b_najran_two4 = {				
+				}
+				b_najran_two5 = {				
+				}
+				b_najran_two6 = {				
+				}
+				b_najran_two7 = {				
 				}
 			}
 			c_thamud = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_thamud = {				
+				}
+				b_thamud2 = {				
+				}
+				b_thamud3 = {				
+				}
+				b_thamud4 = {				
+				}
+				b_thamud5 = {				
+				}
+				b_thamud6 = {				
+				}
+				b_thamud7 = {				
 				}
 			}
 			c_mushayt = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_mushayt = {				
+				}
+				b_mushayt2 = {				
+				}
+				b_mushayt3 = {				
+				}
+				b_mushayt4 = {				
+				}
+				b_mushayt5 = {				
+				}
+				b_mushayt6 = {				
+				}
+				b_mushayt7 = {				
 				}
 			}
 			c_sai_ar = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_sai_ar = {				
+				}
+				b_sai_ar2 = {				
+				}
+				b_sai_ar3 = {				
+				}
+				b_sai_ar4 = {				
+				}
+				b_sai_ar5 = {				
+				}
+				b_sai_ar6 = {				
+				}
+				b_sai_ar7 = {				
 				}
 			}
 		}
@@ -19390,17 +19753,39 @@ e_arabia = {
 			c_riyadh = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_riyadh = {			
+				}
+				b_riyadh2 = {			
+				}
+				b_riyadh3 = {			
+				}
+				b_riyadh4 = {			
+				}
+				b_riyadh5 = {			
+				}
+				b_riyadh6 = {			
+				}
+				b_riyadh7 = {			
 				}
 			}
 			c_zalim = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_zalim = {				
+				}
+				b_zalim2 = {				
+				}
+				b_zalim3 = {				
+				}
+				b_zalim4 = {				
+				}
+				b_zalim5 = {				
+				}
+				b_zalim6 = {				
+				}
+				b_zalim7 = {				
 				}
 			}
 			c_halaban = {
@@ -19452,7 +19837,6 @@ e_arabia = {
 				b_saban = {
 				}
 			}
-			
 			c_al_habbariyah = {
 				color={ 150 205 113 }
 				color2={ 255 255 255 }
@@ -19480,13 +19864,25 @@ e_arabia = {
 				b_nuayj = {
 				}
 			}
-			
 		    c_badiyatashsham = {
 				color={ 115 184 55 }
+				color2={ 255 255 255 }
+				
 				b_badiyatashsham = {
 				}
+				b_badiyatashsham2 = {
+				}
+				b_badiyatashsham3 = {
+				}
+				b_badiyatashsham4 = {
+				}
+				b_badiyatashsham5 = {
+				}
+				b_badiyatashsham6 = {
+				}
+				b_badiyatashsham7 = {
+				}
 			}			
-			
 			c_rafha = {
 				color={ 174 253 67 }
 				color2={ 255 255 255 }
@@ -19511,17 +19907,39 @@ e_arabia = {
 			c_abraq = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_abraq = {				
+				}
+				b_abraq2 = {				
+				}
+				b_abraq3 = {				
+				}
+				b_abraq4 = {				
+				}
+				b_abraq5 = {				
+				}
+				b_abraq6 = {				
+				}
+				b_abraq7 = {				
 				}
 			}
 			c_salemy = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_salemy = {				
+				}
+				b_salemy2 = {				
+				}
+				b_salemy3 = {				
+				}
+				b_salemy4 = {				
+				}
+				b_salemy5 = {				
+				}
+				b_salemy6 = {				
+				}
+				b_salemy7 = {				
 				}
 			}
 		}
@@ -19555,17 +19973,39 @@ e_arabia = {
 			c_shuaybah = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_shuaybah = {	
+				}
+				b_shuaybah2 = {	
+				}
+				b_shuaybah3 = {	
+				}
+				b_shuaybah4 = {	
+				}
+				b_shuaybah5 = {	
+				}
+				b_shuaybah6 = {	
+				}
+				b_shuaybah7 = {	
 				}
 			}
 			c_wafrah = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_wafrah = {				
+				}
+				b_wafrah2 = {				
+				}
+				b_wafrah3 = {				
+				}
+				b_wafrah4 = {				
+				}
+				b_wafrah5 = {				
+				}
+				b_wafrah6 = {				
+				}
+				b_wafrah7 = {				
 				}
 			}
 		}
@@ -19578,33 +20018,77 @@ e_arabia = {
 			c_jubbah = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_jubbah = {				
+				}
+				b_jubbah2 = {				
+				}
+				b_jubbah3 = {				
+				}
+				b_jubbah4 = {				
+				}
+				b_jubbah5 = {				
+				}
+				b_jubbah6 = {				
+				}
+				b_jubbah7 = {				
 				}
 			}
 			c_turayf = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_turayf = {			
+				}
+				b_turayf2 = {			
+				}
+				b_turayf3 = {			
+				}
+				b_turayf4 = {			
+				}
+				b_turayf5 = {			
+				}
+				b_turayf6 = {			
+				}
+				b_turayf7 = {			
 				}
 			}
 			c_baqa = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
-				b_baqa_two = {	 #LD		
+				b_baqa_two = {	 		
+				}
+				b_baqa_two2 = {	 		
+				}
+				b_baqa_two3 = {	 		
+				}
+				b_baqa_two4 = {	 		
+				}
+				b_baqa_two5 = {	 		
+				}
+				b_baqa_two6 = {	 		
+				}
+				b_baqa_two7 = {	 		
 				}
 			}
 			c_unayzah = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_unayzah = {				
+				}
+				b_unayzah2 = {				
+				}
+				b_unayzah3 = {				
+				}
+				b_unayzah4 = {				
+				}
+				b_unayzah5 = {				
+				}
+				b_unayzah6 = {				
+				}
+				b_unayzah7 = {				
 				}
 			}
 		}
@@ -19641,30 +20125,62 @@ e_arabia = {
 			c_khatt = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_khatt = {				
+				}
+				b_khatt2 = {				
+				}
+				b_khatt3 = {				
+				}
+				b_khatt4 = {				
+				}
+				b_khatt5 = {				
+				}
+				b_khatt6 = {				
+				}
+				b_khatt7 = {				
 				}
 			}
 			c_ka_ab = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_ka_ab = {				
+				}
+				b_ka_ab2 = {				
+				}
+				b_ka_ab3 = {				
+				}
+				b_ka_ab4 = {				
+				}
+				b_ka_ab5 = {				
+				}
+				b_ka_ab6 = {				
+				}
+				b_ka_ab7 = {				
 				}
 			}
 			c_hofuf = {
 				color={ 162 253 55 }
 				color2={ 255 255 255 }
-					
 			
 				b_hofuf = {				
+				}
+				b_hofuf2 = {				
+				}
+				b_hofuf3 = {				
+				}
+				b_hofuf4 = {				
+				}
+				b_hofuf5 = {				
+				}
+				b_hofuf6 = {				
+				}
+				b_hofuf7 = {				
 				}
 			}
 		}
 	}
-
 }
 
 e_armenia = {
@@ -19969,7 +20485,6 @@ e_armenia = {
 				b_tigranakert = {
 				}
 			}
-			
 			c_koloneia = {
 				color={ 195 120 50 }
 				color2={ 255 255 255 }
@@ -20262,22 +20777,61 @@ e_persia = {
 
             c_saokoros = {
 			    color={ 140 90 30 }
+				color2={ 255 255 255 }
+				
 				b_saokoros = {
 				}
+				b_saokoros2 = {
+				}
+				b_saokoros3 = {
+				}
+				b_saokoros4 = {
+				}
+				b_saokoros5 = {
+				}
+				b_saokoros6 = {
+				}
+				b_saokoros7 = {
+				}
 			}
-			
             c_arbayestan = {
 			    color={ 140 90 30 }
+				color2={ 255 255 255 }
+				
 				b_arbayestan = {
 				}
-			}
-			
-           c_betzabdai = {
-			    color={ 140 90 30 }
-				b_bethzabdai = {
+				b_arbayestan2 = {
+				}
+				b_arbayestan3 = {
+				}
+				b_arbayestan4 = {
+				}
+				b_arbayestan5 = {
+				}
+				b_arbayestan6 = {
+				}
+				b_arbayestan7 = {
 				}
 			}
-			
+            c_betzabdai = {
+			    color={ 140 90 30 }
+				color2={ 255 255 255 }
+				
+				b_bethzabdai = {
+				}
+				b_bethzabdai2 = {
+				}
+				b_bethzabdai3 = {
+				}
+				b_bethzabdai4 = {
+				}
+				b_bethzabdai5 = {
+				}
+				b_bethzabdai6 = {
+				}
+				b_bethzabdai7 = {
+				}
+			}
 			c_nisibin = {
 				color={ 133 170 52 }
 				color2={ 255 255 255 }
@@ -20461,13 +21015,25 @@ e_persia = {
 				b_salmas = {
 				}
 			}
-			
 		    c_sigriane = {
 				color={ 255 150 20 }
+				color2={ 255 255 255 }
+				
 				b_sigriane = {
 				}
+				b_sigriane2 = {
+				}
+				b_sigriane3 = {
+				}
+				b_sigriane4 = {
+				}
+				b_sigriane5 = {
+				}
+				b_sigriane6 = {
+				}
+				b_sigriane7 = {
+				}
 			}
-			
 			c_gilan = {
 				color={ 106 143 61 }
 				color2={ 255 255 255 }
@@ -20714,25 +21280,63 @@ e_persia = {
 				b_pakdasht = {
 				}
 			}
-			
             c_belabad = {
 			    color={ 25 25 110 }
+				color2={ 255 255 255 }
+				
 				b_belabad = {
 				}
+				b_belabad2 = {
+				}
+				b_belabad3 = {
+				}
+				b_belabad4 = {
+				}
+				b_belabad5 = {
+				}
+				b_belabad6 = {
+				}
+				b_belabad7 = {
+				}
 			}
-			
             c_nihavand = {
 			    color={ 25 25 110 }
+				color2={ 255 255 255 }
+				
 				b_nihavand = {
 				}
-			}
-			
-           c_syarzur = {
-			    color={ 25 25 110 }
-				b_syarzur = {
+				b_nihavand2 = {
+				}
+				b_nihavand3 = {
+				}
+				b_nihavand4 = {
+				}
+				b_nihavand5 = {
+				}
+				b_nihavand6 = {
+				}
+				b_nihavand7 = {
 				}
 			}
-			
+            c_syarzur = {
+			    color={ 25 25 110 }
+				color2={ 255 255 255 }
+				
+				b_syarzur = {
+				}
+				b_syarzur2 = {
+				}
+				b_syarzur3 = {
+				}
+				b_syarzur4 = {
+				}
+				b_syarzur5 = {
+				}
+				b_syarzur6 = {
+				}
+				b_syarzur7 = {
+				}
+			}
 			c_kermanshah = {
 				color={ 25 25 110 }
 				color2={ 255 255 255 }
@@ -20754,7 +21358,6 @@ e_persia = {
 				b_ravansar = {
 				}
 			}
-			
 			c_qwivir = {
 				color={ 115 155 45 }
 				color2={ 255 255 255 }
@@ -20808,13 +21411,25 @@ e_persia = {
 				b_jayzan = {
 				}
 			}
-			
             c_ohrmazdardashir = {
 			    color={ 54 68 19 }
+				color2={ 255 255 255 }
+				
 				b_ohrmazdardashir = {
 				}
+				b_ohrmazdardashir2 = {
+				}
+				b_ohrmazdardashir3 = {
+				}
+				b_ohrmazdardashir4 = {
+				}
+				b_ohrmazdardashir5 = {
+				}
+				b_ohrmazdardashir6 = {
+				}
+				b_ohrmazdardashir7 = {
+				}
 			}
-			
 			c_khozistan = {
 				color={ 95 134 28 }
 				color2={ 255 255 255 }
@@ -21156,7 +21771,6 @@ e_persia = {
 				b_abeshkan = {
 				}
 			}
-			
 			c_hormuz = {
 				color={ 106 126 71 }
 				color2={ 255 255 255 }
@@ -21267,6 +21881,8 @@ e_persia = {
 				b_ramian = {
 				}
 				b_minudasht = {
+				}
+				b_gurgan2 = {
 				}
 			}
 		}
@@ -21554,6 +22170,10 @@ e_persia = {
 				}
 				b_bilcheragh = {
 				}
+				b_maymana2 = {
+				}
+				b_maymana3 = {
+				}
 			}
 			c_kunduz = {
 				color={ 155 110 30 }
@@ -21637,6 +22257,10 @@ e_persia = {
 				b_zakhak = {
 				}
 				b_shibar = {
+				}
+				b_bamiyan2 = {
+				}
+				b_bamiyan3 = {
 				}
 			}
 			c_ghazna = {
@@ -21862,12 +22486,36 @@ e_persia = {
 				
 				b_kalat = {
 				}
+				b_kalat2 = {
+				}
+				b_kalat3 = {
+				}
+				b_kalat4 = {
+				}
+				b_kalat5 = {
+				}
+				b_kalat6 = {
+				}
+				b_kalat7 = {
+				}
 			}
 			c_chagai = {
 				color={ 152 185 96 }
 				color2={ 255 255 255 }
 				
 				b_nushki = {
+				}
+				b_nushki2 = {
+				}
+				b_nushki3 = {
+				}
+				b_nushki4 = {
+				}
+				b_nushki5 = {
+				}
+				b_nushki6 = {
+				}
+				b_nushki7 = {
 				}
 			}
 		}
@@ -21914,6 +22562,12 @@ e_persia = {
 				b_kambali = {
 				}
 				b_yusli = {
+				}
+				b_armail2 = {
+				}
+				b_armail3 = {
+				}
+				b_armail4 = {
 				}
 			}
 			c_jask = {
@@ -21989,6 +22643,12 @@ e_persia = {
 				}
 				b_kannazbun = {
 				}
+				b_al_haur2 = {
+				}
+				b_al_haur3 = {
+				}
+				b_al_haur4 = {
+				}
 			}
 		}
 	}
@@ -22015,42 +22675,154 @@ e_persia = {
 			
             c_orukit = {
 			    color={ 230 230 170 }
+				color2={ 255 255 255 }
+				
 				b_orukit = {
+				}
+				b_orukit2 = {
+				}
+				b_orukit3 = {
+				}
+				b_orukit4 = {
+				}
+				b_orukit5 = {
+				}
+				b_orukit6 = {
+				}
+				b_orukit7 = {
 				}
 			}
             c_kaskar = {
 			    color={ 230 230 170 }
+				color2={ 255 255 255 }
+				
 				b_kaskar = {
+				}
+				b_kaskar2 = {
+				}
+				b_kaskar3 = {
+				}
+				b_kaskar4 = {
+				}
+				b_kaskar5 = {
+				}
+				b_kaskar6 = {
+				}
+				b_kaskar7 = {
 				}
 			}
             c_asoristan = {
 			    color={ 230 230 170 }
+				color2={ 255 255 255 }
+				
 				b_asoristan = {
+				}
+				b_asoristan2 = {
+				}
+				b_asoristan3 = {
+				}
+				b_asoristan4 = {
+				}
+				b_asoristan5 = {
+				}
+				b_asoristan6 = {
+				}
+				b_asoristan7 = {
 				}
 			}
             c_betdarai = {
 			    color={ 230 230 170 }
+				color2={ 255 255 255 }
+				
 				b_betdarai = {
+				}
+				b_betdarai2 = {
+				}
+				b_betdarai3 = {
+				}
+				b_betdarai4 = {
+				}
+				b_betdarai5 = {
+				}
+				b_betdarai6 = {
+				}
+				b_betdarai7 = {
 				}
 			}
             c_vehardashir = {
 			    color={ 230 230 170 }
+				color2={ 255 255 255 }
+				
 				b_vehardashir = {
+				}
+				b_vehardashir2 = {
+				}
+				b_vehardashir3 = {
+				}
+				b_vehardashir4 = {
+				}
+				b_vehardashir5 = {
+				}
+				b_vehardashir6 = {
+				}
+				b_vehardashir7 = {
 				}
 			}
             c_wandanigan = {
 			    color={ 230 230 170 }
+				color2={ 255 255 255 }
+				
 				b_wandanigan = {
+				}
+				b_wandanigan2 = {
+				}
+				b_wandanigan3 = {
+				}
+				b_wandanigan4 = {
+				}
+				b_wandanigan5 = {
+				}
+				b_wandanigan6 = {
+				}
+				b_wandanigan7 = {
 				}
 			}
             c_dastkart = {
 			    color={ 230 230 170 }
+				color2={ 255 255 255 }
+				
 				b_dastkart = {
+				}
+				b_dastkart2 = {
+				}
+				b_dastkart3 = {
+				}
+				b_dastkart4 = {
+				}
+				b_dastkart5 = {
+				}
+				b_dastkart6 = {
+				}
+				b_dastkart7 = {
 				}
 			}
             c_hambar = {
 			    color={ 230 230 170 }
+				color2={ 255 255 255 }
+				
 				b_hambar = {
+				}
+				b_hambar2 = {
+				}
+				b_hambar3 = {
+				}
+				b_hambar4 = {
+				}
+				b_hambar5 = {
+				}
+				b_hambar6 = {
+				}
+				b_hambar7 = {
 				}
 			}
 			c_baghdad = {
@@ -22121,7 +22893,21 @@ e_persia = {
 			
 			c_hira = {
 				color={ 230 230 170 }
+				color2={ 255 255 255 }
+				
 				b_hira = {
+				}
+				b_hira2 = {
+				}
+				b_hira3 = {
+				}
+				b_hira4 = {
+				}
+				b_hira5 = {
+				}
+				b_hira6 = {
+				}
+				b_hira7 = {
 				}
 			}
 			c_karbala = {
@@ -22254,7 +23040,21 @@ e_persia = {
 			}
 			c_rima = {
 				color={ 230 230 170 }
+				color2={ 255 255 255 }
+				
 				b_rima = {
+				}
+				b_rima2 = {
+				}
+				b_rima3 = {
+				}
+				b_rima4 = {
+				}
+				b_rima5 = {
+				}
+				b_rima6 = {
+				}
+				b_rima7 = {
 				}
 			}
 			c_tigris = {
@@ -22337,7 +23137,21 @@ e_persia = {
 			}
 			c_vahman = {
 			    color={ 230 230 170 }
+				color2={ 255 255 255 }
+				
 				b_vahman = {
+				}
+				b_vahman2 = {
+				}
+				b_vahman3 = {
+				}
+				b_vahman4 = {
+				}
+				b_vahman5 = {
+				}
+				b_vahman6 = {
+				}
+				b_vahman7 = {
 				}
 			}
 		}
@@ -22393,7 +23207,6 @@ e_persia = {
 				b_al_balqa = {
 				}
 			}
-			
 			c_druz = {
 				color={ 39 236 24 }
 				color2={ 255 255 255 }
@@ -22512,25 +23325,63 @@ e_persia = {
 			
 			capital = 696 # Samarra
 			
-			
             c_vuzurgshapur = {
 			    color={ 210 175 20 }
+				color2={ 255 255 255 }
+				
 				b_vuzurgshapur = {
 				}
+				b_vuzurgshapur2 = {
+				}
+				b_vuzurgshapur3 = {
+				}
+				b_vuzurgshapur4 = {
+				}
+				b_vuzurgshapur5 = {
+				}
+				b_vuzurgshapur6 = {
+				}
+				b_vuzurgshapur7 = {
+				}
 			}
-			
-           c_shahrkart = {
+            c_shahrkart = {
 			    color={ 210 175 20 }
+				color2={ 255 255 255 }
+				
 				b_shahrkart = {
 				}
-			}
-			
-           c_arbil = {
-			    color={ 210 175 20 }
-				b_arbil = {
+				b_shahrkart2 = {
+				}
+				b_shahrkart3 = {
+				}
+				b_shahrkart4 = {
+				}
+				b_shahrkart5 = {
+				}
+				b_shahrkart6 = {
+				}
+				b_shahrkart7 = {
 				}
 			}
-
+            c_arbil = {
+			    color={ 210 175 20 }
+				color2={ 255 255 255 }
+				
+				b_arbil = {
+				}
+				b_arbil2 = {
+				}
+				b_arbil3 = {
+				}
+				b_arbil4 = {
+				}
+				b_arbil5 = {
+				}
+				b_arbil6 = {
+				}
+				b_arbil7 = {
+				}
+			}
 			c_deir = {
 				color={ 210 175 20 }
 				color2={ 255 255 255 }
@@ -22733,6 +23584,7 @@ e_gaul = {
 				roman = "Lutetia"
 				romano_gallic = "Lutetia"
 				armorican = Parisii
+				gallic = Parisii
 				
 				holy_site = aztec
 				holy_site = aztec_reformed
@@ -22775,6 +23627,7 @@ e_gaul = {
 				color2={ 255 255 255 }
 
 				armorican = Veliocasses
+				gallic = Veliocasses
 				roman = Veccinus
 				romano_gallic = Veccinus
 				
@@ -22801,7 +23654,8 @@ e_gaul = {
 				color={ 107 142 35 }
 				color2={ 255 255 255 }
 
-				armorican = Ratumacos 
+				armorican = Ratumacos
+				gallic = Ratumacos
 				roman = Rotomagus
 				romano_gallic = Rotomagus
 				
@@ -22833,6 +23687,7 @@ e_gaul = {
 				color2={ 255 255 255 }
 			
 				armorican = Calates
+				gallic = Calates
 				roman = Juliobona
 				romano_gallic = Juliobona
 				
@@ -22854,7 +23709,6 @@ e_gaul = {
 				}
 			}
 		}
-
 		d_celtica = {
 			color={ 0 128 0 }
 			color2={ 255 255 255 }
@@ -22879,7 +23733,8 @@ e_gaul = {
 				color={ 77 30 232 }
 				color2={ 255 255 255 }
 
-				armorican = Abrincates 
+				armorican = Abrincates
+				gallic = Abrincates
 				roman = Ingena 
 				romano_gallic = Ingena 
 				
@@ -22913,6 +23768,7 @@ e_gaul = {
 				color2={ 255 255 255 }
 
 				armorican = "Eburovices"
+				gallic = "Eburovices"
 				roman = "Mediolanum"
 				romano_gallic = Mediolanum
 				
@@ -22972,6 +23828,7 @@ e_gaul = {
 				color2={ 255 255 255 }
 
 				armorican = Andecavi
+				gallic = Andecavi
 				roman = Andegavia 
 				romano_gallic = Andegavia 
 				
@@ -23007,6 +23864,7 @@ e_gaul = {
 				roman = "Vindocinum"
 				romano_gallic = "Vindocinum"
 				armorican = "Vindoces"
+				gallic = "Vindoces"
 				
 				b_lavardin = {
 					roman = "Labrocinum"
@@ -23036,6 +23894,7 @@ e_gaul = {
 				roman = "Autricum"
 				romano_gallic = "Autricum"
 				armorican = "Carnutes"
+				gallic = "Carnutes"
 				
 				b_chateaudun = {
 					roman = "Dunense Castrum"
@@ -23072,6 +23931,7 @@ e_gaul = {
 				color2={ 255 255 255 }
 
 				armorican = Cenabum
+				gallic = Cenabum
 				roman = "Aurelianum"
 				romano_gallic = "Aurelianum"
 				alan = Allaines 
@@ -23130,6 +23990,7 @@ e_gaul = {
 				roman = "Praesidii Romani"
 				romano_gallic = "Praesidii Romani"
 				armorican = "Rhufeinigwersyll"
+				gallic = "Rhufeinigwersyll"
 				
 				b_beaugency = {
 				}
@@ -23193,6 +24054,7 @@ e_gaul = {
 				roman = "Autissiodorum"
 				romano_gallic = "Autissiodorum"
 				armorican = "Autissiorii"
+				gallic = "Autissiorii"
 				
 				b_auxerre = {
 					roman = "Autissiodorum"
@@ -23221,7 +24083,8 @@ e_gaul = {
 				
 				roman = "Novus Campania"
 				romano_gallic = "Novus Campania"
-				armorican = Meysydd 
+				armorican = Meysydd
+				gallic = Meysydd
 				
 				b_brienne = {
 				}
@@ -23256,6 +24119,7 @@ e_gaul = {
 				roman = "Caesaria"
 				romano_gallic = "Caesaria"
 				armorican = "De-Aedui"
+				gallic = "De-Aedui"
 				burgundian = "Caesaria"
 				visigothic = "Caesaria"
 				
@@ -23284,6 +24148,7 @@ e_gaul = {
 				roman = "Matiscus"
 				romano_gallic = "Matiscus"
 				armorican = "Matisco"
+				gallic = "Matisco"
 				burgundian = "Matiscus"
 				visigothic = "Matiscus"
 				
@@ -23321,6 +24186,7 @@ e_gaul = {
 				roman = "Divio"
 				romano_gallic = "Divio"
 				armorican = "Fynonii"
+				gallic = "Fynonii"
 				burgundian = "Divio"
 				visigothic = "Divio"
 				
@@ -23412,6 +24278,7 @@ e_gaul = {
 				color2={ 255 255 255 }
 
 				armorican = Lugodunon
+				gallic = Lugodunon
 				roman = Lugdunum
 				romano_gallic = Lugdunum
 				burgundian = Lugdunum
@@ -23545,6 +24412,7 @@ e_gaul = {
 				roman = "Burdigala"
 				romano_gallic = "Burdigala"
 				armorican = "Burdigala"
+				gallic = "Burdigala"
 				visigothic = "Burdigala"
 				
 				b_castillon = {
@@ -23583,7 +24451,8 @@ e_gaul = {
 				visigothic = "Aginnum"
 				romano_gallic = "Aquae Garonus"
 				armorican = "Uelh deth Garona"
-					
+				gallic = "Uelh deth Garona"
+				
 				b_agen = {
 					roman = "Aginnum"
 					visigothic = "Aginnum"
@@ -23617,7 +24486,8 @@ e_gaul = {
 				roman = "Beneharnum"
 				visigothic = "Beneharnum"
 				romano_gallic = "Beneharnum"
-				armorican= "Venarni"
+				armorican = "Venarni"
+				gallic = "Venarni"
 				
 				b_pau = {
 				}
@@ -23648,7 +24518,8 @@ e_gaul = {
 				roman = "Ausciorum"
 				visigothic = "Ausciorum"
 				romano_gallic = "Ausciourum"
-				armorican= "Di-Ausci"
+				armorican = "Di-Ausci"
+				gallic = "Di-Ausci"
 				
 				b_castelnau = {
 				}
@@ -23682,7 +24553,8 @@ e_gaul = {
 				roman = "Lapurdum"
 				visigothic = "Lapurdum"
 				romano_gallic = "Lapurdum"
-				armorican= "Tarbelas"
+				armorican = "Tarbelas"
+				gallic = "Tarbelas"
 				
 				b_sauveterre = {
 				}
@@ -23756,6 +24628,7 @@ e_gaul = {
 				visigothic = "Borbonius"
 				romano_gallic = "Borbonius"
 				armorican = "Biorden"
+				gallic = "Biorden"
 				frankish = "Poitiers"
 				
 				b_bourbon = {
@@ -23817,6 +24690,7 @@ e_gaul = {
 				visigothic = "Marchia"
 				romano_gallic = "Marchia"
 				armorican = "Goriedieth"
+				gallic = "Goriedieth"
 				
 				b_crozant = {
 				}
@@ -23843,12 +24717,14 @@ e_gaul = {
 				visigothic = "Avernus"
 				romano_gallic = "Avernus"
 				armorican = "Averni"
+				gallic = "Averni"
 				
 				b_tournoel = {
 					roman = "Avernus"
 					visigothic = "Avernus"
 					romano_gallic = "Avernus"
 					armorican = "Averni"
+					gallic = "Averni"
 				}
 				b_clermont = {
 					roman = "Augustonemetum"
@@ -23875,6 +24751,7 @@ e_gaul = {
 				color2={ 255 255 255 }
 
 				armorican = Avariocon
+				gallic = Avariocon
 				old_frankish = Borough
 				roman = Avaricum 
 				visigothic = Avaricum 
@@ -23916,6 +24793,7 @@ e_gaul = {
 			culture = romano_gallic
 
 			armorican = "Pictones"
+			gallic = "Pictones"
 			frankish = "Lusignan"
 			visigothic = "Thifalia"
 
@@ -23927,6 +24805,7 @@ e_gaul = {
 				visigothic = "Diolindum"
 				romano_gallic = "Cives Perigus"
 				armorican = "Perii"
+				gallic = "Perii"
 				
 				b_baneuil = {
 					roman = "Diolindum"
@@ -23962,6 +24841,7 @@ e_gaul = {
 				visigothic = "Lemovicus"
 				romano_gallic = "Lemovicus"
 				armorican = "Iculisma"
+				gallic = "Iculisma"
 				
 				b_jarnac = {
 				}
@@ -23994,6 +24874,7 @@ e_gaul = {
 				visigothic = "Mediolanum"
 				romano_gallic = "Cives Saintes"
 				armorican = "Santones"
+				gallic = "Santones"
 				
 				b_montguyon = {
 				}
@@ -24026,7 +24907,8 @@ e_gaul = {
 				visigothic = "Pictavium"
 				romano_gallic = "Pictavium"
 				armorican = "Lemonicus"
-					
+				gallic = "Lemonicus"
+				
 				b_chauvigny = {
 				}
 				b_poitiers = {
@@ -24055,6 +24937,7 @@ e_gaul = {
 				visigothic = "Lusignus"
 				romano_gallic = "Lusignus"
 				armorican = "Lusignii"
+				gallic = "Lusignii"
 				
 				b_lusignan = {
 					roman = "Lusignus"
@@ -24085,12 +24968,14 @@ e_gaul = {
 				visigothic = "Peregrinatio"
 				romano_gallic = "Peregrinatio"
 				armorican = "Peregii"
+				gallic = "Peregii"
 				
 				b_thouars = {
 					roman = "Peregrinatio"
 					visigothic = "Peregrinatio"
 					romano_gallic = "Peregrinatio"
 					armorican = "Peregii"
+					gallic = "Peregii"
 				}
 				b_larochelle = {
 				}
@@ -24119,6 +25004,7 @@ e_gaul = {
 			roman = "Narbo Martius"
 			romano_gallic = "Narbo Martius"
 			armorican = "Tolosates"
+			gallic = "Tolosates"
 			
 			culture = occitan
 			
@@ -24130,6 +25016,7 @@ e_gaul = {
 				visigothic = "Carcasum"
 				romano_gallic = "Carcasum"
 				armorican = "Carsac"
+				gallic = "Carsac"
 				
 				b_saissac = {
 				} 
@@ -24162,6 +25049,7 @@ e_gaul = {
 				visigothic = "Tolosa"
 				romano_gallic = "Tolosa"
 				armorican = "Tolosates"
+				gallic = "Tolosates"
 				
 				b_castelnaudary = {
 					roman = "Sostomagus"
@@ -24197,6 +25085,7 @@ e_gaul = {
 				visigothic = "Rodicus"
 				romano_gallic = "Rodicus"
 				armorican = "Redscii"
+				gallic = "Redscii"
 				
 				b_rodez = {
 					roman = "Segodunum"
@@ -24257,6 +25146,7 @@ e_gaul = {
 				visigothic = "Saxacastellum"
 				romano_gallic = "Saxacastellum"
 				armorican = "Foiricii"
+				gallic = "Foiricii"
 				
 				b_foix = {
 					roman = "Saxacastellum"
@@ -24295,6 +25185,7 @@ e_gaul = {
 				roman = "Narbo Martius"
 				romano_gallic = "Narbo Martius"
 				armorican = "Narbonensis"
+				gallic = "Narbonensis"
 				visigothic = "Narbonensis"
 				
 				b_albi = {
@@ -24336,6 +25227,7 @@ e_gaul = {
 				visigothic = "Gabalum"
 				romano_gallic = "Gabalum"
 				armorican = "Anderitum"
+				gallic = "Anderitum"
 				
 				b_grezes = {
 				}
@@ -24368,6 +25260,7 @@ e_gaul = {
 				visigothic = "Novus Cives"
 				romano_gallic = "Novus Cives"
 				armorican = "Nwyrain-Tolosates"
+				gallic = "Nwyrain-Tolosates"
 				
 				b_beaucaire = {
 					roman = "Vgernum"
@@ -24401,6 +25294,7 @@ e_gaul = {
 				visigothic = Vivaris
 				romano_gallic = Vivaris
 				armorican = Helveti
+				gallic = Helveti
 				
 				b_aubenas = {
 				}
@@ -24464,10 +25358,11 @@ e_gaul = {
 				roman = "Aquae Sextiae"
 				romano_gallic = "Aquae Sextiae"
 				armorican = Liguria
+				gallic = Liguria
 				greek = Masssalia
 				visigothic = Masssalia
 				massalian = Massalia
-								
+				
 				b_arles = {
 					roman = "Arelate"
 					visigothic = "Arelate"
@@ -24655,6 +25550,7 @@ e_gaul = {
 				massalian = Nikaia
 				greek = Nikaia
 				armorican = Cemenelum
+				gallic = Cemenelum
 				
 				b_nizza = {
 					roman = "Nicaea"
@@ -24702,6 +25598,7 @@ e_gaul = {
 		irish = Bhriotáin
 		frankish = Bretagne
 		armorican = Armorica
+		gallic = Armorica
 		
 		allow = {
 			hidden_tooltip = {
@@ -24725,6 +25622,7 @@ e_gaul = {
 			irish = Briotáine
 			frankish = Bretagne
 			armorican = Armorica
+			gallic = Armorica
 			roman = "Aremorica"
 			romano_gallic = "Aremorica"
 			
@@ -24996,6 +25894,7 @@ e_gaul = {
 				roman = "Samarobriva"
 				romano_gallic = "Samarobriva"
 				armorican = "Ambiani"
+				gallic = "Ambiani"
 				
 				b_peronne = {
 				}
@@ -25028,7 +25927,8 @@ e_gaul = {
 
 				roman = "Castra Romani"
 				romano_gallic = "Castra Romani"
-				armorican = Bealornes 
+				armorican = Bealornes
+				gallic = Bealornes
 				old_frankish = "Wiksinaburc"
 				
 				
@@ -25096,6 +25996,7 @@ e_gaul = {
 				roman = "Durocotorum"
 				romano_gallic = "Durocotorum"
 				armorican = Durocorteron
+				gallic = Durocorteron
 				visigothic = "Durocotorum"
 				burgundian = Durocorteron
 				
@@ -25157,6 +26058,7 @@ e_gaul = {
 				color2={ 255 255 255 }
 
 				armorican = Senones
+				gallic = Senones
 				roman = Argentoratum
 				alamannian = Argentoratum
 				romano_gallic = Argentoratum
@@ -25495,11 +26397,13 @@ e_gaul = {
 				old_frankish = "Ganda"
 				roman = "Gontia"
 				armorican = "Gontia"
+				gallic = "Gontia"
 				
 				b_gent = {
 					old_frankish = "Ganda"
 					roman = "Gontia"
 					armorican = "Gontia"
+					gallic = "Gontia"
 				}
 				b_doornik = {
 					roman = Turnacum
@@ -31858,6 +32762,38 @@ e_britannia = {
 					briton = "Calafortnua"
 					roman = "Novum Portum"
 				}
+				b_wight2 = {
+					old_saxon = Wihtgarabyrig
+					anglo = Wihtgarabyrig
+					jute = Wihtwarasburgh
+					briton = "Ynys Weith"
+					roman = "Inis Vectis"
+					romano_british = "Inis Vectis"
+				}
+				b_wight3 = {
+					old_saxon = Wihtgarabyrig
+					anglo = Wihtgarabyrig
+					jute = Wihtwarasburgh
+					briton = "Ynys Weith"
+					roman = "Inis Vectis"
+					romano_british = "Inis Vectis"
+				}
+				b_wight4 = {
+					old_saxon = Wihtgarabyrig
+					anglo = Wihtgarabyrig
+					jute = Wihtwarasburgh
+					briton = "Ynys Weith"
+					roman = "Inis Vectis"
+					romano_british = "Inis Vectis"
+				}
+				b_wight5 = {
+					old_saxon = Wihtgarabyrig
+					anglo = Wihtgarabyrig
+					jute = Wihtwarasburgh
+					briton = "Ynys Weith"
+					roman = "Inis Vectis"
+					romano_british = "Inis Vectis"
+				}
 			}
 			c_dorset = {
 				color={ 241 25 70 }
@@ -31913,6 +32849,7 @@ e_britannia = {
 				romano_british = "Aquae Sulis"
 				welsh = "Gwlad yr Haf"
 				armorican = "Gwlas an Hav"
+				gallic = "Gwlas an Hav"
 				
 				holy_site = west_pagan
 				
@@ -33391,7 +34328,6 @@ e_africa = {
 					libyan = "Nanelhet"
 					garamantian = "Nanelhet"
 				}
-					
 				b_merzouga = {
 				}
 				b_tanamouste= {
@@ -33406,8 +34342,7 @@ e_africa = {
 				}
 				b_tisserdmine = {
 				}
-				}
-				
+			}
 			c_canarias = {
 				color={ 60 190 43 }
 				color2={ 255 255 255 }
@@ -33506,10 +34441,88 @@ e_africa = {
 					
 		
 				b_imedrasa = {
+					roman = "Abinna"
+					greek = "Abinna"
+					tashellhit = "Abafran"
+					african_romance = "Abinna"
+					vandalic = "Abinna"
+					tamazight = "Abafran"
+					mzab_wargla = "Abafran"
+					riffian = "Abafran"
+					shenwa = "Abafran"
+					taqbaylit = "Abafran"
+					tacawit = "Abafran"
+					nafusi = "Abafran"
+					libyan = "Abafran"
+					garamantian = "Abafran"
 				}
 				b_azru = {
 				}
 				b_arrbish = {
+				}
+				b_imedrasa2 = {
+					roman = "Abinna"
+					greek = "Abinna"
+					tashellhit = "Abafran"
+					african_romance = "Abinna"
+					vandalic = "Abinna"
+					tamazight = "Abafran"
+					mzab_wargla = "Abafran"
+					riffian = "Abafran"
+					shenwa = "Abafran"
+					taqbaylit = "Abafran"
+					tacawit = "Abafran"
+					nafusi = "Abafran"
+					libyan = "Abafran"
+					garamantian = "Abafran"
+				}
+				b_imedrasa3 = {
+					roman = "Abinna"
+					greek = "Abinna"
+					tashellhit = "Abafran"
+					african_romance = "Abinna"
+					vandalic = "Abinna"
+					tamazight = "Abafran"
+					mzab_wargla = "Abafran"
+					riffian = "Abafran"
+					shenwa = "Abafran"
+					taqbaylit = "Abafran"
+					tacawit = "Abafran"
+					nafusi = "Abafran"
+					libyan = "Abafran"
+					garamantian = "Abafran"
+				}
+				b_imedrasa4 = {
+					roman = "Abinna"
+					greek = "Abinna"
+					tashellhit = "Abafran"
+					african_romance = "Abinna"
+					vandalic = "Abinna"
+					tamazight = "Abafran"
+					mzab_wargla = "Abafran"
+					riffian = "Abafran"
+					shenwa = "Abafran"
+					taqbaylit = "Abafran"
+					tacawit = "Abafran"
+					nafusi = "Abafran"
+					libyan = "Abafran"
+					garamantian = "Abafran"
+				}
+				b_imedrasa5 = {
+					roman = "Abinna"
+					greek = "Abinna"
+					tashellhit = "Abafran"
+					african_romance = "Abinna"
+					vandalic = "Abinna"
+					tamazight = "Abafran"
+					mzab_wargla = "Abafran"
+					riffian = "Abafran"
+					shenwa = "Abafran"
+					taqbaylit = "Abafran"
+					tacawit = "Abafran"
+					nafusi = "Abafran"
+					libyan = "Abafran"
+					garamantian = "Abafran"
 				}
 			}
 			c_rewda = {
@@ -33522,6 +34535,14 @@ e_africa = {
 				}
 				b_ahegga = {
 				}
+				b_rewda2 = {
+				}
+				b_rewda3 = {
+				}
+				b_rewda4 = {
+				}
+				b_rewda5 = {
+				}
 			}
 			c_krusi = {
 				color={ 48 255 6 }
@@ -33532,6 +34553,14 @@ e_africa = {
 				b_sen = {
 				}
 				b_nnuri = {
+				}
+				b_krusi2 = {
+				}
+				b_krusi3 = {
+				}
+				b_krusi4 = {
+				}
+				b_krusi5 = {
 				}
 			}
 			c_menshke = {
@@ -36092,6 +37121,7 @@ e_italy = {
 				color2={ 255 255 255 }
 
 				armorican = Cenomani
+				gallic = Cenomani
 				
 				b_cremona = {
 				}

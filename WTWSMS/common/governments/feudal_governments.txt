@@ -246,9 +246,12 @@ feudal_governments = {
 		frame_suffix = "_chineseimperial"
 		potential = {
 			tier = EMPEROR
-			primary_title = { has_title_flag = pretender_chinese_empire }
 			OR = {
 				culture_group = sinic
+				religion = taoist
+				religion = confucianism
+				religion = root_west_pagan
+				religion = root_west_pagan_reformed
 				culture = khitan
 				culture = tangut
 				culture = jurchen
@@ -278,7 +281,7 @@ feudal_governments = {
 		can_grant_kingdoms_and_empires_to_other_government_group = yes
 		free_retract_vassalage = yes
 		
-		vassal_limit = 10
+		vassal_limit = 15
 		
 		character_modifier = {
 			monthly_character_piety = 1

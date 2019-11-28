@@ -56,6 +56,10 @@ griot = { #West African Griot
 			culture_group = central_african
 			religion = west_african_pagan
 			religion = west_african_pagan_reformed
+			religion = african_solar_pagan
+			religion = african_solar_pagan_reformed
+			any_liege = { has_landed_title = k_mali }
+			any_liege = { has_landed_title = e_mali }
 		}
 	}
 
@@ -72,13 +76,13 @@ griot = { #West African Griot
 }
 
 bilal_descendant = { #First successful West African Muslims King or Emperor
-	potential = {
-		OR = {
-			culture_group = west_african
-			culture_group = central_african
-			religion_group = muslim
-		}
-	}
+#	potential = {
+#		OR = {
+#			culture_group = west_african
+#			culture_group = central_african
+#			religion_group = muslim
+#		}
+#	}
 	
 	agnatic = yes # Always inherited from fathers
 
@@ -107,7 +111,7 @@ israel_restorer = { # The Restorer of Israel
 	random = no
 
 	jewish_group_opinion = 10
-	ebionites_opinion = 5
+	ebionites_opinion = 10
 
 	monthly_character_prestige = 0.03
 	monthly_character_piety = 0.08
@@ -124,7 +128,7 @@ house_of_david = { # Descendant of David
 	learning = 1
 	
 	jewish_group_opinion = 10
-	ebionites_opinion = 5
+	ebionites_opinion = 10
 
 	monthly_character_prestige = 0.5
 	monthly_character_piety = 0.1
@@ -341,6 +345,14 @@ son_of_heaven = {
 		OR = {
 			culture_group = sinic
 			religion = confucianism
+			religion = taoist
+			religion = root_west_pagan
+			religion = root_west_pagan_reformed
+			culture = khitan
+			culture = tangut
+			culture = jurchen
+			government = chinese_imperial_government
+			government = confucian_bureaucracy		
 		}
 		higher_real_tier_than = KING
 	}

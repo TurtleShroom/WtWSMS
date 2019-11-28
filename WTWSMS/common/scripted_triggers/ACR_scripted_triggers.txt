@@ -57,6 +57,7 @@ is_neoplatonist_trigger = {
 		trait = stoic
 		trait = skeptic
 		trait = epicurean
+		religion = neoplatonism
 	}
 }
 

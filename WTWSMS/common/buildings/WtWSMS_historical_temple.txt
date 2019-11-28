@@ -118,9 +118,11 @@ temple = {
 	tp_dam_mosque = { # Great Mosque of Damascus
 		potential = {
 			FROMFROM = { title = b_damascus }
+		}
+		trigger = {
+			TECH_TEMPLE_CONSTRUCTION = 2
 			FROM = { religion_group = muslim }
 		}
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 } 
 		desc = tp_dam_mosque_desc
 		gold_cost = 600
 		build_time = 1800
@@ -278,13 +280,18 @@ temple = {
 
 	tp_jeru_wall2 = {
 		potential = {
-			AND = {
-				FROM = { religion = jewish }
-				FROMFROM = { title = b_jerusalem }
-			}
+			always = no #built via SoA.101 event
+			FROMFROM = { title = b_jerusalem }
 		}
 		desc = tp_jeru_wall2_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 0 }
+		trigger = {
+			TECH_TEMPLE_CONSTRUCTION = 0
+			OR = {
+				FROM = { religion = jewish }
+				FROM = { religion_group = jewish_group }
+				FROM = { religion = ebionites }
+			}
+		}
 		prerequisites = { tp_jeru_wall1 }
 		upgrades_from = tp_jeru_wall1
 		gold_cost = 200
@@ -699,6 +706,7 @@ temple = {
 				}
 			}
 			OR = {
+				FROMFROM = { has_building = tp_roman_roads_0 } # Once a Roman Road is built, it is permanent
 				FROMFROM = { region = custom_imperium_romanum }
 				FROM = { has_romance_culture_trigger = yes }
 			}
@@ -817,8 +825,9 @@ temple = {
 				}
 			}
 			OR = {
-				FROMFROM = { region = custom_imperium_romanum }
-				FROM = { has_romance_culture_trigger = yes }
+					FROMFROM = { has_building = tp_roman_roads_1 } # Once a Roman Road is built, it is permanent
+					FROMFROM = { region = custom_imperium_romanum }
+					FROM = { has_romance_culture_trigger = yes }
 			}
 		}
 		desc = roman_roads_1_desc
@@ -936,8 +945,9 @@ temple = {
 				}
 			}
 			OR = {
-				FROMFROM = { region = custom_imperium_romanum }
-				FROM = { has_romance_culture_trigger = yes }
+					FROMFROM = { has_building = tp_roman_roads_2 } # Once a Roman Road is built, it is permanent
+					FROMFROM = { region = custom_imperium_romanum }
+					FROM = { has_romance_culture_trigger = yes }
 			}
 		}
 		desc = roman_roads_2_desc
@@ -1421,6 +1431,7 @@ temple = {
 				OR = {
 					religion = egyptian_pagan
 					religion = aten_pagan
+					culture = coptic
 				}
 			}
 		}

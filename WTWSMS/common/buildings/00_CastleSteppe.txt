@@ -18,17 +18,35 @@ castle = {
 		desc = ca_steppe_barracks_desc
 		potential = {
 			terrain = steppe
+		}
+#		replaces = ca_barracks_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			FROM = {
 				OR = {
 					culture_group = altaic
 					culture_group = magyar
 					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
 					culture_group = iranian
+					government = nomadic_government
 				}
 			}
 		}
-		replaces = ca_barracks_1
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = magyar
+					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
+					culture_group = iranian
+					government = nomadic_government
+				}
+			}
+		}
 		gold_cost = 100
 		build_time = 365
 		heavy_infantry = 25
@@ -41,17 +59,36 @@ castle = {
 		desc = ca_steppe_barracks_desc
 		potential = {
 			terrain = steppe
+		}
+#		replaces = ca_barracks_2
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			FROM = {
 				OR = {
 					culture_group = altaic
 					culture_group = magyar
 					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
 					culture_group = iranian
+					culture_group = altaic
+					government = nomadic_government
 				}
 			}
 		}
-		replaces = ca_barracks_2
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = magyar
+					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
+					culture_group = iranian
+					government = nomadic_government
+				}
+			}
+		}
 		prerequisites = { ca_wall_1 }
 		upgrades_from = ca_steppe_barracks_1
 		gold_cost = 120
@@ -66,17 +103,36 @@ castle = {
 		desc = ca_steppe_barracks_desc
 		potential = {
 			terrain = steppe
+		}
+#		replaces = ca_barracks_3
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			FROM = {
 				OR = {
 					culture_group = altaic
 					culture_group = magyar
 					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
 					culture_group = iranian
+					culture_group = altaic
+					government = nomadic_government
 				}
 			}
 		}
-		replaces = ca_barracks_3
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = magyar
+					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
+					culture_group = iranian
+					government = nomadic_government
+				}
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		upgrades_from = ca_steppe_barracks_2
 		gold_cost = 200
@@ -91,18 +147,36 @@ castle = {
 		desc = ca_steppe_barracks_desc
 		potential = {
 			terrain = steppe
+		}
+#		replaces = ca_barracks_4
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 1
 			FROM = {
 				OR = {
 					culture_group = altaic
 					culture_group = magyar
 					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
 					culture_group = iranian
-					
+					culture_group = altaic
+					government = nomadic_government
 				}
 			}
 		}
-		replaces = ca_barracks_4
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = magyar
+					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
+					culture_group = iranian
+					government = nomadic_government
+				}
+			}
+		}
 		upgrades_from = ca_steppe_barracks_3
 		gold_cost = 300
 		build_time = 1095
@@ -116,17 +190,36 @@ castle = {
 		desc = ca_steppe_barracks_desc
 		potential = {
 			terrain = steppe
+		}
+#		replaces = ca_barracks_5
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = {
 				OR = {
 					culture_group = altaic
 					culture_group = magyar
 					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
 					culture_group = iranian
+					culture_group = altaic
+					government = nomadic_government
 				}
 			}
 		}
-		replaces = ca_barracks_5
-		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = magyar
+					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
+					culture_group = iranian
+					government = nomadic_government
+				}
+			}
+		}
 		upgrades_from = ca_steppe_barracks_4
 		gold_cost = 400
 		build_time = 2190
@@ -140,17 +233,36 @@ castle = {
 		desc = ca_steppe_barracks_desc
 		potential = {
 			terrain = steppe
+		}
+#		replaces = ca_barracks_6
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 5
 			FROM = {
 				OR = {
 					culture_group = altaic
 					culture_group = magyar
 					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
 					culture_group = iranian
+					culture_group = altaic
+					government = nomadic_government
 				}
 			}
 		}
-		replaces = ca_barracks_6
-		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = magyar
+					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
+					culture_group = iranian
+					government = nomadic_government
+				}
+			}
+		}
 		upgrades_from = ca_steppe_barracks_5
 		gold_cost = 500
 		build_time = 2190
@@ -166,17 +278,36 @@ castle = {
 		desc = ca_steppe_stable_desc
 		potential = {
 			terrain = steppe
+		}
+#		replaces = ca_stable_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			FROM = {
 				OR = {
 					culture_group = altaic
 					culture_group = magyar
 					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
 					culture_group = iranian
+					culture_group = altaic
+					government = nomadic_government
 				}
 			}
 		}
-		replaces = ca_stable_1
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = magyar
+					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
+					culture_group = iranian
+					government = nomadic_government
+				}
+			}
+		}
 		gold_cost = 100
 		build_time = 365
 		light_cavalry = 25
@@ -189,17 +320,36 @@ castle = {
 		desc = ca_steppe_stable_desc
 		potential = {
 			terrain = steppe
+		}
+#		replaces = ca_stable_2
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			FROM = {
 				OR = {
 					culture_group = altaic
 					culture_group = magyar
 					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
 					culture_group = iranian
+					culture_group = altaic
+					government = nomadic_government
 				}
 			}
 		}
-		replaces = ca_stable_2
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = magyar
+					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
+					culture_group = iranian
+					government = nomadic_government
+				}
+			}
+		}
 		prerequisites = { ca_wall_1 }
 		upgrades_from = ca_steppe_stable_1
 		gold_cost = 120
@@ -214,17 +364,36 @@ castle = {
 		desc = ca_steppe_stable_desc
 		potential = {
 			terrain = steppe
+		}
+#		replaces = ca_stable_3
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 2
 			FROM = {
 				OR = {
 					culture_group = altaic
 					culture_group = magyar
 					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
 					culture_group = iranian
+					culture_group = altaic
+					government = nomadic_government
 				}
 			}
 		}
-		replaces = ca_stable_3
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = magyar
+					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
+					culture_group = iranian
+					government = nomadic_government
+				}
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		upgrades_from = ca_steppe_stable_2
 		gold_cost = 200
@@ -239,17 +408,36 @@ castle = {
 		desc = ca_steppe_stable_desc
 		potential = {
 			terrain = steppe
+		}
+#		replaces = ca_stable_4
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = {
 				OR = {
 					culture_group = altaic
 					culture_group = magyar
 					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
 					culture_group = iranian
+					culture_group = altaic
+					government = nomadic_government
 				}
 			}
 		}
-		replaces = ca_stable_4
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = magyar
+					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
+					culture_group = iranian
+					government = nomadic_government
+				}
+			}
+		}
 		upgrades_from = ca_steppe_stable_3
 		gold_cost = 300
 		build_time = 1095
@@ -264,17 +452,36 @@ castle = {
 		desc = ca_steppe_stable_desc
 		potential = {
 			terrain = steppe
+		}
+#		replaces = ca_stable_5
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = {
 				OR = {
 					culture_group = altaic
 					culture_group = magyar
 					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
 					culture_group = iranian
+					culture_group = altaic
+					government = nomadic_government
 				}
 			}
 		}
-		replaces = ca_stable_5
-		trigger = { TECH_CASTLE_CONSTRUCTION = 6 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = magyar
+					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
+					culture_group = iranian
+					government = nomadic_government
+				}
+			}
+		}
 		upgrades_from = ca_steppe_stable_4
 		gold_cost = 400
 		build_time = 2190
@@ -289,17 +496,36 @@ castle = {
 		desc = ca_steppe_stable_desc
 		potential = {
 			terrain = steppe
+		}
+#		replaces = ca_stable_6
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 8
 			FROM = {
 				OR = {
 					culture_group = altaic
 					culture_group = magyar
 					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
 					culture_group = iranian
+					culture_group = altaic
+					government = nomadic_government
 				}
 			}
 		}
-		replaces = ca_stable_6
-		trigger = { TECH_CASTLE_CONSTRUCTION = 8 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = altaic
+					culture_group = magyar
+					culture = alan
+					culture = hunnic
+					culture = hunno_bolgar
+					culture_group = iranian
+					government = nomadic_government
+				}
+			}
+		}
 		upgrades_from = ca_steppe_stable_5
 		gold_cost = 500
 		build_time = 2190
@@ -316,6 +542,11 @@ castle = {
 		desc = ca_desert_stable_desc
 		potential = {
 			terrain = desert
+
+		}
+#		replaces = ca_stable_1
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			FROM = {
 				OR = {
 					culture_group = east_african
@@ -327,8 +558,18 @@ castle = {
 				}
 			}
 		}
-		replaces = ca_stable_1
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = east_african
+					culture_group = west_african
+					culture_group = south_semitic
+					culture_group = east_semitic
+					culture_group = northwest_semitic
+					culture_group = central_semitic
+				}
+			}
+		}
 		gold_cost = 100
 		build_time = 365
 		light_cavalry = 25
@@ -341,6 +582,10 @@ castle = {
 		desc = ca_desert_stable_desc
 		potential = {
 			terrain = desert
+		}
+#		replaces = ca_stable_2
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			FROM = {
 				OR = {
 					culture_group = east_african
@@ -352,8 +597,18 @@ castle = {
 				}
 			}
 		}
-		replaces = ca_stable_2
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = east_african
+					culture_group = west_african
+					culture_group = south_semitic
+					culture_group = east_semitic
+					culture_group = northwest_semitic
+					culture_group = central_semitic
+				}
+			}
+		}
 		prerequisites = { ca_wall_1 }
 		upgrades_from = ca_desert_stable_1
 		gold_cost = 120
@@ -368,6 +623,10 @@ castle = {
 		desc = ca_desert_stable_desc
 		potential = {
 			terrain = desert
+		}
+#		replaces = ca_stable_3
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 2
 			FROM = {
 				OR = {
 					culture_group = east_african
@@ -379,8 +638,18 @@ castle = {
 				}
 			}
 		}
-		replaces = ca_stable_3
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = east_african
+					culture_group = west_african
+					culture_group = south_semitic
+					culture_group = east_semitic
+					culture_group = northwest_semitic
+					culture_group = central_semitic
+				}
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		upgrades_from = ca_desert_stable_2
 		gold_cost = 200
@@ -395,6 +664,10 @@ castle = {
 		desc = ca_desert_stable_desc
 		potential = {
 			terrain = desert
+		}
+#		replaces = ca_stable_4
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = {
 				OR = {
 					culture_group = east_african
@@ -406,8 +679,18 @@ castle = {
 				}
 			}
 		}
-		replaces = ca_stable_4
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = east_african
+					culture_group = west_african
+					culture_group = south_semitic
+					culture_group = east_semitic
+					culture_group = northwest_semitic
+					culture_group = central_semitic
+				}
+			}
+		}
 		upgrades_from = ca_desert_stable_3
 		gold_cost = 300
 		build_time = 1095
@@ -422,6 +705,10 @@ castle = {
 		desc = ca_desert_stable_desc
 		potential = {
 			terrain = desert
+		}
+#		replaces = ca_stable_5
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = {
 				OR = {
 					culture_group = east_african
@@ -433,8 +720,18 @@ castle = {
 				}
 			}
 		}
-		replaces = ca_stable_5
-		trigger = { TECH_CASTLE_CONSTRUCTION = 6 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = east_african
+					culture_group = west_african
+					culture_group = south_semitic
+					culture_group = east_semitic
+					culture_group = northwest_semitic
+					culture_group = central_semitic
+				}
+			}
+		}
 		upgrades_from = ca_desert_stable_4
 		gold_cost = 400
 		build_time = 2190
@@ -449,6 +746,10 @@ castle = {
 		desc = ca_desert_stable_desc
 		potential = {
 			terrain = desert
+		}
+#		replaces = ca_stable_6
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 8
 			FROM = {
 				OR = {
 					culture_group = east_african
@@ -460,8 +761,18 @@ castle = {
 				}
 			}
 		}
-		replaces = ca_stable_6
-		trigger = { TECH_CASTLE_CONSTRUCTION = 8 }
+		is_active_trigger = {
+			FROM = {
+				OR = {
+					culture_group = east_african
+					culture_group = west_african
+					culture_group = south_semitic
+					culture_group = east_semitic
+					culture_group = northwest_semitic
+					culture_group = central_semitic
+				}
+			}
+		}
 		upgrades_from = ca_desert_stable_5
 		gold_cost = 500
 		build_time = 2190

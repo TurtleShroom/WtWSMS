@@ -2218,6 +2218,7 @@ k_auvergne = {
 	dalmatian = "Avernus"
 	noricroman = "Avernus"
 	armorican = "Averni"
+	gallic = "Averni"
 	
 	culture = romano_gallic
 	

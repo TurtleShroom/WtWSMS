@@ -44,6 +44,7 @@ succession_laws = {
 			}
 			is_primary_type_title = no
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
+#			NOT = { holder_scope = { government = bureaucratic_government } } #WtWSMS
 		}
 		allow = {
 			holder_scope = {
@@ -119,6 +120,7 @@ succession_laws = {
 			is_primary_type_title = no
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
 			NOT = { holder_scope = { government = chinese_imperial_government } }
+#			NOT = { holder_scope = { government = bureaucratic_government } } #WtWSMS
 		}
 		allow = {
 			conditional_tooltip = {
@@ -171,13 +173,13 @@ succession_laws = {
 					}
 				}
 				
-                OR = {
-                    NOR = {
+				OR = {
+					NOR = {
 						religion_group = muslim
 						religion_group = indian_group 
 					}
-                    is_patrician = yes
-                }
+					is_patrician = yes
+				}
 				
 				OR = {
 					NOT = { religion_group = pagan_group }
@@ -223,8 +225,7 @@ succession_laws = {
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
 		}
 		
-		allow = {
-			
+		allow = {	
 			conditional_tooltip = {
 				trigger = {
 					NOT = { has_dlc = "Conclave" }
@@ -522,18 +523,8 @@ succession_laws = {
 				is_tribal_type_title = yes
 				temporary = yes
 			}
-			is_primary_type_title = no
+#			is_primary_type_title = no
 			NOT = { tier = baron }
-			OR = {
-				holder_scope = { 
-					culture_group = celtic
-				}
-				AND = {
-					tier = baron
-					is_feudal = yes
-				}
-				holder_scope = { is_feudal = yes }
-			}
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
 			NOT = { holder_scope = { government = chinese_imperial_government } }
 		}
@@ -590,6 +581,7 @@ succession_laws = {
 					culture = mongol
 					religion = bon					
 					is_reformed_religion = no
+					government = nomadic_government
 				}
 				
 				NOT = { religion_group = muslim }
@@ -608,6 +600,7 @@ succession_laws = {
 				is_landless_type_title = no
 				is_tribal_type_title = yes
 				temporary = yes
+				government = nomadic_government
 				AND = {
 					is_nomadic = no
 					OR = {
@@ -694,6 +687,9 @@ succession_laws = {
 		effect = {
 			succession = ultimogeniture
 		}
+
+
+
 		revoke_allowed = {
 			always = no
 		}
@@ -775,8 +771,8 @@ succession_laws = {
 				}
 				is_merchant_republic = no
 			}
-			NOT = { holder_scope = { government = confucian_bureaucracy } }
-			NOT = { holder_scope = { government = chinese_imperial_government } }
+#			NOT = { holder_scope = { government = confucian_bureaucracy } }
+#			NOT = { holder_scope = { government = chinese_imperial_government } }
 		}
 		effect = {
 			succession = appointment
@@ -962,11 +958,6 @@ gender_laws = {
 		potential = {
 			holder_scope = {
 				OR = {
-					NOT = { tier = baron }
-					is_theocracy = yes
-					is_republic = yes
-				}
-				OR = {
 					independent = yes
 					NOT = {
 						any_liege = {
@@ -974,13 +965,13 @@ gender_laws = {
 						}
 					}
 					is_merchant_republic = yes
+					is_patrician = yes
 				}
 				OR = {
 					AND = {
 						NOT = { religion_group = muslim }
 						NOT = { religion = aztec }
 						NOT = { religion = aztec_reformed }
-						has_horde_culture = no
 						OR = {
 							AND = {
 								is_tribal = no
@@ -990,8 +981,8 @@ gender_laws = {
 							culture_group = vasconic # Basque
 							culture = spartan
 						}
-						is_merchant_republic = no
-						is_patrician = no
+#						is_merchant_republic = no
+#						is_patrician = no
 					}
 					AND = {
 						has_dlc = "Zeus"
@@ -1007,7 +998,7 @@ gender_laws = {
 							}
 						}
 						OR = {
-							is_patrician = no
+#							is_patrician = no
 							liege = {
 								primary_title = {
 									OR = {
@@ -1077,13 +1068,10 @@ gender_laws = {
 			modifier = {
 				factor = 100
 				holder_scope = {
-					NOR = {
-						religion_group = christian
-						AND = {
-							culture_group = tibetan_group
-							NOT = { religion = taoist }
-							NOT = { culture = tangut }
-						}
+					OR = {
+						religion_group = muslim
+						religion = aztec
+						religion = aztec_reformed						
 					}
 					primary_title = {
 						NOT = { has_law = status_of_women_3 }
@@ -1102,8 +1090,8 @@ gender_laws = {
 				OR = {
 					AND = {
 						NOT = { has_dlc = "Zeus" }
-						is_feminist_religion_trigger = yes
 						OR = {
+							is_feminist_religion_trigger = yes
 							culture_group = vasconic # Basque
 							culture = spartan
 						}
@@ -1115,8 +1103,8 @@ gender_laws = {
 						has_horde_culture = no
 						is_tribal = no
 						is_nomadic = no
-						is_merchant_republic = no
-						is_patrician = no
+#						is_merchant_republic = no
+#						is_patrician = no
 					}
 					AND = {
 						has_dlc = "Zeus"
@@ -1154,17 +1142,17 @@ gender_laws = {
 			
 			is_landless_type_title = no
 			
-			OR = {
-				AND = {
-					tier = baron
-					is_theocracy = no
-					is_republic = no
-				}
-				holder_scope = {
-					is_theocracy = no
-					is_republic = no
-				}
-			}
+#			OR = {
+#				AND = {
+#					tier = baron
+#					is_theocracy = no
+#					is_republic = no
+#				}
+#				holder_scope = {
+#					is_theocracy = no
+#					is_republic = no
+#				}
+#			}
 			
 			is_primary_type_title = no
 		}

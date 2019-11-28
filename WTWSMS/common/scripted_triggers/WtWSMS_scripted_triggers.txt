@@ -110,7 +110,7 @@ sassanid_government_trigger = {
 			OR = {
 				culture = persian
 				culture = parthian
-				religion = zoroastrian
+				religion = zoroastrian_group
 			}
 		}
 	}
@@ -210,11 +210,12 @@ foederati_roman_trigger = {
 		has_landed_title = e_wre
 		has_landed_title = e_byzantium 
 		has_landed_title = e_roman_empire
+		bureaucratic_government_trigger = yes
 	}
 	num_of_count_titles_in_realm = 2 # Needs to be able to grant a county without game-over 
 }
 
-# Mystic religions get some particular events and can access the Mystic trait
+# Especially mystic religions get some particular events and can access the Mystic trait
 # trigger has character scope
 mystic_religion_trigger = {
 	OR = {
