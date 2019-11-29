@@ -145,7 +145,7 @@ character_event = {
 								90 = { 
 									religion = jewish
 								}
-								4 = { 
+								5 = { 
 									religion = samaritan
 								}
 								5 = { 
@@ -216,11 +216,12 @@ character_event = {
 								90 = { 
 									religion = jewish
 								}
-								4 = { 
+								5 = { 
 									religion = samaritan
 								}
 								5 = { 
 									religion = karaite
+								}
 								1 = {
 									religion = ebionites
 								}
@@ -407,6 +408,9 @@ character_event = {
 								5 = { 
 									religion = karaite
 								}
+								1 = {
+									religion = ebionites
+								}
 							}
 							random_list = { # Is the Physician a Quack?
 								90 = {
@@ -490,7 +494,7 @@ character_event = {
 								90 = { 
 									religion = jewish
 								}
-								4 = { 
+								5 = { 
 									religion = samaritan
 								}
 								5 = { 
@@ -706,7 +710,7 @@ character_event = {
 								90 = { 
 									religion = jewish
 								}
-								4 = { 
+								5 = { 
 									religion = samaritan
 								}
 								5 = { 
@@ -795,7 +799,7 @@ character_event = {
 								90 = { 
 									religion = jewish
 								}
-								4 = { 
+								5 = { 
 									religion = samaritan
 								}
 								5 = { 
@@ -881,7 +885,7 @@ character_event = {
 								90 = { 
 									religion = jewish
 								}
-								4 = { 
+								5 = { 
 									religion = samaritan
 								}
 								5 = { 
@@ -969,7 +973,7 @@ character_event = {
 								90 = { 
 									religion = jewish
 								}
-								4 = { 
+								5 = { 
 									religion = samaritan
 								}
 								5 = { 
@@ -1147,7 +1151,7 @@ character_event = {
 								90 = { 
 									religion = jewish
 								}
-								4 = { 
+								5 = { 
 									religion = samaritan
 								}
 								5 = { 
@@ -1230,7 +1234,7 @@ character_event = {
 								90 = { 
 									religion = jewish
 								}
-								4 = { 
+								5 = { 
 									religion = samaritan
 								}
 								5 = { 
@@ -1512,7 +1516,7 @@ character_event = {
 					25 = { # Arabic Sunni (Mutazilite)
 						create_character = {
 							culture = bedouin_arabic
-							religion = sunni
+							religion = semitic_pagan # Islam does not exist yet!
 							dynasty = culture
 							age = 35
 							random_traits = yes
@@ -1522,7 +1526,7 @@ character_event = {
 							}
 							health = 6
 							trait = martial_cleric 
-							trait = mutazilite
+#							trait = mutazilite
 							flag = is_court_physician
 							flag = physician_arab_scholar
 							flag = ai_flag_refuse_conversion
@@ -1555,7 +1559,7 @@ character_event = {
 					25 = { # Berber Kharijite (Mystic)
 						create_character = {
 							culture = maghreb_arabic
-							religion = kharijite
+							religion = central_african_pagan # Islam does not exist yet!
 							dynasty = culture
 							age = 35
 							random_traits = yes
@@ -1608,10 +1612,10 @@ character_event = {
 							character_event = { id = RIP.11052 }
 						}
 					}
-					25 = { # Egyptian Shia (Mutazilite)
+					25 = { # Egyptian Shi'ite (Mutazilite)
 						create_character = {
 							culture = egyptian_arabic
-							religion = shiite
+							religion = nicene # Islam does not exist yet!
 							dynasty = culture
 							age = 35
 							random_traits = yes
@@ -1621,7 +1625,6 @@ character_event = {
 							}
 							health = 6
 							trait = martial_cleric 
-							trait = mutazilite
 							flag = is_court_physician
 							flag = physician_arab_scholar
 							flag = ai_flag_refuse_conversion
@@ -1639,6 +1642,10 @@ character_event = {
 								50 = {
 									
 								}
+							}
+							random_list = { # Rare chance that the Physician is an Egyptian Pagan
+								90 = {}
+								10 = { religion = egyptian_pagan }
 							}
 							random_list = { # Is the Physician a Quack?
 								90 = {
@@ -2777,7 +2784,7 @@ character_event = {
 								90 = { 
 									religion = jewish
 								}
-								4 = { 
+								5 = { 
 									religion = samaritan
 								}
 								5 = { 
@@ -2859,7 +2866,7 @@ character_event = {
 								90 = { 
 									religion = jewish
 								}
-								4 = { 
+								5 = { 
 									religion = samaritan
 								}
 								5 = { 

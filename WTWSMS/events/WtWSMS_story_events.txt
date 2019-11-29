@@ -1,4 +1,5 @@
-﻿###################################
+﻿##
+###################################
 # Fall of Rome, historical invasions, etc..
 #
 # Written by Zusk

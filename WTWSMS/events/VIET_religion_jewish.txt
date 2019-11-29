@@ -660,6 +660,35 @@ character_event = {
 					}
 				}
 			}
+			# Now for some Hebrews
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = culture
+				religion = jewish
+				culture = hebrew
+				female = no
+			}
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = culture
+				religion = jewish
+				culture = hebrew
+				female = no
+			}
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = culture
+				religion = jewish
+				culture = hebrew
+				female = no
+			}
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = culture
+				religion = jewish
+				culture = hebrew
+				female = no
+			}
 		}
 	}
 }
@@ -1192,7 +1221,7 @@ character_event = {
 			add_spouse = ROOT
 		}
 		# Sets the laws of the Exilarchy as a safety check, because the game tends to revert back to Open Elective for theocracies
-		d_ebionites = { 
+		d_ebionites = {
 			add_law = succ_primogeniture
 		}
 		d_exilarch = {
@@ -1220,7 +1249,7 @@ narrative_event = {
 	trigger = {
 		has_landed_title = d_exilarch
 		NOT = { trait = house_of_david }
-		NOT = { has_global_flag = has_global_flag = jewish_homeland_restored } # With Israel restored, the worries about the House of David and continuity, etc., are solved, similarly to the High Priest
+		NOT = { has_global_flag = jewish_homeland_restored } # With Israel restored, the worries about the House of David and continuity, etc., are solved, similarly to the High Priest
 	}
 	
 	immediate = {

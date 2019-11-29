@@ -18,7 +18,7 @@ character_event = {
 	
 	trigger = {
 		has_game_rule = { name = shattered_tribes value = shatter }
-		NOT = { has_game_rule = { name = shattered_tribes value = not_shatter }
+		NOT = { has_game_rule = { name = shattered_tribes value = not_shatter } }
 		government = tribal_government
 		tier = KING
 		current_heir = { # Weak heir

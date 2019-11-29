@@ -70,6 +70,7 @@ narrative_event = { # Announcement of the ressurection of SPARTA
 				culture = spartan
 			}
 		}
+	}
 
 	option = { # Persian/Iranian/Zoroastrian/etc. reaction and reaction of cravens
 		name = this_is_sparta.6
@@ -163,6 +164,7 @@ narrative_event = { # Spartan Brigades
 				culture = spartan
 			}
 		}
+	}
 
 	option = { # Persian/Iranian/Zoroastrian/etc. reaction and reaction of cravens
 		name = this_is_sparta.6
@@ -257,7 +259,7 @@ character_event = { # Removal of penalty if Spartan is no longer a chicken
 	}
 }
 
-character_event = { 
+character_event = {
 # In this Event, a Spartan with a defect who has survived the infancy challenge gets the special Lame Spartan Trait, which hurts his Martial but ups his other talents.
 # It should be noted that a Spartan who survives infancy and the challenge with a defect, or manifests one later in life, would still be accepted as a Spartan.
 # Spartans who could not fight were put to work as Sparta's bureaucrats, artists, governors, stewards, farmers, and so on to support the warriors.
