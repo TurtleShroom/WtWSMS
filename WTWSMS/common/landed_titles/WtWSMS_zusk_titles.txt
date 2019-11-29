@@ -28,7 +28,7 @@ e_assyria = {
 
 	religion = assyrian_pagan
 	
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	dynasty_title_names = no # Will not be named "Seljuk", etc.
 	
 	allow = {
 		always = no # Only created through special event
@@ -85,7 +85,7 @@ e_celtic = {
 		prestige = 1000
 		independent = yes
 		realm_size = 255
-	}	  
+	}
 }
 
 e_bolghar = {
@@ -325,13 +325,16 @@ e_khitan = {
 	dignity = 100 # Counted as having this many more counties than it does
 
 	culture = khitan
-	religion = buddhist
+#	religion = buddhist
 	
 	capital = 901 #Khiva/Aral
 
 	allow = {
 		always = no # Only created through special event
 	}
+
+	title = CULTURE_KHAGAN
+	title_female = CULTURE_KHANUM
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 	
@@ -364,7 +367,7 @@ e_khanid = {
 d_massalia  = {
 	color = { 90 75 150 }
 
-	capital = 230 #Nice
+	capital = 221 # Provence
 	
 	frankish = "Marseille"
 	occitan = "Marselha"

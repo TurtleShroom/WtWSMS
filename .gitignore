@@ -223,3 +223,9 @@ pip-log.txt
 #############
 
 *.exe
+
+#############
+# cwtools for VS Code
+#############
+.cwtools/
+WTWSMS/gfx/interface/decision_icon_erect_calvary.dds

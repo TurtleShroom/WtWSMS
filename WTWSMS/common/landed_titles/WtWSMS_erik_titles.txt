@@ -373,6 +373,7 @@ e_palmyra = {
 				culture = helleno_aramean
 				culture = romano_aramean
 				culture = corduenian
+#				culture = assyrian
 			}
 			is_adult = yes
 			prestige = 10000

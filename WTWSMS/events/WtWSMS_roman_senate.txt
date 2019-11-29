@@ -1043,6 +1043,8 @@ narrative_event = {
 	border = GFX_event_narrative_frame_religion
 	major = yes
 	
+	hide_from = yes
+	
 	only_playable = yes
 	only_rulers = yes
 	only_independent = yes

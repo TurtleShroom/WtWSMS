@@ -27,11 +27,24 @@ theocracy_governments = {
 		frame_suffix = "_theocracy"
 		title_prefix = "temple_"
 		potential = {
-			NOT = {	religion_group = muslim	}
+			OR = {
+				NOT = {	religion_group = muslim	}
+				religion = yazidi
+			}
+			holy_order = no
 			is_patrician = no
 			OR = {
 				is_female = no
 				religion_allows_female_temple_holders = yes
+			}
+			OR = {
+				is_female = yes
+				religion_allows_male_temple_holders = yes
+			}
+			NOT = {
+				has_landed_title = k_melchisedechianism
+				has_landed_title = d_platonic_academy
+				has_landed_title = e_assyria
 			}
 		}
 		

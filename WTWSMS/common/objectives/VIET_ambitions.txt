@@ -691,6 +691,7 @@ obj_befriend_priest = {
 					trait = monk
 					trait = nun
 					trait = wandering_hermit
+					trait = druid
 					is_theocracy = yes
 				}
 			}
@@ -746,6 +747,7 @@ obj_befriend_priest = {
 				trait = monk
 				trait = nun
 				trait = wandering_hermit
+				trait = druid
 				is_theocracy = yes
 			}
 		}

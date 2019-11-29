@@ -20,7 +20,6 @@ castle = {
 	# + 0.15 bonus in either offensive, defensive or morale sometimes split over different units or stats same on all levels
 	
 	# Culture building names MUST start with ca_culture
-
 	## Gaulish Cultural Buildings
 	ca_culture_gaulish_1 = {
 		desc = ca_culture_gaulish_1_desc
@@ -174,7 +173,9 @@ castle = {
 				}
 			}
 		}
+
 		desc = kemetic_pyramid_desc
+
 		gold_cost = 600
 		build_time = 3650
 
@@ -211,6 +212,7 @@ city = {
 				}
 			}
 		}
+
 		desc = kemetic_pyramid_desc
 		gold_cost = 600
 		build_time = 3650
@@ -248,6 +250,7 @@ temple = {
 				}
 			}
 		}
+
 		desc = kemetic_pyramid_desc
 		gold_cost = 600
 		build_time = 3650
@@ -285,6 +288,7 @@ tribal = {
 				}
 			}
 		}
+
 		desc = kemetic_pyramid_desc
 		gold_cost = 600
 		build_time = 3650

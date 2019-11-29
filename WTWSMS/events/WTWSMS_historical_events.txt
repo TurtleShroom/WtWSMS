@@ -4,7 +4,7 @@
 ###################################
 # Historical Events
 #
-# hist.1 -> hist.28
+# hist.1 -> hist.29
 # 
 # Id 60000 - 61000 is reserved
 ###################################
@@ -63,7 +63,7 @@ character_event = {
 		text = hist.2.desc.a
 	}
 	desc = {
-		trigger = {		
+		trigger = {
 			NOT = { has_landed_title = k_dal_riata }
 		}
 		text = hist.2.desc.b
@@ -103,7 +103,7 @@ character_event = {
 	}
 
 	option = {
-		name = hist.2.a		
+		name = hist.2.a
 		trigger = {
 			has_landed_title = k_dal_riata
 		}
@@ -113,9 +113,9 @@ character_event = {
 	
 	option = {
 		name = hist.2.b
-		trigger = { 
+		trigger = {
 			religion_group = christian
-			NOT = { has_landed_title = k_dal_riata }		
+			NOT = { has_landed_title = k_dal_riata }
 		}
 	}
 	
@@ -123,7 +123,7 @@ character_event = {
 		name = hist.2.c
 		trigger = {
 			religion = celtic_pagan
-			NOT = { has_landed_title = k_dal_riata }			
+			NOT = { has_landed_title = k_dal_riata }
 		}
 	}
 }
@@ -191,6 +191,17 @@ character_event = {
 		trigger = {
 			NOR = {
 				religion = nicene
+				has_landed_title = k_soissons
+			}
+			religion_group = christian
+		}
+	}
+	
+	option = {
+		name = hist.4.d
+		trigger = {
+			NOR = {
+				religion_group = christian
 				has_landed_title = k_soissons
 			}
 		}
@@ -744,8 +755,19 @@ narrative_event = {
 				has_landed_title = k_maxima_sequanorum
 				religion = arian
 			}
+			religion_group = christian
 		}
 		piety = -50 
+	}
+	
+	option = {
+		name = hist.14.d
+		trigger = {
+			NOR = {
+				has_landed_title = k_maxima_sequanorum
+				religion_group = christian
+			}
+		}
 	}
 }
 
@@ -915,6 +937,8 @@ narrative_event = {
 	picture = GFX_evt_stone_church
 	border = GFX_event_narrative_frame_religion
 	
+	hide_from = yes
+	
 	only_playable = yes
 	religion_group = christian
 	has_dlc = "Mystics"
@@ -969,6 +993,8 @@ narrative_event = {
 	desc = hist.22.desc
 	picture = GFX_evt_holy_jerusalem
 	border = GFX_event_narrative_frame_religion
+	
+	hide_from = yes
 	
 	only_playable = yes
 	
@@ -1186,7 +1212,8 @@ narrative_event = {
 	option = {
 		name = hist.25.b
 		trigger = { 
-			has_romance_culture_trigger = yes 
+			has_romance_culture_trigger = yes
+			NOT = { has_landed_title = k_visigoths }
 		}
 		prestige = -50 
 	}
@@ -1194,9 +1221,19 @@ narrative_event = {
 	option = {
 		name = hist.25.c
 		trigger = { 
-			has_germanic_culture_trigger = yes 
+			has_germanic_culture_trigger = yes
+			NOT = { has_landed_title = k_visigoths }
 		}
 		prestige = 50 
+	}
+	
+	option = {
+		name = hist.25.d
+		trigger = {
+			has_romance_culture_trigger = no
+			has_germanic_culture_trigger = no
+			NOT = { has_landed_title = k_visigoths }
+		}
 	}
 }
 
@@ -1303,4 +1340,19 @@ narrative_event = {
 		set_global_flag = 535_536_weather_events
 		any_realm_province = { add_province_modifier = { name = failed_crops duration = 3650 } }
     }
+}
+
+# Form the Provincia Spaniae
+narrative_event = {
+	id = hist.29
+	title = hist.29.name
+	desc = hist.29.desc
+	picture = GFX_evt_nicene_preacher 
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hist.29.a
+	}
 }

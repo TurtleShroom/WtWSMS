@@ -73,7 +73,7 @@ decisions = {
 					make_primary_title = yes # Automatic for AI, but more friendly/visible for the player
 				}
 			}
-			add_claim = e_gaul #Encourages a united Frankish kingdom to expand through Gaul instead of Germania
+			add_pressed_claim = e_gaul #Encourages a united Frankish kingdom to expand through Gaul instead of Germania
 			hidden_tooltip = {
 				any_child = {
 					limit = {
@@ -131,7 +131,7 @@ decisions = {
 					NOT = { has_landed_title = e_assyria }
 					ai = no
 				}
-				narrative_event = { id = zusk_event.19 }
+				narrative_event = { id = zusk_event.19 } 
 			}
 		}
 			
@@ -179,7 +179,10 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			NOT = { tier = EMPEROR }
-			culture = bolghar
+			OR = {
+				culture = bolghar
+				culture = hunno_bulgar
+			}
 			e_bolghar = {
 				has_holder = no
 			}
@@ -198,6 +201,14 @@ decisions = {
 					activate_title = { title = THIS status = yes } # Otherwise grant_title doesn't work
 					grant_title = PREVPREV
 					copy_title_laws = PREV
+				}
+			}
+			if = {
+				limit = {
+					culture = hunno_bulgar
+				}
+				e_bolghar = {
+					culture = hunno_bulgar
 				}
 			}
 		}
@@ -226,14 +237,14 @@ decisions = {
 			NOT = { trait = incapable }
 		}
 		effect = {
-		  primary_title = {
-			  e_karluk = {
-				  activate_title = { title = THIS status = yes } # Otherwise grant_title doesn't work
-				  grant_title = PREVPREV
-				  copy_title_laws = PREV
-					}
-						}
+			primary_title = {
+				e_karluk = {
+					activate_title = { title = THIS status = yes } # Otherwise grant_title doesn't work
+					grant_title = PREVPREV
+					copy_title_laws = PREV
+				}
 			}
+		}
 			
 		
 		ai_will_do = {
@@ -267,7 +278,6 @@ decisions = {
 				}
 			}
 		}
-		
 		ai_will_do = {
 			factor = 1
 		}
@@ -291,15 +301,14 @@ decisions = {
 			NOT = { trait = incapable }
 		}
 		effect = {
-		  primary_title = {
-			  e_kirghiz = {
-				  activate_title = { title = THIS status = yes } # Otherwise grant_title doesn't work
-				  grant_title = PREVPREV
-				  copy_title_laws = PREV
-					}
+			primary_title = {
+				e_kirghiz = {
+					activate_title = { title = THIS status = yes } # Otherwise grant_title doesn't work
+					grant_title = PREVPREV
+					copy_title_laws = PREV
+				}
 			}
 		}
-			
 		ai_will_do = {
 			factor = 1
 		}
@@ -322,16 +331,14 @@ decisions = {
 			NOT = { trait = incapable }
 		}
 		effect = {
-		  primary_title = {
-			  e_pecheneg = {
-				  activate_title = { title = THIS status = yes } # Otherwise grant_title doesn't work
-				  grant_title = PREVPREV
-				  copy_title_laws = PREV
-					}
+			primary_title = {
+				e_pecheneg = {
+					activate_title = { title = THIS status = yes } # Otherwise grant_title doesn't work
+					grant_title = PREVPREV
+					copy_title_laws = PREV
+				}
 			}
 		}
-			
-		
 		ai_will_do = {
 			factor = 1
 		}
@@ -364,8 +371,6 @@ decisions = {
 				}
 			}
 		}
-			
-		
 		ai_will_do = {
 			factor = 1
 		}
@@ -401,16 +406,11 @@ decisions = {
 			wealth = -300
 			prestige = 1000
 		}
-			
-		
-
 		ai_will_do = {
 			factor = 1
 		}
 	}
-}
 
-decisions = {
 	this_is_sparta = { # Edits and commentary courtesy of Loup
 		is_high_prio = yes
 		only_playable = yes
@@ -829,6 +829,42 @@ decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+
+	form_spania = {
+		only_playable = yes
+		is_high_prio = yes
+		potential = {
+		    has_landed_title = e_byzantium
+			NOT = { has_global_flag = spania_created }
+			completely_controls = k_baetica
+			k_spania = {
+				has_holder = no
+			}
+		}
+		allow = {
+			prestige = 500
+			war = no
+			is_adult = yes
+			prisoner = no
+			is_incapable = no
+		}
+		effect = {
+			set_global_flag = spania_created
+			
+			k_spania = {
+				activate_title = { title = THIS status = yes } # Otherwise grant_title doesn't work
+				grant_title = ROOT
+			}
+			ROOT = {
+				primary_title = {
+					k_spania = {
+						copy_title_laws = PREV
+					}
+				}
+				narrative_event = { id = hist.29 }
+			}
 		}
 	}
 }

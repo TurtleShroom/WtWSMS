@@ -36,7 +36,10 @@ castle = {
 		potential = {
 			FROMFROM = { title = b_constantinople }
 		}
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
+		trigger = {
+			TECH_TEMPLE_CONSTRUCTION = 1
+			religion_group = christian
+		}
 		is_active_trigger = {
 			religion_group = christian
 		}
@@ -51,23 +54,6 @@ castle = {
 		extra_tech_building_start = 10.0
 	}
 
-	ca_hal_maus = { # Mausoleum of Halicarnassus
-		potential = {
-			FROMFROM = { title = b_halikarnassos }
-		}
-		desc = ca_hal_maus_desc
-		gold_cost = 0
-		build_time = 0
-
-		culture_techpoints = 0.05
-		liege_prestige = 0.25
-		monthly_character_prestige = 0.25
-
-		ai_creation_factor = 100
-
-		extra_tech_building_start = 0.0
-	}
-	
 	ca_hadrian_wall_0 = { # Remnants of Hadrian's Wall
 		potential = { 
 			OR = {
@@ -119,7 +105,7 @@ castle = {
 
 		extra_tech_building_start = 0.0
 	}
-			
+	
 	ca_hadrian_wall_1 = { # Rebuilt Hadrian's Wall
 		potential = { 
 			OR = {
@@ -1085,6 +1071,7 @@ castle = {
 		
 		extra_tech_building_start = 0.0
 	}
+	
 	ca_via_appia = {	# Via Appia
 		potential = {
 			FROMFROM = { is_capital = yes }
